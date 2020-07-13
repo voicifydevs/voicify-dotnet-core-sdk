@@ -9,9 +9,4 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Webhooks\Responses\" />
-    <Folder Include="Webhooks\Requests\" />
-  </ItemGroup>
-
 </Project>
