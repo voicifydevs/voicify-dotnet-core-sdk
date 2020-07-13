@@ -1,15 +1,12 @@
-# IO.Swagger.Model.UserModel
+# IO.Swagger.Model.CustomAssistantListItem
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
-**Email** | **string** |  | [optional] 
-**FirstName** | **string** |  | [optional] 
-**LastName** | **string** |  | [optional] 
-**IsAdmin** | **bool?** |  | [optional] 
-**ImageUrl** | **string** |  | [optional] 
-**IsApiUser** | **bool?** |  | [optional] 
+**Title** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**Image** | [**MediaItemModel**](MediaItemModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
