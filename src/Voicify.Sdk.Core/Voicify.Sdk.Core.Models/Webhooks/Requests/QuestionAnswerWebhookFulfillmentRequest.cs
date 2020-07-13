@@ -18,16 +18,5 @@ namespace Voicify.Sdk.Core.Models.Webhooks.Requests
         public AnswerModel Response { get; set; }
         public Dictionary<string, string> Parameters { get; set; }
         public GeneralAssistantRequest OriginalRequest { get; set; }
-
-        public QuestionAnswerWebhookFulfillmentRequest(QuestionModel model)
-        {
-            Id = model?.Id;
-            Content = model?.Content;
-            ApplicationId = model?.ApplicationId;
-            ApplicationModuleId = model?.ApplicationModuleId;
-            QuestionAnswerId = model?.QuestionAnswerId;
-            IsLive = model?.IsLive ?? false;
-        }
-        public QuestionAnswerWebhookFulfillmentRequest() { }
     }
 }
