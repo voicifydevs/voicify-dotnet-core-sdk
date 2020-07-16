@@ -2,11 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Alex Dunn, Aadu Pirn, Gavin Berkowitz</Authors>
+    <Company>Voicify</Company>
+    <Description>Core SDK models for Voicify integrations</Description>
+    <RepositoryUrl>https://wb2.6cb.myftpupload.com/wp-content/uploads/2018/06/cropped-voicify-favicon-270x270.png</RepositoryUrl>
+    <PackageProjectUrl>https://voicify.com</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Integrations\Requests\" />
   </ItemGroup>
 
 </Project>

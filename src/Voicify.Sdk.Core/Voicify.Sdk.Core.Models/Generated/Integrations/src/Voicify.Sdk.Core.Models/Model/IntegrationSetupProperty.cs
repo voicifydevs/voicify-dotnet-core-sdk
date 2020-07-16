@@ -20,7 +20,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
-
+using Voicify.Sdk.Core.Models.Integrations.Setup;
 
 namespace Voicify.Sdk.Core.Models.Model
 {
@@ -43,7 +43,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="label">label (required).</param>
         /// <param name="tooltip">tooltip.</param>
         /// <param name="field">field (required).</param>
-        public IntegrationSetupProperty(string id = default(string), bool? required = default(bool?), string label = default(string), string tooltip = default(string), IIntegrationSetupField field = default(IIntegrationSetupField))
+        public IntegrationSetupProperty(string id = default(string), bool? required = default(bool?), string label = default(string), string tooltip = default(string), IIntegrationSetupField field = default)
         {
             // to ensure "id" is required (not null)
             if (id == null)
