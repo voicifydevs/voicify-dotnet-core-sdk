@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Alex Dunn, Aadu Pirn, Gavin Berkowitz</Authors>
+    <Authors>Voicify</Authors>
     <Company>Voicify</Company>
     <Description>Core SDK models for Voicify integrations</Description>
     <RepositoryUrl>https://wb2.6cb.myftpupload.com/wp-content/uploads/2018/06/cropped-voicify-favicon-270x270.png</RepositoryUrl>
