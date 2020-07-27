@@ -1,16 +1,89 @@
 # Introduction 
 
-TODO
+This project contains core models used in external Voicify development including:
+
+- Webhook models
+- CMS API models
+- Assistant API Models
+- Integration API Models
 
 # Getting Started
 
-TODO
+You can install this package from NuGet:
+
+```
+Install-Package Voicify.Sdk.Core.Models
+```
+
+Then you can pull in any of the namespaces you need by what model you need. For Example, you can create a webhook response model:
+
+
+```csharp
+using Voicify.Sdk.Core.Models.Webhooks.Responses;
+
+// ...
+
+var response = new GeneralFulfillmentResponse
+{
+    Data = new ContentFulfillmentWebhookData
+    {
+        Content = "This is now the output speech"
+    }
+}
+```
+
+or create a request for the Custom Assistant API:
+
+```csharp
+
+ var device = new CustomAssistantDevice(
+    id: Guid.NewGuid().ToString(),
+    name: "Voicify Sample App",
+    supportsDisplayText: true,
+    supportsTextInput: true
+);
+var user = new CustomAssistantUser(
+    id: Guid.NewGuid().ToString(),
+    name: "Sample User"
+);
+
+var welcomeContext = CreateContext(string.Empty);
+welcomeContext.RequiresLanguageUnderstanding = false;
+welcomeContext.RequestName = CustomAssistantIntents.VoicifyWelcome;
+var welcomeResponse = await customAssistantApi.HandleRequestAsync(appId, appSecret, new CustomAssistantRequestBody(
+    requestId: Guid.NewGuid().ToString(),
+    device: device,
+    user: user,
+    context: welcomeContext
+));
+
+static CustomAssistantRequestContext CreateContext(string input)
+{
+    return new CustomAssistantRequestContext(
+        channel: "Voicify Sample App",
+        locale: "en-US",
+        sessionId: Guid.NewGuid().ToString(),
+        requestType: "IntentRequest",
+        originalInput: input,
+        requiresLanguageUnderstanding: true
+    );
+}
+```
+
+Voicify Partners and Customers can also check out the extended documentation and details at https://support.voicify.com
+
+# Contributing
+
+The Voicify core development team owns this repo and NuGet package, but all Voicify developers are welcome to contribute changes. Before contributing, please create an issue that you can track your PRs against and be sure there is not already a PR open for it.
 
 # Build and Test
+
 This project contains core models for all Voicify integrations including API models and other custom models.
 There are some steps to autogenerate the C# models from the swagger API models that Voicify outputs.
 
 ## Generate Models from Swagger
+
+Many of the models are generated from Voicify's different API gateways. You can get the latest models from those APIs by generating new models and adjusting accordingly.
 
 Sample:
 
