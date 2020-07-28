@@ -1,12 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Voicify</Authors>
     <Company>Voicify</Company>
     <Description>Core SDK models for Voicify integrations</Description>
-    <RepositoryUrl>https://wb2.6cb.myftpupload.com/wp-content/uploads/2018/06/cropped-voicify-favicon-270x270.png</RepositoryUrl>
+    <RepositoryUrl>https://github.com/voicifydevs/voicify-dotnet-core-sdk</RepositoryUrl>
     <PackageProjectUrl>https://voicify.com</PackageProjectUrl>
+    <PackageIconUrl>https://wb2.6cb.myftpupload.com/wp-content/uploads/2018/06/cropped-voicify-favicon-270x270.png</PackageIconUrl>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <FileVersion>2.2.0.0</FileVersion>
+    <Version>2.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
