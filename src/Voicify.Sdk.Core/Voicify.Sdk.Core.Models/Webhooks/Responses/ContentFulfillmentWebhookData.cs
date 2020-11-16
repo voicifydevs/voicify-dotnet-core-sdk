@@ -41,6 +41,15 @@ namespace Voicify.Sdk.Core.Models.Webhooks.Responses
         /// </summary>
         public string[] RemovedSessionAttributes { get; set; }
 
+        public List<string> AdditionalSessionFlags { get; set; }
+        public List<string> RemovedSessionFlags { get; set; }
+
+        public Dictionary<string, object> AdditionalUserProfileAttributes { get; set; }
+        public List<string> RemovedUserProfileAttributes { get; set; }
+
+        public List<string> AdditionalUserProfileFlags { get; set; }
+        public List<string> RemovedUserProfileFlags { get; set; }
+
         /// <summary>
         /// Allows for overriding the entire response to the assistant by returning a native assistant response
         /// </summary>
