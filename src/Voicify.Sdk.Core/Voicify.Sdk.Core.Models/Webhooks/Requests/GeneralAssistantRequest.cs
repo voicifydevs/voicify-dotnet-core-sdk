@@ -11,7 +11,7 @@ namespace Voicify.Sdk.Core.Models.Webhooks.Requests
     public class GeneralAssistantRequest
     {
         public string RequestType { get; set; }
-
+        public Dictionary<string,string> Slots { get; set; }
         public string Assistant { get; set; }
         public string SessionId { get; set; }
         public string UserId { get; set; }
