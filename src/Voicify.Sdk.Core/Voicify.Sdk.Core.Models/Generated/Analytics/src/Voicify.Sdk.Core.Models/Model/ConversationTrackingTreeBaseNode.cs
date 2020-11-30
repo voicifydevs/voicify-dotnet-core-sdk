@@ -51,7 +51,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Gets or Sets ConversationTrackingNodeType
         /// </summary>
         [DataMember(Name="conversationTrackingNodeType", EmitDefaultValue=false)]
-        public string ConversationTrackingNodeType { get; private set; }
+        public virtual string ConversationTrackingNodeType { get; private set; }
 
         /// <summary>
         /// Gets or Sets RequestIds
@@ -75,7 +75,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Gets or Sets ChildNodes
         /// </summary>
         [DataMember(Name="childNodes", EmitDefaultValue=false)]
-        public List<ConversationTrackingTreeBaseNode> ChildNodes { get; set; }
+        public virtual List<ConversationTrackingTreeBaseNode> ChildNodes { get; set; }
 
         /// <summary>
         /// Gets or Sets ParentNode
