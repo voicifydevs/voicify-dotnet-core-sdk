@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// BixbyEventSearchRequest
     /// </summary>
     [DataContract]
-    public partial class BixbyEventSearchRequest : Dictionary<String, Object>,  IEquatable<BixbyEventSearchRequest>, IValidatableObject
+    public partial class BixbyEventSearchRequest : Dictionary<String, Object>,  IEquatable<BixbyEventSearchRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BixbyEventSearchRequest" /> class.
@@ -175,15 +175,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-                     yield break;
-        }
     }
 
 }

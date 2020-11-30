@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// WebhookParameterValueModel
     /// </summary>
     [DataContract]
-    public partial class WebhookParameterValueModel :  IEquatable<WebhookParameterValueModel>, IValidatableObject
+    public partial class WebhookParameterValueModel :  IEquatable<WebhookParameterValueModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="WebhookParameterValueModel" /> class.
@@ -158,15 +158,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

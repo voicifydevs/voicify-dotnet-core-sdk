@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// UpdateOrganizationRequest
     /// </summary>
     [DataContract]
-    public partial class UpdateOrganizationRequest :  IEquatable<UpdateOrganizationRequest>, IValidatableObject
+    public partial class UpdateOrganizationRequest :  IEquatable<UpdateOrganizationRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateOrganizationRequest" /> class.
@@ -139,21 +139,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            // Name (string) minLength
-            if(this.Name != null && this.Name.Length < 2)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for Name, length must be greater than 2.", new [] { "Name" });
-            }
-
-            yield break;
-        }
     }
 
 }

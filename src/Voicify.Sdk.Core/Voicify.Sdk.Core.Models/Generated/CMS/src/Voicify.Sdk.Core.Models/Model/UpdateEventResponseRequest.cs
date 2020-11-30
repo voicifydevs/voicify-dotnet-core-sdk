@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// UpdateEventResponseRequest
     /// </summary>
     [DataContract]
-    public partial class UpdateEventResponseRequest :  IEquatable<UpdateEventResponseRequest>, IValidatableObject
+    public partial class UpdateEventResponseRequest :  IEquatable<UpdateEventResponseRequest>
     {
         /// <summary>
         /// Defines EventQueryType
@@ -299,15 +299,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// NewNumberRangeRequest
     /// </summary>
     [DataContract]
-    public partial class NewNumberRangeRequest :  IEquatable<NewNumberRangeRequest>, IValidatableObject
+    public partial class NewNumberRangeRequest :  IEquatable<NewNumberRangeRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NewNumberRangeRequest" /> class.
@@ -387,15 +387,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

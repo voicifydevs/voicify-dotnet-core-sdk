@@ -28,17 +28,19 @@ namespace Voicify.Sdk.Core.Models.Model
     /// ConversationSessionState
     /// </summary>
     [DataContract]
-    public partial class ConversationSessionState :  IEquatable<ConversationSessionState>, IValidatableObject
+    public partial class ConversationSessionState :  IEquatable<ConversationSessionState>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ConversationSessionState" /> class.
         /// </summary>
         /// <param name="id">id.</param>
         /// <param name="sessionAttributes">sessionAttributes.</param>
-        public ConversationSessionState(string id = default(string), Dictionary<string, Object> sessionAttributes = default(Dictionary<string, Object>))
+        /// <param name="sessionFlags">sessionFlags.</param>
+        public ConversationSessionState(string id = default(string), Dictionary<string, Object> sessionAttributes = default(Dictionary<string, Object>), List<string> sessionFlags = default(List<string>))
         {
             this.Id = id;
             this.SessionAttributes = sessionAttributes;
+            this.SessionFlags = sessionFlags;
         }
         
         /// <summary>
@@ -54,6 +56,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public Dictionary<string, Object> SessionAttributes { get; set; }
 
         /// <summary>
+        /// Gets or Sets SessionFlags
+        /// </summary>
+        [DataMember(Name="sessionFlags", EmitDefaultValue=false)]
+        public List<string> SessionFlags { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -63,6 +71,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("class ConversationSessionState {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  SessionAttributes: ").Append(SessionAttributes).Append("\n");
+            sb.Append("  SessionFlags: ").Append(SessionFlags).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -106,6 +115,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.SessionAttributes == input.SessionAttributes ||
                     this.SessionAttributes != null &&
                     this.SessionAttributes.SequenceEqual(input.SessionAttributes)
+                ) && 
+                (
+                    this.SessionFlags == input.SessionFlags ||
+                    this.SessionFlags != null &&
+                    this.SessionFlags.SequenceEqual(input.SessionFlags)
                 );
         }
 
@@ -122,19 +136,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.SessionAttributes != null)
                     hashCode = hashCode * 59 + this.SessionAttributes.GetHashCode();
+                if (this.SessionFlags != null)
+                    hashCode = hashCode * 59 + this.SessionFlags.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

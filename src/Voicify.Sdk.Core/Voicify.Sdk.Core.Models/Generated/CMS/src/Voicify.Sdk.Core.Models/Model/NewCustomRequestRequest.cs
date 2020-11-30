@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// NewCustomRequestRequest
     /// </summary>
     [DataContract]
-    public partial class NewCustomRequestRequest :  IEquatable<NewCustomRequestRequest>, IValidatableObject
+    public partial class NewCustomRequestRequest :  IEquatable<NewCustomRequestRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NewCustomRequestRequest" /> class.
@@ -451,15 +451,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

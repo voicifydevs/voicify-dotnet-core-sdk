@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// IOutputSpeech
     /// </summary>
     [DataContract]
-    public partial class IOutputSpeech :  IEquatable<IOutputSpeech>, IValidatableObject
+    public partial class IOutputSpeech :  IEquatable<IOutputSpeech>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="IOutputSpeech" /> class.
@@ -109,15 +109,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **SimpleChoiceWebhooks** | [**List&lt;SimpleChoiceWebhookModel&gt;**](SimpleChoiceWebhookModel.md) |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
 **CreatedFromId** | **string** |  | [optional] 
+**ShouldNotSync** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

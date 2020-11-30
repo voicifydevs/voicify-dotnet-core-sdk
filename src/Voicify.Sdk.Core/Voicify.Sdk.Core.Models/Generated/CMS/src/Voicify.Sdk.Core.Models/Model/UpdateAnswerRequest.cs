@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// UpdateAnswerRequest
     /// </summary>
     [DataContract]
-    public partial class UpdateAnswerRequest :  IEquatable<UpdateAnswerRequest>, IValidatableObject
+    public partial class UpdateAnswerRequest :  IEquatable<UpdateAnswerRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateAnswerRequest" /> class.
@@ -139,15 +139,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

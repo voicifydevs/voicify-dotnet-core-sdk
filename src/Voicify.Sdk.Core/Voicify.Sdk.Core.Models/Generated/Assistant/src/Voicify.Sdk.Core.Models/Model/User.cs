@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// User
     /// </summary>
     [DataContract]
-    public partial class User :  IEquatable<User>, IValidatableObject
+    public partial class User :  IEquatable<User>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="User" /> class.
@@ -142,15 +142,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

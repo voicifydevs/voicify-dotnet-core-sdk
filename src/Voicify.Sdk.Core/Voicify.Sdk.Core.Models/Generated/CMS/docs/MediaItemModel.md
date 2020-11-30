@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MediaItemModel
+# Voicify.Sdk.Core.Models.Model.MediaItemModel
 ## Properties
 
 Name | Type | Description | Notes

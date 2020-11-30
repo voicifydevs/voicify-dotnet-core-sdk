@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// WelcomeMessageExportModel
     /// </summary>
     [DataContract]
-    public partial class WelcomeMessageExportModel :  IEquatable<WelcomeMessageExportModel>, IValidatableObject
+    public partial class WelcomeMessageExportModel :  IEquatable<WelcomeMessageExportModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="WelcomeMessageExportModel" /> class.
@@ -62,7 +62,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="isComplete">isComplete.</param>
         /// <param name="createdFromId">createdFromId.</param>
         /// <param name="languages">languages.</param>
-        public WelcomeMessageExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string content = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), List<WelcomeMessageWebhookModel> welcomeMessageWebhooks = default(List<WelcomeMessageWebhookModel>), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), FollowUpModel followUp = default(FollowUpModel), int? hits = default(int?), RepromptModel reprompt = default(RepromptModel), string repromptId = default(string), string followUpId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>))
+        /// <param name="shouldNotSync">shouldNotSync.</param>
+        public WelcomeMessageExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string content = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), List<WelcomeMessageWebhookModel> welcomeMessageWebhooks = default(List<WelcomeMessageWebhookModel>), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), FollowUpModel followUp = default(FollowUpModel), int? hits = default(int?), RepromptModel reprompt = default(RepromptModel), string repromptId = default(string), string followUpId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?))
         {
             this.Id = id;
             this.ApplicationId = applicationId;
@@ -93,6 +94,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.IsComplete = isComplete;
             this.CreatedFromId = createdFromId;
             this.Languages = languages;
+            this.ShouldNotSync = shouldNotSync;
         }
         
         /// <summary>
@@ -270,6 +272,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<LanguageModel> Languages { get; set; }
 
         /// <summary>
+        /// Gets or Sets ShouldNotSync
+        /// </summary>
+        [DataMember(Name="shouldNotSync", EmitDefaultValue=false)]
+        public bool? ShouldNotSync { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -306,6 +314,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  IsComplete: ").Append(IsComplete).Append("\n");
             sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
             sb.Append("  Languages: ").Append(Languages).Append("\n");
+            sb.Append("  ShouldNotSync: ").Append(ShouldNotSync).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -484,6 +493,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Languages == input.Languages ||
                     this.Languages != null &&
                     this.Languages.SequenceEqual(input.Languages)
+                ) && 
+                (
+                    this.ShouldNotSync == input.ShouldNotSync ||
+                    (this.ShouldNotSync != null &&
+                    this.ShouldNotSync.Equals(input.ShouldNotSync))
                 );
         }
 
@@ -554,19 +568,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.CreatedFromId.GetHashCode();
                 if (this.Languages != null)
                     hashCode = hashCode * 59 + this.Languages.GetHashCode();
+                if (this.ShouldNotSync != null)
+                    hashCode = hashCode * 59 + this.ShouldNotSync.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

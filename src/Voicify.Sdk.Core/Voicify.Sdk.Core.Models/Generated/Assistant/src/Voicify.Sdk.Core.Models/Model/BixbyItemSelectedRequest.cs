@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// BixbyItemSelectedRequest
     /// </summary>
     [DataContract]
-    public partial class BixbyItemSelectedRequest : Dictionary<String, Object>,  IEquatable<BixbyItemSelectedRequest>, IValidatableObject
+    public partial class BixbyItemSelectedRequest : Dictionary<String, Object>,  IEquatable<BixbyItemSelectedRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BixbyItemSelectedRequest" /> class.
@@ -127,15 +127,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-                     yield break;
-        }
     }
 
 }
