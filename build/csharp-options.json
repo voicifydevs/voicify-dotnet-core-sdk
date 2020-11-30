@@ -1,3 +1,4 @@
 {
-    "packageName" : "Voicify.Sdk.Core.Models"
+    "packageName" : "Voicify.Sdk.Core.Models",
+    "validatable": false
 }

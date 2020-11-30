@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **AccessToken** | **string** |  | [optional] 
 **CreatedFromId** | **string** |  | [optional] 
 **Parameters** | [**List&lt;WebhookParameterModel&gt;**](WebhookParameterModel.md) |  | [optional] 
+**ShouldNotSync** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

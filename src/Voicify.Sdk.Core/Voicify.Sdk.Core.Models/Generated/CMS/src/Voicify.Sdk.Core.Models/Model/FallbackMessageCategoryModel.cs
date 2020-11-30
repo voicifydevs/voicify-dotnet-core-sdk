@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// FallbackMessageCategoryModel
     /// </summary>
     [DataContract]
-    public partial class FallbackMessageCategoryModel :  IEquatable<FallbackMessageCategoryModel>, IValidatableObject
+    public partial class FallbackMessageCategoryModel :  IEquatable<FallbackMessageCategoryModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="FallbackMessageCategoryModel" /> class.
@@ -158,15 +158,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -15,5 +15,6 @@ namespace Voicify.Sdk.Core.Models.Webhooks.Events
             ApplicationFeatureId = applicationFeatureId;
             Content = content;
         }
+        public WebhookContentItemDeletedEvent() { }
     }
 }

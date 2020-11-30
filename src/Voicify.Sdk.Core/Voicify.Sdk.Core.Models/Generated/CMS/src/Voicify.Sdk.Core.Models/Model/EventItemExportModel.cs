@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// EventItemExportModel
     /// </summary>
     [DataContract]
-    public partial class EventItemExportModel :  IEquatable<EventItemExportModel>, IValidatableObject
+    public partial class EventItemExportModel :  IEquatable<EventItemExportModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="EventItemExportModel" /> class.
@@ -57,7 +57,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="isComplete">isComplete.</param>
         /// <param name="languages">languages.</param>
         /// <param name="createdFromId">createdFromId.</param>
-        public EventItemExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), string applicationModuleId = default(string), string eventName = default(string), string description = default(string), string locationName = default(string), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? eventStartDate = default(DateTime?), DateTime? eventEndDate = default(DateTime?), List<EventCategoryModel> categories = default(List<EventCategoryModel>), List<EventResponseModel> responses = default(List<EventResponseModel>), List<EventItemWebhookModel> eventItemWebhooks = default(List<EventItemWebhookModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), List<LanguageModel> languages = default(List<LanguageModel>), string createdFromId = default(string))
+        /// <param name="shouldNotSync">shouldNotSync.</param>
+        public EventItemExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), string applicationModuleId = default(string), string eventName = default(string), string description = default(string), string locationName = default(string), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? eventStartDate = default(DateTime?), DateTime? eventEndDate = default(DateTime?), List<EventCategoryModel> categories = default(List<EventCategoryModel>), List<EventResponseModel> responses = default(List<EventResponseModel>), List<EventItemWebhookModel> eventItemWebhooks = default(List<EventItemWebhookModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), List<LanguageModel> languages = default(List<LanguageModel>), string createdFromId = default(string), bool? shouldNotSync = default(bool?))
         {
             this.Id = id;
             this.ApplicationId = applicationId;
@@ -83,6 +84,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.IsComplete = isComplete;
             this.Languages = languages;
             this.CreatedFromId = createdFromId;
+            this.ShouldNotSync = shouldNotSync;
         }
         
         /// <summary>
@@ -230,6 +232,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string CreatedFromId { get; set; }
 
         /// <summary>
+        /// Gets or Sets ShouldNotSync
+        /// </summary>
+        [DataMember(Name="shouldNotSync", EmitDefaultValue=false)]
+        public bool? ShouldNotSync { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -261,6 +269,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  IsComplete: ").Append(IsComplete).Append("\n");
             sb.Append("  Languages: ").Append(Languages).Append("\n");
             sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
+            sb.Append("  ShouldNotSync: ").Append(ShouldNotSync).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -414,6 +423,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.CreatedFromId == input.CreatedFromId ||
                     (this.CreatedFromId != null &&
                     this.CreatedFromId.Equals(input.CreatedFromId))
+                ) && 
+                (
+                    this.ShouldNotSync == input.ShouldNotSync ||
+                    (this.ShouldNotSync != null &&
+                    this.ShouldNotSync.Equals(input.ShouldNotSync))
                 );
         }
 
@@ -474,19 +488,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Languages.GetHashCode();
                 if (this.CreatedFromId != null)
                     hashCode = hashCode * 59 + this.CreatedFromId.GetHashCode();
+                if (this.ShouldNotSync != null)
+                    hashCode = hashCode * 59 + this.ShouldNotSync.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

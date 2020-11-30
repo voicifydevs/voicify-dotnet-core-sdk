@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// FulfillmentImage
     /// </summary>
     [DataContract]
-    public partial class FulfillmentImage :  IEquatable<FulfillmentImage>, IValidatableObject
+    public partial class FulfillmentImage :  IEquatable<FulfillmentImage>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="FulfillmentImage" /> class.
@@ -126,15 +126,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

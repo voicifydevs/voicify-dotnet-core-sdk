@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// CustomAssistantListItem
     /// </summary>
     [DataContract]
-    public partial class CustomAssistantListItem :  IEquatable<CustomAssistantListItem>, IValidatableObject
+    public partial class CustomAssistantListItem :  IEquatable<CustomAssistantListItem>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomAssistantListItem" /> class.
@@ -158,15 +158,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

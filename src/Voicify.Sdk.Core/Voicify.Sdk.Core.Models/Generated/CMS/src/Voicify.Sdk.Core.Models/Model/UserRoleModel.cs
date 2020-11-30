@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// UserRoleModel
     /// </summary>
     [DataContract]
-    public partial class UserRoleModel :  IEquatable<UserRoleModel>, IValidatableObject
+    public partial class UserRoleModel :  IEquatable<UserRoleModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UserRoleModel" /> class.
@@ -174,15 +174,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

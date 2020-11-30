@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// ResetRequest
     /// </summary>
     [DataContract]
-    public partial class ResetRequest :  IEquatable<ResetRequest>, IValidatableObject
+    public partial class ResetRequest :  IEquatable<ResetRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ResetRequest" /> class.
@@ -123,15 +123,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

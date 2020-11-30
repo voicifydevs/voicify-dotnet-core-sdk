@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// RepromptModel
     /// </summary>
     [DataContract]
-    public partial class RepromptModel :  IEquatable<RepromptModel>, IValidatableObject
+    public partial class RepromptModel :  IEquatable<RepromptModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="RepromptModel" /> class.
@@ -190,15 +190,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

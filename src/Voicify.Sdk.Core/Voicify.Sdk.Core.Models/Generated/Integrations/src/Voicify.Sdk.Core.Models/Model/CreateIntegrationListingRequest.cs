@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// CreateIntegrationListingRequest
     /// </summary>
     [DataContract]
-    public partial class CreateIntegrationListingRequest :  IEquatable<CreateIntegrationListingRequest>, IValidatableObject
+    public partial class CreateIntegrationListingRequest :  IEquatable<CreateIntegrationListingRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateIntegrationListingRequest" /> class.
@@ -235,15 +235,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

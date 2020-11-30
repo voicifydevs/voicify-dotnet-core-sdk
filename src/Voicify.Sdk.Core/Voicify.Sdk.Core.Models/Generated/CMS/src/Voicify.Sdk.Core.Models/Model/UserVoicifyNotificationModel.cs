@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// UserVoicifyNotificationModel
     /// </summary>
     [DataContract]
-    public partial class UserVoicifyNotificationModel :  IEquatable<UserVoicifyNotificationModel>, IValidatableObject
+    public partial class UserVoicifyNotificationModel :  IEquatable<UserVoicifyNotificationModel>
     {
         /// <summary>
         /// Defines Priority
@@ -371,15 +371,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// QuestionAnswerModel
     /// </summary>
     [DataContract]
-    public partial class QuestionAnswerModel :  IEquatable<QuestionAnswerModel>, IValidatableObject
+    public partial class QuestionAnswerModel :  IEquatable<QuestionAnswerModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="QuestionAnswerModel" /> class.
@@ -50,7 +50,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="createdFromId">createdFromId.</param>
         /// <param name="languages">languages.</param>
         /// <param name="questionAnswerWebhooks">questionAnswerWebhooks.</param>
-        public QuestionAnswerModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), bool? isLive = default(bool?), string title = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), List<AnswerModel> responses = default(List<AnswerModel>), List<QuestionModel> questionSet = default(List<QuestionModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), List<QuestionAnswerWebhookModel> questionAnswerWebhooks = default(List<QuestionAnswerWebhookModel>))
+        /// <param name="shouldNotSync">shouldNotSync.</param>
+        public QuestionAnswerModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), bool? isLive = default(bool?), string title = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), List<AnswerModel> responses = default(List<AnswerModel>), List<QuestionModel> questionSet = default(List<QuestionModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), List<QuestionAnswerWebhookModel> questionAnswerWebhooks = default(List<QuestionAnswerWebhookModel>), bool? shouldNotSync = default(bool?))
         {
             this.Id = id;
             this.ApplicationId = applicationId;
@@ -69,6 +70,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.CreatedFromId = createdFromId;
             this.Languages = languages;
             this.QuestionAnswerWebhooks = questionAnswerWebhooks;
+            this.ShouldNotSync = shouldNotSync;
         }
         
         /// <summary>
@@ -174,6 +176,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<QuestionAnswerWebhookModel> QuestionAnswerWebhooks { get; set; }
 
         /// <summary>
+        /// Gets or Sets ShouldNotSync
+        /// </summary>
+        [DataMember(Name="shouldNotSync", EmitDefaultValue=false)]
+        public bool? ShouldNotSync { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -198,6 +206,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
             sb.Append("  Languages: ").Append(Languages).Append("\n");
             sb.Append("  QuestionAnswerWebhooks: ").Append(QuestionAnswerWebhooks).Append("\n");
+            sb.Append("  ShouldNotSync: ").Append(ShouldNotSync).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -316,6 +325,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.QuestionAnswerWebhooks == input.QuestionAnswerWebhooks ||
                     this.QuestionAnswerWebhooks != null &&
                     this.QuestionAnswerWebhooks.SequenceEqual(input.QuestionAnswerWebhooks)
+                ) && 
+                (
+                    this.ShouldNotSync == input.ShouldNotSync ||
+                    (this.ShouldNotSync != null &&
+                    this.ShouldNotSync.Equals(input.ShouldNotSync))
                 );
         }
 
@@ -362,19 +376,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Languages.GetHashCode();
                 if (this.QuestionAnswerWebhooks != null)
                     hashCode = hashCode * 59 + this.QuestionAnswerWebhooks.GetHashCode();
+                if (this.ShouldNotSync != null)
+                    hashCode = hashCode * 59 + this.ShouldNotSync.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

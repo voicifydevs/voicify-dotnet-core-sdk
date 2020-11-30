@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// ExitMessageModel
     /// </summary>
     [DataContract]
-    public partial class ExitMessageModel :  IEquatable<ExitMessageModel>, IValidatableObject
+    public partial class ExitMessageModel :  IEquatable<ExitMessageModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ExitMessageModel" /> class.
@@ -558,15 +558,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

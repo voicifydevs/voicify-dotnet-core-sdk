@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// BulkUpdateSimpleChoiceRequest
     /// </summary>
     [DataContract]
-    public partial class BulkUpdateSimpleChoiceRequest :  IEquatable<BulkUpdateSimpleChoiceRequest>, IValidatableObject
+    public partial class BulkUpdateSimpleChoiceRequest :  IEquatable<BulkUpdateSimpleChoiceRequest>
     {
         /// <summary>
         /// Defines ChoiceType
@@ -381,15 +381,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

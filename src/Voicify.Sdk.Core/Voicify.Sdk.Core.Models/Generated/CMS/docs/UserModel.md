@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UserModel
+# Voicify.Sdk.Core.Models.Model.UserModel
 ## Properties
 
 Name | Type | Description | Notes

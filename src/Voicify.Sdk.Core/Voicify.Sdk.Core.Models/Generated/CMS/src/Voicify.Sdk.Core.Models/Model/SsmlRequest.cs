@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// SsmlRequest
     /// </summary>
     [DataContract]
-    public partial class SsmlRequest :  IEquatable<SsmlRequest>, IValidatableObject
+    public partial class SsmlRequest :  IEquatable<SsmlRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="SsmlRequest" /> class.
@@ -139,15 +139,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }
