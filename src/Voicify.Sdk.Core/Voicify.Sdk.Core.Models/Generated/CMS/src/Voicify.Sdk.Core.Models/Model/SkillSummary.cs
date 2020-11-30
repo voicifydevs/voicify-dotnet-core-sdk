@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// SkillSummary
     /// </summary>
     [DataContract]
-    public partial class SkillSummary :  IEquatable<SkillSummary>, IValidatableObject
+    public partial class SkillSummary :  IEquatable<SkillSummary>
     {
         /// <summary>
         /// Defines Stage
@@ -276,15 +276,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

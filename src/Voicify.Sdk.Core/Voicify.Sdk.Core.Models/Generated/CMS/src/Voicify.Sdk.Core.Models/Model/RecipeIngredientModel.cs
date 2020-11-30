@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// RecipeIngredientModel
     /// </summary>
     [DataContract]
-    public partial class RecipeIngredientModel :  IEquatable<RecipeIngredientModel>, IValidatableObject
+    public partial class RecipeIngredientModel :  IEquatable<RecipeIngredientModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="RecipeIngredientModel" /> class.
@@ -382,15 +382,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

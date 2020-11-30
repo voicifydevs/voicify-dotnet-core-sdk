@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// NumberRangeExportModel
     /// </summary>
     [DataContract]
-    public partial class NumberRangeExportModel :  IEquatable<NumberRangeExportModel>, IValidatableObject
+    public partial class NumberRangeExportModel :  IEquatable<NumberRangeExportModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NumberRangeExportModel" /> class.
@@ -50,7 +50,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="isComplete">isComplete.</param>
         /// <param name="createdFromId">createdFromId.</param>
         /// <param name="languages">languages.</param>
-        public NumberRangeExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), string applicationModuleId = default(string), List<NumberRangeResponseModel> responses = default(List<NumberRangeResponseModel>), List<NumberRangeWebhookModel> numberRangeWebhooks = default(List<NumberRangeWebhookModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), double? minimumValue = default(double?), double? maximumValue = default(double?), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>))
+        /// <param name="shouldNotSync">shouldNotSync.</param>
+        public NumberRangeExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), string applicationModuleId = default(string), List<NumberRangeResponseModel> responses = default(List<NumberRangeResponseModel>), List<NumberRangeWebhookModel> numberRangeWebhooks = default(List<NumberRangeWebhookModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), double? minimumValue = default(double?), double? maximumValue = default(double?), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?))
         {
             this.Id = id;
             this.ApplicationId = applicationId;
@@ -69,6 +70,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.IsComplete = isComplete;
             this.CreatedFromId = createdFromId;
             this.Languages = languages;
+            this.ShouldNotSync = shouldNotSync;
         }
         
         /// <summary>
@@ -174,6 +176,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<LanguageModel> Languages { get; set; }
 
         /// <summary>
+        /// Gets or Sets ShouldNotSync
+        /// </summary>
+        [DataMember(Name="shouldNotSync", EmitDefaultValue=false)]
+        public bool? ShouldNotSync { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -198,6 +206,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  IsComplete: ").Append(IsComplete).Append("\n");
             sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
             sb.Append("  Languages: ").Append(Languages).Append("\n");
+            sb.Append("  ShouldNotSync: ").Append(ShouldNotSync).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -316,6 +325,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Languages == input.Languages ||
                     this.Languages != null &&
                     this.Languages.SequenceEqual(input.Languages)
+                ) && 
+                (
+                    this.ShouldNotSync == input.ShouldNotSync ||
+                    (this.ShouldNotSync != null &&
+                    this.ShouldNotSync.Equals(input.ShouldNotSync))
                 );
         }
 
@@ -362,19 +376,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.CreatedFromId.GetHashCode();
                 if (this.Languages != null)
                     hashCode = hashCode * 59 + this.Languages.GetHashCode();
+                if (this.ShouldNotSync != null)
+                    hashCode = hashCode * 59 + this.ShouldNotSync.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// AddFeatureToModuleRequest
     /// </summary>
     [DataContract]
-    public partial class AddFeatureToModuleRequest :  IEquatable<AddFeatureToModuleRequest>, IValidatableObject
+    public partial class AddFeatureToModuleRequest :  IEquatable<AddFeatureToModuleRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="AddFeatureToModuleRequest" /> class.
@@ -139,15 +139,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// CreateStepRequest
     /// </summary>
     [DataContract]
-    public partial class CreateStepRequest :  IEquatable<CreateStepRequest>, IValidatableObject
+    public partial class CreateStepRequest :  IEquatable<CreateStepRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateStepRequest" /> class.
@@ -235,15 +235,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

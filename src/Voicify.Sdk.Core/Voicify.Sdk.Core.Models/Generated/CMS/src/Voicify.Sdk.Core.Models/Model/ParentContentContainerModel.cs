@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// ParentContentContainerModel
     /// </summary>
     [DataContract]
-    public partial class ParentContentContainerModel :  IEquatable<ParentContentContainerModel>, IValidatableObject
+    public partial class ParentContentContainerModel :  IEquatable<ParentContentContainerModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ParentContentContainerModel" /> class.
@@ -286,15 +286,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

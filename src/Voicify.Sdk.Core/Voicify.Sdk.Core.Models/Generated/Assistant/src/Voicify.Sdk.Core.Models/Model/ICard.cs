@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// ICard
     /// </summary>
     [DataContract]
-    public partial class ICard :  IEquatable<ICard>, IValidatableObject
+    public partial class ICard :  IEquatable<ICard>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ICard" /> class.
@@ -109,15 +109,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

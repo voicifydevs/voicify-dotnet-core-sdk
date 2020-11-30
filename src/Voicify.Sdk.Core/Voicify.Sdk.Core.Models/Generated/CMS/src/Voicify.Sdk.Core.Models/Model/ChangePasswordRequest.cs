@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// ChangePasswordRequest
     /// </summary>
     [DataContract]
-    public partial class ChangePasswordRequest :  IEquatable<ChangePasswordRequest>, IValidatableObject
+    public partial class ChangePasswordRequest :  IEquatable<ChangePasswordRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ChangePasswordRequest" /> class.
@@ -171,27 +171,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            // NewPassword (string) minLength
-            if(this.NewPassword != null && this.NewPassword.Length < 6)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for NewPassword, length must be greater than 6.", new [] { "NewPassword" });
-            }
-
-            // NewPasswordConfirmation (string) minLength
-            if(this.NewPasswordConfirmation != null && this.NewPasswordConfirmation.Length < 6)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for NewPasswordConfirmation, length must be greater than 6.", new [] { "NewPasswordConfirmation" });
-            }
-
-            yield break;
-        }
     }
 
 }

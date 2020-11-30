@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **SubscriptionTypeId** | **string** |  | [optional] 
 **StartDate** | **DateTime?** |  | [optional] 
 **ExpirationDate** | **DateTime?** |  | [optional] 
+**IsExpired** | **bool?** |  | [optional] 
 **SubscriptionType** | [**SubscriptionTypeModel**](SubscriptionTypeModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

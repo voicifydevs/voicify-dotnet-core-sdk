@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// WebhookModel
     /// </summary>
     [DataContract]
-    public partial class WebhookModel :  IEquatable<WebhookModel>, IValidatableObject
+    public partial class WebhookModel :  IEquatable<WebhookModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="WebhookModel" /> class.
@@ -44,7 +44,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="accessToken">accessToken.</param>
         /// <param name="createdFromId">createdFromId.</param>
         /// <param name="parameters">parameters.</param>
-        public WebhookModel(string id = default(string), string title = default(string), string description = default(string), string url = default(string), WebhookTypeModel webhookType = default(WebhookTypeModel), string organizationId = default(string), bool? isPublic = default(bool?), bool? isDisabled = default(bool?), string accessToken = default(string), string createdFromId = default(string), List<WebhookParameterModel> parameters = default(List<WebhookParameterModel>))
+        /// <param name="shouldNotSync">shouldNotSync.</param>
+        public WebhookModel(string id = default(string), string title = default(string), string description = default(string), string url = default(string), WebhookTypeModel webhookType = default(WebhookTypeModel), string organizationId = default(string), bool? isPublic = default(bool?), bool? isDisabled = default(bool?), string accessToken = default(string), string createdFromId = default(string), List<WebhookParameterModel> parameters = default(List<WebhookParameterModel>), bool? shouldNotSync = default(bool?))
         {
             this.Id = id;
             this.Title = title;
@@ -57,6 +58,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.AccessToken = accessToken;
             this.CreatedFromId = createdFromId;
             this.Parameters = parameters;
+            this.ShouldNotSync = shouldNotSync;
         }
         
         /// <summary>
@@ -126,6 +128,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<WebhookParameterModel> Parameters { get; set; }
 
         /// <summary>
+        /// Gets or Sets ShouldNotSync
+        /// </summary>
+        [DataMember(Name="shouldNotSync", EmitDefaultValue=false)]
+        public bool? ShouldNotSync { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -144,6 +152,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  AccessToken: ").Append(AccessToken).Append("\n");
             sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
             sb.Append("  Parameters: ").Append(Parameters).Append("\n");
+            sb.Append("  ShouldNotSync: ").Append(ShouldNotSync).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -232,6 +241,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Parameters == input.Parameters ||
                     this.Parameters != null &&
                     this.Parameters.SequenceEqual(input.Parameters)
+                ) && 
+                (
+                    this.ShouldNotSync == input.ShouldNotSync ||
+                    (this.ShouldNotSync != null &&
+                    this.ShouldNotSync.Equals(input.ShouldNotSync))
                 );
         }
 
@@ -266,19 +280,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.CreatedFromId.GetHashCode();
                 if (this.Parameters != null)
                     hashCode = hashCode * 59 + this.Parameters.GetHashCode();
+                if (this.ShouldNotSync != null)
+                    hashCode = hashCode * 59 + this.ShouldNotSync.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

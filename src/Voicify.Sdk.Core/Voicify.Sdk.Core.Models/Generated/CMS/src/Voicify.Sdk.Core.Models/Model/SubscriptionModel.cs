@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// SubscriptionModel
     /// </summary>
     [DataContract]
-    public partial class SubscriptionModel :  IEquatable<SubscriptionModel>, IValidatableObject
+    public partial class SubscriptionModel :  IEquatable<SubscriptionModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="SubscriptionModel" /> class.
@@ -38,14 +38,16 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="subscriptionTypeId">subscriptionTypeId.</param>
         /// <param name="startDate">startDate.</param>
         /// <param name="expirationDate">expirationDate.</param>
+        /// <param name="isExpired">isExpired.</param>
         /// <param name="subscriptionType">subscriptionType.</param>
-        public SubscriptionModel(string id = default(string), string organizationId = default(string), string subscriptionTypeId = default(string), DateTime? startDate = default(DateTime?), DateTime? expirationDate = default(DateTime?), SubscriptionTypeModel subscriptionType = default(SubscriptionTypeModel))
+        public SubscriptionModel(string id = default(string), string organizationId = default(string), string subscriptionTypeId = default(string), DateTime? startDate = default(DateTime?), DateTime? expirationDate = default(DateTime?), bool? isExpired = default(bool?), SubscriptionTypeModel subscriptionType = default(SubscriptionTypeModel))
         {
             this.Id = id;
             this.OrganizationId = organizationId;
             this.SubscriptionTypeId = subscriptionTypeId;
             this.StartDate = startDate;
             this.ExpirationDate = expirationDate;
+            this.IsExpired = isExpired;
             this.SubscriptionType = subscriptionType;
         }
         
@@ -80,6 +82,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public DateTime? ExpirationDate { get; set; }
 
         /// <summary>
+        /// Gets or Sets IsExpired
+        /// </summary>
+        [DataMember(Name="isExpired", EmitDefaultValue=false)]
+        public bool? IsExpired { get; set; }
+
+        /// <summary>
         /// Gets or Sets SubscriptionType
         /// </summary>
         [DataMember(Name="subscriptionType", EmitDefaultValue=false)]
@@ -98,6 +106,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  SubscriptionTypeId: ").Append(SubscriptionTypeId).Append("\n");
             sb.Append("  StartDate: ").Append(StartDate).Append("\n");
             sb.Append("  ExpirationDate: ").Append(ExpirationDate).Append("\n");
+            sb.Append("  IsExpired: ").Append(IsExpired).Append("\n");
             sb.Append("  SubscriptionType: ").Append(SubscriptionType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -159,6 +168,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ExpirationDate.Equals(input.ExpirationDate))
                 ) && 
                 (
+                    this.IsExpired == input.IsExpired ||
+                    (this.IsExpired != null &&
+                    this.IsExpired.Equals(input.IsExpired))
+                ) && 
+                (
                     this.SubscriptionType == input.SubscriptionType ||
                     (this.SubscriptionType != null &&
                     this.SubscriptionType.Equals(input.SubscriptionType))
@@ -184,21 +198,14 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.StartDate.GetHashCode();
                 if (this.ExpirationDate != null)
                     hashCode = hashCode * 59 + this.ExpirationDate.GetHashCode();
+                if (this.IsExpired != null)
+                    hashCode = hashCode * 59 + this.IsExpired.GetHashCode();
                 if (this.SubscriptionType != null)
                     hashCode = hashCode * 59 + this.SubscriptionType.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -20,7 +20,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
-using Voicify.Sdk.Core.Models.Integrations.Setup;
+
 
 namespace Voicify.Sdk.Core.Models.Model
 {
@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// IntegrationSetupProperty
     /// </summary>
     [DataContract]
-    public partial class IntegrationSetupProperty :  IEquatable<IntegrationSetupProperty>, IValidatableObject
+    public partial class IntegrationSetupProperty :  IEquatable<IntegrationSetupProperty>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="IntegrationSetupProperty" /> class.
@@ -43,7 +43,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="label">label (required).</param>
         /// <param name="tooltip">tooltip.</param>
         /// <param name="field">field (required).</param>
-        public IntegrationSetupProperty(string id = default(string), bool? required = default(bool?), string label = default(string), string tooltip = default(string), IIntegrationSetupField field = default)
+        public IntegrationSetupProperty(string id = default(string), bool? required = default(bool?), string label = default(string), string tooltip = default(string), IIntegrationSetupField field = default(IIntegrationSetupField))
         {
             // to ensure "id" is required (not null)
             if (id == null)
@@ -211,15 +211,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

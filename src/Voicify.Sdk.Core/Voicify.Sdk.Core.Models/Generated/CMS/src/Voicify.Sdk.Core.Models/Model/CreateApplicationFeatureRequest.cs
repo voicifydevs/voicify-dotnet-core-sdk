@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// CreateApplicationFeatureRequest
     /// </summary>
     [DataContract]
-    public partial class CreateApplicationFeatureRequest :  IEquatable<CreateApplicationFeatureRequest>, IValidatableObject
+    public partial class CreateApplicationFeatureRequest :  IEquatable<CreateApplicationFeatureRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateApplicationFeatureRequest" /> class.
@@ -139,15 +139,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -11,8 +11,7 @@ namespace Voicify.Sdk.Core.Models.Webhooks.Requests
     public class GeneralAssistantRequest
     {
         public string RequestType { get; set; }
-        public Dictionary<string, string> Slots { get; set; }
-        public Dictionary<string, object> SessionAttributes { get; set; }
+        public Dictionary<string,string> Slots { get; set; }
         public string Assistant { get; set; }
         public string SessionId { get; set; }
         public string UserId { get; set; }
@@ -25,5 +24,14 @@ namespace Voicify.Sdk.Core.Models.Webhooks.Requests
         public ConversationTurnHistoryState ConversationState { get; set; }
         public string AccessToken { get; set; }
         public string Locale { get; set; }
+
+        //Session data
+        public Dictionary<string, object> SessionAttributes { get; set; }
+        public List<string> SessionFlags { get; set; }
+
+        //User profile
+        public DateTime? UserFirstSeen { get; set; }
+        public List<string> UserFlags { get; set; }
+        public Dictionary<string, object> UserAttributes { get; set; }
     }
 }

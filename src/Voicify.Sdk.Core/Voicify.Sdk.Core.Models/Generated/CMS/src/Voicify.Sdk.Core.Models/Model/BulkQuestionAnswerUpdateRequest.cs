@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// BulkQuestionAnswerUpdateRequest
     /// </summary>
     [DataContract]
-    public partial class BulkQuestionAnswerUpdateRequest :  IEquatable<BulkQuestionAnswerUpdateRequest>, IValidatableObject
+    public partial class BulkQuestionAnswerUpdateRequest :  IEquatable<BulkQuestionAnswerUpdateRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BulkQuestionAnswerUpdateRequest" /> class.
@@ -347,15 +347,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

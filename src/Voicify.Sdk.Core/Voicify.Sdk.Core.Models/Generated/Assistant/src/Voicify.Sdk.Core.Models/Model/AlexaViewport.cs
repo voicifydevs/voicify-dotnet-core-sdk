@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// AlexaViewport
     /// </summary>
     [DataContract]
-    public partial class AlexaViewport :  IEquatable<AlexaViewport>, IValidatableObject
+    public partial class AlexaViewport :  IEquatable<AlexaViewport>
     {
         /// <summary>
         /// Defines Shape
@@ -280,15 +280,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// MicrosoftDeploymentLink
     /// </summary>
     [DataContract]
-    public partial class MicrosoftDeploymentLink :  IEquatable<MicrosoftDeploymentLink>, IValidatableObject
+    public partial class MicrosoftDeploymentLink :  IEquatable<MicrosoftDeploymentLink>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="MicrosoftDeploymentLink" /> class.
@@ -37,15 +37,19 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="microsoftAppId">microsoftAppId.</param>
         /// <param name="microsoftAppPassword">microsoftAppPassword.</param>
         /// <param name="luisRegion">luisRegion.</param>
+        /// <param name="luisPredictionRegion">luisPredictionRegion.</param>
         /// <param name="luisAuthoringKey">luisAuthoringKey.</param>
+        /// <param name="luisPredictionKey">luisPredictionKey.</param>
         /// <param name="luisAppId">luisAppId.</param>
-        public MicrosoftDeploymentLink(string botServiceName = default(string), string microsoftAppId = default(string), string microsoftAppPassword = default(string), string luisRegion = default(string), string luisAuthoringKey = default(string), string luisAppId = default(string))
+        public MicrosoftDeploymentLink(string botServiceName = default(string), string microsoftAppId = default(string), string microsoftAppPassword = default(string), string luisRegion = default(string), string luisPredictionRegion = default(string), string luisAuthoringKey = default(string), string luisPredictionKey = default(string), string luisAppId = default(string))
         {
             this.BotServiceName = botServiceName;
             this.MicrosoftAppId = microsoftAppId;
             this.MicrosoftAppPassword = microsoftAppPassword;
             this.LuisRegion = luisRegion;
+            this.LuisPredictionRegion = luisPredictionRegion;
             this.LuisAuthoringKey = luisAuthoringKey;
+            this.LuisPredictionKey = luisPredictionKey;
             this.LuisAppId = luisAppId;
         }
         
@@ -74,10 +78,22 @@ namespace Voicify.Sdk.Core.Models.Model
         public string LuisRegion { get; set; }
 
         /// <summary>
+        /// Gets or Sets LuisPredictionRegion
+        /// </summary>
+        [DataMember(Name="luisPredictionRegion", EmitDefaultValue=false)]
+        public string LuisPredictionRegion { get; set; }
+
+        /// <summary>
         /// Gets or Sets LuisAuthoringKey
         /// </summary>
         [DataMember(Name="luisAuthoringKey", EmitDefaultValue=false)]
         public string LuisAuthoringKey { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LuisPredictionKey
+        /// </summary>
+        [DataMember(Name="luisPredictionKey", EmitDefaultValue=false)]
+        public string LuisPredictionKey { get; set; }
 
         /// <summary>
         /// Gets or Sets LuisAppId
@@ -97,7 +113,9 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  MicrosoftAppId: ").Append(MicrosoftAppId).Append("\n");
             sb.Append("  MicrosoftAppPassword: ").Append(MicrosoftAppPassword).Append("\n");
             sb.Append("  LuisRegion: ").Append(LuisRegion).Append("\n");
+            sb.Append("  LuisPredictionRegion: ").Append(LuisPredictionRegion).Append("\n");
             sb.Append("  LuisAuthoringKey: ").Append(LuisAuthoringKey).Append("\n");
+            sb.Append("  LuisPredictionKey: ").Append(LuisPredictionKey).Append("\n");
             sb.Append("  LuisAppId: ").Append(LuisAppId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -154,9 +172,19 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LuisRegion.Equals(input.LuisRegion))
                 ) && 
                 (
+                    this.LuisPredictionRegion == input.LuisPredictionRegion ||
+                    (this.LuisPredictionRegion != null &&
+                    this.LuisPredictionRegion.Equals(input.LuisPredictionRegion))
+                ) && 
+                (
                     this.LuisAuthoringKey == input.LuisAuthoringKey ||
                     (this.LuisAuthoringKey != null &&
                     this.LuisAuthoringKey.Equals(input.LuisAuthoringKey))
+                ) && 
+                (
+                    this.LuisPredictionKey == input.LuisPredictionKey ||
+                    (this.LuisPredictionKey != null &&
+                    this.LuisPredictionKey.Equals(input.LuisPredictionKey))
                 ) && 
                 (
                     this.LuisAppId == input.LuisAppId ||
@@ -182,23 +210,18 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.MicrosoftAppPassword.GetHashCode();
                 if (this.LuisRegion != null)
                     hashCode = hashCode * 59 + this.LuisRegion.GetHashCode();
+                if (this.LuisPredictionRegion != null)
+                    hashCode = hashCode * 59 + this.LuisPredictionRegion.GetHashCode();
                 if (this.LuisAuthoringKey != null)
                     hashCode = hashCode * 59 + this.LuisAuthoringKey.GetHashCode();
+                if (this.LuisPredictionKey != null)
+                    hashCode = hashCode * 59 + this.LuisPredictionKey.GetHashCode();
                 if (this.LuisAppId != null)
                     hashCode = hashCode * 59 + this.LuisAppId.GetHashCode();
                 return hashCode;
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

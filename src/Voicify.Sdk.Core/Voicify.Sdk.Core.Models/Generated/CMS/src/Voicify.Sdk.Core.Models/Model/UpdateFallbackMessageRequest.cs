@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// UpdateFallbackMessageRequest
     /// </summary>
     [DataContract]
-    public partial class UpdateFallbackMessageRequest :  IEquatable<UpdateFallbackMessageRequest>, IValidatableObject
+    public partial class UpdateFallbackMessageRequest :  IEquatable<UpdateFallbackMessageRequest>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFallbackMessageRequest" /> class.
@@ -347,15 +347,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

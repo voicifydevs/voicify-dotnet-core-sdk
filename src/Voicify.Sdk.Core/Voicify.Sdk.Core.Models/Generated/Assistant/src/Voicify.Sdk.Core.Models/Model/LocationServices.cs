@@ -28,7 +28,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// LocationServices
     /// </summary>
     [DataContract]
-    public partial class LocationServices :  IEquatable<LocationServices>, IValidatableObject
+    public partial class LocationServices :  IEquatable<LocationServices>
     {
         /// <summary>
         /// Defines Access
@@ -166,15 +166,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
         }
 
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }
