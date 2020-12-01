@@ -96,6 +96,9 @@ java -jar swagger-codegen-cli.jar generate -i http://assistant.voicify.com/swagg
 ```
 
 ```
+java -jar swagger-codegen-cli.jar generate -i http://analytics.voicify.com/swagger/v1/swagger.json -l csharp -c ../csharp-options.json -Dmodels -o ../../src/Voicify.Sdk.Core/Voicify.Sdk.Core.Models/Generated/Analytics -DmodelTests=false
+```
+```
 java -jar swagger-codegen-cli.jar generate -i http://integrations.voicify.com/swagger/v1/swagger.json -l csharp -c ../csharp-options.json -Dmodels -o ../../src/Voicify.Sdk.Core/Voicify.Sdk.Core.Models/Generated/Integrations -DmodelTests=false
 ```
 
