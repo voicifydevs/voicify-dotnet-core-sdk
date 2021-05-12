@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **IsAdmin** | **bool?** |  | [optional] 
 **CanEdit** | **bool?** |  | [optional] 
 **ImageUrl** | **string** |  | [optional] 
+**CreatedDate** | **DateTime?** |  | [optional] 
+**IsApiUser** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

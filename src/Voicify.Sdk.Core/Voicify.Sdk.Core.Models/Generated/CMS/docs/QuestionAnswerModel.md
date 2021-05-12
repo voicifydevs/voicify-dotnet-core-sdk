@@ -20,7 +20,9 @@ Name | Type | Description | Notes
 **CreatedFromId** | **string** |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
 **QuestionAnswerWebhooks** | [**List&lt;QuestionAnswerWebhookModel&gt;**](QuestionAnswerWebhookModel.md) |  | [optional] 
+**WebhookChainingType** | **WebhookChainingType** |  | [optional] 
 **ShouldNotSync** | **bool?** |  | [optional] 
+**AppliedApplicationTemplateFormId** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

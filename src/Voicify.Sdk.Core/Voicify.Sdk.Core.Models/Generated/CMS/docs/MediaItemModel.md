@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **IsDisabled** | **bool?** |  | [optional] 
 **ModifiedByUserId** | **string** |  | [optional] 
 **CreatedFromId** | **string** |  | [optional] 
+**AppliedApplicationTemplateFormId** | **string** |  | [optional] 
 **ModifiedByUser** | [**UserModel**](UserModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

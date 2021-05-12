@@ -3,17 +3,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Title** | **string** |  | 
 **EventName** | **string** |  | [optional] 
+**StartDate** | **DateTime?** |  | [optional] 
+**Responses** | [**List&lt;UpdateEventResponseRequest&gt;**](UpdateEventResponseRequest.md) |  | [optional] 
+**Title** | **string** |  | 
 **Description** | **string** |  | [optional] 
 **LocationName** | **string** |  | [optional] 
 **CategoryNames** | **List&lt;string&gt;** |  | [optional] 
 **OwnerName** | **string** |  | [optional] 
 **Address** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
-**StartDate** | **DateTime?** |  | [optional] 
 **EndDate** | **DateTime?** |  | [optional] 
-**Responses** | [**List&lt;UpdateEventResponseRequest&gt;**](UpdateEventResponseRequest.md) |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 

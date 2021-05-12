@@ -1,0 +1,275 @@
+# Voicify.Sdk.Core.Models.Api.ArchiveApi
+
+All URIs are relative to */*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**ApiArchiveArchiveIdDelete**](ArchiveApi.md#apiarchivearchiveiddelete) | **DELETE** /api/Archive/{archiveId} | 
+[**ApiArchiveArchiveIdGet**](ArchiveApi.md#apiarchivearchiveidget) | **GET** /api/Archive/{archiveId} | 
+[**ApiArchiveForAppApplicationIdGet**](ArchiveApi.md#apiarchiveforappapplicationidget) | **GET** /api/Archive/forApp/{applicationId} | 
+[**ApiArchiveQueuePost**](ArchiveApi.md#apiarchivequeuepost) | **POST** /api/Archive/queue | 
+
+<a name="apiarchivearchiveiddelete"></a>
+# **ApiArchiveArchiveIdDelete**
+> ApplicationArchiveModel ApiArchiveArchiveIdDelete (string archiveId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ApiArchiveArchiveIdDeleteExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ArchiveApi();
+            var archiveId = archiveId_example;  // string | 
+
+            try
+            {
+                ApplicationArchiveModel result = apiInstance.ApiArchiveArchiveIdDelete(archiveId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ArchiveApi.ApiArchiveArchiveIdDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **archiveId** | **string**|  | 
+
+### Return type
+
+[**ApplicationArchiveModel**](ApplicationArchiveModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="apiarchivearchiveidget"></a>
+# **ApiArchiveArchiveIdGet**
+> ApplicationArchiveModel ApiArchiveArchiveIdGet (string archiveId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ApiArchiveArchiveIdGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ArchiveApi();
+            var archiveId = archiveId_example;  // string | 
+
+            try
+            {
+                ApplicationArchiveModel result = apiInstance.ApiArchiveArchiveIdGet(archiveId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ArchiveApi.ApiArchiveArchiveIdGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **archiveId** | **string**|  | 
+
+### Return type
+
+[**ApplicationArchiveModel**](ApplicationArchiveModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="apiarchiveforappapplicationidget"></a>
+# **ApiArchiveForAppApplicationIdGet**
+> List<ApplicationArchiveModel> ApiArchiveForAppApplicationIdGet (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ApiArchiveForAppApplicationIdGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ArchiveApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationArchiveModel&gt; result = apiInstance.ApiArchiveForAppApplicationIdGet(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ArchiveApi.ApiArchiveForAppApplicationIdGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationArchiveModel>**](ApplicationArchiveModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="apiarchivequeuepost"></a>
+# **ApiArchiveQueuePost**
+> ApplicationArchiveModel ApiArchiveQueuePost (NewArchiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ApiArchiveQueuePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ArchiveApi();
+            var body = new NewArchiveRequest(); // NewArchiveRequest |  (optional) 
+
+            try
+            {
+                ApplicationArchiveModel result = apiInstance.ApiArchiveQueuePost(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ArchiveApi.ApiArchiveQueuePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewArchiveRequest**](NewArchiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationArchiveModel**](ApplicationArchiveModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
 **Content** | **string** |  | 
-**EventQueryType** | **string** |  | [optional] 
+**EventQueryType** | **EventQueryType** |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 

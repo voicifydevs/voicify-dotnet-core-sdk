@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **FollowUpId** | **string** |  | [optional] 
 **Position** | **int?** |  | [optional] 
+**ResponseId** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

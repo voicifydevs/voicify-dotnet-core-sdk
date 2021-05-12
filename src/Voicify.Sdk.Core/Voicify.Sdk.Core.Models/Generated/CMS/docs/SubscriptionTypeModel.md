@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **MaxSandboxes** | **long?** |  | [optional] 
 **MaxRequests** | **long?** |  | [optional] 
 **MaxFileUploadMegabytes** | **long?** |  | [optional] 
-**Length** | **string** |  | [optional] 
+**Length** | [**TimeSpan**](TimeSpan.md) |  | [optional] 
 **IsCustom** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

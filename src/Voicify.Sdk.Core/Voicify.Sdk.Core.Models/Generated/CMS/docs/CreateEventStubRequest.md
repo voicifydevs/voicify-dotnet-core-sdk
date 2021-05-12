@@ -3,19 +3,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Title** | **string** |  | 
 **EventName** | **string** |  | [optional] 
+**StartDate** | **DateTime?** |  | [optional] 
+**ApplicationId** | **string** |  | 
+**ApplicationFeatureId** | **string** |  | 
+**Responses** | [**List&lt;CreateEventResponseRequest&gt;**](CreateEventResponseRequest.md) |  | [optional] 
+**Title** | **string** |  | 
 **Description** | **string** |  | [optional] 
 **LocationName** | **string** |  | [optional] 
 **CategoryNames** | **List&lt;string&gt;** |  | [optional] 
 **OwnerName** | **string** |  | [optional] 
 **Address** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
-**StartDate** | **DateTime?** |  | [optional] 
 **EndDate** | **DateTime?** |  | [optional] 
-**ApplicationId** | **string** |  | 
-**ApplicationFeatureId** | **string** |  | 
-**Responses** | [**List&lt;CreateEventResponseRequest&gt;**](CreateEventResponseRequest.md) |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 

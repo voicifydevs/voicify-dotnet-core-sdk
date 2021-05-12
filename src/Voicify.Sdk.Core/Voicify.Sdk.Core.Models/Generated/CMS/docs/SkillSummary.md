@@ -5,11 +5,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LastUpdated** | **DateTime?** |  | [optional] 
 **NameByLocale** | **Dictionary&lt;string, string&gt;** |  | [optional] 
-**Stage** | **string** |  | [optional] 
+**Stage** | **SkillStage** |  | [optional] 
 **Apis** | **List&lt;string&gt;** |  | [optional] 
-**PublicationStatus** | **string** |  | [optional] 
+**Status** | **PublicationStatus** |  | [optional] 
 **SkillId** | **string** |  | [optional] 
-**Links** | [**Dictionary&lt;string, SkillSummaryLink&gt;**](SkillSummaryLink.md) |  | [optional] 
+**Links** | [**Dictionary&lt;string, ApiLink&gt;**](ApiLink.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
