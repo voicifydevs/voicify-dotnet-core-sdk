@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Reprompts** | [**List&lt;RepromptModel&gt;**](RepromptModel.md) |  | [optional] 
 **WebhookParameters** | [**List&lt;WebhookParameterModel&gt;**](WebhookParameterModel.md) |  | [optional] 
 **Webhooks** | [**List&lt;WebhookModel&gt;**](WebhookModel.md) |  | [optional] 
+**WebhookFolders** | [**List&lt;WebhookFolderExportModel&gt;**](WebhookFolderExportModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

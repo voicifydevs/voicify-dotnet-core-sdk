@@ -3,9 +3,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StartDate** | **DateTime?** |  | 
-**Category** | **string** |  | 
-**Responses** | [**List&lt;UpdateLatestMessageResponseRequest&gt;**](UpdateLatestMessageResponseRequest.md) |  | 
 **ApplicationId** | **string** |  | 
 **EndDate** | **DateTime?** |  | [optional] 
 **Title** | **string** |  | 
@@ -20,6 +17,9 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
+**StartDate** | **DateTime?** |  | 
+**Category** | **string** |  | 
+**Responses** | [**List&lt;UpdateLatestMessageResponseRequest&gt;**](UpdateLatestMessageResponseRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

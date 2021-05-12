@@ -3,7 +3,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [optional] 
 **ResponseTemplateTypeId** | **string** |  | 
 **ApplicationId** | **string** |  | 
 **DisplayTitle** | **string** |  | [optional] 
@@ -15,6 +14,7 @@ Name | Type | Description | Notes
 **VideoItemId** | **string** |  | [optional] 
 **DeviceTargetId** | **string** |  | [optional] 
 **CustomMarkup** | **string** |  | [optional] 
+**Id** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

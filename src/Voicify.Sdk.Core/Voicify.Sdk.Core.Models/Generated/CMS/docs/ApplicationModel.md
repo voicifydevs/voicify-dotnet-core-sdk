@@ -15,8 +15,9 @@ Name | Type | Description | Notes
 **ImageItemId** | **string** |  | [optional] 
 **ApplicationInformationItems** | [**List&lt;ApplicationInformationModel&gt;**](ApplicationInformationModel.md) |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
+**Regions** | [**List&lt;VoicifyRegionModel&gt;**](VoicifyRegionModel.md) |  | [optional] 
 **IsDisabled** | **bool?** |  | [optional] 
-**AlexaFallbackSensitivity** | **string** |  | [optional] 
+**AlexaFallbackSensitivity** | **AlexaFallbackSensitivityLevel** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

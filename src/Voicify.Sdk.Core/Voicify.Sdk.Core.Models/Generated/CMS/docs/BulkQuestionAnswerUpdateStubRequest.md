@@ -3,9 +3,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Title** | **string** |  | 
 **Questions** | [**List&lt;UpdateQuestionRequest&gt;**](UpdateQuestionRequest.md) |  | [optional] 
 **Answers** | [**List&lt;UpdateAnswerRequest&gt;**](UpdateAnswerRequest.md) |  | [optional] 
+**Title** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 

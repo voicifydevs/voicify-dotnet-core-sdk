@@ -3,7 +3,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Responses** | [**List&lt;NewCustomRequestResponseRequest&gt;**](NewCustomRequestResponseRequest.md) |  | 
 **ApplicationId** | **string** |  | 
 **ApplicationFeatureId** | **string** |  | 
 **StartDate** | **DateTime?** |  | [optional] 
@@ -23,6 +22,7 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
+**Responses** | [**List&lt;NewCustomRequestResponseRequest&gt;**](NewCustomRequestResponseRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

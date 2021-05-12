@@ -3,9 +3,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EventName** | **string** |  | 
-**StartDate** | **DateTime?** |  | 
-**Responses** | [**List&lt;UpdateEventResponseRequest&gt;**](UpdateEventResponseRequest.md) |  | 
 **Title** | **string** |  | 
 **Description** | **string** |  | [optional] 
 **LocationName** | **string** |  | [optional] 
@@ -25,6 +22,9 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
+**EventName** | **string** |  | 
+**StartDate** | **DateTime?** |  | 
+**Responses** | [**List&lt;UpdateEventResponseRequest&gt;**](UpdateEventResponseRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -22,6 +22,9 @@ Name | Type | Description | Notes
 **IsComplete** | **bool?** |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
 **ShouldNotSync** | **bool?** |  | [optional] 
+**WebhookChainingType** | **WebhookChainingType** |  | [optional] 
+**AppliedApplicationTemplateFormId** | **string** |  | [optional] 
+**SharedReferences** | [**SharedReferencesExportModel**](SharedReferencesExportModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

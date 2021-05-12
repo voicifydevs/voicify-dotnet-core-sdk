@@ -3,10 +3,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Title** | **string** |  | 
-**ApplicationId** | **string** |  | 
 **Questions** | [**List&lt;CreateQuestionRequest&gt;**](CreateQuestionRequest.md) |  | [optional] 
 **Answers** | [**List&lt;CreateAnswerRequest&gt;**](CreateAnswerRequest.md) |  | [optional] 
+**Title** | **string** |  | 
+**ApplicationId** | **string** |  | 
 **ApplicationFeatureId** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 

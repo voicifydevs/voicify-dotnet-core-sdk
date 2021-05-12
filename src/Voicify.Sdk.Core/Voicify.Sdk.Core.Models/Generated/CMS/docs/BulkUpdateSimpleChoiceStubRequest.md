@@ -3,9 +3,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ApplicationId** | **string** |  | 
-**ChoiceType** | **string** |  | [optional] 
+**ChoiceType** | **SimpleChoiceType** |  | [optional] 
 **Title** | **string** |  | [optional] 
+**Responses** | [**List&lt;UpdateSimpleChoiceResponseRequest&gt;**](UpdateSimpleChoiceResponseRequest.md) |  | [optional] 
+**ApplicationId** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 
@@ -15,7 +16,6 @@ Name | Type | Description | Notes
 **MediaResponseContainerId** | **string** |  | [optional] 
 **DisplayTextOverride** | **string** |  | [optional] 
 **DisplayTitleOverride** | **string** |  | [optional] 
-**Responses** | [**List&lt;UpdateSimpleChoiceResponseRequest&gt;**](UpdateSimpleChoiceResponseRequest.md) |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

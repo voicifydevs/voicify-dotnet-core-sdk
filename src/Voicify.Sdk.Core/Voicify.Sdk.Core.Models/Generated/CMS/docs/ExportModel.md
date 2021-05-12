@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ApplicationId** | **string** |  | [optional] 
 **ApplicationFeatures** | [**List&lt;ApplicationFeatureExportModel&gt;**](ApplicationFeatureExportModel.md) |  | [optional] 
 **SharedReferences** | [**SharedReferencesExportModel**](SharedReferencesExportModel.md) |  | [optional] 
 **WelcomeMessages** | [**List&lt;WelcomeMessageExportModel&gt;**](WelcomeMessageExportModel.md) |  | [optional] 

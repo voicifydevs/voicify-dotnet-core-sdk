@@ -7,6 +7,9 @@ Name | Type | Description | Notes
 **OrganizationId** | **string** |  | [optional] 
 **Email** | **string** |  | [optional] 
 **ExpirationDate** | **DateTime?** |  | [optional] 
+**IsAddedToApplications** | **bool?** |  | [optional] 
+**IsAdmin** | **bool?** |  | [optional] 
+**RoleId** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
 **TemplateFormFieldId** | **string** |  | [optional] 
+**DynamicFormFieldId** | **string** |  | [optional] 
 **Label** | **string** |  | [optional] 
 **Value** | **string** |  | [optional] 
 **Priority** | **int?** |  | [optional] 
