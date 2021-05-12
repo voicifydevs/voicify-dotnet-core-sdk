@@ -13,13 +13,16 @@ Name | Type | Description | Notes
 **Hits** | **int?** |  | [optional] 
 **ModifiedDate** | **DateTime?** |  | [optional] 
 **CreatedDate** | **DateTime?** |  | [optional] 
-**ChoiceType** | **string** |  | [optional] 
+**ChoiceType** | **SimpleChoiceType** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **IsComplete** | **bool?** |  | [optional] 
 **SimpleChoiceWebhooks** | [**List&lt;SimpleChoiceWebhookModel&gt;**](SimpleChoiceWebhookModel.md) |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
 **CreatedFromId** | **string** |  | [optional] 
 **ShouldNotSync** | **bool?** |  | [optional] 
+**WebhookChainingType** | **WebhookChainingType** |  | [optional] 
+**AppliedApplicationTemplateFormId** | **string** |  | [optional] 
+**SharedReferences** | [**SharedReferencesExportModel**](SharedReferencesExportModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

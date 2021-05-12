@@ -3,11 +3,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EventName** | **string** |  | 
-**StartDate** | **DateTime?** |  | 
-**ApplicationId** | **string** |  | 
-**ApplicationFeatureId** | **string** |  | 
-**Responses** | [**List&lt;CreateEventResponseRequest&gt;**](CreateEventResponseRequest.md) |  | 
 **Title** | **string** |  | 
 **Description** | **string** |  | [optional] 
 **LocationName** | **string** |  | [optional] 
@@ -27,6 +22,11 @@ Name | Type | Description | Notes
 **MediaResponseContainerId** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
+**EventName** | **string** |  | 
+**StartDate** | **DateTime?** |  | 
+**ApplicationId** | **string** |  | 
+**ApplicationFeatureId** | **string** |  | 
+**Responses** | [**List&lt;CreateEventResponseRequest&gt;**](CreateEventResponseRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

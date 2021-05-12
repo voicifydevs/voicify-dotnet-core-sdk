@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
 **Content** | **string** |  | [optional] 
-**EventQueryType** | **string** |  | [optional] 
+**EventQueryType** | **EventQueryType** |  | [optional] 
 **EventId** | **string** |  | [optional] 
 **SmallImage** | [**MediaItemModel**](MediaItemModel.md) |  | [optional] 
 **LargeImage** | [**MediaItemModel**](MediaItemModel.md) |  | [optional] 
@@ -23,6 +23,8 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **FollowUpId** | **string** |  | [optional] 
 **ApplicationFeatureId** | **string** |  | [optional] 
+**ResponseId** | **string** |  | [optional] 
+**Conditions** | [**List&lt;ConditionInstanceModel&gt;**](ConditionInstanceModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

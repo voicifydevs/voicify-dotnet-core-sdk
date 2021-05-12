@@ -3,13 +3,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Title** | **string** |  | 
 **RecipeName** | **string** |  | [optional] 
+**Steps** | [**List&lt;UpdateStepRequest&gt;**](UpdateStepRequest.md) |  | [optional] 
+**Ingredients** | [**List&lt;UpdateIngredientRequest&gt;**](UpdateIngredientRequest.md) |  | [optional] 
+**Title** | **string** |  | 
 **Keywords** | **string** |  | [optional] 
 **Description** | **string** |  | [optional] 
 **MealType** | **string** |  | [optional] 
 **Servings** | **string** |  | [optional] 
-**TotalTime** | **string** |  | [optional] 
+**TotalTime** | [**TimeSpan**](TimeSpan.md) |  | [optional] 
 **Calories** | **int?** |  | [optional] 
 **VideoItemId** | **string** |  | [optional] 
 **SmallImageItemId** | **string** |  | [optional] 
@@ -20,8 +22,6 @@ Name | Type | Description | Notes
 **MediaResponseContainerId** | **string** |  | [optional] 
 **DisplayTextOverride** | **string** |  | [optional] 
 **DisplayTitleOverride** | **string** |  | [optional] 
-**Steps** | [**List&lt;UpdateStepRequest&gt;**](UpdateStepRequest.md) |  | [optional] 
-**Ingredients** | [**List&lt;UpdateIngredientRequest&gt;**](UpdateIngredientRequest.md) |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
 
