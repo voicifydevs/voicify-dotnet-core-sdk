@@ -27,26 +27,11 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines ArchiveType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-        public enum ArchiveType
+    public enum ArchiveType
     {
-        /// <summary>
-        /// Enum NUMBER_0 for value: 0
-        /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
-        /// <summary>
-        /// Enum NUMBER_1 for value: 1
-        /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
-        /// <summary>
-        /// Enum NUMBER_2 for value: 2
-        /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
-        /// <summary>
-        /// Enum NUMBER_3 for value: 3
-        /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4    }
+        Unknown,
+        BulkContent,
+        InteractionModelChanges,
+        FullApplication
+    }
 }
