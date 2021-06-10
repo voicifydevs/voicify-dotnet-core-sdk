@@ -32,6 +32,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewQuestionAnswerRequest" /> class.
         /// </summary>
+        /// <param name="questions">questions (required).</param>
+        /// <param name="answers">answers (required).</param>
         /// <param name="title">title (required).</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
@@ -46,10 +48,26 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="questions">questions (required).</param>
-        /// <param name="answers">answers (required).</param>
-        public NewQuestionAnswerRequest(string title = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), List<CreateQuestionRequest> questions = default(List<CreateQuestionRequest>), List<CreateAnswerRequest> answers = default(List<CreateAnswerRequest>))
+        public NewQuestionAnswerRequest(List<CreateQuestionRequest> questions = default(List<CreateQuestionRequest>), List<CreateAnswerRequest> answers = default(List<CreateAnswerRequest>), string title = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
+            // to ensure "questions" is required (not null)
+            if (questions == null)
+            {
+                throw new InvalidDataException("questions is a required property for NewQuestionAnswerRequest and cannot be null");
+            }
+            else
+            {
+                this.Questions = questions;
+            }
+            // to ensure "answers" is required (not null)
+            if (answers == null)
+            {
+                throw new InvalidDataException("answers is a required property for NewQuestionAnswerRequest and cannot be null");
+            }
+            else
+            {
+                this.Answers = answers;
+            }
             // to ensure "title" is required (not null)
             if (title == null)
             {
@@ -77,24 +95,6 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.ApplicationFeatureId = applicationFeatureId;
             }
-            // to ensure "questions" is required (not null)
-            if (questions == null)
-            {
-                throw new InvalidDataException("questions is a required property for NewQuestionAnswerRequest and cannot be null");
-            }
-            else
-            {
-                this.Questions = questions;
-            }
-            // to ensure "answers" is required (not null)
-            if (answers == null)
-            {
-                throw new InvalidDataException("answers is a required property for NewQuestionAnswerRequest and cannot be null");
-            }
-            else
-            {
-                this.Answers = answers;
-            }
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
             this.AudioItemId = audioItemId;
@@ -108,6 +108,18 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets Questions
+        /// </summary>
+        [DataMember(Name="questions", EmitDefaultValue=false)]
+        public List<CreateQuestionRequest> Questions { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Answers
+        /// </summary>
+        [DataMember(Name="answers", EmitDefaultValue=false)]
+        public List<CreateAnswerRequest> Answers { get; set; }
+
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
@@ -193,18 +205,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets Questions
-        /// </summary>
-        [DataMember(Name="questions", EmitDefaultValue=false)]
-        public List<CreateQuestionRequest> Questions { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Answers
-        /// </summary>
-        [DataMember(Name="answers", EmitDefaultValue=false)]
-        public List<CreateAnswerRequest> Answers { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -212,6 +212,8 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewQuestionAnswerRequest {\n");
+            sb.Append("  Questions: ").Append(Questions).Append("\n");
+            sb.Append("  Answers: ").Append(Answers).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
@@ -226,8 +228,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  Questions: ").Append(Questions).Append("\n");
-            sb.Append("  Answers: ").Append(Answers).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -262,6 +262,18 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Questions == input.Questions ||
+                    this.Questions != null &&
+                    input.Questions != null &&
+                    this.Questions.SequenceEqual(input.Questions)
+                ) && 
+                (
+                    this.Answers == input.Answers ||
+                    this.Answers != null &&
+                    input.Answers != null &&
+                    this.Answers.SequenceEqual(input.Answers)
+                ) && 
                 (
                     this.Title == input.Title ||
                     (this.Title != null &&
@@ -332,18 +344,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.Questions == input.Questions ||
-                    this.Questions != null &&
-                    input.Questions != null &&
-                    this.Questions.SequenceEqual(input.Questions)
-                ) && 
-                (
-                    this.Answers == input.Answers ||
-                    this.Answers != null &&
-                    input.Answers != null &&
-                    this.Answers.SequenceEqual(input.Answers)
                 );
         }
 
@@ -356,6 +356,10 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Questions != null)
+                    hashCode = hashCode * 59 + this.Questions.GetHashCode();
+                if (this.Answers != null)
+                    hashCode = hashCode * 59 + this.Answers.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.ApplicationId != null)
@@ -384,10 +388,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.Questions != null)
-                    hashCode = hashCode * 59 + this.Questions.GetHashCode();
-                if (this.Answers != null)
-                    hashCode = hashCode * 59 + this.Answers.GetHashCode();
                 return hashCode;
             }
         }

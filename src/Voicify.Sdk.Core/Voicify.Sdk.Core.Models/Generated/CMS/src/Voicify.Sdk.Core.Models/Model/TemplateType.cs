@@ -27,9 +27,16 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines TemplateType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum TemplateType
+        public enum TemplateType
     {
-        ContentTemplate,
-        Integration
-    }
+        /// <summary>
+        /// Enum ContentTemplate for value: ContentTemplate
+        /// </summary>
+        [EnumMember(Value = "ContentTemplate")]
+        ContentTemplate = 1,
+        /// <summary>
+        /// Enum Integration for value: Integration
+        /// </summary>
+        [EnumMember(Value = "Integration")]
+        Integration = 2    }
 }

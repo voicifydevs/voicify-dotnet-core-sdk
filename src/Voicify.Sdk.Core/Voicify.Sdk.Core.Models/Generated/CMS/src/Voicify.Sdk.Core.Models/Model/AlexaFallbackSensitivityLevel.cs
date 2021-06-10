@@ -29,8 +29,19 @@ namespace Voicify.Sdk.Core.Models.Model
     [JsonConverter(typeof(StringEnumConverter))]
     public enum AlexaFallbackSensitivityLevel
     {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
+        /// <summary>
+        /// Enum LOW for value: LOW
+        /// </summary>
+        [EnumMember(Value = "LOW")]
+        LOW = 1,
+        /// <summary>
+        /// Enum MEDIUM for value: MEDIUM
+        /// </summary>
+        [EnumMember(Value = "MEDIUM")]
+        MEDIUM = 2,
+        /// <summary>
+        /// Enum HIGH for value: HIGH
+        /// </summary>
+        [EnumMember(Value = "HIGH")]
+        HIGH = 3    }
 }

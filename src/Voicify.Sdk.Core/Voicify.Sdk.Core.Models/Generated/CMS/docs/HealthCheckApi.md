@@ -4,11 +4,11 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiHealthCheckGet**](HealthCheckApi.md#apihealthcheckget) | **GET** /api/HealthCheck | 
+[**HealthCheck**](HealthCheckApi.md#healthcheck) | **GET** /api/HealthCheck | 
 
-<a name="apihealthcheckget"></a>
-# **ApiHealthCheckGet**
-> void ApiHealthCheckGet ()
+<a name="healthcheck"></a>
+# **HealthCheck**
+> void HealthCheck ()
 
 
 
@@ -22,7 +22,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHealthCheckGetExample
+    public class HealthCheckExample
     {
         public void main()
         {
@@ -39,11 +39,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiHealthCheckGet();
+                apiInstance.HealthCheck();
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HealthCheckApi.ApiHealthCheckGet: " + e.Message );
+                Debug.Print("Exception when calling HealthCheckApi.HealthCheck: " + e.Message );
             }
         }
     }

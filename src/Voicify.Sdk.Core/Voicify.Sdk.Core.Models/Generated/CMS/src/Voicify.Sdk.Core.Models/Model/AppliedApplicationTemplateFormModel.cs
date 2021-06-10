@@ -40,10 +40,11 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="templateFormId">templateFormId.</param>
         /// <param name="appliedApplicationId">appliedApplicationId.</param>
         /// <param name="lastSyncedDate">lastSyncedDate.</param>
+        /// <param name="name">name.</param>
         /// <param name="templateForm">templateForm.</param>
         /// <param name="templateFormFieldValues">templateFormFieldValues.</param>
         /// <param name="dynamicFormSections">dynamicFormSections.</param>
-        public AppliedApplicationTemplateFormModel(string id = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string createdByUserId = default(string), string modifiedByUserId = default(string), string templateFormId = default(string), string appliedApplicationId = default(string), DateTime? lastSyncedDate = default(DateTime?), TemplateFormWithConfigurationModel templateForm = default(TemplateFormWithConfigurationModel), List<TemplateFormFieldValueModel> templateFormFieldValues = default(List<TemplateFormFieldValueModel>), List<DynamicFormSectionModel> dynamicFormSections = default(List<DynamicFormSectionModel>))
+        public AppliedApplicationTemplateFormModel(string id = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string createdByUserId = default(string), string modifiedByUserId = default(string), string templateFormId = default(string), string appliedApplicationId = default(string), DateTime? lastSyncedDate = default(DateTime?), string name = default(string), TemplateFormWithConfigurationModel templateForm = default(TemplateFormWithConfigurationModel), List<TemplateFormFieldValueModel> templateFormFieldValues = default(List<TemplateFormFieldValueModel>), List<DynamicFormSectionModel> dynamicFormSections = default(List<DynamicFormSectionModel>))
         {
             this.Id = id;
             this.CreatedDate = createdDate;
@@ -53,6 +54,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.TemplateFormId = templateFormId;
             this.AppliedApplicationId = appliedApplicationId;
             this.LastSyncedDate = lastSyncedDate;
+            this.Name = name;
             this.TemplateForm = templateForm;
             this.TemplateFormFieldValues = templateFormFieldValues;
             this.DynamicFormSections = dynamicFormSections;
@@ -107,6 +109,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public DateTime? LastSyncedDate { get; set; }
 
         /// <summary>
+        /// Gets or Sets Name
+        /// </summary>
+        [DataMember(Name="name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
         /// Gets or Sets TemplateForm
         /// </summary>
         [DataMember(Name="templateForm", EmitDefaultValue=false)]
@@ -140,6 +148,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  TemplateFormId: ").Append(TemplateFormId).Append("\n");
             sb.Append("  AppliedApplicationId: ").Append(AppliedApplicationId).Append("\n");
             sb.Append("  LastSyncedDate: ").Append(LastSyncedDate).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  TemplateForm: ").Append(TemplateForm).Append("\n");
             sb.Append("  TemplateFormFieldValues: ").Append(TemplateFormFieldValues).Append("\n");
             sb.Append("  DynamicFormSections: ").Append(DynamicFormSections).Append("\n");
@@ -218,6 +227,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LastSyncedDate.Equals(input.LastSyncedDate))
                 ) && 
                 (
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
+                ) && 
+                (
                     this.TemplateForm == input.TemplateForm ||
                     (this.TemplateForm != null &&
                     this.TemplateForm.Equals(input.TemplateForm))
@@ -261,6 +275,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.AppliedApplicationId.GetHashCode();
                 if (this.LastSyncedDate != null)
                     hashCode = hashCode * 59 + this.LastSyncedDate.GetHashCode();
+                if (this.Name != null)
+                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.TemplateForm != null)
                     hashCode = hashCode * 59 + this.TemplateForm.GetHashCode();
                 if (this.TemplateFormFieldValues != null)

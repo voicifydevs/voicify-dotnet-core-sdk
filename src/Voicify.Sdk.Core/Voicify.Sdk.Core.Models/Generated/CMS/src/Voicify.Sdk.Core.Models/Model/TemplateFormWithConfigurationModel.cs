@@ -32,18 +32,26 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TemplateFormWithConfigurationModel" /> class.
         /// </summary>
+        /// <param name="templateConfiguration">templateConfiguration.</param>
         /// <param name="id">id.</param>
         /// <param name="templateConfigurationId">templateConfigurationId.</param>
-        /// <param name="templateConfiguration">templateConfiguration.</param>
+        /// <param name="instructionsMarkdown">instructionsMarkdown.</param>
         /// <param name="templateFormSections">templateFormSections.</param>
-        public TemplateFormWithConfigurationModel(string id = default(string), string templateConfigurationId = default(string), TemplateConfigurationModel templateConfiguration = default(TemplateConfigurationModel), List<TemplateFormSectionModel> templateFormSections = default(List<TemplateFormSectionModel>))
+        public TemplateFormWithConfigurationModel(TemplateConfigurationModel templateConfiguration = default(TemplateConfigurationModel), string id = default(string), string templateConfigurationId = default(string), string instructionsMarkdown = default(string), List<TemplateFormSectionModel> templateFormSections = default(List<TemplateFormSectionModel>))
         {
+            this.TemplateConfiguration = templateConfiguration;
             this.Id = id;
             this.TemplateConfigurationId = templateConfigurationId;
-            this.TemplateConfiguration = templateConfiguration;
+            this.InstructionsMarkdown = instructionsMarkdown;
             this.TemplateFormSections = templateFormSections;
         }
         
+        /// <summary>
+        /// Gets or Sets TemplateConfiguration
+        /// </summary>
+        [DataMember(Name="templateConfiguration", EmitDefaultValue=false)]
+        public TemplateConfigurationModel TemplateConfiguration { get; set; }
+
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -57,10 +65,10 @@ namespace Voicify.Sdk.Core.Models.Model
         public string TemplateConfigurationId { get; set; }
 
         /// <summary>
-        /// Gets or Sets TemplateConfiguration
+        /// Gets or Sets InstructionsMarkdown
         /// </summary>
-        [DataMember(Name="templateConfiguration", EmitDefaultValue=false)]
-        public TemplateConfigurationModel TemplateConfiguration { get; set; }
+        [DataMember(Name="instructionsMarkdown", EmitDefaultValue=false)]
+        public string InstructionsMarkdown { get; set; }
 
         /// <summary>
         /// Gets or Sets TemplateFormSections
@@ -76,9 +84,10 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class TemplateFormWithConfigurationModel {\n");
+            sb.Append("  TemplateConfiguration: ").Append(TemplateConfiguration).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  TemplateConfigurationId: ").Append(TemplateConfigurationId).Append("\n");
-            sb.Append("  TemplateConfiguration: ").Append(TemplateConfiguration).Append("\n");
+            sb.Append("  InstructionsMarkdown: ").Append(InstructionsMarkdown).Append("\n");
             sb.Append("  TemplateFormSections: ").Append(TemplateFormSections).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -115,6 +124,11 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
+                    this.TemplateConfiguration == input.TemplateConfiguration ||
+                    (this.TemplateConfiguration != null &&
+                    this.TemplateConfiguration.Equals(input.TemplateConfiguration))
+                ) && 
+                (
                     this.Id == input.Id ||
                     (this.Id != null &&
                     this.Id.Equals(input.Id))
@@ -125,9 +139,9 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.TemplateConfigurationId.Equals(input.TemplateConfigurationId))
                 ) && 
                 (
-                    this.TemplateConfiguration == input.TemplateConfiguration ||
-                    (this.TemplateConfiguration != null &&
-                    this.TemplateConfiguration.Equals(input.TemplateConfiguration))
+                    this.InstructionsMarkdown == input.InstructionsMarkdown ||
+                    (this.InstructionsMarkdown != null &&
+                    this.InstructionsMarkdown.Equals(input.InstructionsMarkdown))
                 ) && 
                 (
                     this.TemplateFormSections == input.TemplateFormSections ||
@@ -146,12 +160,14 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.TemplateConfiguration != null)
+                    hashCode = hashCode * 59 + this.TemplateConfiguration.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.TemplateConfigurationId != null)
                     hashCode = hashCode * 59 + this.TemplateConfigurationId.GetHashCode();
-                if (this.TemplateConfiguration != null)
-                    hashCode = hashCode * 59 + this.TemplateConfiguration.GetHashCode();
+                if (this.InstructionsMarkdown != null)
+                    hashCode = hashCode * 59 + this.InstructionsMarkdown.GetHashCode();
                 if (this.TemplateFormSections != null)
                     hashCode = hashCode * 59 + this.TemplateFormSections.GetHashCode();
                 return hashCode;

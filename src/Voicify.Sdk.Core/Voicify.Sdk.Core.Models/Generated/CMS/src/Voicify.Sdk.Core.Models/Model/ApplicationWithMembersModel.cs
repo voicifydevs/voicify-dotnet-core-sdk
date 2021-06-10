@@ -42,11 +42,12 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="keywords">keywords.</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="defaultLanguageId">defaultLanguageId.</param>
+        /// <param name="allowsTemplating">allowsTemplating.</param>
         /// <param name="languages">languages.</param>
         /// <param name="applicationInformationItems">applicationInformationItems.</param>
         /// <param name="members">members.</param>
         /// <param name="webhookInstances">webhookInstances.</param>
-        public ApplicationWithMembersModel(string id = default(string), string name = default(string), string secret = default(string), string imageUrl = default(string), string invocationPhrase = default(string), string description = default(string), string shortDescription = default(string), string keywords = default(string), string imageItemId = default(string), string defaultLanguageId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), List<ApplicationInformationModel> applicationInformationItems = default(List<ApplicationInformationModel>), List<ApplicationMemberModel> members = default(List<ApplicationMemberModel>), List<ApplicationWebhookModel> webhookInstances = default(List<ApplicationWebhookModel>))
+        public ApplicationWithMembersModel(string id = default(string), string name = default(string), string secret = default(string), string imageUrl = default(string), string invocationPhrase = default(string), string description = default(string), string shortDescription = default(string), string keywords = default(string), string imageItemId = default(string), string defaultLanguageId = default(string), bool? allowsTemplating = default(bool?), List<LanguageModel> languages = default(List<LanguageModel>), List<ApplicationInformationModel> applicationInformationItems = default(List<ApplicationInformationModel>), List<ApplicationMemberModel> members = default(List<ApplicationMemberModel>), List<ApplicationWebhookModel> webhookInstances = default(List<ApplicationWebhookModel>))
         {
             this.Id = id;
             this.Name = name;
@@ -58,6 +59,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.Keywords = keywords;
             this.ImageItemId = imageItemId;
             this.DefaultLanguageId = defaultLanguageId;
+            this.AllowsTemplating = allowsTemplating;
             this.Languages = languages;
             this.ApplicationInformationItems = applicationInformationItems;
             this.Members = members;
@@ -125,6 +127,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string DefaultLanguageId { get; set; }
 
         /// <summary>
+        /// Gets or Sets AllowsTemplating
+        /// </summary>
+        [DataMember(Name="allowsTemplating", EmitDefaultValue=false)]
+        public bool? AllowsTemplating { get; set; }
+
+        /// <summary>
         /// Gets or Sets Languages
         /// </summary>
         [DataMember(Name="languages", EmitDefaultValue=false)]
@@ -166,6 +174,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  Keywords: ").Append(Keywords).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  DefaultLanguageId: ").Append(DefaultLanguageId).Append("\n");
+            sb.Append("  AllowsTemplating: ").Append(AllowsTemplating).Append("\n");
             sb.Append("  Languages: ").Append(Languages).Append("\n");
             sb.Append("  ApplicationInformationItems: ").Append(ApplicationInformationItems).Append("\n");
             sb.Append("  Members: ").Append(Members).Append("\n");
@@ -255,6 +264,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.DefaultLanguageId.Equals(input.DefaultLanguageId))
                 ) && 
                 (
+                    this.AllowsTemplating == input.AllowsTemplating ||
+                    (this.AllowsTemplating != null &&
+                    this.AllowsTemplating.Equals(input.AllowsTemplating))
+                ) && 
+                (
                     this.Languages == input.Languages ||
                     this.Languages != null &&
                     input.Languages != null &&
@@ -309,6 +323,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
                 if (this.DefaultLanguageId != null)
                     hashCode = hashCode * 59 + this.DefaultLanguageId.GetHashCode();
+                if (this.AllowsTemplating != null)
+                    hashCode = hashCode * 59 + this.AllowsTemplating.GetHashCode();
                 if (this.Languages != null)
                     hashCode = hashCode * 59 + this.Languages.GetHashCode();
                 if (this.ApplicationInformationItems != null)

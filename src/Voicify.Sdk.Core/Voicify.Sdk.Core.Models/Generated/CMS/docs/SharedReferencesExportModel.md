@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **WebhookParameters** | [**List&lt;WebhookParameterModel&gt;**](WebhookParameterModel.md) |  | [optional] 
 **Webhooks** | [**List&lt;WebhookModel&gt;**](WebhookModel.md) |  | [optional] 
 **WebhookFolders** | [**List&lt;WebhookFolderExportModel&gt;**](WebhookFolderExportModel.md) |  | [optional] 
+**ApplicationConversationFlags** | [**List&lt;ApplicationConversationFlagModel&gt;**](ApplicationConversationFlagModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

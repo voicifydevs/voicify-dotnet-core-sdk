@@ -37,7 +37,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="additionalReplacements">additionalReplacements.</param>
         /// <param name="dynamicFormSections">dynamicFormSections.</param>
         /// <param name="exportModel">exportModel.</param>
-        public CompleteTemplateFormModel(string templateConfigurationId = default(string), List<TemplateFormFieldValueModel> templateFormFieldValues = default(List<TemplateFormFieldValueModel>), Dictionary<string, string> additionalReplacements = default(Dictionary<string, string>), List<DynamicFormSectionModel> dynamicFormSections = default(List<DynamicFormSectionModel>), ExportModel exportModel = default(ExportModel))
+        /// <param name="name">name.</param>
+        public CompleteTemplateFormModel(string templateConfigurationId = default(string), List<TemplateFormFieldValueModel> templateFormFieldValues = default(List<TemplateFormFieldValueModel>), Dictionary<string, string> additionalReplacements = default(Dictionary<string, string>), List<DynamicFormSectionModel> dynamicFormSections = default(List<DynamicFormSectionModel>), ExportModel exportModel = default(ExportModel), string name = default(string))
         {
             // to ensure "templateConfigurationId" is required (not null)
             if (templateConfigurationId == null)
@@ -52,6 +53,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.AdditionalReplacements = additionalReplacements;
             this.DynamicFormSections = dynamicFormSections;
             this.ExportModel = exportModel;
+            this.Name = name;
         }
         
         /// <summary>
@@ -85,6 +87,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public ExportModel ExportModel { get; set; }
 
         /// <summary>
+        /// Gets or Sets Name
+        /// </summary>
+        [DataMember(Name="name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -97,6 +105,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  AdditionalReplacements: ").Append(AdditionalReplacements).Append("\n");
             sb.Append("  DynamicFormSections: ").Append(DynamicFormSections).Append("\n");
             sb.Append("  ExportModel: ").Append(ExportModel).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -158,6 +167,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ExportModel == input.ExportModel ||
                     (this.ExportModel != null &&
                     this.ExportModel.Equals(input.ExportModel))
+                ) && 
+                (
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
                 );
         }
 
@@ -180,6 +194,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DynamicFormSections.GetHashCode();
                 if (this.ExportModel != null)
                     hashCode = hashCode * 59 + this.ExportModel.GetHashCode();
+                if (this.Name != null)
+                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 return hashCode;
             }
         }

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Description** | **string** |  | [optional] 
 **MealType** | **string** |  | [optional] 
 **Servings** | **string** |  | [optional] 
-**TotalTime** | [**TimeSpan**](TimeSpan.md) |  | [optional] 
+**TotalTime** | **string** |  | [optional] 
 **Calories** | **int?** |  | [optional] 
 **CreatedDate** | **DateTime?** |  | [optional] 
 **ModifiedDate** | **DateTime?** |  | [optional] 

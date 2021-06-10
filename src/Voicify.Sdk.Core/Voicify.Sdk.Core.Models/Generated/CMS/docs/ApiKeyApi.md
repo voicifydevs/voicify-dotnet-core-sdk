@@ -4,79 +4,13 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiApiKeyApiKeyIdDelete**](ApiKeyApi.md#apiapikeyapikeyiddelete) | **DELETE** /api/ApiKey/{apiKeyId} | 
-[**ApiApiKeyOrganizationOrganizationIdAdminPost**](ApiKeyApi.md#apiapikeyorganizationorganizationidadminpost) | **POST** /api/ApiKey/organization/{organizationId}/admin | 
-[**ApiApiKeyOrganizationOrganizationIdGet**](ApiKeyApi.md#apiapikeyorganizationorganizationidget) | **GET** /api/ApiKey/organization/{organizationId} | 
+[**CreateOrganizationApiKey**](ApiKeyApi.md#createorganizationapikey) | **POST** /api/ApiKey/organization/{organizationId}/admin | 
+[**DeleteApiKey**](ApiKeyApi.md#deleteapikey) | **DELETE** /api/ApiKey/{apiKeyId} | 
+[**GetOrganizationApiKeys**](ApiKeyApi.md#getorganizationapikeys) | **GET** /api/ApiKey/organization/{organizationId} | 
 
-<a name="apiapikeyapikeyiddelete"></a>
-# **ApiApiKeyApiKeyIdDelete**
-> List<ApiKeyModel> ApiApiKeyApiKeyIdDelete (string apiKeyId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApiKeyApiKeyIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApiKeyApi();
-            var apiKeyId = apiKeyId_example;  // string | 
-
-            try
-            {
-                List&lt;ApiKeyModel&gt; result = apiInstance.ApiApiKeyApiKeyIdDelete(apiKeyId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApiKeyApi.ApiApiKeyApiKeyIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiKeyId** | **string**|  | 
-
-### Return type
-
-[**List<ApiKeyModel>**](ApiKeyModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapikeyorganizationorganizationidadminpost"></a>
-# **ApiApiKeyOrganizationOrganizationIdAdminPost**
-> ApiKeyResult ApiApiKeyOrganizationOrganizationIdAdminPost (string organizationId, NewApiKeyRequest body = null)
+<a name="createorganizationapikey"></a>
+# **CreateOrganizationApiKey**
+> ApiKeyResult CreateOrganizationApiKey (string organizationId, NewApiKeyRequest body = null)
 
 
 
@@ -90,7 +24,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApiKeyOrganizationOrganizationIdAdminPostExample
+    public class CreateOrganizationApiKeyExample
     {
         public void main()
         {
@@ -109,12 +43,12 @@ namespace Example
 
             try
             {
-                ApiKeyResult result = apiInstance.ApiApiKeyOrganizationOrganizationIdAdminPost(organizationId, body);
+                ApiKeyResult result = apiInstance.CreateOrganizationApiKey(organizationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApiKeyApi.ApiApiKeyOrganizationOrganizationIdAdminPost: " + e.Message );
+                Debug.Print("Exception when calling ApiKeyApi.CreateOrganizationApiKey: " + e.Message );
             }
         }
     }
@@ -142,9 +76,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapikeyorganizationorganizationidget"></a>
-# **ApiApiKeyOrganizationOrganizationIdGet**
-> List<ApiKeyModel> ApiApiKeyOrganizationOrganizationIdGet (string organizationId)
+<a name="deleteapikey"></a>
+# **DeleteApiKey**
+> List<ApiKeyModel> DeleteApiKey (string apiKeyId)
 
 
 
@@ -158,7 +92,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApiKeyOrganizationOrganizationIdGetExample
+    public class DeleteApiKeyExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApiKeyApi();
+            var apiKeyId = apiKeyId_example;  // string | 
+
+            try
+            {
+                List&lt;ApiKeyModel&gt; result = apiInstance.DeleteApiKey(apiKeyId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApiKeyApi.DeleteApiKey: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiKeyId** | **string**|  | 
+
+### Return type
+
+[**List<ApiKeyModel>**](ApiKeyModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getorganizationapikeys"></a>
+# **GetOrganizationApiKeys**
+> List<ApiKeyModel> GetOrganizationApiKeys (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetOrganizationApiKeysExample
     {
         public void main()
         {
@@ -176,12 +176,12 @@ namespace Example
 
             try
             {
-                List&lt;ApiKeyModel&gt; result = apiInstance.ApiApiKeyOrganizationOrganizationIdGet(organizationId);
+                List&lt;ApiKeyModel&gt; result = apiInstance.GetOrganizationApiKeys(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApiKeyApi.ApiApiKeyOrganizationOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ApiKeyApi.GetOrganizationApiKeys: " + e.Message );
             }
         }
     }

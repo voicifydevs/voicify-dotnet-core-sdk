@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **NameByLocale** | **Dictionary&lt;string, string&gt;** |  | [optional] 
 **Stage** | **SkillStage** |  | [optional] 
 **Apis** | **List&lt;string&gt;** |  | [optional] 
-**Status** | **PublicationStatus** |  | [optional] 
+**PublicationStatus** | **PublicationStatus** |  | [optional] 
 **SkillId** | **string** |  | [optional] 
 **Links** | [**Dictionary&lt;string, ApiLink&gt;**](ApiLink.md) |  | [optional] 
 

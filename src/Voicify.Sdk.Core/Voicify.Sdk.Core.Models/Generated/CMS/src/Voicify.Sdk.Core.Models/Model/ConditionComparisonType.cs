@@ -27,12 +27,31 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines ConditionComparisonType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum ConditionComparisonType
+        public enum ConditionComparisonType
     {
-        Unknown,
-        Equals,
-        NotEquals,
-        Contains,
-        DoesNotContain
-    }
+        /// <summary>
+        /// Enum Unknown for value: Unknown
+        /// </summary>
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
+        /// <summary>
+        /// Enum Equals for value: Equals
+        /// </summary>
+        [EnumMember(Value = "Equals")]
+        Equals = 2,
+        /// <summary>
+        /// Enum NotEquals for value: NotEquals
+        /// </summary>
+        [EnumMember(Value = "NotEquals")]
+        NotEquals = 3,
+        /// <summary>
+        /// Enum Contains for value: Contains
+        /// </summary>
+        [EnumMember(Value = "Contains")]
+        Contains = 4,
+        /// <summary>
+        /// Enum DoesNotContain for value: DoesNotContain
+        /// </summary>
+        [EnumMember(Value = "DoesNotContain")]
+        DoesNotContain = 5    }
 }

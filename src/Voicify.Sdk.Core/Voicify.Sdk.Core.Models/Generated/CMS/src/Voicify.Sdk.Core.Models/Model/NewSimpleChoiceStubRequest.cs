@@ -37,10 +37,10 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewSimpleChoiceStubRequest" /> class.
         /// </summary>
-        /// <param name="responses">responses.</param>
-        /// <param name="choiceType">choiceType.</param>
         /// <param name="applicationId">applicationId (required).</param>
+        /// <param name="responses">responses.</param>
         /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
+        /// <param name="choiceType">choiceType.</param>
         /// <param name="title">title (required).</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="backgroundImageItemId">backgroundImageItemId.</param>
@@ -52,7 +52,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTextOverride">displayTextOverride.</param>
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="languageIds">languageIds.</param>
-        public NewSimpleChoiceStubRequest(List<NewSimpleChoiceResponseRequest> responses = default(List<NewSimpleChoiceResponseRequest>), SimpleChoiceType? choiceType = default(SimpleChoiceType?), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>))
+        public NewSimpleChoiceStubRequest(string applicationId = default(string), List<NewSimpleChoiceResponseRequest> responses = default(List<NewSimpleChoiceResponseRequest>), string applicationFeatureId = default(string), SimpleChoiceType? choiceType = default(SimpleChoiceType?), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>))
         {
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)
@@ -96,23 +96,23 @@ namespace Voicify.Sdk.Core.Models.Model
         }
         
         /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<NewSimpleChoiceResponseRequest> Responses { get; set; }
-
-
-        /// <summary>
         /// Gets or Sets ApplicationId
         /// </summary>
         [DataMember(Name="applicationId", EmitDefaultValue=false)]
         public string ApplicationId { get; set; }
 
         /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<NewSimpleChoiceResponseRequest> Responses { get; set; }
+
+        /// <summary>
         /// Gets or Sets ApplicationFeatureId
         /// </summary>
         [DataMember(Name="applicationFeatureId", EmitDefaultValue=false)]
         public string ApplicationFeatureId { get; set; }
+
 
         /// <summary>
         /// Gets or Sets Title
@@ -188,10 +188,10 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewSimpleChoiceStubRequest {\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
-            sb.Append("  ChoiceType: ").Append(ChoiceType).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
+            sb.Append("  ChoiceType: ").Append(ChoiceType).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  BackgroundImageItemId: ").Append(BackgroundImageItemId).Append("\n");
@@ -238,25 +238,25 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
+                    this.ApplicationId == input.ApplicationId ||
+                    (this.ApplicationId != null &&
+                    this.ApplicationId.Equals(input.ApplicationId))
+                ) && 
+                (
                     this.Responses == input.Responses ||
                     this.Responses != null &&
                     input.Responses != null &&
                     this.Responses.SequenceEqual(input.Responses)
                 ) && 
                 (
-                    this.ChoiceType == input.ChoiceType ||
-                    (this.ChoiceType != null &&
-                    this.ChoiceType.Equals(input.ChoiceType))
-                ) && 
-                (
-                    this.ApplicationId == input.ApplicationId ||
-                    (this.ApplicationId != null &&
-                    this.ApplicationId.Equals(input.ApplicationId))
-                ) && 
-                (
                     this.ApplicationFeatureId == input.ApplicationFeatureId ||
                     (this.ApplicationFeatureId != null &&
                     this.ApplicationFeatureId.Equals(input.ApplicationFeatureId))
+                ) && 
+                (
+                    this.ChoiceType == input.ChoiceType ||
+                    (this.ChoiceType != null &&
+                    this.ChoiceType.Equals(input.ChoiceType))
                 ) && 
                 (
                     this.Title == input.Title ||
@@ -325,14 +325,14 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
-                if (this.ChoiceType != null)
-                    hashCode = hashCode * 59 + this.ChoiceType.GetHashCode();
                 if (this.ApplicationId != null)
                     hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.ApplicationFeatureId != null)
                     hashCode = hashCode * 59 + this.ApplicationFeatureId.GetHashCode();
+                if (this.ChoiceType != null)
+                    hashCode = hashCode * 59 + this.ChoiceType.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.ImageItemId != null)

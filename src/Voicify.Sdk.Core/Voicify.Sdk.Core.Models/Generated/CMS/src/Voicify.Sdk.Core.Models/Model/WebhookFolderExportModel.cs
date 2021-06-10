@@ -32,6 +32,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="WebhookFolderExportModel" /> class.
         /// </summary>
+        /// <param name="children">children.</param>
         /// <param name="id">id.</param>
         /// <param name="parentId">parentId.</param>
         /// <param name="name">name.</param>
@@ -39,8 +40,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="applicationId">applicationId.</param>
         /// <param name="priority">priority.</param>
         /// <param name="webhooks">webhooks.</param>
-        public WebhookFolderExportModel(string id = default(string), string parentId = default(string), string name = default(string), string createdFromId = default(string), string applicationId = default(string), int? priority = default(int?), List<WebhookModel> webhooks = default(List<WebhookModel>))
+        public WebhookFolderExportModel(List<WebhookFolderExportModel> children = default(List<WebhookFolderExportModel>), string id = default(string), string parentId = default(string), string name = default(string), string createdFromId = default(string), string applicationId = default(string), int? priority = default(int?), List<WebhookModel> webhooks = default(List<WebhookModel>))
         {
+            this.Children = children;
             this.Id = id;
             this.ParentId = parentId;
             this.Name = name;
@@ -50,6 +52,12 @@ namespace Voicify.Sdk.Core.Models.Model
             this.Webhooks = webhooks;
         }
         
+        /// <summary>
+        /// Gets or Sets Children
+        /// </summary>
+        [DataMember(Name="children", EmitDefaultValue=false)]
+        public List<WebhookFolderExportModel> Children { get; set; }
+
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -100,6 +108,7 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class WebhookFolderExportModel {\n");
+            sb.Append("  Children: ").Append(Children).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  ParentId: ").Append(ParentId).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
@@ -141,6 +150,12 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Children == input.Children ||
+                    this.Children != null &&
+                    input.Children != null &&
+                    this.Children.SequenceEqual(input.Children)
+                ) && 
                 (
                     this.Id == input.Id ||
                     (this.Id != null &&
@@ -188,6 +203,8 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Children != null)
+                    hashCode = hashCode * 59 + this.Children.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.ParentId != null)

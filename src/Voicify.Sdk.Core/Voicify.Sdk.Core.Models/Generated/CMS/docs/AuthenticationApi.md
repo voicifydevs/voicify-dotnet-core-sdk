@@ -4,13 +4,13 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiAuthenticationPost**](AuthenticationApi.md#apiauthenticationpost) | **POST** /api/Authentication | 
-[**ApiAuthenticationTestAdminGet**](AuthenticationApi.md#apiauthenticationtestadminget) | **GET** /api/Authentication/test/admin | 
-[**ApiAuthenticationTestGet**](AuthenticationApi.md#apiauthenticationtestget) | **GET** /api/Authentication/test | 
+[**Authenticate**](AuthenticationApi.md#authenticate) | **POST** /api/Authentication | 
+[**TestAdminAuth**](AuthenticationApi.md#testadminauth) | **GET** /api/Authentication/test/admin | 
+[**TestAuth**](AuthenticationApi.md#testauth) | **GET** /api/Authentication/test | 
 
-<a name="apiauthenticationpost"></a>
-# **ApiAuthenticationPost**
-> AuthenticationResponse ApiAuthenticationPost (string clientId, string clientSecret, string grantType, string username, string password = null, string refreshToken = null)
+<a name="authenticate"></a>
+# **Authenticate**
+> AuthenticationResponse Authenticate (string clientId, string clientSecret, string grantType, string username, string password = null, string refreshToken = null)
 
 
 
@@ -24,7 +24,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAuthenticationPostExample
+    public class AuthenticateExample
     {
         public void main()
         {
@@ -47,12 +47,12 @@ namespace Example
 
             try
             {
-                AuthenticationResponse result = apiInstance.ApiAuthenticationPost(clientId, clientSecret, grantType, username, password, refreshToken);
+                AuthenticationResponse result = apiInstance.Authenticate(clientId, clientSecret, grantType, username, password, refreshToken);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AuthenticationApi.ApiAuthenticationPost: " + e.Message );
+                Debug.Print("Exception when calling AuthenticationApi.Authenticate: " + e.Message );
             }
         }
     }
@@ -84,9 +84,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiauthenticationtestadminget"></a>
-# **ApiAuthenticationTestAdminGet**
-> void ApiAuthenticationTestAdminGet ()
+<a name="testadminauth"></a>
+# **TestAdminAuth**
+> void TestAdminAuth ()
 
 
 
@@ -100,7 +100,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAuthenticationTestAdminGetExample
+    public class TestAdminAuthExample
     {
         public void main()
         {
@@ -117,11 +117,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiAuthenticationTestAdminGet();
+                apiInstance.TestAdminAuth();
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AuthenticationApi.ApiAuthenticationTestAdminGet: " + e.Message );
+                Debug.Print("Exception when calling AuthenticationApi.TestAdminAuth: " + e.Message );
             }
         }
     }
@@ -145,9 +145,9 @@ void (empty response body)
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiauthenticationtestget"></a>
-# **ApiAuthenticationTestGet**
-> void ApiAuthenticationTestGet ()
+<a name="testauth"></a>
+# **TestAuth**
+> void TestAuth ()
 
 
 
@@ -161,7 +161,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAuthenticationTestGetExample
+    public class TestAuthExample
     {
         public void main()
         {
@@ -178,11 +178,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiAuthenticationTestGet();
+                apiInstance.TestAuth();
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AuthenticationApi.ApiAuthenticationTestGet: " + e.Message );
+                Debug.Print("Exception when calling AuthenticationApi.TestAuth: " + e.Message );
             }
         }
     }

@@ -32,16 +32,6 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ApplicationFeatureExportModel" /> class.
         /// </summary>
-        /// <param name="id">id.</param>
-        /// <param name="applicationModuleId">applicationModuleId.</param>
-        /// <param name="applicationId">applicationId.</param>
-        /// <param name="feature">feature.</param>
-        /// <param name="name">name.</param>
-        /// <param name="priority">priority.</param>
-        /// <param name="parentId">parentId.</param>
-        /// <param name="createdFromId">createdFromId.</param>
-        /// <param name="applicationFeatureWebhooks">applicationFeatureWebhooks.</param>
-        /// <param name="appliedApplicationTemplateFormId">appliedApplicationTemplateFormId.</param>
         /// <param name="welcomeMessages">welcomeMessages.</param>
         /// <param name="exitMessages">exitMessages.</param>
         /// <param name="fallbackMessages">fallbackMessages.</param>
@@ -54,19 +44,18 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="numberRanges">numberRanges.</param>
         /// <param name="customRequests">customRequests.</param>
         /// <param name="children">children.</param>
-        /// <param name="sharedReferences">sharedReferences.</param>
-        public ApplicationFeatureExportModel(string id = default(string), string applicationModuleId = default(string), string applicationId = default(string), FeatureModel feature = default(FeatureModel), string name = default(string), int? priority = default(int?), string parentId = default(string), string createdFromId = default(string), List<ApplicationFeatureWebhookModel> applicationFeatureWebhooks = default(List<ApplicationFeatureWebhookModel>), string appliedApplicationTemplateFormId = default(string), List<WelcomeMessageExportModel> welcomeMessages = default(List<WelcomeMessageExportModel>), List<ExitMessageExportModel> exitMessages = default(List<ExitMessageExportModel>), List<FallbackMessageExportModel> fallbackMessages = default(List<FallbackMessageExportModel>), List<HelpMessageExportModel> helpMessages = default(List<HelpMessageExportModel>), List<QuestionAnswerExportModel> questionAnswers = default(List<QuestionAnswerExportModel>), List<EventItemExportModel> eventItems = default(List<EventItemExportModel>), List<LatestMessageExportModel> latestMessages = default(List<LatestMessageExportModel>), List<SimpleChoiceExportModel> simpleChoices = default(List<SimpleChoiceExportModel>), List<RecipeExportModel> recipes = default(List<RecipeExportModel>), List<NumberRangeExportModel> numberRanges = default(List<NumberRangeExportModel>), List<CustomRequestExportModel> customRequests = default(List<CustomRequestExportModel>), List<ApplicationFeatureExportModel> children = default(List<ApplicationFeatureExportModel>), SharedReferencesExportModel sharedReferences = default(SharedReferencesExportModel))
+        /// <param name="id">id.</param>
+        /// <param name="applicationModuleId">applicationModuleId.</param>
+        /// <param name="applicationId">applicationId.</param>
+        /// <param name="feature">feature.</param>
+        /// <param name="name">name.</param>
+        /// <param name="priority">priority.</param>
+        /// <param name="parentId">parentId.</param>
+        /// <param name="createdFromId">createdFromId.</param>
+        /// <param name="applicationFeatureWebhooks">applicationFeatureWebhooks.</param>
+        /// <param name="appliedApplicationTemplateFormId">appliedApplicationTemplateFormId.</param>
+        public ApplicationFeatureExportModel(List<WelcomeMessageExportModel> welcomeMessages = default(List<WelcomeMessageExportModel>), List<ExitMessageExportModel> exitMessages = default(List<ExitMessageExportModel>), List<FallbackMessageExportModel> fallbackMessages = default(List<FallbackMessageExportModel>), List<HelpMessageExportModel> helpMessages = default(List<HelpMessageExportModel>), List<QuestionAnswerExportModel> questionAnswers = default(List<QuestionAnswerExportModel>), List<EventItemExportModel> eventItems = default(List<EventItemExportModel>), List<LatestMessageExportModel> latestMessages = default(List<LatestMessageExportModel>), List<SimpleChoiceExportModel> simpleChoices = default(List<SimpleChoiceExportModel>), List<RecipeExportModel> recipes = default(List<RecipeExportModel>), List<NumberRangeExportModel> numberRanges = default(List<NumberRangeExportModel>), List<CustomRequestExportModel> customRequests = default(List<CustomRequestExportModel>), List<ApplicationFeatureExportModel> children = default(List<ApplicationFeatureExportModel>), string id = default(string), string applicationModuleId = default(string), string applicationId = default(string), FeatureModel feature = default(FeatureModel), string name = default(string), int? priority = default(int?), string parentId = default(string), string createdFromId = default(string), List<ApplicationFeatureWebhookModel> applicationFeatureWebhooks = default(List<ApplicationFeatureWebhookModel>), string appliedApplicationTemplateFormId = default(string))
         {
-            this.Id = id;
-            this.ApplicationModuleId = applicationModuleId;
-            this.ApplicationId = applicationId;
-            this.Feature = feature;
-            this.Name = name;
-            this.Priority = priority;
-            this.ParentId = parentId;
-            this.CreatedFromId = createdFromId;
-            this.ApplicationFeatureWebhooks = applicationFeatureWebhooks;
-            this.AppliedApplicationTemplateFormId = appliedApplicationTemplateFormId;
             this.WelcomeMessages = welcomeMessages;
             this.ExitMessages = exitMessages;
             this.FallbackMessages = fallbackMessages;
@@ -79,69 +68,18 @@ namespace Voicify.Sdk.Core.Models.Model
             this.NumberRanges = numberRanges;
             this.CustomRequests = customRequests;
             this.Children = children;
-            this.SharedReferences = sharedReferences;
+            this.Id = id;
+            this.ApplicationModuleId = applicationModuleId;
+            this.ApplicationId = applicationId;
+            this.Feature = feature;
+            this.Name = name;
+            this.Priority = priority;
+            this.ParentId = parentId;
+            this.CreatedFromId = createdFromId;
+            this.ApplicationFeatureWebhooks = applicationFeatureWebhooks;
+            this.AppliedApplicationTemplateFormId = appliedApplicationTemplateFormId;
         }
         
-        /// <summary>
-        /// Gets or Sets Id
-        /// </summary>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public string Id { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationModuleId
-        /// </summary>
-        [DataMember(Name="applicationModuleId", EmitDefaultValue=false)]
-        public string ApplicationModuleId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationId
-        /// </summary>
-        [DataMember(Name="applicationId", EmitDefaultValue=false)]
-        public string ApplicationId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Feature
-        /// </summary>
-        [DataMember(Name="feature", EmitDefaultValue=false)]
-        public FeatureModel Feature { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Name
-        /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Priority
-        /// </summary>
-        [DataMember(Name="priority", EmitDefaultValue=false)]
-        public int? Priority { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ParentId
-        /// </summary>
-        [DataMember(Name="parentId", EmitDefaultValue=false)]
-        public string ParentId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets CreatedFromId
-        /// </summary>
-        [DataMember(Name="createdFromId", EmitDefaultValue=false)]
-        public string CreatedFromId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationFeatureWebhooks
-        /// </summary>
-        [DataMember(Name="applicationFeatureWebhooks", EmitDefaultValue=false)]
-        public List<ApplicationFeatureWebhookModel> ApplicationFeatureWebhooks { get; set; }
-
-        /// <summary>
-        /// Gets or Sets AppliedApplicationTemplateFormId
-        /// </summary>
-        [DataMember(Name="appliedApplicationTemplateFormId", EmitDefaultValue=false)]
-        public string AppliedApplicationTemplateFormId { get; set; }
-
         /// <summary>
         /// Gets or Sets WelcomeMessages
         /// </summary>
@@ -215,10 +153,64 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<ApplicationFeatureExportModel> Children { get; set; }
 
         /// <summary>
-        /// Gets or Sets SharedReferences
+        /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name="sharedReferences", EmitDefaultValue=false)]
-        public SharedReferencesExportModel SharedReferences { get; set; }
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationModuleId
+        /// </summary>
+        [DataMember(Name="applicationModuleId", EmitDefaultValue=false)]
+        public string ApplicationModuleId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationId
+        /// </summary>
+        [DataMember(Name="applicationId", EmitDefaultValue=false)]
+        public string ApplicationId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Feature
+        /// </summary>
+        [DataMember(Name="feature", EmitDefaultValue=false)]
+        public FeatureModel Feature { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Name
+        /// </summary>
+        [DataMember(Name="name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Priority
+        /// </summary>
+        [DataMember(Name="priority", EmitDefaultValue=false)]
+        public int? Priority { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ParentId
+        /// </summary>
+        [DataMember(Name="parentId", EmitDefaultValue=false)]
+        public string ParentId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedFromId
+        /// </summary>
+        [DataMember(Name="createdFromId", EmitDefaultValue=false)]
+        public string CreatedFromId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationFeatureWebhooks
+        /// </summary>
+        [DataMember(Name="applicationFeatureWebhooks", EmitDefaultValue=false)]
+        public List<ApplicationFeatureWebhookModel> ApplicationFeatureWebhooks { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AppliedApplicationTemplateFormId
+        /// </summary>
+        [DataMember(Name="appliedApplicationTemplateFormId", EmitDefaultValue=false)]
+        public string AppliedApplicationTemplateFormId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -228,16 +220,6 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ApplicationFeatureExportModel {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  ApplicationModuleId: ").Append(ApplicationModuleId).Append("\n");
-            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
-            sb.Append("  Feature: ").Append(Feature).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
-            sb.Append("  Priority: ").Append(Priority).Append("\n");
-            sb.Append("  ParentId: ").Append(ParentId).Append("\n");
-            sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
-            sb.Append("  ApplicationFeatureWebhooks: ").Append(ApplicationFeatureWebhooks).Append("\n");
-            sb.Append("  AppliedApplicationTemplateFormId: ").Append(AppliedApplicationTemplateFormId).Append("\n");
             sb.Append("  WelcomeMessages: ").Append(WelcomeMessages).Append("\n");
             sb.Append("  ExitMessages: ").Append(ExitMessages).Append("\n");
             sb.Append("  FallbackMessages: ").Append(FallbackMessages).Append("\n");
@@ -250,7 +232,16 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  NumberRanges: ").Append(NumberRanges).Append("\n");
             sb.Append("  CustomRequests: ").Append(CustomRequests).Append("\n");
             sb.Append("  Children: ").Append(Children).Append("\n");
-            sb.Append("  SharedReferences: ").Append(SharedReferences).Append("\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  ApplicationModuleId: ").Append(ApplicationModuleId).Append("\n");
+            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
+            sb.Append("  Feature: ").Append(Feature).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  Priority: ").Append(Priority).Append("\n");
+            sb.Append("  ParentId: ").Append(ParentId).Append("\n");
+            sb.Append("  CreatedFromId: ").Append(CreatedFromId).Append("\n");
+            sb.Append("  ApplicationFeatureWebhooks: ").Append(ApplicationFeatureWebhooks).Append("\n");
+            sb.Append("  AppliedApplicationTemplateFormId: ").Append(AppliedApplicationTemplateFormId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -285,57 +276,6 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
-                (
-                    this.Id == input.Id ||
-                    (this.Id != null &&
-                    this.Id.Equals(input.Id))
-                ) && 
-                (
-                    this.ApplicationModuleId == input.ApplicationModuleId ||
-                    (this.ApplicationModuleId != null &&
-                    this.ApplicationModuleId.Equals(input.ApplicationModuleId))
-                ) && 
-                (
-                    this.ApplicationId == input.ApplicationId ||
-                    (this.ApplicationId != null &&
-                    this.ApplicationId.Equals(input.ApplicationId))
-                ) && 
-                (
-                    this.Feature == input.Feature ||
-                    (this.Feature != null &&
-                    this.Feature.Equals(input.Feature))
-                ) && 
-                (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
-                ) && 
-                (
-                    this.Priority == input.Priority ||
-                    (this.Priority != null &&
-                    this.Priority.Equals(input.Priority))
-                ) && 
-                (
-                    this.ParentId == input.ParentId ||
-                    (this.ParentId != null &&
-                    this.ParentId.Equals(input.ParentId))
-                ) && 
-                (
-                    this.CreatedFromId == input.CreatedFromId ||
-                    (this.CreatedFromId != null &&
-                    this.CreatedFromId.Equals(input.CreatedFromId))
-                ) && 
-                (
-                    this.ApplicationFeatureWebhooks == input.ApplicationFeatureWebhooks ||
-                    this.ApplicationFeatureWebhooks != null &&
-                    input.ApplicationFeatureWebhooks != null &&
-                    this.ApplicationFeatureWebhooks.SequenceEqual(input.ApplicationFeatureWebhooks)
-                ) && 
-                (
-                    this.AppliedApplicationTemplateFormId == input.AppliedApplicationTemplateFormId ||
-                    (this.AppliedApplicationTemplateFormId != null &&
-                    this.AppliedApplicationTemplateFormId.Equals(input.AppliedApplicationTemplateFormId))
-                ) && 
                 (
                     this.WelcomeMessages == input.WelcomeMessages ||
                     this.WelcomeMessages != null &&
@@ -409,9 +349,55 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Children.SequenceEqual(input.Children)
                 ) && 
                 (
-                    this.SharedReferences == input.SharedReferences ||
-                    (this.SharedReferences != null &&
-                    this.SharedReferences.Equals(input.SharedReferences))
+                    this.Id == input.Id ||
+                    (this.Id != null &&
+                    this.Id.Equals(input.Id))
+                ) && 
+                (
+                    this.ApplicationModuleId == input.ApplicationModuleId ||
+                    (this.ApplicationModuleId != null &&
+                    this.ApplicationModuleId.Equals(input.ApplicationModuleId))
+                ) && 
+                (
+                    this.ApplicationId == input.ApplicationId ||
+                    (this.ApplicationId != null &&
+                    this.ApplicationId.Equals(input.ApplicationId))
+                ) && 
+                (
+                    this.Feature == input.Feature ||
+                    (this.Feature != null &&
+                    this.Feature.Equals(input.Feature))
+                ) && 
+                (
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
+                ) && 
+                (
+                    this.Priority == input.Priority ||
+                    (this.Priority != null &&
+                    this.Priority.Equals(input.Priority))
+                ) && 
+                (
+                    this.ParentId == input.ParentId ||
+                    (this.ParentId != null &&
+                    this.ParentId.Equals(input.ParentId))
+                ) && 
+                (
+                    this.CreatedFromId == input.CreatedFromId ||
+                    (this.CreatedFromId != null &&
+                    this.CreatedFromId.Equals(input.CreatedFromId))
+                ) && 
+                (
+                    this.ApplicationFeatureWebhooks == input.ApplicationFeatureWebhooks ||
+                    this.ApplicationFeatureWebhooks != null &&
+                    input.ApplicationFeatureWebhooks != null &&
+                    this.ApplicationFeatureWebhooks.SequenceEqual(input.ApplicationFeatureWebhooks)
+                ) && 
+                (
+                    this.AppliedApplicationTemplateFormId == input.AppliedApplicationTemplateFormId ||
+                    (this.AppliedApplicationTemplateFormId != null &&
+                    this.AppliedApplicationTemplateFormId.Equals(input.AppliedApplicationTemplateFormId))
                 );
         }
 
@@ -424,26 +410,6 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Id != null)
-                    hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.ApplicationModuleId != null)
-                    hashCode = hashCode * 59 + this.ApplicationModuleId.GetHashCode();
-                if (this.ApplicationId != null)
-                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
-                if (this.Feature != null)
-                    hashCode = hashCode * 59 + this.Feature.GetHashCode();
-                if (this.Name != null)
-                    hashCode = hashCode * 59 + this.Name.GetHashCode();
-                if (this.Priority != null)
-                    hashCode = hashCode * 59 + this.Priority.GetHashCode();
-                if (this.ParentId != null)
-                    hashCode = hashCode * 59 + this.ParentId.GetHashCode();
-                if (this.CreatedFromId != null)
-                    hashCode = hashCode * 59 + this.CreatedFromId.GetHashCode();
-                if (this.ApplicationFeatureWebhooks != null)
-                    hashCode = hashCode * 59 + this.ApplicationFeatureWebhooks.GetHashCode();
-                if (this.AppliedApplicationTemplateFormId != null)
-                    hashCode = hashCode * 59 + this.AppliedApplicationTemplateFormId.GetHashCode();
                 if (this.WelcomeMessages != null)
                     hashCode = hashCode * 59 + this.WelcomeMessages.GetHashCode();
                 if (this.ExitMessages != null)
@@ -468,8 +434,26 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.CustomRequests.GetHashCode();
                 if (this.Children != null)
                     hashCode = hashCode * 59 + this.Children.GetHashCode();
-                if (this.SharedReferences != null)
-                    hashCode = hashCode * 59 + this.SharedReferences.GetHashCode();
+                if (this.Id != null)
+                    hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.ApplicationModuleId != null)
+                    hashCode = hashCode * 59 + this.ApplicationModuleId.GetHashCode();
+                if (this.ApplicationId != null)
+                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
+                if (this.Feature != null)
+                    hashCode = hashCode * 59 + this.Feature.GetHashCode();
+                if (this.Name != null)
+                    hashCode = hashCode * 59 + this.Name.GetHashCode();
+                if (this.Priority != null)
+                    hashCode = hashCode * 59 + this.Priority.GetHashCode();
+                if (this.ParentId != null)
+                    hashCode = hashCode * 59 + this.ParentId.GetHashCode();
+                if (this.CreatedFromId != null)
+                    hashCode = hashCode * 59 + this.CreatedFromId.GetHashCode();
+                if (this.ApplicationFeatureWebhooks != null)
+                    hashCode = hashCode * 59 + this.ApplicationFeatureWebhooks.GetHashCode();
+                if (this.AppliedApplicationTemplateFormId != null)
+                    hashCode = hashCode * 59 + this.AppliedApplicationTemplateFormId.GetHashCode();
                 return hashCode;
             }
         }

@@ -4,37 +4,37 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiExitMessageApplicationIdGet**](ExitMessageApi.md#apiexitmessageapplicationidget) | **GET** /api/ExitMessage/{applicationId} | 
-[**ApiExitMessageApplicationIdPost**](ExitMessageApi.md#apiexitmessageapplicationidpost) | **POST** /api/ExitMessage/{applicationId} | 
-[**ApiExitMessageApplicationIdStubPost**](ExitMessageApi.md#apiexitmessageapplicationidstubpost) | **POST** /api/ExitMessage/{applicationId}/stub | 
-[**ApiExitMessageByFeatureApplicationFeatureIdGet**](ExitMessageApi.md#apiexitmessagebyfeatureapplicationfeatureidget) | **GET** /api/ExitMessage/byFeature/{applicationFeatureId} | 
-[**ApiExitMessageContentItemIdFullPut**](ExitMessageApi.md#apiexitmessagecontentitemidfullput) | **PUT** /api/ExitMessage/{contentItemId}/full | 
-[**ApiExitMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**](ExitMessageApi.md#apiexitmessagecontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/ExitMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiExitMessageExitMessageIdAddAudioFileMediaItemIdPut**](ExitMessageApi.md#apiexitmessageexitmessageidaddaudiofilemediaitemidput) | **PUT** /api/ExitMessage/{exitMessageId}/addAudioFile/{mediaItemId} | 
-[**ApiExitMessageExitMessageIdAddLargeImageMediaItemIdPut**](ExitMessageApi.md#apiexitmessageexitmessageidaddlargeimagemediaitemidput) | **PUT** /api/ExitMessage/{exitMessageId}/addLargeImage/{mediaItemId} | 
-[**ApiExitMessageExitMessageIdAddSmallImageMediaItemIdPut**](ExitMessageApi.md#apiexitmessageexitmessageidaddsmallimagemediaitemidput) | **PUT** /api/ExitMessage/{exitMessageId}/addSmallImage/{mediaItemId} | 
-[**ApiExitMessageExitMessageIdAddVideoFileMediaItemIdPut**](ExitMessageApi.md#apiexitmessageexitmessageidaddvideofilemediaitemidput) | **PUT** /api/ExitMessage/{exitMessageId}/addVideoFile/{mediaItemId} | 
-[**ApiExitMessageExitMessageIdCopyPost**](ExitMessageApi.md#apiexitmessageexitmessageidcopypost) | **POST** /api/ExitMessage/{exitMessageId}/copy | 
-[**ApiExitMessageExitMessageIdDelete**](ExitMessageApi.md#apiexitmessageexitmessageiddelete) | **DELETE** /api/ExitMessage/{exitMessageId} | 
-[**ApiExitMessageExitMessageIdIsLivePut**](ExitMessageApi.md#apiexitmessageexitmessageidisliveput) | **PUT** /api/ExitMessage/{exitMessageId}/isLive | 
-[**ApiExitMessageExitMessageIdShouldNotSyncPut**](ExitMessageApi.md#apiexitmessageexitmessageidshouldnotsyncput) | **PUT** /api/ExitMessage/{exitMessageId}/shouldNotSync | 
-[**ApiExitMessageExitMessageIdUpdatePut**](ExitMessageApi.md#apiexitmessageexitmessageidupdateput) | **PUT** /api/ExitMessage/{exitMessageId}/update | 
-[**ApiExitMessageExitMessageIdUpdateStubPut**](ExitMessageApi.md#apiexitmessageexitmessageidupdatestubput) | **PUT** /api/ExitMessage/{exitMessageId}/update/stub | 
-[**ApiExitMessageExitMessageIdWebhooksBulkPut**](ExitMessageApi.md#apiexitmessageexitmessageidwebhooksbulkput) | **PUT** /api/ExitMessage/{exitMessageId}/webhooks/bulk | 
-[**ApiExitMessageExitMessageIdWebhooksGet**](ExitMessageApi.md#apiexitmessageexitmessageidwebhooksget) | **GET** /api/ExitMessage/{exitMessageId}/webhooks | 
-[**ApiExitMessageExitMessageIdWebhooksInstanceWebhookIdPut**](ExitMessageApi.md#apiexitmessageexitmessageidwebhooksinstancewebhookidput) | **PUT** /api/ExitMessage/{exitMessageId}/webhooks/{instanceWebhookId} | 
-[**ApiExitMessageExitMessageIdWebhooksWebhookIdPost**](ExitMessageApi.md#apiexitmessageexitmessageidwebhookswebhookidpost) | **POST** /api/ExitMessage/{exitMessageId}/webhooks/{webhookId} | 
-[**ApiExitMessageFullIdGet**](ExitMessageApi.md#apiexitmessagefullidget) | **GET** /api/ExitMessage/full/{id} | 
-[**ApiExitMessageFullPost**](ExitMessageApi.md#apiexitmessagefullpost) | **POST** /api/ExitMessage/full | 
-[**ApiExitMessageWebhookExitMessageWebhookIdDelete**](ExitMessageApi.md#apiexitmessagewebhookexitmessagewebhookiddelete) | **DELETE** /api/ExitMessage/webhook/{exitMessageWebhookId} | 
-[**ApiExitMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**](ExitMessageApi.md#apiexitmessagewebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/ExitMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiExitMessageWebhookInstanceWebhookIdUserParametersPost**](ExitMessageApi.md#apiexitmessagewebhookinstancewebhookiduserparameterspost) | **POST** /api/ExitMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiExitMessageWebhookInstanceWebhookIdUserParametersPut**](ExitMessageApi.md#apiexitmessagewebhookinstancewebhookiduserparametersput) | **PUT** /api/ExitMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiExitMessageWebhookInstanceWebhookIdWebhookParametersPut**](ExitMessageApi.md#apiexitmessagewebhookinstancewebhookidwebhookparametersput) | **PUT** /api/ExitMessage/webhook/{instanceWebhookId}/webhookParameters | 
+[**AddAudioFileImage**](ExitMessageApi.md#addaudiofileimage) | **PUT** /api/ExitMessage/{exitMessageId}/addAudioFile/{mediaItemId} | 
+[**AddExitMessage**](ExitMessageApi.md#addexitmessage) | **POST** /api/ExitMessage/{applicationId} | 
+[**AddExitMessageStub**](ExitMessageApi.md#addexitmessagestub) | **POST** /api/ExitMessage/{applicationId}/stub | 
+[**AddLargeImage**](ExitMessageApi.md#addlargeimage) | **PUT** /api/ExitMessage/{exitMessageId}/addLargeImage/{mediaItemId} | 
+[**AddSmallImage**](ExitMessageApi.md#addsmallimage) | **PUT** /api/ExitMessage/{exitMessageId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](ExitMessageApi.md#addvideofile) | **PUT** /api/ExitMessage/{exitMessageId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](ExitMessageApi.md#addwebhook) | **POST** /api/ExitMessage/{exitMessageId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](ExitMessageApi.md#bulkupdateattachedwebhooks) | **PUT** /api/ExitMessage/{exitMessageId}/webhooks/bulk | 
+[**CopyContentItem**](ExitMessageApi.md#copycontentitem) | **POST** /api/ExitMessage/{exitMessageId}/copy | 
+[**CreateFullCustomRequest**](ExitMessageApi.md#createfullcustomrequest) | **POST** /api/ExitMessage/full | 
+[**CreateUserDefinedParameter**](ExitMessageApi.md#createuserdefinedparameter) | **POST** /api/ExitMessage/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteExitMessage**](ExitMessageApi.md#deleteexitmessage) | **DELETE** /api/ExitMessage/{exitMessageId} | 
+[**FindFullById**](ExitMessageApi.md#findfullbyid) | **GET** /api/ExitMessage/full/{id} | 
+[**GetByApplicationFeature**](ExitMessageApi.md#getbyapplicationfeature) | **GET** /api/ExitMessage/byFeature/{applicationFeatureId} | 
+[**GetExitMessagesForApplication**](ExitMessageApi.md#getexitmessagesforapplication) | **GET** /api/ExitMessage/{applicationId} | 
+[**GetWebhooks**](ExitMessageApi.md#getwebhooks) | **GET** /api/ExitMessage/{exitMessageId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](ExitMessageApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/ExitMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveUserDefinedParameter**](ExitMessageApi.md#removeuserdefinedparameter) | **DELETE** /api/ExitMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](ExitMessageApi.md#removewebhook) | **DELETE** /api/ExitMessage/webhook/{exitMessageWebhookId} | 
+[**ToggleIsLive**](ExitMessageApi.md#toggleislive) | **PUT** /api/ExitMessage/{exitMessageId}/isLive | 
+[**ToggleSync**](ExitMessageApi.md#togglesync) | **PUT** /api/ExitMessage/{exitMessageId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](ExitMessageApi.md#updateattachedwebhook) | **PUT** /api/ExitMessage/{exitMessageId}/webhooks/{instanceWebhookId} | 
+[**UpdateExitMessage**](ExitMessageApi.md#updateexitmessage) | **PUT** /api/ExitMessage/{exitMessageId}/update | 
+[**UpdateExitMessageStub**](ExitMessageApi.md#updateexitmessagestub) | **PUT** /api/ExitMessage/{exitMessageId}/update/stub | 
+[**UpdateFullContentItem**](ExitMessageApi.md#updatefullcontentitem) | **PUT** /api/ExitMessage/{contentItemId}/full | 
+[**UpdateUserDefinedParameter**](ExitMessageApi.md#updateuserdefinedparameter) | **PUT** /api/ExitMessage/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](ExitMessageApi.md#updatewebhookparameter) | **PUT** /api/ExitMessage/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apiexitmessageapplicationidget"></a>
-# **ApiExitMessageApplicationIdGet**
-> List<ExitMessageModel> ApiExitMessageApplicationIdGet (string applicationId)
+<a name="addaudiofileimage"></a>
+# **AddAudioFileImage**
+> ExitMessageModel AddAudioFileImage (string exitMessageId, string mediaItemId)
 
 
 
@@ -48,7 +48,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageApplicationIdGetExample
+    public class AddAudioFileImageExample
     {
         public void main()
         {
@@ -62,16 +62,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ExitMessageApi();
-            var applicationId = applicationId_example;  // string | 
+            var exitMessageId = exitMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                List&lt;ExitMessageModel&gt; result = apiInstance.ApiExitMessageApplicationIdGet(applicationId);
+                ExitMessageModel result = apiInstance.AddAudioFileImage(exitMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageApplicationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddAudioFileImage: " + e.Message );
             }
         }
     }
@@ -82,11 +83,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
+ **exitMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
-[**List<ExitMessageModel>**](ExitMessageModel.md)
+[**ExitMessageModel**](ExitMessageModel.md)
 
 ### Authorization
 
@@ -98,9 +100,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageapplicationidpost"></a>
-# **ApiExitMessageApplicationIdPost**
-> ExitMessageModel ApiExitMessageApplicationIdPost (string applicationId, NewExitMessageRequest body = null)
+<a name="addexitmessage"></a>
+# **AddExitMessage**
+> ExitMessageModel AddExitMessage (string applicationId, NewExitMessageRequest body = null)
 
 
 
@@ -114,7 +116,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageApplicationIdPostExample
+    public class AddExitMessageExample
     {
         public void main()
         {
@@ -133,12 +135,12 @@ namespace Example
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageApplicationIdPost(applicationId, body);
+                ExitMessageModel result = apiInstance.AddExitMessage(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageApplicationIdPost: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddExitMessage: " + e.Message );
             }
         }
     }
@@ -166,9 +168,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageapplicationidstubpost"></a>
-# **ApiExitMessageApplicationIdStubPost**
-> ExitMessageModel ApiExitMessageApplicationIdStubPost (string applicationId, NewExitMessageStubRequest body = null)
+<a name="addexitmessagestub"></a>
+# **AddExitMessageStub**
+> ExitMessageModel AddExitMessageStub (string applicationId, NewExitMessageStubRequest body = null)
 
 
 
@@ -182,7 +184,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageApplicationIdStubPostExample
+    public class AddExitMessageStubExample
     {
         public void main()
         {
@@ -201,12 +203,12 @@ namespace Example
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageApplicationIdStubPost(applicationId, body);
+                ExitMessageModel result = apiInstance.AddExitMessageStub(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageApplicationIdStubPost: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddExitMessageStub: " + e.Message );
             }
         }
     }
@@ -234,9 +236,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagebyfeatureapplicationfeatureidget"></a>
-# **ApiExitMessageByFeatureApplicationFeatureIdGet**
-> List<ExitMessageModel> ApiExitMessageByFeatureApplicationFeatureIdGet (string applicationFeatureId)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> ExitMessageModel AddLargeImage (string exitMessageId, string mediaItemId)
 
 
 
@@ -250,209 +252,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageByFeatureApplicationFeatureIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                List&lt;ExitMessageModel&gt; result = apiInstance.ApiExitMessageByFeatureApplicationFeatureIdGet(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageByFeatureApplicationFeatureIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<ExitMessageModel>**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagecontentitemidfullput"></a>
-# **ApiExitMessageContentItemIdFullPut**
-> ExitMessageModel ApiExitMessageContentItemIdFullPut (string contentItemId, ExitMessageModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageContentItemIdFullPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new ExitMessageModel(); // ExitMessageModel |  (optional) 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageContentItemIdFullPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageContentItemIdFullPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**ExitMessageModel**](ExitMessageModel.md)|  | [optional] 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagecontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiExitMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> ExitMessageModel ApiExitMessageContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageContentItemIdMoveToFeatureApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidaddaudiofilemediaitemidput"></a>
-# **ApiExitMessageExitMessageIdAddAudioFileMediaItemIdPut**
-> ExitMessageModel ApiExitMessageExitMessageIdAddAudioFileMediaItemIdPut (string exitMessageId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdAddAudioFileMediaItemIdPutExample
+    public class AddLargeImageExample
     {
         public void main()
         {
@@ -471,12 +271,12 @@ namespace Example
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdAddAudioFileMediaItemIdPut(exitMessageId, mediaItemId);
+                ExitMessageModel result = apiInstance.AddLargeImage(exitMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdAddAudioFileMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddLargeImage: " + e.Message );
             }
         }
     }
@@ -504,9 +304,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidaddlargeimagemediaitemidput"></a>
-# **ApiExitMessageExitMessageIdAddLargeImageMediaItemIdPut**
-> ExitMessageModel ApiExitMessageExitMessageIdAddLargeImageMediaItemIdPut (string exitMessageId, string mediaItemId)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> ExitMessageModel AddSmallImage (string exitMessageId, string mediaItemId)
 
 
 
@@ -520,7 +320,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageExitMessageIdAddLargeImageMediaItemIdPutExample
+    public class AddSmallImageExample
     {
         public void main()
         {
@@ -539,12 +339,12 @@ namespace Example
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdAddLargeImageMediaItemIdPut(exitMessageId, mediaItemId);
+                ExitMessageModel result = apiInstance.AddSmallImage(exitMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdAddLargeImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddSmallImage: " + e.Message );
             }
         }
     }
@@ -572,9 +372,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidaddsmallimagemediaitemidput"></a>
-# **ApiExitMessageExitMessageIdAddSmallImageMediaItemIdPut**
-> ExitMessageModel ApiExitMessageExitMessageIdAddSmallImageMediaItemIdPut (string exitMessageId, string mediaItemId)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> ExitMessageModel AddVideoFile (string exitMessageId, string mediaItemId)
 
 
 
@@ -588,7 +388,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageExitMessageIdAddSmallImageMediaItemIdPutExample
+    public class AddVideoFileExample
     {
         public void main()
         {
@@ -607,12 +407,12 @@ namespace Example
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdAddSmallImageMediaItemIdPut(exitMessageId, mediaItemId);
+                ExitMessageModel result = apiInstance.AddVideoFile(exitMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdAddSmallImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddVideoFile: " + e.Message );
             }
         }
     }
@@ -640,9 +440,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidaddvideofilemediaitemidput"></a>
-# **ApiExitMessageExitMessageIdAddVideoFileMediaItemIdPut**
-> ExitMessageModel ApiExitMessageExitMessageIdAddVideoFileMediaItemIdPut (string exitMessageId, string mediaItemId)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> ExitMessageWebhookModel AddWebhook (string exitMessageId, string webhookId, WebhookParametersRequest body = null)
 
 
 
@@ -656,683 +456,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageExitMessageIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdAddVideoFileMediaItemIdPut(exitMessageId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidcopypost"></a>
-# **ApiExitMessageExitMessageIdCopyPost**
-> ExitMessageModel ApiExitMessageExitMessageIdCopyPost (string exitMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdCopyPost(exitMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageiddelete"></a>
-# **ApiExitMessageExitMessageIdDelete**
-> ExitMessageModel ApiExitMessageExitMessageIdDelete (string exitMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdDelete(exitMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidisliveput"></a>
-# **ApiExitMessageExitMessageIdIsLivePut**
-> ExitMessageModel ApiExitMessageExitMessageIdIsLivePut (string exitMessageId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdIsLivePut(exitMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidshouldnotsyncput"></a>
-# **ApiExitMessageExitMessageIdShouldNotSyncPut**
-> ExitMessageModel ApiExitMessageExitMessageIdShouldNotSyncPut (string exitMessageId, ToggleSyncRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdShouldNotSyncPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdShouldNotSyncPut(exitMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdShouldNotSyncPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidupdateput"></a>
-# **ApiExitMessageExitMessageIdUpdatePut**
-> ExitMessageModel ApiExitMessageExitMessageIdUpdatePut (string exitMessageId, UpdateExitMessageRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var body = new UpdateExitMessageRequest(); // UpdateExitMessageRequest |  (optional) 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdUpdatePut(exitMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **body** | [**UpdateExitMessageRequest**](UpdateExitMessageRequest.md)|  | [optional] 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidupdatestubput"></a>
-# **ApiExitMessageExitMessageIdUpdateStubPut**
-> ExitMessageModel ApiExitMessageExitMessageIdUpdateStubPut (string exitMessageId, UpdateExitMessageStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var body = new UpdateExitMessageStubRequest(); // UpdateExitMessageStubRequest |  (optional) 
-
-            try
-            {
-                ExitMessageModel result = apiInstance.ApiExitMessageExitMessageIdUpdateStubPut(exitMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **body** | [**UpdateExitMessageStubRequest**](UpdateExitMessageStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**ExitMessageModel**](ExitMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidwebhooksbulkput"></a>
-# **ApiExitMessageExitMessageIdWebhooksBulkPut**
-> List<ExitMessageWebhookModel> ApiExitMessageExitMessageIdWebhooksBulkPut (string exitMessageId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;ExitMessageWebhookModel&gt; result = apiInstance.ApiExitMessageExitMessageIdWebhooksBulkPut(exitMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<ExitMessageWebhookModel>**](ExitMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidwebhooksget"></a>
-# **ApiExitMessageExitMessageIdWebhooksGet**
-> List<ExitMessageWebhookModel> ApiExitMessageExitMessageIdWebhooksGet (string exitMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-
-            try
-            {
-                List&lt;ExitMessageWebhookModel&gt; result = apiInstance.ApiExitMessageExitMessageIdWebhooksGet(exitMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
-
-### Return type
-
-[**List<ExitMessageWebhookModel>**](ExitMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidwebhooksinstancewebhookidput"></a>
-# **ApiExitMessageExitMessageIdWebhooksInstanceWebhookIdPut**
-> ExitMessageWebhookModel ApiExitMessageExitMessageIdWebhooksInstanceWebhookIdPut (string exitMessageId, string instanceWebhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdWebhooksInstanceWebhookIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageId = exitMessageId_example;  // string | 
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
-
-            try
-            {
-                ExitMessageWebhookModel result = apiInstance.ApiExitMessageExitMessageIdWebhooksInstanceWebhookIdPut(exitMessageId, instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdWebhooksInstanceWebhookIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageId** | **string**|  | 
- **instanceWebhookId** | **string**|  | 
- **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
-
-### Return type
-
-[**ExitMessageWebhookModel**](ExitMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessageexitmessageidwebhookswebhookidpost"></a>
-# **ApiExitMessageExitMessageIdWebhooksWebhookIdPost**
-> ExitMessageWebhookModel ApiExitMessageExitMessageIdWebhooksWebhookIdPost (string exitMessageId, string webhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageExitMessageIdWebhooksWebhookIdPostExample
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1352,12 +476,12 @@ namespace Example
 
             try
             {
-                ExitMessageWebhookModel result = apiInstance.ApiExitMessageExitMessageIdWebhooksWebhookIdPost(exitMessageId, webhookId, body);
+                ExitMessageWebhookModel result = apiInstance.AddWebhook(exitMessageId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageExitMessageIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1386,9 +510,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagefullidget"></a>
-# **ApiExitMessageFullIdGet**
-> ExitMessageModel ApiExitMessageFullIdGet (string id)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<ExitMessageWebhookModel> BulkUpdateAttachedWebhooks (string exitMessageId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1402,7 +526,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageFullIdGetExample
+    public class BulkUpdateAttachedWebhooksExample
     {
         public void main()
         {
@@ -1416,16 +540,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ExitMessageApi();
-            var id = id_example;  // string | 
+            var exitMessageId = exitMessageId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageFullIdGet(id);
+                List&lt;ExitMessageWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(exitMessageId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageFullIdGet: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.BulkUpdateAttachedWebhooks: " + e.Message );
             }
         }
     }
@@ -1436,7 +561,74 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
+ **exitMessageId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<ExitMessageWebhookModel>**](ExitMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> ExitMessageModel CopyContentItem (string exitMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.CopyContentItem(exitMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
 
 ### Return type
 
@@ -1452,9 +644,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagefullpost"></a>
-# **ApiExitMessageFullPost**
-> ExitMessageModel ApiExitMessageFullPost (ExitMessageModel body = null)
+<a name="createfullcustomrequest"></a>
+# **CreateFullCustomRequest**
+> ExitMessageModel CreateFullCustomRequest (ExitMessageModel body = null)
 
 
 
@@ -1468,7 +660,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageFullPostExample
+    public class CreateFullCustomRequestExample
     {
         public void main()
         {
@@ -1486,12 +678,12 @@ namespace Example
 
             try
             {
-                ExitMessageModel result = apiInstance.ApiExitMessageFullPost(body);
+                ExitMessageModel result = apiInstance.CreateFullCustomRequest(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageFullPost: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.CreateFullCustomRequest: " + e.Message );
             }
         }
     }
@@ -1518,9 +710,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagewebhookexitmessagewebhookiddelete"></a>
-# **ApiExitMessageWebhookExitMessageWebhookIdDelete**
-> ExitMessageWebhookModel ApiExitMessageWebhookExitMessageWebhookIdDelete (string exitMessageWebhookId)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
 
 
 
@@ -1534,141 +726,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageWebhookExitMessageWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var exitMessageWebhookId = exitMessageWebhookId_example;  // string | 
-
-            try
-            {
-                ExitMessageWebhookModel result = apiInstance.ApiExitMessageWebhookExitMessageWebhookIdDelete(exitMessageWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageWebhookExitMessageWebhookIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **exitMessageWebhookId** | **string**|  | 
-
-### Return type
-
-[**ExitMessageWebhookModel**](ExitMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagewebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiExitMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiExitMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ExitMessageApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var parameterName = parameterName_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiExitMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **parameterName** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagewebhookinstancewebhookiduserparameterspost"></a>
-# **ApiExitMessageWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiExitMessageWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiExitMessageWebhookInstanceWebhookIdUserParametersPostExample
+    public class CreateUserDefinedParameterExample
     {
         public void main()
         {
@@ -1687,12 +745,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiExitMessageWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.CreateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -1720,9 +778,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagewebhookinstancewebhookiduserparametersput"></a>
-# **ApiExitMessageWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiExitMessageWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="deleteexitmessage"></a>
+# **DeleteExitMessage**
+> ExitMessageModel DeleteExitMessage (string exitMessageId)
 
 
 
@@ -1736,7 +794,949 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageWebhookInstanceWebhookIdUserParametersPutExample
+    public class DeleteExitMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.DeleteExitMessage(exitMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.DeleteExitMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> ExitMessageModel FindFullById (string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindFullByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var id = id_example;  // string | 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.FindFullById(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.FindFullById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**|  | 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<ExitMessageModel> GetByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;ExitMessageModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.GetByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<ExitMessageModel>**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getexitmessagesforapplication"></a>
+# **GetExitMessagesForApplication**
+> List<ExitMessageModel> GetExitMessagesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetExitMessagesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;ExitMessageModel&gt; result = apiInstance.GetExitMessagesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.GetExitMessagesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<ExitMessageModel>**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<ExitMessageWebhookModel> GetWebhooks (string exitMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+
+            try
+            {
+                List&lt;ExitMessageWebhookModel&gt; result = apiInstance.GetWebhooks(exitMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+
+### Return type
+
+[**List<ExitMessageWebhookModel>**](ExitMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> ExitMessageModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.MoveContentItemToApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var parameterName = parameterName_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.RemoveUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **parameterName** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> ExitMessageWebhookModel RemoveWebhook (string exitMessageWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageWebhookId = exitMessageWebhookId_example;  // string | 
+
+            try
+            {
+                ExitMessageWebhookModel result = apiInstance.RemoveWebhook(exitMessageWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageWebhookId** | **string**|  | 
+
+### Return type
+
+[**ExitMessageWebhookModel**](ExitMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="toggleislive"></a>
+# **ToggleIsLive**
+> ExitMessageModel ToggleIsLive (string exitMessageId, ToggleLiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleIsLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.ToggleIsLive(exitMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.ToggleIsLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> ExitMessageModel ToggleSync (string exitMessageId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.ToggleSync(exitMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> ExitMessageWebhookModel UpdateAttachedWebhook (string exitMessageId, string instanceWebhookId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+
+            try
+            {
+                ExitMessageWebhookModel result = apiInstance.UpdateAttachedWebhook(exitMessageId, instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.UpdateAttachedWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+
+### Return type
+
+[**ExitMessageWebhookModel**](ExitMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateexitmessage"></a>
+# **UpdateExitMessage**
+> ExitMessageModel UpdateExitMessage (string exitMessageId, UpdateExitMessageRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateExitMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+            var body = new UpdateExitMessageRequest(); // UpdateExitMessageRequest |  (optional) 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.UpdateExitMessage(exitMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.UpdateExitMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+ **body** | [**UpdateExitMessageRequest**](UpdateExitMessageRequest.md)|  | [optional] 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateexitmessagestub"></a>
+# **UpdateExitMessageStub**
+> ExitMessageModel UpdateExitMessageStub (string exitMessageId, UpdateExitMessageStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateExitMessageStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var exitMessageId = exitMessageId_example;  // string | 
+            var body = new UpdateExitMessageStubRequest(); // UpdateExitMessageStubRequest |  (optional) 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.UpdateExitMessageStub(exitMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.UpdateExitMessageStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **exitMessageId** | **string**|  | 
+ **body** | [**UpdateExitMessageStubRequest**](UpdateExitMessageStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> ExitMessageModel UpdateFullContentItem (string contentItemId, ExitMessageModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ExitMessageApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new ExitMessageModel(); // ExitMessageModel |  (optional) 
+
+            try
+            {
+                ExitMessageModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExitMessageApi.UpdateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **body** | [**ExitMessageModel**](ExitMessageModel.md)|  | [optional] 
+
+### Return type
+
+[**ExitMessageModel**](ExitMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -1755,12 +1755,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiExitMessageWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -1788,9 +1788,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiexitmessagewebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiExitMessageWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiExitMessageWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -1804,7 +1804,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiExitMessageWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -1823,12 +1823,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiExitMessageWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExitMessageApi.ApiExitMessageWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling ExitMessageApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }

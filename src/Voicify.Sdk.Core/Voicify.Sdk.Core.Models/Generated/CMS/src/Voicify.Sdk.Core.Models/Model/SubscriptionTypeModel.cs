@@ -42,7 +42,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="maxFileUploadMegabytes">maxFileUploadMegabytes.</param>
         /// <param name="length">length.</param>
         /// <param name="isCustom">isCustom.</param>
-        public SubscriptionTypeModel(string id = default(string), string name = default(string), string description = default(string), long? maxApps = default(long?), long? maxMembers = default(long?), long? maxSandboxes = default(long?), long? maxRequests = default(long?), long? maxFileUploadMegabytes = default(long?), TimeSpan length = default(TimeSpan), bool? isCustom = default(bool?))
+        public SubscriptionTypeModel(string id = default(string), string name = default(string), string description = default(string), long? maxApps = default(long?), long? maxMembers = default(long?), long? maxSandboxes = default(long?), long? maxRequests = default(long?), long? maxFileUploadMegabytes = default(long?), string length = default(string), bool? isCustom = default(bool?))
         {
             this.Id = id;
             this.Name = name;
@@ -108,7 +108,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Gets or Sets Length
         /// </summary>
         [DataMember(Name="length", EmitDefaultValue=false)]
-        public TimeSpan Length { get; set; }
+        public string Length { get; set; }
 
         /// <summary>
         /// Gets or Sets IsCustom

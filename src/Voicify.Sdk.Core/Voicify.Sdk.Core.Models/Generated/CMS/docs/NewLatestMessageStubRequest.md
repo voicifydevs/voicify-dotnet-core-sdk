@@ -3,12 +3,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Responses** | [**List&lt;NewLatestMessageResponseRequest&gt;**](NewLatestMessageResponseRequest.md) |  | [optional] 
+**ApplicationId** | **string** |  | 
+**ApplicationFeatureId** | **string** |  | 
 **StartDate** | **DateTime?** |  | [optional] 
 **EndDate** | **DateTime?** |  | [optional] 
 **Category** | **string** |  | [optional] 
-**ApplicationId** | **string** |  | 
-**ApplicationFeatureId** | **string** |  | 
 **Title** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
@@ -19,6 +18,7 @@ Name | Type | Description | Notes
 **MediaResponseContainerId** | **string** |  | [optional] 
 **DisplayTextOverride** | **string** |  | [optional] 
 **DisplayTitleOverride** | **string** |  | [optional] 
+**Responses** | [**List&lt;NewLatestMessageResponseRequest&gt;**](NewLatestMessageResponseRequest.md) |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
 

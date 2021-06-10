@@ -3,11 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RequestTypes** | **string** |  | [optional] 
-**RequestNames** | **string** |  | [optional] 
-**PlatformFilter** | **string** |  | [optional] 
-**StartDate** | **DateTime?** |  | [optional] 
-**EndDate** | **DateTime?** |  | [optional] 
+**Responses** | [**List&lt;UpdateCustomRequestResponseRequest&gt;**](UpdateCustomRequestResponseRequest.md) |  | 
 **ApplicationId** | **string** |  | 
 **Title** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
@@ -21,7 +17,11 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
-**Responses** | [**List&lt;UpdateCustomRequestResponseRequest&gt;**](UpdateCustomRequestResponseRequest.md) |  | 
+**RequestTypes** | **string** |  | [optional] 
+**RequestNames** | **string** |  | [optional] 
+**PlatformFilter** | **string** |  | [optional] 
+**StartDate** | **DateTime?** |  | [optional] 
+**EndDate** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

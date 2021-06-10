@@ -37,6 +37,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UserVoicifyNotificationModel" /> class.
         /// </summary>
+        /// <param name="isRead">isRead.</param>
         /// <param name="id">id.</param>
         /// <param name="title">title (required).</param>
         /// <param name="subtitle">subtitle (required).</param>
@@ -49,8 +50,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="expirationDate">expirationDate.</param>
         /// <param name="startDate">startDate.</param>
         /// <param name="priority">priority.</param>
-        /// <param name="isRead">isRead.</param>
-        public UserVoicifyNotificationModel(string id = default(string), string title = default(string), string subtitle = default(string), string markdown = default(string), string notificationType = default(string), bool? isDisabled = default(bool?), bool? enforceRead = default(bool?), bool? isSystemWide = default(bool?), string imageUrl = default(string), DateTime? expirationDate = default(DateTime?), DateTime? startDate = default(DateTime?), VoicifyNotificationPriority? priority = default(VoicifyNotificationPriority?), bool? isRead = default(bool?))
+        public UserVoicifyNotificationModel(bool? isRead = default(bool?), string id = default(string), string title = default(string), string subtitle = default(string), string markdown = default(string), string notificationType = default(string), bool? isDisabled = default(bool?), bool? enforceRead = default(bool?), bool? isSystemWide = default(bool?), string imageUrl = default(string), DateTime? expirationDate = default(DateTime?), DateTime? startDate = default(DateTime?), VoicifyNotificationPriority? priority = default(VoicifyNotificationPriority?))
         {
             // to ensure "title" is required (not null)
             if (title == null)
@@ -88,6 +88,7 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.NotificationType = notificationType;
             }
+            this.IsRead = isRead;
             this.Id = id;
             this.IsDisabled = isDisabled;
             this.EnforceRead = enforceRead;
@@ -96,9 +97,14 @@ namespace Voicify.Sdk.Core.Models.Model
             this.ExpirationDate = expirationDate;
             this.StartDate = startDate;
             this.Priority = priority;
-            this.IsRead = isRead;
         }
         
+        /// <summary>
+        /// Gets or Sets IsRead
+        /// </summary>
+        [DataMember(Name="isRead", EmitDefaultValue=false)]
+        public bool? IsRead { get; set; }
+
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -167,12 +173,6 @@ namespace Voicify.Sdk.Core.Models.Model
 
 
         /// <summary>
-        /// Gets or Sets IsRead
-        /// </summary>
-        [DataMember(Name="isRead", EmitDefaultValue=false)]
-        public bool? IsRead { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -180,6 +180,7 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class UserVoicifyNotificationModel {\n");
+            sb.Append("  IsRead: ").Append(IsRead).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  Subtitle: ").Append(Subtitle).Append("\n");
@@ -192,7 +193,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  ExpirationDate: ").Append(ExpirationDate).Append("\n");
             sb.Append("  StartDate: ").Append(StartDate).Append("\n");
             sb.Append("  Priority: ").Append(Priority).Append("\n");
-            sb.Append("  IsRead: ").Append(IsRead).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -227,6 +227,11 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.IsRead == input.IsRead ||
+                    (this.IsRead != null &&
+                    this.IsRead.Equals(input.IsRead))
+                ) && 
                 (
                     this.Id == input.Id ||
                     (this.Id != null &&
@@ -286,11 +291,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Priority == input.Priority ||
                     (this.Priority != null &&
                     this.Priority.Equals(input.Priority))
-                ) && 
-                (
-                    this.IsRead == input.IsRead ||
-                    (this.IsRead != null &&
-                    this.IsRead.Equals(input.IsRead))
                 );
         }
 
@@ -303,6 +303,8 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.IsRead != null)
+                    hashCode = hashCode * 59 + this.IsRead.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.Title != null)
@@ -327,8 +329,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.StartDate.GetHashCode();
                 if (this.Priority != null)
                     hashCode = hashCode * 59 + this.Priority.GetHashCode();
-                if (this.IsRead != null)
-                    hashCode = hashCode * 59 + this.IsRead.GetHashCode();
                 return hashCode;
             }
         }

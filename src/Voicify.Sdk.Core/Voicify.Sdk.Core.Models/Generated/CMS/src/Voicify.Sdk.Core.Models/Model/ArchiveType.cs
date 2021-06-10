@@ -27,11 +27,31 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines ArchiveType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum ArchiveType
+        public enum ArchiveType
     {
-        Unknown,
-        BulkContent,
-        InteractionModelChanges,
-        FullApplication
-    }
+        /// <summary>
+        /// Enum Unknown for value: Unknown
+        /// </summary>
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
+        /// <summary>
+        /// Enum BulkContent for value: BulkContent
+        /// </summary>
+        [EnumMember(Value = "BulkContent")]
+        BulkContent = 2,
+        /// <summary>
+        /// Enum BulkWebhook for value: BulkWebhook
+        /// </summary>
+        [EnumMember(Value = "BulkWebhook")]
+        BulkWebhook = 3,
+        /// <summary>
+        /// Enum InteractionModelChanges for value: InteractionModelChanges
+        /// </summary>
+        [EnumMember(Value = "InteractionModelChanges")]
+        InteractionModelChanges = 4,
+        /// <summary>
+        /// Enum FullApplication for value: FullApplication
+        /// </summary>
+        [EnumMember(Value = "FullApplication")]
+        FullApplication = 5    }
 }

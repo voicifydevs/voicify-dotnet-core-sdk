@@ -32,6 +32,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewHelpMessageRequest" /> class.
         /// </summary>
+        /// <param name="content">content (required).</param>
         /// <param name="title">title (required).</param>
         /// <param name="applicationId">applicationId.</param>
         /// <param name="imageItemId">imageItemId.</param>
@@ -46,9 +47,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="content">content (required).</param>
-        public NewHelpMessageRequest(string title = default(string), string applicationId = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string applicationFeatureId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), string content = default(string))
+        public NewHelpMessageRequest(string content = default(string), string title = default(string), string applicationId = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string applicationFeatureId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
+            // to ensure "content" is required (not null)
+            if (content == null)
+            {
+                throw new InvalidDataException("content is a required property for NewHelpMessageRequest and cannot be null");
+            }
+            else
+            {
+                this.Content = content;
+            }
             // to ensure "title" is required (not null)
             if (title == null)
             {
@@ -67,15 +76,6 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.ApplicationFeatureId = applicationFeatureId;
             }
-            // to ensure "content" is required (not null)
-            if (content == null)
-            {
-                throw new InvalidDataException("content is a required property for NewHelpMessageRequest and cannot be null");
-            }
-            else
-            {
-                this.Content = content;
-            }
             this.ApplicationId = applicationId;
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
@@ -90,6 +90,12 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets Content
+        /// </summary>
+        [DataMember(Name="content", EmitDefaultValue=false)]
+        public string Content { get; set; }
+
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
@@ -175,12 +181,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets Content
-        /// </summary>
-        [DataMember(Name="content", EmitDefaultValue=false)]
-        public string Content { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -188,6 +188,7 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewHelpMessageRequest {\n");
+            sb.Append("  Content: ").Append(Content).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
@@ -202,7 +203,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  Content: ").Append(Content).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -237,6 +237,11 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Content == input.Content ||
+                    (this.Content != null &&
+                    this.Content.Equals(input.Content))
+                ) && 
                 (
                     this.Title == input.Title ||
                     (this.Title != null &&
@@ -307,11 +312,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.Content == input.Content ||
-                    (this.Content != null &&
-                    this.Content.Equals(input.Content))
                 );
         }
 
@@ -324,6 +324,8 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Content != null)
+                    hashCode = hashCode * 59 + this.Content.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.ApplicationId != null)
@@ -352,8 +354,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.Content != null)
-                    hashCode = hashCode * 59 + this.Content.GetHashCode();
                 return hashCode;
             }
         }

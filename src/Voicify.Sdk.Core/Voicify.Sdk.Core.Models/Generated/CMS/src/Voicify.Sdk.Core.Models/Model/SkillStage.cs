@@ -27,9 +27,16 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines SkillStage
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum SkillStage
+        public enum SkillStage
     {
-        Development = 0,
-        Live = 1
-    }
+        /// <summary>
+        /// Enum Development for value: development
+        /// </summary>
+        [EnumMember(Value = "development")]
+        Development = 1,
+        /// <summary>
+        /// Enum Live for value: live
+        /// </summary>
+        [EnumMember(Value = "live")]
+        Live = 2    }
 }

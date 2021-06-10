@@ -4,108 +4,42 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiSimpleChoiceApplicationIdGet**](SimpleChoiceApi.md#apisimplechoiceapplicationidget) | **GET** /api/SimpleChoice/{applicationId} | 
-[**ApiSimpleChoiceByFeatureApplicationFeatureIdGet**](SimpleChoiceApi.md#apisimplechoicebyfeatureapplicationfeatureidget) | **GET** /api/SimpleChoice/byFeature/{applicationFeatureId} | 
-[**ApiSimpleChoiceContentItemIdFullPut**](SimpleChoiceApi.md#apisimplechoicecontentitemidfullput) | **PUT** /api/SimpleChoice/{contentItemId}/full | 
-[**ApiSimpleChoiceContentItemIdMoveToFeatureApplicationFeatureIdPut**](SimpleChoiceApi.md#apisimplechoicecontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/SimpleChoice/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiSimpleChoiceFullIdGet**](SimpleChoiceApi.md#apisimplechoicefullidget) | **GET** /api/SimpleChoice/full/{id} | 
-[**ApiSimpleChoiceFullPost**](SimpleChoiceApi.md#apisimplechoicefullpost) | **POST** /api/SimpleChoice/full | 
-[**ApiSimpleChoiceModuleApplicationModuleIdGet**](SimpleChoiceApi.md#apisimplechoicemoduleapplicationmoduleidget) | **GET** /api/SimpleChoice/module/{applicationModuleId} | 
-[**ApiSimpleChoicePost**](SimpleChoiceApi.md#apisimplechoicepost) | **POST** /api/SimpleChoice | 
-[**ApiSimpleChoiceResponseSimpleChoiceResponseIdDelete**](SimpleChoiceApi.md#apisimplechoiceresponsesimplechoiceresponseiddelete) | **DELETE** /api/SimpleChoice/response/{simpleChoiceResponseId} | 
-[**ApiSimpleChoiceResponseSimpleChoiceResponseIdPut**](SimpleChoiceApi.md#apisimplechoiceresponsesimplechoiceresponseidput) | **PUT** /api/SimpleChoice/response/{simpleChoiceResponseId} | 
-[**ApiSimpleChoiceSimpleChoiceIdBulkUpdatePut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidbulkupdateput) | **PUT** /api/SimpleChoice/{simpleChoiceId}/bulkUpdate | 
-[**ApiSimpleChoiceSimpleChoiceIdBulkUpdateStubPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidbulkupdatestubput) | **PUT** /api/SimpleChoice/{simpleChoiceId}/bulkUpdate/stub | 
-[**ApiSimpleChoiceSimpleChoiceIdCopyPost**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidcopypost) | **POST** /api/SimpleChoice/{simpleChoiceId}/copy | 
-[**ApiSimpleChoiceSimpleChoiceIdDelete**](SimpleChoiceApi.md#apisimplechoicesimplechoiceiddelete) | **DELETE** /api/SimpleChoice/{simpleChoiceId} | 
-[**ApiSimpleChoiceSimpleChoiceIdIsLivePut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidisliveput) | **PUT** /api/SimpleChoice/{simpleChoiceId}/isLive | 
-[**ApiSimpleChoiceSimpleChoiceIdPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidput) | **PUT** /api/SimpleChoice/{simpleChoiceId} | 
-[**ApiSimpleChoiceSimpleChoiceIdResponsePost**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidresponsepost) | **POST** /api/SimpleChoice/{simpleChoiceId}/response | 
-[**ApiSimpleChoiceSimpleChoiceIdShouldNotSyncPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidshouldnotsyncput) | **PUT** /api/SimpleChoice/{simpleChoiceId}/shouldNotSync | 
-[**ApiSimpleChoiceSimpleChoiceIdWebhooksBulkPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidwebhooksbulkput) | **PUT** /api/SimpleChoice/{simpleChoiceId}/webhooks/bulk | 
-[**ApiSimpleChoiceSimpleChoiceIdWebhooksGet**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidwebhooksget) | **GET** /api/SimpleChoice/{simpleChoiceId}/webhooks | 
-[**ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookIdPost**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidwebhookswebhookidpost) | **POST** /api/SimpleChoice/{simpleChoiceId}/webhooks/{webhookId} | 
-[**ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookInstanceIdPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceidwebhookswebhookinstanceidput) | **PUT** /api/SimpleChoice/{simpleChoiceId}/webhooks/{webhookInstanceId} | 
-[**ApiSimpleChoiceSimpleChoiceResponseIdAddAudioFileMediaItemIdPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceresponseidaddaudiofilemediaitemidput) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addAudioFile/{mediaItemId} | 
-[**ApiSimpleChoiceSimpleChoiceResponseIdAddLargeImageMediaItemIdPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceresponseidaddlargeimagemediaitemidput) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addLargeImage/{mediaItemId} | 
-[**ApiSimpleChoiceSimpleChoiceResponseIdAddSmallImageMediaItemIdPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceresponseidaddsmallimagemediaitemidput) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addSmallImage/{mediaItemId} | 
-[**ApiSimpleChoiceSimpleChoiceResponseIdAddVideoFileMediaItemIdPut**](SimpleChoiceApi.md#apisimplechoicesimplechoiceresponseidaddvideofilemediaitemidput) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addVideoFile/{mediaItemId} | 
-[**ApiSimpleChoiceStubPost**](SimpleChoiceApi.md#apisimplechoicestubpost) | **POST** /api/SimpleChoice/stub | 
-[**ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersParameterNameDelete**](SimpleChoiceApi.md#apisimplechoicewebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/SimpleChoice/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPost**](SimpleChoiceApi.md#apisimplechoicewebhookinstancewebhookiduserparameterspost) | **POST** /api/SimpleChoice/webhook/{instanceWebhookId}/userParameters | 
-[**ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPut**](SimpleChoiceApi.md#apisimplechoicewebhookinstancewebhookiduserparametersput) | **PUT** /api/SimpleChoice/webhook/{instanceWebhookId}/userParameters | 
-[**ApiSimpleChoiceWebhookInstanceWebhookIdWebhookParametersPut**](SimpleChoiceApi.md#apisimplechoicewebhookinstancewebhookidwebhookparametersput) | **PUT** /api/SimpleChoice/webhook/{instanceWebhookId}/webhookParameters | 
-[**ApiSimpleChoiceWebhookSimpleChoiceWebhookIdDelete**](SimpleChoiceApi.md#apisimplechoicewebhooksimplechoicewebhookiddelete) | **DELETE** /api/SimpleChoice/webhook/{simpleChoiceWebhookId} | 
+[**AddAudioFile**](SimpleChoiceApi.md#addaudiofile) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addAudioFile/{mediaItemId} | 
+[**AddLargeImage**](SimpleChoiceApi.md#addlargeimage) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addLargeImage/{mediaItemId} | 
+[**AddSmallImage**](SimpleChoiceApi.md#addsmallimage) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](SimpleChoiceApi.md#addvideofile) | **PUT** /api/SimpleChoice/{simpleChoiceResponseId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](SimpleChoiceApi.md#addwebhook) | **POST** /api/SimpleChoice/{simpleChoiceId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](SimpleChoiceApi.md#bulkupdateattachedwebhooks) | **PUT** /api/SimpleChoice/{simpleChoiceId}/webhooks/bulk | 
+[**BulkUpdateSimpleChoice**](SimpleChoiceApi.md#bulkupdatesimplechoice) | **PUT** /api/SimpleChoice/{simpleChoiceId}/bulkUpdate | 
+[**BulkUpdateSimpleChoiceStub**](SimpleChoiceApi.md#bulkupdatesimplechoicestub) | **PUT** /api/SimpleChoice/{simpleChoiceId}/bulkUpdate/stub | 
+[**CopyContentItem**](SimpleChoiceApi.md#copycontentitem) | **POST** /api/SimpleChoice/{simpleChoiceId}/copy | 
+[**CreateFullContentItem**](SimpleChoiceApi.md#createfullcontentitem) | **POST** /api/SimpleChoice/full | 
+[**CreateResponse**](SimpleChoiceApi.md#createresponse) | **POST** /api/SimpleChoice/{simpleChoiceId}/response | 
+[**CreateSimpleChoice**](SimpleChoiceApi.md#createsimplechoice) | **POST** /api/SimpleChoice | 
+[**CreateSimpleChoiceStub**](SimpleChoiceApi.md#createsimplechoicestub) | **POST** /api/SimpleChoice/stub | 
+[**CreateUserDefinedParameter**](SimpleChoiceApi.md#createuserdefinedparameter) | **POST** /api/SimpleChoice/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteResponse**](SimpleChoiceApi.md#deleteresponse) | **DELETE** /api/SimpleChoice/response/{simpleChoiceResponseId} | 
+[**DeleteSimpleChoice**](SimpleChoiceApi.md#deletesimplechoice) | **DELETE** /api/SimpleChoice/{simpleChoiceId} | 
+[**FindFullById**](SimpleChoiceApi.md#findfullbyid) | **GET** /api/SimpleChoice/full/{id} | 
+[**GetByApplicationFeature**](SimpleChoiceApi.md#getbyapplicationfeature) | **GET** /api/SimpleChoice/byFeature/{applicationFeatureId} | 
+[**GetMessagesForApplication**](SimpleChoiceApi.md#getmessagesforapplication) | **GET** /api/SimpleChoice/{applicationId} | 
+[**GetMessagesForModule**](SimpleChoiceApi.md#getmessagesformodule) | **GET** /api/SimpleChoice/module/{applicationModuleId} | 
+[**GetWebhooks**](SimpleChoiceApi.md#getwebhooks) | **GET** /api/SimpleChoice/{simpleChoiceId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](SimpleChoiceApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/SimpleChoice/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveUserDefinedParameter**](SimpleChoiceApi.md#removeuserdefinedparameter) | **DELETE** /api/SimpleChoice/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](SimpleChoiceApi.md#removewebhook) | **DELETE** /api/SimpleChoice/webhook/{simpleChoiceWebhookId} | 
+[**ToggleLive**](SimpleChoiceApi.md#togglelive) | **PUT** /api/SimpleChoice/{simpleChoiceId}/isLive | 
+[**ToggleSync**](SimpleChoiceApi.md#togglesync) | **PUT** /api/SimpleChoice/{simpleChoiceId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](SimpleChoiceApi.md#updateattachedwebhook) | **PUT** /api/SimpleChoice/{simpleChoiceId}/webhooks/{webhookInstanceId} | 
+[**UpdateFullContentItem**](SimpleChoiceApi.md#updatefullcontentitem) | **PUT** /api/SimpleChoice/{contentItemId}/full | 
+[**UpdateMessage**](SimpleChoiceApi.md#updatemessage) | **PUT** /api/SimpleChoice/{simpleChoiceId} | 
+[**UpdateResponse**](SimpleChoiceApi.md#updateresponse) | **PUT** /api/SimpleChoice/response/{simpleChoiceResponseId} | 
+[**UpdateUserDefinedParameter**](SimpleChoiceApi.md#updateuserdefinedparameter) | **PUT** /api/SimpleChoice/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](SimpleChoiceApi.md#updatewebhookparameter) | **PUT** /api/SimpleChoice/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apisimplechoiceapplicationidget"></a>
-# **ApiSimpleChoiceApplicationIdGet**
-> List<SimpleChoiceModel> ApiSimpleChoiceApplicationIdGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceApplicationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;SimpleChoiceModel&gt; result = apiInstance.ApiSimpleChoiceApplicationIdGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceApplicationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<SimpleChoiceModel>**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicebyfeatureapplicationfeatureidget"></a>
-# **ApiSimpleChoiceByFeatureApplicationFeatureIdGet**
-> List<SimpleChoiceModel> ApiSimpleChoiceByFeatureApplicationFeatureIdGet (string applicationFeatureId)
+<a name="addaudiofile"></a>
+# **AddAudioFile**
+> SimpleChoiceResponseModel AddAudioFile (string simpleChoiceResponseId, string mediaItemId)
 
 
 
@@ -119,473 +53,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceByFeatureApplicationFeatureIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                List&lt;SimpleChoiceModel&gt; result = apiInstance.ApiSimpleChoiceByFeatureApplicationFeatureIdGet(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceByFeatureApplicationFeatureIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<SimpleChoiceModel>**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicecontentitemidfullput"></a>
-# **ApiSimpleChoiceContentItemIdFullPut**
-> SimpleChoiceModel ApiSimpleChoiceContentItemIdFullPut (string contentItemId, SimpleChoiceModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceContentItemIdFullPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new SimpleChoiceModel(); // SimpleChoiceModel |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceContentItemIdFullPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceContentItemIdFullPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**SimpleChoiceModel**](SimpleChoiceModel.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicecontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiSimpleChoiceContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> SimpleChoiceModel ApiSimpleChoiceContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceContentItemIdMoveToFeatureApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicefullidget"></a>
-# **ApiSimpleChoiceFullIdGet**
-> SimpleChoiceModel ApiSimpleChoiceFullIdGet (string id)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceFullIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var id = id_example;  // string | 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceFullIdGet(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceFullIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicefullpost"></a>
-# **ApiSimpleChoiceFullPost**
-> SimpleChoiceModel ApiSimpleChoiceFullPost (SimpleChoiceModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceFullPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var body = new SimpleChoiceModel(); // SimpleChoiceModel |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceFullPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceFullPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**SimpleChoiceModel**](SimpleChoiceModel.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicemoduleapplicationmoduleidget"></a>
-# **ApiSimpleChoiceModuleApplicationModuleIdGet**
-> List<SimpleChoiceModel> ApiSimpleChoiceModuleApplicationModuleIdGet (string applicationModuleId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceModuleApplicationModuleIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var applicationModuleId = applicationModuleId_example;  // string | 
-
-            try
-            {
-                List&lt;SimpleChoiceModel&gt; result = apiInstance.ApiSimpleChoiceModuleApplicationModuleIdGet(applicationModuleId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceModuleApplicationModuleIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationModuleId** | **string**|  | 
-
-### Return type
-
-[**List<SimpleChoiceModel>**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicepost"></a>
-# **ApiSimpleChoicePost**
-> SimpleChoiceModel ApiSimpleChoicePost (NewSimpleChoiceRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoicePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var body = new NewSimpleChoiceRequest(); // NewSimpleChoiceRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoicePost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoicePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewSimpleChoiceRequest**](NewSimpleChoiceRequest.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoiceresponsesimplechoiceresponseiddelete"></a>
-# **ApiSimpleChoiceResponseSimpleChoiceResponseIdDelete**
-> SimpleChoiceResponseModel ApiSimpleChoiceResponseSimpleChoiceResponseIdDelete (string simpleChoiceResponseId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceResponseSimpleChoiceResponseIdDeleteExample
+    public class AddAudioFileExample
     {
         public void main()
         {
@@ -600,15 +68,16 @@ namespace Example
 
             var apiInstance = new SimpleChoiceApi();
             var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceResponseSimpleChoiceResponseIdDelete(simpleChoiceResponseId);
+                SimpleChoiceResponseModel result = apiInstance.AddAudioFile(simpleChoiceResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceResponseSimpleChoiceResponseIdDelete: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.AddAudioFile: " + e.Message );
             }
         }
     }
@@ -620,6 +89,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **simpleChoiceResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
@@ -635,9 +105,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoiceresponsesimplechoiceresponseidput"></a>
-# **ApiSimpleChoiceResponseSimpleChoiceResponseIdPut**
-> SimpleChoiceResponseModel ApiSimpleChoiceResponseSimpleChoiceResponseIdPut (string simpleChoiceResponseId, UpdateSimpleChoiceResponseRequest body = null)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> SimpleChoiceResponseModel AddLargeImage (string simpleChoiceResponseId, string mediaItemId)
 
 
 
@@ -651,7 +121,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceResponseSimpleChoiceResponseIdPutExample
+    public class AddLargeImageExample
     {
         public void main()
         {
@@ -666,16 +136,16 @@ namespace Example
 
             var apiInstance = new SimpleChoiceApi();
             var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
-            var body = new UpdateSimpleChoiceResponseRequest(); // UpdateSimpleChoiceResponseRequest |  (optional) 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceResponseSimpleChoiceResponseIdPut(simpleChoiceResponseId, body);
+                SimpleChoiceResponseModel result = apiInstance.AddLargeImage(simpleChoiceResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceResponseSimpleChoiceResponseIdPut: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.AddLargeImage: " + e.Message );
             }
         }
     }
@@ -687,7 +157,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **simpleChoiceResponseId** | **string**|  | 
- **body** | [**UpdateSimpleChoiceResponseRequest**](UpdateSimpleChoiceResponseRequest.md)|  | [optional] 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
@@ -699,215 +169,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidbulkupdateput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdBulkUpdatePut**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdBulkUpdatePut (string simpleChoiceId, BulkUpdateSimpleChoiceRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdBulkUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new BulkUpdateSimpleChoiceRequest(); // BulkUpdateSimpleChoiceRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdBulkUpdatePut(simpleChoiceId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdBulkUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**BulkUpdateSimpleChoiceRequest**](BulkUpdateSimpleChoiceRequest.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidbulkupdatestubput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdBulkUpdateStubPut**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdBulkUpdateStubPut (string simpleChoiceId, BulkUpdateSimpleChoiceStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdBulkUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new BulkUpdateSimpleChoiceStubRequest(); // BulkUpdateSimpleChoiceStubRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdBulkUpdateStubPut(simpleChoiceId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdBulkUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**BulkUpdateSimpleChoiceStubRequest**](BulkUpdateSimpleChoiceStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidcopypost"></a>
-# **ApiSimpleChoiceSimpleChoiceIdCopyPost**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdCopyPost (string simpleChoiceId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdCopyPost(simpleChoiceId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
  - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceiddelete"></a>
-# **ApiSimpleChoiceSimpleChoiceIdDelete**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdDelete (string simpleChoiceId)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> SimpleChoiceResponseModel AddSmallImage (string simpleChoiceResponseId, string mediaItemId)
 
 
 
@@ -921,7 +189,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceSimpleChoiceIdDeleteExample
+    public class AddSmallImageExample
     {
         public void main()
         {
@@ -935,16 +203,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdDelete(simpleChoiceId);
+                SimpleChoiceResponseModel result = apiInstance.AddSmallImage(simpleChoiceResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdDelete: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.AddSmallImage: " + e.Message );
             }
         }
     }
@@ -955,211 +224,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidisliveput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdIsLivePut**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdIsLivePut (string simpleChoiceId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdIsLivePut(simpleChoiceId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdPut**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdPut (string simpleChoiceId, UpdateSimpleChoiceRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new UpdateSimpleChoiceRequest(); // UpdateSimpleChoiceRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdPut(simpleChoiceId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**UpdateSimpleChoiceRequest**](UpdateSimpleChoiceRequest.md)|  | [optional] 
-
-### Return type
-
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidresponsepost"></a>
-# **ApiSimpleChoiceSimpleChoiceIdResponsePost**
-> SimpleChoiceResponseModel ApiSimpleChoiceSimpleChoiceIdResponsePost (string simpleChoiceId, NewSimpleChoiceResponseRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdResponsePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new NewSimpleChoiceResponseRequest(); // NewSimpleChoiceResponseRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdResponsePost(simpleChoiceId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdResponsePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**NewSimpleChoiceResponseRequest**](NewSimpleChoiceResponseRequest.md)|  | [optional] 
+ **simpleChoiceResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
@@ -1171,13 +237,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidshouldnotsyncput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdShouldNotSyncPut**
-> SimpleChoiceModel ApiSimpleChoiceSimpleChoiceIdShouldNotSyncPut (string simpleChoiceId, ToggleSyncRequest body = null)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> SimpleChoiceResponseModel AddVideoFile (string simpleChoiceResponseId, string mediaItemId)
 
 
 
@@ -1191,7 +257,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceSimpleChoiceIdShouldNotSyncPutExample
+    public class AddVideoFileExample
     {
         public void main()
         {
@@ -1205,17 +271,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdShouldNotSyncPut(simpleChoiceId, body);
+                SimpleChoiceResponseModel result = apiInstance.AddVideoFile(simpleChoiceResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdShouldNotSyncPut: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.AddVideoFile: " + e.Message );
             }
         }
     }
@@ -1226,146 +292,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+ **simpleChoiceResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
-[**SimpleChoiceModel**](SimpleChoiceModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidwebhooksbulkput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdWebhooksBulkPut**
-> List<SimpleChoiceWebhookModel> ApiSimpleChoiceSimpleChoiceIdWebhooksBulkPut (string simpleChoiceId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;SimpleChoiceWebhookModel&gt; result = apiInstance.ApiSimpleChoiceSimpleChoiceIdWebhooksBulkPut(simpleChoiceId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<SimpleChoiceWebhookModel>**](SimpleChoiceWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidwebhooksget"></a>
-# **ApiSimpleChoiceSimpleChoiceIdWebhooksGet**
-> List<SimpleChoiceWebhookModel> ApiSimpleChoiceSimpleChoiceIdWebhooksGet (string simpleChoiceId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceId = simpleChoiceId_example;  // string | 
-
-            try
-            {
-                List&lt;SimpleChoiceWebhookModel&gt; result = apiInstance.ApiSimpleChoiceSimpleChoiceIdWebhooksGet(simpleChoiceId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceId** | **string**|  | 
-
-### Return type
-
-[**List<SimpleChoiceWebhookModel>**](SimpleChoiceWebhookModel.md)
+[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
 
 ### Authorization
 
@@ -1377,9 +309,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidwebhookswebhookidpost"></a>
-# **ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookIdPost**
-> SimpleChoiceWebhookModel ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookIdPost (string simpleChoiceId, string webhookId, WebhookParametersRequest body = null)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> SimpleChoiceWebhookModel AddWebhook (string simpleChoiceId, string webhookId, WebhookParametersRequest body = null)
 
 
 
@@ -1393,7 +325,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookIdPostExample
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1413,12 +345,12 @@ namespace Example
 
             try
             {
-                SimpleChoiceWebhookModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookIdPost(simpleChoiceId, webhookId, body);
+                SimpleChoiceWebhookModel result = apiInstance.AddWebhook(simpleChoiceId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1447,9 +379,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceidwebhookswebhookinstanceidput"></a>
-# **ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookInstanceIdPut**
-> SimpleChoiceWebhookModel ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookInstanceIdPut (string simpleChoiceId, string webhookInstanceId, WebhookParametersRequest body = null)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<SimpleChoiceWebhookModel> BulkUpdateAttachedWebhooks (string simpleChoiceId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1463,7 +395,1411 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookInstanceIdPutExample
+    public class BulkUpdateAttachedWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
+
+            try
+            {
+                List&lt;SimpleChoiceWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(simpleChoiceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.BulkUpdateAttachedWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<SimpleChoiceWebhookModel>**](SimpleChoiceWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatesimplechoice"></a>
+# **BulkUpdateSimpleChoice**
+> SimpleChoiceModel BulkUpdateSimpleChoice (string simpleChoiceId, BulkUpdateSimpleChoiceRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateSimpleChoiceExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new BulkUpdateSimpleChoiceRequest(); // BulkUpdateSimpleChoiceRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.BulkUpdateSimpleChoice(simpleChoiceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.BulkUpdateSimpleChoice: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**BulkUpdateSimpleChoiceRequest**](BulkUpdateSimpleChoiceRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatesimplechoicestub"></a>
+# **BulkUpdateSimpleChoiceStub**
+> SimpleChoiceModel BulkUpdateSimpleChoiceStub (string simpleChoiceId, BulkUpdateSimpleChoiceStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateSimpleChoiceStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new BulkUpdateSimpleChoiceStubRequest(); // BulkUpdateSimpleChoiceStubRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.BulkUpdateSimpleChoiceStub(simpleChoiceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.BulkUpdateSimpleChoiceStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**BulkUpdateSimpleChoiceStubRequest**](BulkUpdateSimpleChoiceStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> SimpleChoiceModel CopyContentItem (string simpleChoiceId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.CopyContentItem(simpleChoiceId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createfullcontentitem"></a>
+# **CreateFullContentItem**
+> SimpleChoiceModel CreateFullContentItem (SimpleChoiceModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var body = new SimpleChoiceModel(); // SimpleChoiceModel |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.CreateFullContentItem(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.CreateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SimpleChoiceModel**](SimpleChoiceModel.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createresponse"></a>
+# **CreateResponse**
+> SimpleChoiceResponseModel CreateResponse (string simpleChoiceId, NewSimpleChoiceResponseRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new NewSimpleChoiceResponseRequest(); // NewSimpleChoiceResponseRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceResponseModel result = apiInstance.CreateResponse(simpleChoiceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.CreateResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**NewSimpleChoiceResponseRequest**](NewSimpleChoiceResponseRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createsimplechoice"></a>
+# **CreateSimpleChoice**
+> SimpleChoiceModel CreateSimpleChoice (NewSimpleChoiceRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateSimpleChoiceExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var body = new NewSimpleChoiceRequest(); // NewSimpleChoiceRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.CreateSimpleChoice(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.CreateSimpleChoice: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewSimpleChoiceRequest**](NewSimpleChoiceRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createsimplechoicestub"></a>
+# **CreateSimpleChoiceStub**
+> SimpleChoiceModel CreateSimpleChoiceStub (NewSimpleChoiceStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateSimpleChoiceStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var body = new NewSimpleChoiceStubRequest(); // NewSimpleChoiceStubRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.CreateSimpleChoiceStub(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.CreateSimpleChoiceStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewSimpleChoiceStubRequest**](NewSimpleChoiceStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.CreateUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deleteresponse"></a>
+# **DeleteResponse**
+> SimpleChoiceResponseModel DeleteResponse (string simpleChoiceResponseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
+
+            try
+            {
+                SimpleChoiceResponseModel result = apiInstance.DeleteResponse(simpleChoiceResponseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.DeleteResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceResponseId** | **string**|  | 
+
+### Return type
+
+[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deletesimplechoice"></a>
+# **DeleteSimpleChoice**
+> SimpleChoiceModel DeleteSimpleChoice (string simpleChoiceId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteSimpleChoiceExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.DeleteSimpleChoice(simpleChoiceId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.DeleteSimpleChoice: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> SimpleChoiceModel FindFullById (string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindFullByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var id = id_example;  // string | 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.FindFullById(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.FindFullById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**|  | 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<SimpleChoiceModel> GetByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;SimpleChoiceModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.GetByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<SimpleChoiceModel>**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmessagesforapplication"></a>
+# **GetMessagesForApplication**
+> List<SimpleChoiceModel> GetMessagesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMessagesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;SimpleChoiceModel&gt; result = apiInstance.GetMessagesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.GetMessagesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<SimpleChoiceModel>**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmessagesformodule"></a>
+# **GetMessagesForModule**
+> List<SimpleChoiceModel> GetMessagesForModule (string applicationModuleId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMessagesForModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var applicationModuleId = applicationModuleId_example;  // string | 
+
+            try
+            {
+                List&lt;SimpleChoiceModel&gt; result = apiInstance.GetMessagesForModule(applicationModuleId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.GetMessagesForModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationModuleId** | **string**|  | 
+
+### Return type
+
+[**List<SimpleChoiceModel>**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<SimpleChoiceWebhookModel> GetWebhooks (string simpleChoiceId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+
+            try
+            {
+                List&lt;SimpleChoiceWebhookModel&gt; result = apiInstance.GetWebhooks(simpleChoiceId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+
+### Return type
+
+[**List<SimpleChoiceWebhookModel>**](SimpleChoiceWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> SimpleChoiceModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.MoveContentItemToApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var parameterName = parameterName_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.RemoveUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **parameterName** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> SimpleChoiceWebhookModel RemoveWebhook (string simpleChoiceWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceWebhookId = simpleChoiceWebhookId_example;  // string | 
+
+            try
+            {
+                SimpleChoiceWebhookModel result = apiInstance.RemoveWebhook(simpleChoiceWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceWebhookId** | **string**|  | 
+
+### Return type
+
+[**SimpleChoiceWebhookModel**](SimpleChoiceWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglelive"></a>
+# **ToggleLive**
+> SimpleChoiceModel ToggleLive (string simpleChoiceId, ToggleLiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.ToggleLive(simpleChoiceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.ToggleLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> SimpleChoiceModel ToggleSync (string simpleChoiceId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceModel result = apiInstance.ToggleSync(simpleChoiceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> SimpleChoiceWebhookModel UpdateAttachedWebhook (string simpleChoiceId, string webhookInstanceId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
     {
         public void main()
         {
@@ -1483,12 +1819,12 @@ namespace Example
 
             try
             {
-                SimpleChoiceWebhookModel result = apiInstance.ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookInstanceIdPut(simpleChoiceId, webhookInstanceId, body);
+                SimpleChoiceWebhookModel result = apiInstance.UpdateAttachedWebhook(simpleChoiceId, webhookInstanceId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceIdWebhooksWebhookInstanceIdPut: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.UpdateAttachedWebhook: " + e.Message );
             }
         }
     }
@@ -1517,9 +1853,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceresponseidaddaudiofilemediaitemidput"></a>
-# **ApiSimpleChoiceSimpleChoiceResponseIdAddAudioFileMediaItemIdPut**
-> SimpleChoiceResponseModel ApiSimpleChoiceSimpleChoiceResponseIdAddAudioFileMediaItemIdPut (string simpleChoiceResponseId, string mediaItemId)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> SimpleChoiceModel UpdateFullContentItem (string contentItemId, SimpleChoiceModel body = null)
 
 
 
@@ -1533,7 +1869,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceSimpleChoiceResponseIdAddAudioFileMediaItemIdPutExample
+    public class UpdateFullContentItemExample
     {
         public void main()
         {
@@ -1547,17 +1883,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new SimpleChoiceModel(); // SimpleChoiceModel |  (optional) 
 
             try
             {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceSimpleChoiceResponseIdAddAudioFileMediaItemIdPut(simpleChoiceResponseId, mediaItemId);
+                SimpleChoiceModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceResponseIdAddAudioFileMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.UpdateFullContentItem: " + e.Message );
             }
         }
     }
@@ -1568,278 +1904,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **simpleChoiceResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceresponseidaddlargeimagemediaitemidput"></a>
-# **ApiSimpleChoiceSimpleChoiceResponseIdAddLargeImageMediaItemIdPut**
-> SimpleChoiceResponseModel ApiSimpleChoiceSimpleChoiceResponseIdAddLargeImageMediaItemIdPut (string simpleChoiceResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceResponseIdAddLargeImageMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceSimpleChoiceResponseIdAddLargeImageMediaItemIdPut(simpleChoiceResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceResponseIdAddLargeImageMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceresponseidaddsmallimagemediaitemidput"></a>
-# **ApiSimpleChoiceSimpleChoiceResponseIdAddSmallImageMediaItemIdPut**
-> SimpleChoiceResponseModel ApiSimpleChoiceSimpleChoiceResponseIdAddSmallImageMediaItemIdPut (string simpleChoiceResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceResponseIdAddSmallImageMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceSimpleChoiceResponseIdAddSmallImageMediaItemIdPut(simpleChoiceResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceResponseIdAddSmallImageMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicesimplechoiceresponseidaddvideofilemediaitemidput"></a>
-# **ApiSimpleChoiceSimpleChoiceResponseIdAddVideoFileMediaItemIdPut**
-> SimpleChoiceResponseModel ApiSimpleChoiceSimpleChoiceResponseIdAddVideoFileMediaItemIdPut (string simpleChoiceResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceSimpleChoiceResponseIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                SimpleChoiceResponseModel result = apiInstance.ApiSimpleChoiceSimpleChoiceResponseIdAddVideoFileMediaItemIdPut(simpleChoiceResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceSimpleChoiceResponseIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicestubpost"></a>
-# **ApiSimpleChoiceStubPost**
-> SimpleChoiceModel ApiSimpleChoiceStubPost (NewSimpleChoiceStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceStubPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var body = new NewSimpleChoiceStubRequest(); // NewSimpleChoiceStubRequest |  (optional) 
-
-            try
-            {
-                SimpleChoiceModel result = apiInstance.ApiSimpleChoiceStubPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceStubPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewSimpleChoiceStubRequest**](NewSimpleChoiceStubRequest.md)|  | [optional] 
+ **contentItemId** | **string**|  | 
+ **body** | [**SimpleChoiceModel**](SimpleChoiceModel.md)|  | [optional] 
 
 ### Return type
 
@@ -1855,9 +1921,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicewebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
+<a name="updatemessage"></a>
+# **UpdateMessage**
+> SimpleChoiceModel UpdateMessage (string simpleChoiceId, UpdateSimpleChoiceRequest body = null)
 
 
 
@@ -1871,7 +1937,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
+    public class UpdateMessageExample
     {
         public void main()
         {
@@ -1885,17 +1951,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new SimpleChoiceApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var parameterName = parameterName_example;  // string | 
+            var simpleChoiceId = simpleChoiceId_example;  // string | 
+            var body = new UpdateSimpleChoiceRequest(); // UpdateSimpleChoiceRequest |  (optional) 
 
             try
             {
-                bool? result = apiInstance.ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
+                SimpleChoiceModel result = apiInstance.UpdateMessage(simpleChoiceId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.UpdateMessage: " + e.Message );
             }
         }
     }
@@ -1906,80 +1972,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **parameterName** | **string**|  | 
+ **simpleChoiceId** | **string**|  | 
+ **body** | [**UpdateSimpleChoiceRequest**](UpdateSimpleChoiceRequest.md)|  | [optional] 
 
 ### Return type
 
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicewebhookinstancewebhookiduserparameterspost"></a>
-# **ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
-
-            try
-            {
-                bool? result = apiInstance.ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
-
-### Return type
-
-**bool?**
+[**SimpleChoiceModel**](SimpleChoiceModel.md)
 
 ### Authorization
 
@@ -1991,9 +1989,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicewebhookinstancewebhookiduserparametersput"></a>
-# **ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="updateresponse"></a>
+# **UpdateResponse**
+> SimpleChoiceResponseModel UpdateResponse (string simpleChoiceResponseId, UpdateSimpleChoiceResponseRequest body = null)
 
 
 
@@ -2007,7 +2005,75 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPutExample
+    public class UpdateResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new SimpleChoiceApi();
+            var simpleChoiceResponseId = simpleChoiceResponseId_example;  // string | 
+            var body = new UpdateSimpleChoiceResponseRequest(); // UpdateSimpleChoiceResponseRequest |  (optional) 
+
+            try
+            {
+                SimpleChoiceResponseModel result = apiInstance.UpdateResponse(simpleChoiceResponseId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SimpleChoiceApi.UpdateResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **simpleChoiceResponseId** | **string**|  | 
+ **body** | [**UpdateSimpleChoiceResponseRequest**](UpdateSimpleChoiceResponseRequest.md)|  | [optional] 
+
+### Return type
+
+[**SimpleChoiceResponseModel**](SimpleChoiceResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -2026,12 +2092,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -2059,9 +2125,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicewebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiSimpleChoiceWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiSimpleChoiceWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -2075,7 +2141,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSimpleChoiceWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -2094,12 +2160,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiSimpleChoiceWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling SimpleChoiceApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }
@@ -2124,72 +2190,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisimplechoicewebhooksimplechoicewebhookiddelete"></a>
-# **ApiSimpleChoiceWebhookSimpleChoiceWebhookIdDelete**
-> SimpleChoiceWebhookModel ApiSimpleChoiceWebhookSimpleChoiceWebhookIdDelete (string simpleChoiceWebhookId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiSimpleChoiceWebhookSimpleChoiceWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new SimpleChoiceApi();
-            var simpleChoiceWebhookId = simpleChoiceWebhookId_example;  // string | 
-
-            try
-            {
-                SimpleChoiceWebhookModel result = apiInstance.ApiSimpleChoiceWebhookSimpleChoiceWebhookIdDelete(simpleChoiceWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling SimpleChoiceApi.ApiSimpleChoiceWebhookSimpleChoiceWebhookIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **simpleChoiceWebhookId** | **string**|  | 
-
-### Return type
-
-[**SimpleChoiceWebhookModel**](SimpleChoiceWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

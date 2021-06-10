@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **TemplateFormId** | **string** |  | [optional] 
 **AppliedApplicationId** | **string** |  | [optional] 
 **LastSyncedDate** | **DateTime?** |  | [optional] 
+**Name** | **string** |  | [optional] 
 **TemplateForm** | [**TemplateFormWithConfigurationModel**](TemplateFormWithConfigurationModel.md) |  | [optional] 
 **TemplateFormFieldValues** | [**List&lt;TemplateFormFieldValueModel&gt;**](TemplateFormFieldValueModel.md) |  | [optional] 
 **DynamicFormSections** | [**List&lt;DynamicFormSectionModel&gt;**](DynamicFormSectionModel.md) |  | [optional] 

@@ -38,7 +38,6 @@ Name | Type | Description | Notes
 **Responses** | [**List&lt;FallbackMessageResponseModel&gt;**](FallbackMessageResponseModel.md) |  | [optional] 
 **WebhookChainingType** | **WebhookChainingType** |  | [optional] 
 **AppliedApplicationTemplateFormId** | **string** |  | [optional] 
-**SharedReferences** | [**SharedReferencesExportModel**](SharedReferencesExportModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

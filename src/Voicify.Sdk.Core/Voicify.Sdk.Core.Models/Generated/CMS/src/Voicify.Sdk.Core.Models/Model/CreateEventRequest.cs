@@ -32,6 +32,11 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateEventRequest" /> class.
         /// </summary>
+        /// <param name="eventName">eventName (required).</param>
+        /// <param name="startDate">startDate (required).</param>
+        /// <param name="applicationId">applicationId (required).</param>
+        /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
+        /// <param name="responses">responses (required).</param>
         /// <param name="title">title (required).</param>
         /// <param name="description">description.</param>
         /// <param name="locationName">locationName.</param>
@@ -51,22 +56,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="mediaResponseContainerId">mediaResponseContainerId.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="eventName">eventName (required).</param>
-        /// <param name="startDate">startDate (required).</param>
-        /// <param name="applicationId">applicationId (required).</param>
-        /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
-        /// <param name="responses">responses (required).</param>
-        public CreateEventRequest(string title = default(string), string description = default(string), string locationName = default(string), List<string> categoryNames = default(List<string>), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? endDate = default(DateTime?), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), string mediaResponseContainerId = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), string eventName = default(string), DateTime? startDate = default(DateTime?), string applicationId = default(string), string applicationFeatureId = default(string), List<CreateEventResponseRequest> responses = default(List<CreateEventResponseRequest>))
+        public CreateEventRequest(string eventName = default(string), DateTime? startDate = default(DateTime?), string applicationId = default(string), string applicationFeatureId = default(string), List<CreateEventResponseRequest> responses = default(List<CreateEventResponseRequest>), string title = default(string), string description = default(string), string locationName = default(string), List<string> categoryNames = default(List<string>), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? endDate = default(DateTime?), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), string mediaResponseContainerId = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
-            // to ensure "title" is required (not null)
-            if (title == null)
-            {
-                throw new InvalidDataException("title is a required property for CreateEventRequest and cannot be null");
-            }
-            else
-            {
-                this.Title = title;
-            }
             // to ensure "eventName" is required (not null)
             if (eventName == null)
             {
@@ -112,6 +103,15 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Responses = responses;
             }
+            // to ensure "title" is required (not null)
+            if (title == null)
+            {
+                throw new InvalidDataException("title is a required property for CreateEventRequest and cannot be null");
+            }
+            else
+            {
+                this.Title = title;
+            }
             this.Description = description;
             this.LocationName = locationName;
             this.CategoryNames = categoryNames;
@@ -132,6 +132,36 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets EventName
+        /// </summary>
+        [DataMember(Name="eventName", EmitDefaultValue=false)]
+        public string EventName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets StartDate
+        /// </summary>
+        [DataMember(Name="startDate", EmitDefaultValue=false)]
+        public DateTime? StartDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationId
+        /// </summary>
+        [DataMember(Name="applicationId", EmitDefaultValue=false)]
+        public string ApplicationId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationFeatureId
+        /// </summary>
+        [DataMember(Name="applicationFeatureId", EmitDefaultValue=false)]
+        public string ApplicationFeatureId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<CreateEventResponseRequest> Responses { get; set; }
+
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
@@ -247,36 +277,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets EventName
-        /// </summary>
-        [DataMember(Name="eventName", EmitDefaultValue=false)]
-        public string EventName { get; set; }
-
-        /// <summary>
-        /// Gets or Sets StartDate
-        /// </summary>
-        [DataMember(Name="startDate", EmitDefaultValue=false)]
-        public DateTime? StartDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationId
-        /// </summary>
-        [DataMember(Name="applicationId", EmitDefaultValue=false)]
-        public string ApplicationId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationFeatureId
-        /// </summary>
-        [DataMember(Name="applicationFeatureId", EmitDefaultValue=false)]
-        public string ApplicationFeatureId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<CreateEventResponseRequest> Responses { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -284,6 +284,11 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class CreateEventRequest {\n");
+            sb.Append("  EventName: ").Append(EventName).Append("\n");
+            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
+            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
+            sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  LocationName: ").Append(LocationName).Append("\n");
@@ -303,11 +308,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  MediaResponseContainerId: ").Append(MediaResponseContainerId).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  EventName: ").Append(EventName).Append("\n");
-            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
-            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
-            sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -342,6 +342,32 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.EventName == input.EventName ||
+                    (this.EventName != null &&
+                    this.EventName.Equals(input.EventName))
+                ) && 
+                (
+                    this.StartDate == input.StartDate ||
+                    (this.StartDate != null &&
+                    this.StartDate.Equals(input.StartDate))
+                ) && 
+                (
+                    this.ApplicationId == input.ApplicationId ||
+                    (this.ApplicationId != null &&
+                    this.ApplicationId.Equals(input.ApplicationId))
+                ) && 
+                (
+                    this.ApplicationFeatureId == input.ApplicationFeatureId ||
+                    (this.ApplicationFeatureId != null &&
+                    this.ApplicationFeatureId.Equals(input.ApplicationFeatureId))
+                ) && 
+                (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
                 (
                     this.Title == input.Title ||
                     (this.Title != null &&
@@ -438,32 +464,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.EventName == input.EventName ||
-                    (this.EventName != null &&
-                    this.EventName.Equals(input.EventName))
-                ) && 
-                (
-                    this.StartDate == input.StartDate ||
-                    (this.StartDate != null &&
-                    this.StartDate.Equals(input.StartDate))
-                ) && 
-                (
-                    this.ApplicationId == input.ApplicationId ||
-                    (this.ApplicationId != null &&
-                    this.ApplicationId.Equals(input.ApplicationId))
-                ) && 
-                (
-                    this.ApplicationFeatureId == input.ApplicationFeatureId ||
-                    (this.ApplicationFeatureId != null &&
-                    this.ApplicationFeatureId.Equals(input.ApplicationFeatureId))
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
                 );
         }
 
@@ -476,6 +476,16 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.EventName != null)
+                    hashCode = hashCode * 59 + this.EventName.GetHashCode();
+                if (this.StartDate != null)
+                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
+                if (this.ApplicationId != null)
+                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
+                if (this.ApplicationFeatureId != null)
+                    hashCode = hashCode * 59 + this.ApplicationFeatureId.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.Description != null)
@@ -514,16 +524,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.EventName != null)
-                    hashCode = hashCode * 59 + this.EventName.GetHashCode();
-                if (this.StartDate != null)
-                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-                if (this.ApplicationId != null)
-                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
-                if (this.ApplicationFeatureId != null)
-                    hashCode = hashCode * 59 + this.ApplicationFeatureId.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 return hashCode;
             }
         }

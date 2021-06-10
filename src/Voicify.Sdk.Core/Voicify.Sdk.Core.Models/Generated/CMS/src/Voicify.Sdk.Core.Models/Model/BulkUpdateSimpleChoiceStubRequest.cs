@@ -37,10 +37,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BulkUpdateSimpleChoiceStubRequest" /> class.
         /// </summary>
+        /// <param name="applicationId">applicationId (required).</param>
         /// <param name="choiceType">choiceType.</param>
         /// <param name="title">title.</param>
-        /// <param name="responses">responses.</param>
-        /// <param name="applicationId">applicationId (required).</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="backgroundImageItemId">backgroundImageItemId.</param>
         /// <param name="audioItemId">audioItemId.</param>
@@ -50,8 +49,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="mediaResponseContainerId">mediaResponseContainerId.</param>
         /// <param name="displayTextOverride">displayTextOverride.</param>
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
+        /// <param name="responses">responses.</param>
         /// <param name="languageIds">languageIds.</param>
-        public BulkUpdateSimpleChoiceStubRequest(SimpleChoiceType? choiceType = default(SimpleChoiceType?), string title = default(string), List<UpdateSimpleChoiceResponseRequest> responses = default(List<UpdateSimpleChoiceResponseRequest>), string applicationId = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>))
+        public BulkUpdateSimpleChoiceStubRequest(string applicationId = default(string), SimpleChoiceType? choiceType = default(SimpleChoiceType?), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<UpdateSimpleChoiceResponseRequest> responses = default(List<UpdateSimpleChoiceResponseRequest>), List<string> languageIds = default(List<string>))
         {
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)
@@ -64,7 +64,6 @@ namespace Voicify.Sdk.Core.Models.Model
             }
             this.ChoiceType = choiceType;
             this.Title = title;
-            this.Responses = responses;
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
             this.AudioItemId = audioItemId;
@@ -74,27 +73,22 @@ namespace Voicify.Sdk.Core.Models.Model
             this.MediaResponseContainerId = mediaResponseContainerId;
             this.DisplayTextOverride = displayTextOverride;
             this.DisplayTitleOverride = displayTitleOverride;
+            this.Responses = responses;
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets ApplicationId
+        /// </summary>
+        [DataMember(Name="applicationId", EmitDefaultValue=false)]
+        public string ApplicationId { get; set; }
+
 
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
         [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<UpdateSimpleChoiceResponseRequest> Responses { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationId
-        /// </summary>
-        [DataMember(Name="applicationId", EmitDefaultValue=false)]
-        public string ApplicationId { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageItemId
@@ -151,6 +145,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string DisplayTitleOverride { get; set; }
 
         /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<UpdateSimpleChoiceResponseRequest> Responses { get; set; }
+
+        /// <summary>
         /// Gets or Sets LanguageIds
         /// </summary>
         [DataMember(Name="languageIds", EmitDefaultValue=false)]
@@ -164,10 +164,9 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class BulkUpdateSimpleChoiceStubRequest {\n");
+            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ChoiceType: ").Append(ChoiceType).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
-            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  BackgroundImageItemId: ").Append(BackgroundImageItemId).Append("\n");
             sb.Append("  AudioItemId: ").Append(AudioItemId).Append("\n");
@@ -177,6 +176,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  MediaResponseContainerId: ").Append(MediaResponseContainerId).Append("\n");
             sb.Append("  DisplayTextOverride: ").Append(DisplayTextOverride).Append("\n");
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -213,6 +213,11 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
+                    this.ApplicationId == input.ApplicationId ||
+                    (this.ApplicationId != null &&
+                    this.ApplicationId.Equals(input.ApplicationId))
+                ) && 
+                (
                     this.ChoiceType == input.ChoiceType ||
                     (this.ChoiceType != null &&
                     this.ChoiceType.Equals(input.ChoiceType))
@@ -221,17 +226,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Title == input.Title ||
                     (this.Title != null &&
                     this.Title.Equals(input.Title))
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
-                ) && 
-                (
-                    this.ApplicationId == input.ApplicationId ||
-                    (this.ApplicationId != null &&
-                    this.ApplicationId.Equals(input.ApplicationId))
                 ) && 
                 (
                     this.ImageItemId == input.ImageItemId ||
@@ -279,6 +273,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.DisplayTitleOverride.Equals(input.DisplayTitleOverride))
                 ) && 
                 (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
+                (
                     this.LanguageIds == input.LanguageIds ||
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
@@ -295,14 +295,12 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.ApplicationId != null)
+                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ChoiceType != null)
                     hashCode = hashCode * 59 + this.ChoiceType.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
-                if (this.ApplicationId != null)
-                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ImageItemId != null)
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
                 if (this.BackgroundImageItemId != null)
@@ -321,6 +319,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DisplayTextOverride.GetHashCode();
                 if (this.DisplayTitleOverride != null)
                     hashCode = hashCode * 59 + this.DisplayTitleOverride.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
                 return hashCode;

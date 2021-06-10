@@ -27,9 +27,16 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines WebhookChainingType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum WebhookChainingType
+        public enum WebhookChainingType
     {
-        NoChaining,
-        InstanceLevelChaining
-    }
+        /// <summary>
+        /// Enum NoChaining for value: NoChaining
+        /// </summary>
+        [EnumMember(Value = "NoChaining")]
+        NoChaining = 1,
+        /// <summary>
+        /// Enum InstanceLevelChaining for value: InstanceLevelChaining
+        /// </summary>
+        [EnumMember(Value = "InstanceLevelChaining")]
+        InstanceLevelChaining = 2    }
 }

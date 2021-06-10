@@ -4,17 +4,17 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormDynamicPost**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncapplicationidaddappliedapplicationtemplateformdynamicpost) | **POST** /api/AppliedTemplateSync/{applicationId}/addAppliedApplicationTemplateForm/Dynamic | 
-[**ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormPost**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncapplicationidaddappliedapplicationtemplateformpost) | **POST** /api/AppliedTemplateSync/{applicationId}/addAppliedApplicationTemplateForm | 
-[**ApiAppliedTemplateSyncApplicationIdGetAppliedTemplateSyncsGet**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncapplicationidgetappliedtemplatesyncsget) | **GET** /api/AppliedTemplateSync/{applicationId}/getAppliedTemplateSyncs | 
-[**ApiAppliedTemplateSyncApplicationIdRemoveAppliedApplicationTemplateFormApplicationTemplateFormIdDelete**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncapplicationidremoveappliedapplicationtemplateformapplicationtemplateformiddelete) | **DELETE** /api/AppliedTemplateSync/{applicationId}/RemoveAppliedApplicationTemplateForm/{applicationTemplateFormId} | 
-[**ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdDynamicPut**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncapplicationidupdateappliedapplicationtemplateformapplicationtemplateformiddynamicput) | **PUT** /api/AppliedTemplateSync/{applicationId}/UpdateAppliedApplicationTemplateForm/{applicationTemplateFormId}/Dynamic | 
-[**ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdPut**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncapplicationidupdateappliedapplicationtemplateformapplicationtemplateformidput) | **PUT** /api/AppliedTemplateSync/{applicationId}/UpdateAppliedApplicationTemplateForm/{applicationTemplateFormId} | 
-[**ApiAppliedTemplateSyncAppliedTemplateSyncIdGet**](AppliedTemplateSyncApi.md#apiappliedtemplatesyncappliedtemplatesyncidget) | **GET** /api/AppliedTemplateSync/{appliedTemplateSyncId} | 
+[**AddAppliedApplicationTemplateForm**](AppliedTemplateSyncApi.md#addappliedapplicationtemplateform) | **POST** /api/AppliedTemplateSync/{applicationId}/addAppliedApplicationTemplateForm | 
+[**AddAppliedApplicationTemplateFormDynamically**](AppliedTemplateSyncApi.md#addappliedapplicationtemplateformdynamically) | **POST** /api/AppliedTemplateSync/{applicationId}/addAppliedApplicationTemplateForm/Dynamic | 
+[**GetAppliedTemplateSync**](AppliedTemplateSyncApi.md#getappliedtemplatesync) | **GET** /api/AppliedTemplateSync/{appliedTemplateSyncId} | 
+[**GetAppliedTemplateSyncsForOrganization**](AppliedTemplateSyncApi.md#getappliedtemplatesyncsfororganization) | **GET** /api/AppliedTemplateSync/{applicationId}/getAppliedTemplateSyncs | 
+[**RemoveAppliedApplicationTemplateForm**](AppliedTemplateSyncApi.md#removeappliedapplicationtemplateform) | **DELETE** /api/AppliedTemplateSync/{applicationId}/RemoveAppliedApplicationTemplateForm/{applicationTemplateFormId} | 
+[**UpdateAppliedApplicationTemplateForm**](AppliedTemplateSyncApi.md#updateappliedapplicationtemplateform) | **PUT** /api/AppliedTemplateSync/{applicationId}/UpdateAppliedApplicationTemplateForm/{applicationTemplateFormId} | 
+[**UpdateAppliedApplicationTemplateFormFromExportModel**](AppliedTemplateSyncApi.md#updateappliedapplicationtemplateformfromexportmodel) | **PUT** /api/AppliedTemplateSync/{applicationId}/UpdateAppliedApplicationTemplateForm/{applicationTemplateFormId}/Dynamic | 
 
-<a name="apiappliedtemplatesyncapplicationidaddappliedapplicationtemplateformdynamicpost"></a>
-# **ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormDynamicPost**
-> AppliedTemplateSyncModel ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormDynamicPost (string applicationId, CompleteTemplateFormModel body = null)
+<a name="addappliedapplicationtemplateform"></a>
+# **AddAppliedApplicationTemplateForm**
+> AppliedTemplateSyncModel AddAppliedApplicationTemplateForm (string applicationId, CompleteTemplateFormModel body = null)
 
 
 
@@ -28,7 +28,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormDynamicPostExample
+    public class AddAppliedApplicationTemplateFormExample
     {
         public void main()
         {
@@ -47,12 +47,12 @@ namespace Example
 
             try
             {
-                AppliedTemplateSyncModel result = apiInstance.ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormDynamicPost(applicationId, body);
+                AppliedTemplateSyncModel result = apiInstance.AddAppliedApplicationTemplateForm(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormDynamicPost: " + e.Message );
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.AddAppliedApplicationTemplateForm: " + e.Message );
             }
         }
     }
@@ -80,9 +80,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedtemplatesyncapplicationidaddappliedapplicationtemplateformpost"></a>
-# **ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormPost**
-> AppliedTemplateSyncModel ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormPost (string applicationId, CompleteTemplateFormModel body = null)
+<a name="addappliedapplicationtemplateformdynamically"></a>
+# **AddAppliedApplicationTemplateFormDynamically**
+> AppliedTemplateSyncModel AddAppliedApplicationTemplateFormDynamically (string applicationId, CompleteTemplateFormModel body = null)
 
 
 
@@ -96,7 +96,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormPostExample
+    public class AddAppliedApplicationTemplateFormDynamicallyExample
     {
         public void main()
         {
@@ -115,12 +115,12 @@ namespace Example
 
             try
             {
-                AppliedTemplateSyncModel result = apiInstance.ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormPost(applicationId, body);
+                AppliedTemplateSyncModel result = apiInstance.AddAppliedApplicationTemplateFormDynamically(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncApplicationIdAddAppliedApplicationTemplateFormPost: " + e.Message );
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.AddAppliedApplicationTemplateFormDynamically: " + e.Message );
             }
         }
     }
@@ -148,9 +148,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedtemplatesyncapplicationidgetappliedtemplatesyncsget"></a>
-# **ApiAppliedTemplateSyncApplicationIdGetAppliedTemplateSyncsGet**
-> List<AppliedTemplateSyncModel> ApiAppliedTemplateSyncApplicationIdGetAppliedTemplateSyncsGet (string applicationId)
+<a name="getappliedtemplatesync"></a>
+# **GetAppliedTemplateSync**
+> AppliedTemplateSyncModel GetAppliedTemplateSync (string appliedTemplateSyncId)
 
 
 
@@ -164,7 +164,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedTemplateSyncApplicationIdGetAppliedTemplateSyncsGetExample
+    public class GetAppliedTemplateSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new AppliedTemplateSyncApi();
+            var appliedTemplateSyncId = appliedTemplateSyncId_example;  // string | 
+
+            try
+            {
+                AppliedTemplateSyncModel result = apiInstance.GetAppliedTemplateSync(appliedTemplateSyncId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.GetAppliedTemplateSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appliedTemplateSyncId** | **string**|  | 
+
+### Return type
+
+[**AppliedTemplateSyncModel**](AppliedTemplateSyncModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getappliedtemplatesyncsfororganization"></a>
+# **GetAppliedTemplateSyncsForOrganization**
+> List<AppliedTemplateSyncModel> GetAppliedTemplateSyncsForOrganization (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAppliedTemplateSyncsForOrganizationExample
     {
         public void main()
         {
@@ -182,12 +248,12 @@ namespace Example
 
             try
             {
-                List&lt;AppliedTemplateSyncModel&gt; result = apiInstance.ApiAppliedTemplateSyncApplicationIdGetAppliedTemplateSyncsGet(applicationId);
+                List&lt;AppliedTemplateSyncModel&gt; result = apiInstance.GetAppliedTemplateSyncsForOrganization(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncApplicationIdGetAppliedTemplateSyncsGet: " + e.Message );
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.GetAppliedTemplateSyncsForOrganization: " + e.Message );
             }
         }
     }
@@ -214,9 +280,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedtemplatesyncapplicationidremoveappliedapplicationtemplateformapplicationtemplateformiddelete"></a>
-# **ApiAppliedTemplateSyncApplicationIdRemoveAppliedApplicationTemplateFormApplicationTemplateFormIdDelete**
-> AppliedTemplateSyncModel ApiAppliedTemplateSyncApplicationIdRemoveAppliedApplicationTemplateFormApplicationTemplateFormIdDelete (string applicationId, string applicationTemplateFormId)
+<a name="removeappliedapplicationtemplateform"></a>
+# **RemoveAppliedApplicationTemplateForm**
+> AppliedTemplateSyncModel RemoveAppliedApplicationTemplateForm (string applicationId, string applicationTemplateFormId)
 
 
 
@@ -230,7 +296,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedTemplateSyncApplicationIdRemoveAppliedApplicationTemplateFormApplicationTemplateFormIdDeleteExample
+    public class RemoveAppliedApplicationTemplateFormExample
     {
         public void main()
         {
@@ -249,12 +315,12 @@ namespace Example
 
             try
             {
-                AppliedTemplateSyncModel result = apiInstance.ApiAppliedTemplateSyncApplicationIdRemoveAppliedApplicationTemplateFormApplicationTemplateFormIdDelete(applicationId, applicationTemplateFormId);
+                AppliedTemplateSyncModel result = apiInstance.RemoveAppliedApplicationTemplateForm(applicationId, applicationTemplateFormId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncApplicationIdRemoveAppliedApplicationTemplateFormApplicationTemplateFormIdDelete: " + e.Message );
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.RemoveAppliedApplicationTemplateForm: " + e.Message );
             }
         }
     }
@@ -282,9 +348,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedtemplatesyncapplicationidupdateappliedapplicationtemplateformapplicationtemplateformiddynamicput"></a>
-# **ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdDynamicPut**
-> AppliedTemplateSyncModel ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdDynamicPut (string applicationId, string applicationTemplateFormId, UpdateAppliedApplicationTemplateFormRequest body = null)
+<a name="updateappliedapplicationtemplateform"></a>
+# **UpdateAppliedApplicationTemplateForm**
+> AppliedTemplateSyncModel UpdateAppliedApplicationTemplateForm (string applicationId, string applicationTemplateFormId, UpdateAppliedApplicationTemplateFormRequest body = null)
 
 
 
@@ -298,7 +364,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdDynamicPutExample
+    public class UpdateAppliedApplicationTemplateFormExample
     {
         public void main()
         {
@@ -318,12 +384,12 @@ namespace Example
 
             try
             {
-                AppliedTemplateSyncModel result = apiInstance.ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdDynamicPut(applicationId, applicationTemplateFormId, body);
+                AppliedTemplateSyncModel result = apiInstance.UpdateAppliedApplicationTemplateForm(applicationId, applicationTemplateFormId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdDynamicPut: " + e.Message );
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.UpdateAppliedApplicationTemplateForm: " + e.Message );
             }
         }
     }
@@ -352,9 +418,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedtemplatesyncapplicationidupdateappliedapplicationtemplateformapplicationtemplateformidput"></a>
-# **ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdPut**
-> AppliedTemplateSyncModel ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdPut (string applicationId, string applicationTemplateFormId, UpdateAppliedApplicationTemplateFormRequest body = null)
+<a name="updateappliedapplicationtemplateformfromexportmodel"></a>
+# **UpdateAppliedApplicationTemplateFormFromExportModel**
+> AppliedTemplateSyncModel UpdateAppliedApplicationTemplateFormFromExportModel (string applicationId, string applicationTemplateFormId, UpdateAppliedApplicationTemplateFormRequest body = null)
 
 
 
@@ -368,7 +434,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdPutExample
+    public class UpdateAppliedApplicationTemplateFormFromExportModelExample
     {
         public void main()
         {
@@ -388,12 +454,12 @@ namespace Example
 
             try
             {
-                AppliedTemplateSyncModel result = apiInstance.ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdPut(applicationId, applicationTemplateFormId, body);
+                AppliedTemplateSyncModel result = apiInstance.UpdateAppliedApplicationTemplateFormFromExportModel(applicationId, applicationTemplateFormId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncApplicationIdUpdateAppliedApplicationTemplateFormApplicationTemplateFormIdPut: " + e.Message );
+                Debug.Print("Exception when calling AppliedTemplateSyncApi.UpdateAppliedApplicationTemplateFormFromExportModel: " + e.Message );
             }
         }
     }
@@ -419,72 +485,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedtemplatesyncappliedtemplatesyncidget"></a>
-# **ApiAppliedTemplateSyncAppliedTemplateSyncIdGet**
-> AppliedTemplateSyncModel ApiAppliedTemplateSyncAppliedTemplateSyncIdGet (string appliedTemplateSyncId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiAppliedTemplateSyncAppliedTemplateSyncIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new AppliedTemplateSyncApi();
-            var appliedTemplateSyncId = appliedTemplateSyncId_example;  // string | 
-
-            try
-            {
-                AppliedTemplateSyncModel result = apiInstance.ApiAppliedTemplateSyncAppliedTemplateSyncIdGet(appliedTemplateSyncId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AppliedTemplateSyncApi.ApiAppliedTemplateSyncAppliedTemplateSyncIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appliedTemplateSyncId** | **string**|  | 
-
-### Return type
-
-[**AppliedTemplateSyncModel**](AppliedTemplateSyncModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

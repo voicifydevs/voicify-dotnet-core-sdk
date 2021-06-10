@@ -32,9 +32,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BulkQuestionAnswerUpdateStubRequest" /> class.
         /// </summary>
+        /// <param name="title">title (required).</param>
         /// <param name="questions">questions.</param>
         /// <param name="answers">answers.</param>
-        /// <param name="title">title (required).</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="backgroundImageItemId">backgroundImageItemId.</param>
         /// <param name="audioItemId">audioItemId.</param>
@@ -46,7 +46,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        public BulkQuestionAnswerUpdateStubRequest(List<UpdateQuestionRequest> questions = default(List<UpdateQuestionRequest>), List<UpdateAnswerRequest> answers = default(List<UpdateAnswerRequest>), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
+        public BulkQuestionAnswerUpdateStubRequest(string title = default(string), List<UpdateQuestionRequest> questions = default(List<UpdateQuestionRequest>), List<UpdateAnswerRequest> answers = default(List<UpdateAnswerRequest>), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
             // to ensure "title" is required (not null)
             if (title == null)
@@ -73,6 +73,12 @@ namespace Voicify.Sdk.Core.Models.Model
         }
         
         /// <summary>
+        /// Gets or Sets Title
+        /// </summary>
+        [DataMember(Name="title", EmitDefaultValue=false)]
+        public string Title { get; set; }
+
+        /// <summary>
         /// Gets or Sets Questions
         /// </summary>
         [DataMember(Name="questions", EmitDefaultValue=false)]
@@ -83,12 +89,6 @@ namespace Voicify.Sdk.Core.Models.Model
         /// </summary>
         [DataMember(Name="answers", EmitDefaultValue=false)]
         public List<UpdateAnswerRequest> Answers { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Title
-        /// </summary>
-        [DataMember(Name="title", EmitDefaultValue=false)]
-        public string Title { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageItemId
@@ -164,9 +164,9 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class BulkQuestionAnswerUpdateStubRequest {\n");
+            sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  Questions: ").Append(Questions).Append("\n");
             sb.Append("  Answers: ").Append(Answers).Append("\n");
-            sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  BackgroundImageItemId: ").Append(BackgroundImageItemId).Append("\n");
             sb.Append("  AudioItemId: ").Append(AudioItemId).Append("\n");
@@ -213,6 +213,11 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
+                    this.Title == input.Title ||
+                    (this.Title != null &&
+                    this.Title.Equals(input.Title))
+                ) && 
+                (
                     this.Questions == input.Questions ||
                     this.Questions != null &&
                     input.Questions != null &&
@@ -223,11 +228,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Answers != null &&
                     input.Answers != null &&
                     this.Answers.SequenceEqual(input.Answers)
-                ) && 
-                (
-                    this.Title == input.Title ||
-                    (this.Title != null &&
-                    this.Title.Equals(input.Title))
                 ) && 
                 (
                     this.ImageItemId == input.ImageItemId ||
@@ -296,12 +296,12 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Title != null)
+                    hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.Questions != null)
                     hashCode = hashCode * 59 + this.Questions.GetHashCode();
                 if (this.Answers != null)
                     hashCode = hashCode * 59 + this.Answers.GetHashCode();
-                if (this.Title != null)
-                    hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.ImageItemId != null)
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
                 if (this.BackgroundImageItemId != null)

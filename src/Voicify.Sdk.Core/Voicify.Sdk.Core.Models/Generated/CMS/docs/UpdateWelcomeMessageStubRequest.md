@@ -3,8 +3,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Content** | **string** |  | [optional] 
 **Title** | **string** |  | 
+**Content** | **string** |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 

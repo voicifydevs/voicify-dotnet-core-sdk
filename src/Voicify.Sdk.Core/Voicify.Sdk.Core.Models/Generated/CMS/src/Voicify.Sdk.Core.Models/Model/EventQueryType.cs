@@ -27,11 +27,26 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines EventQueryType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum EventQueryType
+        public enum EventQueryType
     {
-        General,
-        Location,
-        StartDate,
-        Status
-    }
+        /// <summary>
+        /// Enum General for value: General
+        /// </summary>
+        [EnumMember(Value = "General")]
+        General = 1,
+        /// <summary>
+        /// Enum Location for value: Location
+        /// </summary>
+        [EnumMember(Value = "Location")]
+        Location = 2,
+        /// <summary>
+        /// Enum StartDate for value: StartDate
+        /// </summary>
+        [EnumMember(Value = "StartDate")]
+        StartDate = 3,
+        /// <summary>
+        /// Enum Status for value: Status
+        /// </summary>
+        [EnumMember(Value = "Status")]
+        Status = 4    }
 }

@@ -4,15 +4,15 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiResponseApplicationApplicationIdGet**](ResponseApi.md#apiresponseapplicationapplicationidget) | **GET** /api/Response/application/{applicationId} | 
-[**ApiResponseApplicationIdPost**](ResponseApi.md#apiresponseapplicationidpost) | **POST** /api/Response/{applicationId} | 
-[**ApiResponseResponseIdDelete**](ResponseApi.md#apiresponseresponseiddelete) | **DELETE** /api/Response/{responseId} | 
-[**ApiResponseResponseIdGet**](ResponseApi.md#apiresponseresponseidget) | **GET** /api/Response/{responseId} | 
-[**ApiResponseResponseIdPut**](ResponseApi.md#apiresponseresponseidput) | **PUT** /api/Response/{responseId} | 
+[**CreateResponse**](ResponseApi.md#createresponse) | **POST** /api/Response/{applicationId} | 
+[**DeleteById**](ResponseApi.md#deletebyid) | **DELETE** /api/Response/{responseId} | 
+[**FindById**](ResponseApi.md#findbyid) | **GET** /api/Response/{responseId} | 
+[**GetForApplication**](ResponseApi.md#getforapplication) | **GET** /api/Response/application/{applicationId} | 
+[**UpdateResponse**](ResponseApi.md#updateresponse) | **PUT** /api/Response/{responseId} | 
 
-<a name="apiresponseapplicationapplicationidget"></a>
-# **ApiResponseApplicationApplicationIdGet**
-> List<ResponseModel> ApiResponseApplicationApplicationIdGet (string applicationId, int? skip = null, int? take = null)
+<a name="createresponse"></a>
+# **CreateResponse**
+> ResponseModel CreateResponse (string applicationId, ResponseModel body = null)
 
 
 
@@ -26,7 +26,207 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiResponseApplicationApplicationIdGetExample
+    public class CreateResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ResponseApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new ResponseModel(); // ResponseModel |  (optional) 
+
+            try
+            {
+                ResponseModel result = apiInstance.CreateResponse(applicationId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ResponseApi.CreateResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**ResponseModel**](ResponseModel.md)|  | [optional] 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deletebyid"></a>
+# **DeleteById**
+> ResponseModel DeleteById (string responseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ResponseApi();
+            var responseId = responseId_example;  // string | 
+
+            try
+            {
+                ResponseModel result = apiInstance.DeleteById(responseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ResponseApi.DeleteById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **responseId** | **string**|  | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findbyid"></a>
+# **FindById**
+> ResponseModel FindById (string responseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ResponseApi();
+            var responseId = responseId_example;  // string | 
+
+            try
+            {
+                ResponseModel result = apiInstance.FindById(responseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ResponseApi.FindById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **responseId** | **string**|  | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getforapplication"></a>
+# **GetForApplication**
+> List<ResponseModel> GetForApplication (string applicationId, int? skip = null, int? take = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetForApplicationExample
     {
         public void main()
         {
@@ -46,12 +246,12 @@ namespace Example
 
             try
             {
-                List&lt;ResponseModel&gt; result = apiInstance.ApiResponseApplicationApplicationIdGet(applicationId, skip, take);
+                List&lt;ResponseModel&gt; result = apiInstance.GetForApplication(applicationId, skip, take);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ResponseApi.ApiResponseApplicationApplicationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ResponseApi.GetForApplication: " + e.Message );
             }
         }
     }
@@ -80,9 +280,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiresponseapplicationidpost"></a>
-# **ApiResponseApplicationIdPost**
-> ResponseModel ApiResponseApplicationIdPost (string applicationId, ResponseModel body = null)
+<a name="updateresponse"></a>
+# **UpdateResponse**
+> ResponseModel UpdateResponse (string responseId, ResponseModel body = null)
 
 
 
@@ -96,207 +296,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiResponseApplicationIdPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ResponseApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new ResponseModel(); // ResponseModel |  (optional) 
-
-            try
-            {
-                ResponseModel result = apiInstance.ApiResponseApplicationIdPost(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ResponseApi.ApiResponseApplicationIdPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**ResponseModel**](ResponseModel.md)|  | [optional] 
-
-### Return type
-
-[**ResponseModel**](ResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiresponseresponseiddelete"></a>
-# **ApiResponseResponseIdDelete**
-> ResponseModel ApiResponseResponseIdDelete (string responseId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiResponseResponseIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ResponseApi();
-            var responseId = responseId_example;  // string | 
-
-            try
-            {
-                ResponseModel result = apiInstance.ApiResponseResponseIdDelete(responseId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ResponseApi.ApiResponseResponseIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **responseId** | **string**|  | 
-
-### Return type
-
-[**ResponseModel**](ResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiresponseresponseidget"></a>
-# **ApiResponseResponseIdGet**
-> ResponseModel ApiResponseResponseIdGet (string responseId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiResponseResponseIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ResponseApi();
-            var responseId = responseId_example;  // string | 
-
-            try
-            {
-                ResponseModel result = apiInstance.ApiResponseResponseIdGet(responseId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ResponseApi.ApiResponseResponseIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **responseId** | **string**|  | 
-
-### Return type
-
-[**ResponseModel**](ResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiresponseresponseidput"></a>
-# **ApiResponseResponseIdPut**
-> ResponseModel ApiResponseResponseIdPut (string responseId, ResponseModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiResponseResponseIdPutExample
+    public class UpdateResponseExample
     {
         public void main()
         {
@@ -315,12 +315,12 @@ namespace Example
 
             try
             {
-                ResponseModel result = apiInstance.ApiResponseResponseIdPut(responseId, body);
+                ResponseModel result = apiInstance.UpdateResponse(responseId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ResponseApi.ApiResponseResponseIdPut: " + e.Message );
+                Debug.Print("Exception when calling ResponseApi.UpdateResponse: " + e.Message );
             }
         }
     }

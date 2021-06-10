@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**IsRead** | **bool?** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **Title** | **string** |  | 
 **Subtitle** | **string** |  | 
@@ -15,7 +16,6 @@ Name | Type | Description | Notes
 **ExpirationDate** | **DateTime?** |  | [optional] 
 **StartDate** | **DateTime?** |  | [optional] 
 **Priority** | **VoicifyNotificationPriority** |  | [optional] 
-**IsRead** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
