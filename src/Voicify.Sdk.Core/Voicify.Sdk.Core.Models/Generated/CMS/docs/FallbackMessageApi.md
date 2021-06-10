@@ -4,38 +4,38 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiFallbackMessageApplicationIdGet**](FallbackMessageApi.md#apifallbackmessageapplicationidget) | **GET** /api/FallbackMessage/{applicationId} | 
-[**ApiFallbackMessageApplicationIdPost**](FallbackMessageApi.md#apifallbackmessageapplicationidpost) | **POST** /api/FallbackMessage/{applicationId} | 
-[**ApiFallbackMessageApplicationIdStubPost**](FallbackMessageApi.md#apifallbackmessageapplicationidstubpost) | **POST** /api/FallbackMessage/{applicationId}/stub | 
-[**ApiFallbackMessageByFeatureApplicationFeatureIdGet**](FallbackMessageApi.md#apifallbackmessagebyfeatureapplicationfeatureidget) | **GET** /api/FallbackMessage/byFeature/{applicationFeatureId} | 
-[**ApiFallbackMessageCategoriesGet**](FallbackMessageApi.md#apifallbackmessagecategoriesget) | **GET** /api/FallbackMessage/categories | 
-[**ApiFallbackMessageContentItemIdFullPut**](FallbackMessageApi.md#apifallbackmessagecontentitemidfullput) | **PUT** /api/FallbackMessage/{contentItemId}/full | 
-[**ApiFallbackMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**](FallbackMessageApi.md#apifallbackmessagecontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/FallbackMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiFallbackMessageFallbackMessageIdAddAudioFileMediaItemIdPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidaddaudiofilemediaitemidput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addAudioFile/{mediaItemId} | 
-[**ApiFallbackMessageFallbackMessageIdAddLargeImageMediaItemIdPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidaddlargeimagemediaitemidput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addLargeImage/{mediaItemId} | 
-[**ApiFallbackMessageFallbackMessageIdAddSmallImageMediaItemIdPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidaddsmallimagemediaitemidput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addSmallImage/{mediaItemId} | 
-[**ApiFallbackMessageFallbackMessageIdAddVideoFileMediaItemIdPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidaddvideofilemediaitemidput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addVideoFile/{mediaItemId} | 
-[**ApiFallbackMessageFallbackMessageIdCopyPost**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidcopypost) | **POST** /api/FallbackMessage/{fallbackMessageId}/copy | 
-[**ApiFallbackMessageFallbackMessageIdDelete**](FallbackMessageApi.md#apifallbackmessagefallbackmessageiddelete) | **DELETE** /api/FallbackMessage/{fallbackMessageId} | 
-[**ApiFallbackMessageFallbackMessageIdIsLivePut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidisliveput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/isLive | 
-[**ApiFallbackMessageFallbackMessageIdShouldNotSyncPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidshouldnotsyncput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/shouldNotSync | 
-[**ApiFallbackMessageFallbackMessageIdUpdatePut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidupdateput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/update | 
-[**ApiFallbackMessageFallbackMessageIdUpdateStubPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidupdatestubput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/update/stub | 
-[**ApiFallbackMessageFallbackMessageIdWebhooksBulkPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidwebhooksbulkput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/webhooks/bulk | 
-[**ApiFallbackMessageFallbackMessageIdWebhooksGet**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidwebhooksget) | **GET** /api/FallbackMessage/{fallbackMessageId}/webhooks | 
-[**ApiFallbackMessageFallbackMessageIdWebhooksInstanceWebhookIdPut**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidwebhooksinstancewebhookidput) | **PUT** /api/FallbackMessage/{fallbackMessageId}/webhooks/{instanceWebhookId} | 
-[**ApiFallbackMessageFallbackMessageIdWebhooksWebhookIdPost**](FallbackMessageApi.md#apifallbackmessagefallbackmessageidwebhookswebhookidpost) | **POST** /api/FallbackMessage/{fallbackMessageId}/webhooks/{webhookId} | 
-[**ApiFallbackMessageFullIdGet**](FallbackMessageApi.md#apifallbackmessagefullidget) | **GET** /api/FallbackMessage/full/{id} | 
-[**ApiFallbackMessageFullPost**](FallbackMessageApi.md#apifallbackmessagefullpost) | **POST** /api/FallbackMessage/full | 
-[**ApiFallbackMessageWebhookFallbackMessageWebhookIdDelete**](FallbackMessageApi.md#apifallbackmessagewebhookfallbackmessagewebhookiddelete) | **DELETE** /api/FallbackMessage/webhook/{fallbackMessageWebhookId} | 
-[**ApiFallbackMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**](FallbackMessageApi.md#apifallbackmessagewebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/FallbackMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPost**](FallbackMessageApi.md#apifallbackmessagewebhookinstancewebhookiduserparameterspost) | **POST** /api/FallbackMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPut**](FallbackMessageApi.md#apifallbackmessagewebhookinstancewebhookiduserparametersput) | **PUT** /api/FallbackMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiFallbackMessageWebhookInstanceWebhookIdWebhookParametersPut**](FallbackMessageApi.md#apifallbackmessagewebhookinstancewebhookidwebhookparametersput) | **PUT** /api/FallbackMessage/webhook/{instanceWebhookId}/webhookParameters | 
+[**AddAudioFileImage**](FallbackMessageApi.md#addaudiofileimage) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addAudioFile/{mediaItemId} | 
+[**AddFallbackMessage**](FallbackMessageApi.md#addfallbackmessage) | **POST** /api/FallbackMessage/{applicationId} | 
+[**AddFallbackMessageStub**](FallbackMessageApi.md#addfallbackmessagestub) | **POST** /api/FallbackMessage/{applicationId}/stub | 
+[**AddLargeImage**](FallbackMessageApi.md#addlargeimage) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addLargeImage/{mediaItemId} | 
+[**AddSmallImage**](FallbackMessageApi.md#addsmallimage) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](FallbackMessageApi.md#addvideofile) | **PUT** /api/FallbackMessage/{fallbackMessageId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](FallbackMessageApi.md#addwebhook) | **POST** /api/FallbackMessage/{fallbackMessageId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](FallbackMessageApi.md#bulkupdateattachedwebhooks) | **PUT** /api/FallbackMessage/{fallbackMessageId}/webhooks/bulk | 
+[**CopyContentItem**](FallbackMessageApi.md#copycontentitem) | **POST** /api/FallbackMessage/{fallbackMessageId}/copy | 
+[**CreateFullContentItem**](FallbackMessageApi.md#createfullcontentitem) | **POST** /api/FallbackMessage/full | 
+[**CreateUserDefinedParameter**](FallbackMessageApi.md#createuserdefinedparameter) | **POST** /api/FallbackMessage/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteFallbackMessage**](FallbackMessageApi.md#deletefallbackmessage) | **DELETE** /api/FallbackMessage/{fallbackMessageId} | 
+[**FindFullById**](FallbackMessageApi.md#findfullbyid) | **GET** /api/FallbackMessage/full/{id} | 
+[**GetByApplicationFeature**](FallbackMessageApi.md#getbyapplicationfeature) | **GET** /api/FallbackMessage/byFeature/{applicationFeatureId} | 
+[**GetCategories**](FallbackMessageApi.md#getcategories) | **GET** /api/FallbackMessage/categories | 
+[**GetFallbackMessagesForApplication**](FallbackMessageApi.md#getfallbackmessagesforapplication) | **GET** /api/FallbackMessage/{applicationId} | 
+[**GetWebhooks**](FallbackMessageApi.md#getwebhooks) | **GET** /api/FallbackMessage/{fallbackMessageId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](FallbackMessageApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/FallbackMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveUserDefinedParameter**](FallbackMessageApi.md#removeuserdefinedparameter) | **DELETE** /api/FallbackMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](FallbackMessageApi.md#removewebhook) | **DELETE** /api/FallbackMessage/webhook/{fallbackMessageWebhookId} | 
+[**ToggleIsLive**](FallbackMessageApi.md#toggleislive) | **PUT** /api/FallbackMessage/{fallbackMessageId}/isLive | 
+[**ToggleSync**](FallbackMessageApi.md#togglesync) | **PUT** /api/FallbackMessage/{fallbackMessageId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](FallbackMessageApi.md#updateattachedwebhook) | **PUT** /api/FallbackMessage/{fallbackMessageId}/webhooks/{instanceWebhookId} | 
+[**UpdateFallbackMessage**](FallbackMessageApi.md#updatefallbackmessage) | **PUT** /api/FallbackMessage/{fallbackMessageId}/update | 
+[**UpdateFallbackMessageStub**](FallbackMessageApi.md#updatefallbackmessagestub) | **PUT** /api/FallbackMessage/{fallbackMessageId}/update/stub | 
+[**UpdateFullContentItem**](FallbackMessageApi.md#updatefullcontentitem) | **PUT** /api/FallbackMessage/{contentItemId}/full | 
+[**UpdateUserDefinedParameter**](FallbackMessageApi.md#updateuserdefinedparameter) | **PUT** /api/FallbackMessage/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](FallbackMessageApi.md#updatewebhookparameter) | **PUT** /api/FallbackMessage/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apifallbackmessageapplicationidget"></a>
-# **ApiFallbackMessageApplicationIdGet**
-> List<FallbackMessageModel> ApiFallbackMessageApplicationIdGet (string applicationId)
+<a name="addaudiofileimage"></a>
+# **AddAudioFileImage**
+> FallbackMessageModel AddAudioFileImage (string fallbackMessageId, string mediaItemId)
 
 
 
@@ -49,7 +49,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageApplicationIdGetExample
+    public class AddAudioFileImageExample
     {
         public void main()
         {
@@ -63,16 +63,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FallbackMessageApi();
-            var applicationId = applicationId_example;  // string | 
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                List&lt;FallbackMessageModel&gt; result = apiInstance.ApiFallbackMessageApplicationIdGet(applicationId);
+                FallbackMessageModel result = apiInstance.AddAudioFileImage(fallbackMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageApplicationIdGet: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddAudioFileImage: " + e.Message );
             }
         }
     }
@@ -83,11 +84,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
+ **fallbackMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
-[**List<FallbackMessageModel>**](FallbackMessageModel.md)
+[**FallbackMessageModel**](FallbackMessageModel.md)
 
 ### Authorization
 
@@ -99,9 +101,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessageapplicationidpost"></a>
-# **ApiFallbackMessageApplicationIdPost**
-> FallbackMessageModel ApiFallbackMessageApplicationIdPost (string applicationId, NewFallbackMessageRequest body = null)
+<a name="addfallbackmessage"></a>
+# **AddFallbackMessage**
+> FallbackMessageModel AddFallbackMessage (string applicationId, NewFallbackMessageRequest body = null)
 
 
 
@@ -115,7 +117,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageApplicationIdPostExample
+    public class AddFallbackMessageExample
     {
         public void main()
         {
@@ -134,12 +136,12 @@ namespace Example
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageApplicationIdPost(applicationId, body);
+                FallbackMessageModel result = apiInstance.AddFallbackMessage(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageApplicationIdPost: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddFallbackMessage: " + e.Message );
             }
         }
     }
@@ -167,9 +169,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessageapplicationidstubpost"></a>
-# **ApiFallbackMessageApplicationIdStubPost**
-> FallbackMessageModel ApiFallbackMessageApplicationIdStubPost (string applicationId, NewFallbackMessageStubRequest body = null)
+<a name="addfallbackmessagestub"></a>
+# **AddFallbackMessageStub**
+> FallbackMessageModel AddFallbackMessageStub (string applicationId, NewFallbackMessageStubRequest body = null)
 
 
 
@@ -183,7 +185,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageApplicationIdStubPostExample
+    public class AddFallbackMessageStubExample
     {
         public void main()
         {
@@ -202,12 +204,12 @@ namespace Example
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageApplicationIdStubPost(applicationId, body);
+                FallbackMessageModel result = apiInstance.AddFallbackMessageStub(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageApplicationIdStubPost: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddFallbackMessageStub: " + e.Message );
             }
         }
     }
@@ -235,9 +237,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagebyfeatureapplicationfeatureidget"></a>
-# **ApiFallbackMessageByFeatureApplicationFeatureIdGet**
-> List<FallbackMessageModel> ApiFallbackMessageByFeatureApplicationFeatureIdGet (string applicationFeatureId)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> FallbackMessageModel AddLargeImage (string fallbackMessageId, string mediaItemId)
 
 
 
@@ -251,271 +253,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageByFeatureApplicationFeatureIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                List&lt;FallbackMessageModel&gt; result = apiInstance.ApiFallbackMessageByFeatureApplicationFeatureIdGet(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageByFeatureApplicationFeatureIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<FallbackMessageModel>**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagecategoriesget"></a>
-# **ApiFallbackMessageCategoriesGet**
-> List<FallbackMessageCategoryModel> ApiFallbackMessageCategoriesGet ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageCategoriesGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-
-            try
-            {
-                List&lt;FallbackMessageCategoryModel&gt; result = apiInstance.ApiFallbackMessageCategoriesGet();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageCategoriesGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<FallbackMessageCategoryModel>**](FallbackMessageCategoryModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagecontentitemidfullput"></a>
-# **ApiFallbackMessageContentItemIdFullPut**
-> FallbackMessageModel ApiFallbackMessageContentItemIdFullPut (string contentItemId, FallbackMessageModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageContentItemIdFullPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new FallbackMessageModel(); // FallbackMessageModel |  (optional) 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageContentItemIdFullPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageContentItemIdFullPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**FallbackMessageModel**](FallbackMessageModel.md)|  | [optional] 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagecontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiFallbackMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> FallbackMessageModel ApiFallbackMessageContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageContentItemIdMoveToFeatureApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidaddaudiofilemediaitemidput"></a>
-# **ApiFallbackMessageFallbackMessageIdAddAudioFileMediaItemIdPut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdAddAudioFileMediaItemIdPut (string fallbackMessageId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdAddAudioFileMediaItemIdPutExample
+    public class AddLargeImageExample
     {
         public void main()
         {
@@ -534,12 +272,12 @@ namespace Example
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdAddAudioFileMediaItemIdPut(fallbackMessageId, mediaItemId);
+                FallbackMessageModel result = apiInstance.AddLargeImage(fallbackMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdAddAudioFileMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddLargeImage: " + e.Message );
             }
         }
     }
@@ -567,9 +305,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidaddlargeimagemediaitemidput"></a>
-# **ApiFallbackMessageFallbackMessageIdAddLargeImageMediaItemIdPut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdAddLargeImageMediaItemIdPut (string fallbackMessageId, string mediaItemId)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> FallbackMessageModel AddSmallImage (string fallbackMessageId, string mediaItemId)
 
 
 
@@ -583,7 +321,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageFallbackMessageIdAddLargeImageMediaItemIdPutExample
+    public class AddSmallImageExample
     {
         public void main()
         {
@@ -602,12 +340,12 @@ namespace Example
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdAddLargeImageMediaItemIdPut(fallbackMessageId, mediaItemId);
+                FallbackMessageModel result = apiInstance.AddSmallImage(fallbackMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdAddLargeImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddSmallImage: " + e.Message );
             }
         }
     }
@@ -635,9 +373,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidaddsmallimagemediaitemidput"></a>
-# **ApiFallbackMessageFallbackMessageIdAddSmallImageMediaItemIdPut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdAddSmallImageMediaItemIdPut (string fallbackMessageId, string mediaItemId)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> FallbackMessageModel AddVideoFile (string fallbackMessageId, string mediaItemId)
 
 
 
@@ -651,7 +389,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageFallbackMessageIdAddSmallImageMediaItemIdPutExample
+    public class AddVideoFileExample
     {
         public void main()
         {
@@ -670,12 +408,12 @@ namespace Example
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdAddSmallImageMediaItemIdPut(fallbackMessageId, mediaItemId);
+                FallbackMessageModel result = apiInstance.AddVideoFile(fallbackMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdAddSmallImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddVideoFile: " + e.Message );
             }
         }
     }
@@ -703,9 +441,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidaddvideofilemediaitemidput"></a>
-# **ApiFallbackMessageFallbackMessageIdAddVideoFileMediaItemIdPut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdAddVideoFileMediaItemIdPut (string fallbackMessageId, string mediaItemId)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> FallbackMessageWebhookModel AddWebhook (string fallbackMessageId, string webhookId, WebhookParametersRequest body = null)
 
 
 
@@ -719,683 +457,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageFallbackMessageIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdAddVideoFileMediaItemIdPut(fallbackMessageId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidcopypost"></a>
-# **ApiFallbackMessageFallbackMessageIdCopyPost**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdCopyPost (string fallbackMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdCopyPost(fallbackMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageiddelete"></a>
-# **ApiFallbackMessageFallbackMessageIdDelete**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdDelete (string fallbackMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdDelete(fallbackMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidisliveput"></a>
-# **ApiFallbackMessageFallbackMessageIdIsLivePut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdIsLivePut (string fallbackMessageId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdIsLivePut(fallbackMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidshouldnotsyncput"></a>
-# **ApiFallbackMessageFallbackMessageIdShouldNotSyncPut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdShouldNotSyncPut (string fallbackMessageId, ToggleSyncRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdShouldNotSyncPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdShouldNotSyncPut(fallbackMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdShouldNotSyncPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidupdateput"></a>
-# **ApiFallbackMessageFallbackMessageIdUpdatePut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdUpdatePut (string fallbackMessageId, UpdateFallbackMessageRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var body = new UpdateFallbackMessageRequest(); // UpdateFallbackMessageRequest |  (optional) 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdUpdatePut(fallbackMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **body** | [**UpdateFallbackMessageRequest**](UpdateFallbackMessageRequest.md)|  | [optional] 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidupdatestubput"></a>
-# **ApiFallbackMessageFallbackMessageIdUpdateStubPut**
-> FallbackMessageModel ApiFallbackMessageFallbackMessageIdUpdateStubPut (string fallbackMessageId, UpdateFallbackMessageStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var body = new UpdateFallbackMessageStubRequest(); // UpdateFallbackMessageStubRequest |  (optional) 
-
-            try
-            {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFallbackMessageIdUpdateStubPut(fallbackMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **body** | [**UpdateFallbackMessageStubRequest**](UpdateFallbackMessageStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**FallbackMessageModel**](FallbackMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidwebhooksbulkput"></a>
-# **ApiFallbackMessageFallbackMessageIdWebhooksBulkPut**
-> List<FallbackMessageWebhookModel> ApiFallbackMessageFallbackMessageIdWebhooksBulkPut (string fallbackMessageId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;FallbackMessageWebhookModel&gt; result = apiInstance.ApiFallbackMessageFallbackMessageIdWebhooksBulkPut(fallbackMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<FallbackMessageWebhookModel>**](FallbackMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidwebhooksget"></a>
-# **ApiFallbackMessageFallbackMessageIdWebhooksGet**
-> List<FallbackMessageWebhookModel> ApiFallbackMessageFallbackMessageIdWebhooksGet (string fallbackMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-
-            try
-            {
-                List&lt;FallbackMessageWebhookModel&gt; result = apiInstance.ApiFallbackMessageFallbackMessageIdWebhooksGet(fallbackMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
-
-### Return type
-
-[**List<FallbackMessageWebhookModel>**](FallbackMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidwebhooksinstancewebhookidput"></a>
-# **ApiFallbackMessageFallbackMessageIdWebhooksInstanceWebhookIdPut**
-> FallbackMessageWebhookModel ApiFallbackMessageFallbackMessageIdWebhooksInstanceWebhookIdPut (string fallbackMessageId, string instanceWebhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdWebhooksInstanceWebhookIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageId = fallbackMessageId_example;  // string | 
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
-
-            try
-            {
-                FallbackMessageWebhookModel result = apiInstance.ApiFallbackMessageFallbackMessageIdWebhooksInstanceWebhookIdPut(fallbackMessageId, instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdWebhooksInstanceWebhookIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageId** | **string**|  | 
- **instanceWebhookId** | **string**|  | 
- **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
-
-### Return type
-
-[**FallbackMessageWebhookModel**](FallbackMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefallbackmessageidwebhookswebhookidpost"></a>
-# **ApiFallbackMessageFallbackMessageIdWebhooksWebhookIdPost**
-> FallbackMessageWebhookModel ApiFallbackMessageFallbackMessageIdWebhooksWebhookIdPost (string fallbackMessageId, string webhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageFallbackMessageIdWebhooksWebhookIdPostExample
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1415,12 +477,12 @@ namespace Example
 
             try
             {
-                FallbackMessageWebhookModel result = apiInstance.ApiFallbackMessageFallbackMessageIdWebhooksWebhookIdPost(fallbackMessageId, webhookId, body);
+                FallbackMessageWebhookModel result = apiInstance.AddWebhook(fallbackMessageId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFallbackMessageIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1449,9 +511,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefullidget"></a>
-# **ApiFallbackMessageFullIdGet**
-> FallbackMessageModel ApiFallbackMessageFullIdGet (string id)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<FallbackMessageWebhookModel> BulkUpdateAttachedWebhooks (string fallbackMessageId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1465,7 +527,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageFullIdGetExample
+    public class BulkUpdateAttachedWebhooksExample
     {
         public void main()
         {
@@ -1479,16 +541,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FallbackMessageApi();
-            var id = id_example;  // string | 
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFullIdGet(id);
+                List&lt;FallbackMessageWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(fallbackMessageId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFullIdGet: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.BulkUpdateAttachedWebhooks: " + e.Message );
             }
         }
     }
@@ -1499,7 +562,74 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
+ **fallbackMessageId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<FallbackMessageWebhookModel>**](FallbackMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> FallbackMessageModel CopyContentItem (string fallbackMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.CopyContentItem(fallbackMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
 
 ### Return type
 
@@ -1515,9 +645,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagefullpost"></a>
-# **ApiFallbackMessageFullPost**
-> FallbackMessageModel ApiFallbackMessageFullPost (FallbackMessageModel body = null)
+<a name="createfullcontentitem"></a>
+# **CreateFullContentItem**
+> FallbackMessageModel CreateFullContentItem (FallbackMessageModel body = null)
 
 
 
@@ -1531,7 +661,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageFullPostExample
+    public class CreateFullContentItemExample
     {
         public void main()
         {
@@ -1549,12 +679,12 @@ namespace Example
 
             try
             {
-                FallbackMessageModel result = apiInstance.ApiFallbackMessageFullPost(body);
+                FallbackMessageModel result = apiInstance.CreateFullContentItem(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageFullPost: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.CreateFullContentItem: " + e.Message );
             }
         }
     }
@@ -1581,9 +711,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagewebhookfallbackmessagewebhookiddelete"></a>
-# **ApiFallbackMessageWebhookFallbackMessageWebhookIdDelete**
-> FallbackMessageWebhookModel ApiFallbackMessageWebhookFallbackMessageWebhookIdDelete (string fallbackMessageWebhookId)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
 
 
 
@@ -1597,141 +727,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageWebhookFallbackMessageWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var fallbackMessageWebhookId = fallbackMessageWebhookId_example;  // string | 
-
-            try
-            {
-                FallbackMessageWebhookModel result = apiInstance.ApiFallbackMessageWebhookFallbackMessageWebhookIdDelete(fallbackMessageWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageWebhookFallbackMessageWebhookIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fallbackMessageWebhookId** | **string**|  | 
-
-### Return type
-
-[**FallbackMessageWebhookModel**](FallbackMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagewebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiFallbackMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiFallbackMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FallbackMessageApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var parameterName = parameterName_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiFallbackMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **parameterName** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagewebhookinstancewebhookiduserparameterspost"></a>
-# **ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPostExample
+    public class CreateUserDefinedParameterExample
     {
         public void main()
         {
@@ -1750,12 +746,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.CreateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -1783,9 +779,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagewebhookinstancewebhookiduserparametersput"></a>
-# **ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="deletefallbackmessage"></a>
+# **DeleteFallbackMessage**
+> FallbackMessageModel DeleteFallbackMessage (string fallbackMessageId)
 
 
 
@@ -1799,7 +795,1011 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPutExample
+    public class DeleteFallbackMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.DeleteFallbackMessage(fallbackMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.DeleteFallbackMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> FallbackMessageModel FindFullById (string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindFullByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var id = id_example;  // string | 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.FindFullById(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.FindFullById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**|  | 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<FallbackMessageModel> GetByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;FallbackMessageModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.GetByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<FallbackMessageModel>**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getcategories"></a>
+# **GetCategories**
+> List<FallbackMessageCategoryModel> GetCategories ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetCategoriesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+
+            try
+            {
+                List&lt;FallbackMessageCategoryModel&gt; result = apiInstance.GetCategories();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.GetCategories: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<FallbackMessageCategoryModel>**](FallbackMessageCategoryModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getfallbackmessagesforapplication"></a>
+# **GetFallbackMessagesForApplication**
+> List<FallbackMessageModel> GetFallbackMessagesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetFallbackMessagesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;FallbackMessageModel&gt; result = apiInstance.GetFallbackMessagesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.GetFallbackMessagesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<FallbackMessageModel>**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<FallbackMessageWebhookModel> GetWebhooks (string fallbackMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+
+            try
+            {
+                List&lt;FallbackMessageWebhookModel&gt; result = apiInstance.GetWebhooks(fallbackMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+
+### Return type
+
+[**List<FallbackMessageWebhookModel>**](FallbackMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> FallbackMessageModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.MoveContentItemToApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var parameterName = parameterName_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.RemoveUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **parameterName** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> FallbackMessageWebhookModel RemoveWebhook (string fallbackMessageWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageWebhookId = fallbackMessageWebhookId_example;  // string | 
+
+            try
+            {
+                FallbackMessageWebhookModel result = apiInstance.RemoveWebhook(fallbackMessageWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageWebhookId** | **string**|  | 
+
+### Return type
+
+[**FallbackMessageWebhookModel**](FallbackMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="toggleislive"></a>
+# **ToggleIsLive**
+> FallbackMessageModel ToggleIsLive (string fallbackMessageId, ToggleLiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleIsLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.ToggleIsLive(fallbackMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.ToggleIsLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> FallbackMessageModel ToggleSync (string fallbackMessageId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.ToggleSync(fallbackMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> FallbackMessageWebhookModel UpdateAttachedWebhook (string fallbackMessageId, string instanceWebhookId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+
+            try
+            {
+                FallbackMessageWebhookModel result = apiInstance.UpdateAttachedWebhook(fallbackMessageId, instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.UpdateAttachedWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+
+### Return type
+
+[**FallbackMessageWebhookModel**](FallbackMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatefallbackmessage"></a>
+# **UpdateFallbackMessage**
+> FallbackMessageModel UpdateFallbackMessage (string fallbackMessageId, UpdateFallbackMessageRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateFallbackMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var body = new UpdateFallbackMessageRequest(); // UpdateFallbackMessageRequest |  (optional) 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.UpdateFallbackMessage(fallbackMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.UpdateFallbackMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+ **body** | [**UpdateFallbackMessageRequest**](UpdateFallbackMessageRequest.md)|  | [optional] 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatefallbackmessagestub"></a>
+# **UpdateFallbackMessageStub**
+> FallbackMessageModel UpdateFallbackMessageStub (string fallbackMessageId, UpdateFallbackMessageStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateFallbackMessageStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var fallbackMessageId = fallbackMessageId_example;  // string | 
+            var body = new UpdateFallbackMessageStubRequest(); // UpdateFallbackMessageStubRequest |  (optional) 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.UpdateFallbackMessageStub(fallbackMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.UpdateFallbackMessageStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fallbackMessageId** | **string**|  | 
+ **body** | [**UpdateFallbackMessageStubRequest**](UpdateFallbackMessageStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> FallbackMessageModel UpdateFullContentItem (string contentItemId, FallbackMessageModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FallbackMessageApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new FallbackMessageModel(); // FallbackMessageModel |  (optional) 
+
+            try
+            {
+                FallbackMessageModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FallbackMessageApi.UpdateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **body** | [**FallbackMessageModel**](FallbackMessageModel.md)|  | [optional] 
+
+### Return type
+
+[**FallbackMessageModel**](FallbackMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -1818,12 +1818,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -1851,9 +1851,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifallbackmessagewebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiFallbackMessageWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiFallbackMessageWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -1867,7 +1867,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFallbackMessageWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -1886,12 +1886,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiFallbackMessageWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FallbackMessageApi.ApiFallbackMessageWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling FallbackMessageApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }

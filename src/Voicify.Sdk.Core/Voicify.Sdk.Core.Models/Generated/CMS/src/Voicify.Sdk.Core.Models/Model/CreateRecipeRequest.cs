@@ -32,6 +32,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateRecipeRequest" /> class.
         /// </summary>
+        /// <param name="recipeName">recipeName (required).</param>
+        /// <param name="steps">steps (required).</param>
+        /// <param name="ingredients">ingredients (required).</param>
         /// <param name="title">title (required).</param>
         /// <param name="keywords">keywords.</param>
         /// <param name="description">description.</param>
@@ -52,38 +55,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="recipeName">recipeName (required).</param>
-        /// <param name="steps">steps (required).</param>
-        /// <param name="ingredients">ingredients (required).</param>
-        public CreateRecipeRequest(string title = default(string), string keywords = default(string), string description = default(string), string mealType = default(string), string servings = default(string), TimeSpan totalTime = default(TimeSpan), int? calories = default(int?), string videoItemId = default(string), string smallImageItemId = default(string), string largeImageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string content = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), string recipeName = default(string), List<CreateStepRequest> steps = default(List<CreateStepRequest>), List<CreateIngredientRequest> ingredients = default(List<CreateIngredientRequest>))
+        public CreateRecipeRequest(string recipeName = default(string), List<CreateStepRequest> steps = default(List<CreateStepRequest>), List<CreateIngredientRequest> ingredients = default(List<CreateIngredientRequest>), string title = default(string), string keywords = default(string), string description = default(string), string mealType = default(string), string servings = default(string), string totalTime = default(string), int? calories = default(int?), string videoItemId = default(string), string smallImageItemId = default(string), string largeImageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string content = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
-            // to ensure "title" is required (not null)
-            if (title == null)
-            {
-                throw new InvalidDataException("title is a required property for CreateRecipeRequest and cannot be null");
-            }
-            else
-            {
-                this.Title = title;
-            }
-            // to ensure "applicationId" is required (not null)
-            if (applicationId == null)
-            {
-                throw new InvalidDataException("applicationId is a required property for CreateRecipeRequest and cannot be null");
-            }
-            else
-            {
-                this.ApplicationId = applicationId;
-            }
-            // to ensure "applicationFeatureId" is required (not null)
-            if (applicationFeatureId == null)
-            {
-                throw new InvalidDataException("applicationFeatureId is a required property for CreateRecipeRequest and cannot be null");
-            }
-            else
-            {
-                this.ApplicationFeatureId = applicationFeatureId;
-            }
             // to ensure "recipeName" is required (not null)
             if (recipeName == null)
             {
@@ -111,6 +84,33 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Ingredients = ingredients;
             }
+            // to ensure "title" is required (not null)
+            if (title == null)
+            {
+                throw new InvalidDataException("title is a required property for CreateRecipeRequest and cannot be null");
+            }
+            else
+            {
+                this.Title = title;
+            }
+            // to ensure "applicationId" is required (not null)
+            if (applicationId == null)
+            {
+                throw new InvalidDataException("applicationId is a required property for CreateRecipeRequest and cannot be null");
+            }
+            else
+            {
+                this.ApplicationId = applicationId;
+            }
+            // to ensure "applicationFeatureId" is required (not null)
+            if (applicationFeatureId == null)
+            {
+                throw new InvalidDataException("applicationFeatureId is a required property for CreateRecipeRequest and cannot be null");
+            }
+            else
+            {
+                this.ApplicationFeatureId = applicationFeatureId;
+            }
             this.Keywords = keywords;
             this.Description = description;
             this.MealType = mealType;
@@ -130,6 +130,24 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets RecipeName
+        /// </summary>
+        [DataMember(Name="recipeName", EmitDefaultValue=false)]
+        public string RecipeName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Steps
+        /// </summary>
+        [DataMember(Name="steps", EmitDefaultValue=false)]
+        public List<CreateStepRequest> Steps { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Ingredients
+        /// </summary>
+        [DataMember(Name="ingredients", EmitDefaultValue=false)]
+        public List<CreateIngredientRequest> Ingredients { get; set; }
+
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
@@ -164,7 +182,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Gets or Sets TotalTime
         /// </summary>
         [DataMember(Name="totalTime", EmitDefaultValue=false)]
-        public TimeSpan TotalTime { get; set; }
+        public string TotalTime { get; set; }
 
         /// <summary>
         /// Gets or Sets Calories
@@ -251,24 +269,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets RecipeName
-        /// </summary>
-        [DataMember(Name="recipeName", EmitDefaultValue=false)]
-        public string RecipeName { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Steps
-        /// </summary>
-        [DataMember(Name="steps", EmitDefaultValue=false)]
-        public List<CreateStepRequest> Steps { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Ingredients
-        /// </summary>
-        [DataMember(Name="ingredients", EmitDefaultValue=false)]
-        public List<CreateIngredientRequest> Ingredients { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -276,6 +276,9 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class CreateRecipeRequest {\n");
+            sb.Append("  RecipeName: ").Append(RecipeName).Append("\n");
+            sb.Append("  Steps: ").Append(Steps).Append("\n");
+            sb.Append("  Ingredients: ").Append(Ingredients).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  Keywords: ").Append(Keywords).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
@@ -296,9 +299,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  RecipeName: ").Append(RecipeName).Append("\n");
-            sb.Append("  Steps: ").Append(Steps).Append("\n");
-            sb.Append("  Ingredients: ").Append(Ingredients).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -333,6 +333,23 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.RecipeName == input.RecipeName ||
+                    (this.RecipeName != null &&
+                    this.RecipeName.Equals(input.RecipeName))
+                ) && 
+                (
+                    this.Steps == input.Steps ||
+                    this.Steps != null &&
+                    input.Steps != null &&
+                    this.Steps.SequenceEqual(input.Steps)
+                ) && 
+                (
+                    this.Ingredients == input.Ingredients ||
+                    this.Ingredients != null &&
+                    input.Ingredients != null &&
+                    this.Ingredients.SequenceEqual(input.Ingredients)
+                ) && 
                 (
                     this.Title == input.Title ||
                     (this.Title != null &&
@@ -433,23 +450,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.RecipeName == input.RecipeName ||
-                    (this.RecipeName != null &&
-                    this.RecipeName.Equals(input.RecipeName))
-                ) && 
-                (
-                    this.Steps == input.Steps ||
-                    this.Steps != null &&
-                    input.Steps != null &&
-                    this.Steps.SequenceEqual(input.Steps)
-                ) && 
-                (
-                    this.Ingredients == input.Ingredients ||
-                    this.Ingredients != null &&
-                    input.Ingredients != null &&
-                    this.Ingredients.SequenceEqual(input.Ingredients)
                 );
         }
 
@@ -462,6 +462,12 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.RecipeName != null)
+                    hashCode = hashCode * 59 + this.RecipeName.GetHashCode();
+                if (this.Steps != null)
+                    hashCode = hashCode * 59 + this.Steps.GetHashCode();
+                if (this.Ingredients != null)
+                    hashCode = hashCode * 59 + this.Ingredients.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.Keywords != null)
@@ -502,12 +508,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.RecipeName != null)
-                    hashCode = hashCode * 59 + this.RecipeName.GetHashCode();
-                if (this.Steps != null)
-                    hashCode = hashCode * 59 + this.Steps.GetHashCode();
-                if (this.Ingredients != null)
-                    hashCode = hashCode * 59 + this.Ingredients.GetHashCode();
                 return hashCode;
             }
         }

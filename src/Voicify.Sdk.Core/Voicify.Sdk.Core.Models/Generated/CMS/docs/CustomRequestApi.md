@@ -4,105 +4,39 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiCustomRequestApplicationIdGet**](CustomRequestApi.md#apicustomrequestapplicationidget) | **GET** /api/CustomRequest/{applicationId} | 
-[**ApiCustomRequestByFeatureApplicationFeatureIdGet**](CustomRequestApi.md#apicustomrequestbyfeatureapplicationfeatureidget) | **GET** /api/CustomRequest/byFeature/{applicationFeatureId} | 
-[**ApiCustomRequestContentItemIdFullPut**](CustomRequestApi.md#apicustomrequestcontentitemidfullput) | **PUT** /api/CustomRequest/{contentItemId}/full | 
-[**ApiCustomRequestContentItemIdMoveToFeatureApplicationFeatureIdPut**](CustomRequestApi.md#apicustomrequestcontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/CustomRequest/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiCustomRequestCustomRequestIdBulkUpdatePut**](CustomRequestApi.md#apicustomrequestcustomrequestidbulkupdateput) | **PUT** /api/CustomRequest/{customRequestId}/bulkUpdate | 
-[**ApiCustomRequestCustomRequestIdBulkUpdateStubPut**](CustomRequestApi.md#apicustomrequestcustomrequestidbulkupdatestubput) | **PUT** /api/CustomRequest/{customRequestId}/bulkUpdate/stub | 
-[**ApiCustomRequestCustomRequestIdCopyPost**](CustomRequestApi.md#apicustomrequestcustomrequestidcopypost) | **POST** /api/CustomRequest/{customRequestId}/copy | 
-[**ApiCustomRequestCustomRequestIdDelete**](CustomRequestApi.md#apicustomrequestcustomrequestiddelete) | **DELETE** /api/CustomRequest/{customRequestId} | 
-[**ApiCustomRequestCustomRequestIdIsLivePut**](CustomRequestApi.md#apicustomrequestcustomrequestidisliveput) | **PUT** /api/CustomRequest/{customRequestId}/isLive | 
-[**ApiCustomRequestCustomRequestIdPut**](CustomRequestApi.md#apicustomrequestcustomrequestidput) | **PUT** /api/CustomRequest/{customRequestId} | 
-[**ApiCustomRequestCustomRequestIdResponsePost**](CustomRequestApi.md#apicustomrequestcustomrequestidresponsepost) | **POST** /api/CustomRequest/{customRequestId}/response | 
-[**ApiCustomRequestCustomRequestIdShouldNotSyncPut**](CustomRequestApi.md#apicustomrequestcustomrequestidshouldnotsyncput) | **PUT** /api/CustomRequest/{customRequestId}/shouldNotSync | 
-[**ApiCustomRequestCustomRequestIdWebhooksBulkPut**](CustomRequestApi.md#apicustomrequestcustomrequestidwebhooksbulkput) | **PUT** /api/CustomRequest/{customRequestId}/webhooks/bulk | 
-[**ApiCustomRequestCustomRequestIdWebhooksGet**](CustomRequestApi.md#apicustomrequestcustomrequestidwebhooksget) | **GET** /api/CustomRequest/{customRequestId}/webhooks | 
-[**ApiCustomRequestCustomRequestIdWebhooksWebhookIdPost**](CustomRequestApi.md#apicustomrequestcustomrequestidwebhookswebhookidpost) | **POST** /api/CustomRequest/{customRequestId}/webhooks/{webhookId} | 
-[**ApiCustomRequestCustomRequestIdWebhooksWebhookInstanceIdPut**](CustomRequestApi.md#apicustomrequestcustomrequestidwebhookswebhookinstanceidput) | **PUT** /api/CustomRequest/{customRequestId}/webhooks/{webhookInstanceId} | 
-[**ApiCustomRequestCustomRequestResponseIdAddAudioFileMediaItemIdPut**](CustomRequestApi.md#apicustomrequestcustomrequestresponseidaddaudiofilemediaitemidput) | **PUT** /api/CustomRequest/{customRequestResponseId}/addAudioFile/{mediaItemId} | 
-[**ApiCustomRequestCustomRequestResponseIdAddLargeImageMediaItemIdPut**](CustomRequestApi.md#apicustomrequestcustomrequestresponseidaddlargeimagemediaitemidput) | **PUT** /api/CustomRequest/{customRequestResponseId}/addLargeImage/{mediaItemId} | 
-[**ApiCustomRequestCustomRequestResponseIdAddSmallImageMediaItemIdPut**](CustomRequestApi.md#apicustomrequestcustomrequestresponseidaddsmallimagemediaitemidput) | **PUT** /api/CustomRequest/{customRequestResponseId}/addSmallImage/{mediaItemId} | 
-[**ApiCustomRequestCustomRequestResponseIdAddVideoFileMediaItemIdPut**](CustomRequestApi.md#apicustomrequestcustomrequestresponseidaddvideofilemediaitemidput) | **PUT** /api/CustomRequest/{customRequestResponseId}/addVideoFile/{mediaItemId} | 
-[**ApiCustomRequestFullIdGet**](CustomRequestApi.md#apicustomrequestfullidget) | **GET** /api/CustomRequest/full/{id} | 
-[**ApiCustomRequestFullPost**](CustomRequestApi.md#apicustomrequestfullpost) | **POST** /api/CustomRequest/full | 
-[**ApiCustomRequestModuleApplicationModuleIdGet**](CustomRequestApi.md#apicustomrequestmoduleapplicationmoduleidget) | **GET** /api/CustomRequest/module/{applicationModuleId} | 
-[**ApiCustomRequestPost**](CustomRequestApi.md#apicustomrequestpost) | **POST** /api/CustomRequest | 
-[**ApiCustomRequestResponseCustomRequestResponseIdDelete**](CustomRequestApi.md#apicustomrequestresponsecustomrequestresponseiddelete) | **DELETE** /api/CustomRequest/response/{customRequestResponseId} | 
-[**ApiCustomRequestResponseCustomRequestResponseIdMediaGet**](CustomRequestApi.md#apicustomrequestresponsecustomrequestresponseidmediaget) | **GET** /api/CustomRequest/response/{customRequestResponseId}/media | 
-[**ApiCustomRequestResponseCustomRequestResponseIdPut**](CustomRequestApi.md#apicustomrequestresponsecustomrequestresponseidput) | **PUT** /api/CustomRequest/response/{customRequestResponseId} | 
-[**ApiCustomRequestStubPost**](CustomRequestApi.md#apicustomrequeststubpost) | **POST** /api/CustomRequest/stub | 
-[**ApiCustomRequestWebhookCustomRequestWebhookIdDelete**](CustomRequestApi.md#apicustomrequestwebhookcustomrequestwebhookiddelete) | **DELETE** /api/CustomRequest/webhook/{customRequestWebhookId} | 
+[**AddAudioFile**](CustomRequestApi.md#addaudiofile) | **PUT** /api/CustomRequest/{customRequestResponseId}/addAudioFile/{mediaItemId} | 
+[**AddLargeImage**](CustomRequestApi.md#addlargeimage) | **PUT** /api/CustomRequest/{customRequestResponseId}/addLargeImage/{mediaItemId} | 
+[**AddSmallImage**](CustomRequestApi.md#addsmallimage) | **PUT** /api/CustomRequest/{customRequestResponseId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](CustomRequestApi.md#addvideofile) | **PUT** /api/CustomRequest/{customRequestResponseId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](CustomRequestApi.md#addwebhook) | **POST** /api/CustomRequest/{customRequestId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](CustomRequestApi.md#bulkupdateattachedwebhooks) | **PUT** /api/CustomRequest/{customRequestId}/webhooks/bulk | 
+[**BulkUpdateCustomRequest**](CustomRequestApi.md#bulkupdatecustomrequest) | **PUT** /api/CustomRequest/{customRequestId}/bulkUpdate | 
+[**BulkUpdateCustomRequestStub**](CustomRequestApi.md#bulkupdatecustomrequeststub) | **PUT** /api/CustomRequest/{customRequestId}/bulkUpdate/stub | 
+[**CopyContentItem**](CustomRequestApi.md#copycontentitem) | **POST** /api/CustomRequest/{customRequestId}/copy | 
+[**CreateCustomRequest**](CustomRequestApi.md#createcustomrequest) | **POST** /api/CustomRequest | 
+[**CreateCustomRequestStub**](CustomRequestApi.md#createcustomrequeststub) | **POST** /api/CustomRequest/stub | 
+[**CreateFullContentItem**](CustomRequestApi.md#createfullcontentitem) | **POST** /api/CustomRequest/full | 
+[**CreateResponse**](CustomRequestApi.md#createresponse) | **POST** /api/CustomRequest/{customRequestId}/response | 
+[**DeleteCustomRequest**](CustomRequestApi.md#deletecustomrequest) | **DELETE** /api/CustomRequest/{customRequestId} | 
+[**DeleteResponse**](CustomRequestApi.md#deleteresponse) | **DELETE** /api/CustomRequest/response/{customRequestResponseId} | 
+[**FindFullById**](CustomRequestApi.md#findfullbyid) | **GET** /api/CustomRequest/full/{id} | 
+[**GetByApplicationFeature**](CustomRequestApi.md#getbyapplicationfeature) | **GET** /api/CustomRequest/byFeature/{applicationFeatureId} | 
+[**GetMediaItemsForCustomRequest**](CustomRequestApi.md#getmediaitemsforcustomrequest) | **GET** /api/CustomRequest/response/{customRequestResponseId}/media | 
+[**GetMessagesForApplication**](CustomRequestApi.md#getmessagesforapplication) | **GET** /api/CustomRequest/{applicationId} | 
+[**GetMessagesForModule**](CustomRequestApi.md#getmessagesformodule) | **GET** /api/CustomRequest/module/{applicationModuleId} | 
+[**GetWebhooks**](CustomRequestApi.md#getwebhooks) | **GET** /api/CustomRequest/{customRequestId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](CustomRequestApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/CustomRequest/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveWebhook**](CustomRequestApi.md#removewebhook) | **DELETE** /api/CustomRequest/webhook/{customRequestWebhookId} | 
+[**ToggleLive**](CustomRequestApi.md#togglelive) | **PUT** /api/CustomRequest/{customRequestId}/isLive | 
+[**ToggleSync**](CustomRequestApi.md#togglesync) | **PUT** /api/CustomRequest/{customRequestId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](CustomRequestApi.md#updateattachedwebhook) | **PUT** /api/CustomRequest/{customRequestId}/webhooks/{webhookInstanceId} | 
+[**UpdateFullContentItem**](CustomRequestApi.md#updatefullcontentitem) | **PUT** /api/CustomRequest/{contentItemId}/full | 
+[**UpdateMessage**](CustomRequestApi.md#updatemessage) | **PUT** /api/CustomRequest/{customRequestId} | 
+[**UpdateResponse**](CustomRequestApi.md#updateresponse) | **PUT** /api/CustomRequest/response/{customRequestResponseId} | 
 
-<a name="apicustomrequestapplicationidget"></a>
-# **ApiCustomRequestApplicationIdGet**
-> List<CustomRequestModel> ApiCustomRequestApplicationIdGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestApplicationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;CustomRequestModel&gt; result = apiInstance.ApiCustomRequestApplicationIdGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestApplicationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<CustomRequestModel>**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestbyfeatureapplicationfeatureidget"></a>
-# **ApiCustomRequestByFeatureApplicationFeatureIdGet**
-> List<CustomRequestModel> ApiCustomRequestByFeatureApplicationFeatureIdGet (string applicationFeatureId)
+<a name="addaudiofile"></a>
+# **AddAudioFile**
+> CustomRequestResponseModel AddAudioFile (string customRequestResponseId, string mediaItemId)
 
 
 
@@ -116,7 +50,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestByFeatureApplicationFeatureIdGetExample
+    public class AddAudioFileExample
     {
         public void main()
         {
@@ -130,16 +64,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new CustomRequestApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var customRequestResponseId = customRequestResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                List&lt;CustomRequestModel&gt; result = apiInstance.ApiCustomRequestByFeatureApplicationFeatureIdGet(applicationFeatureId);
+                CustomRequestResponseModel result = apiInstance.AddAudioFile(customRequestResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestByFeatureApplicationFeatureIdGet: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.AddAudioFile: " + e.Message );
             }
         }
     }
@@ -150,615 +85,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<CustomRequestModel>**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcontentitemidfullput"></a>
-# **ApiCustomRequestContentItemIdFullPut**
-> CustomRequestModel ApiCustomRequestContentItemIdFullPut (string contentItemId, CustomRequestModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestContentItemIdFullPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new CustomRequestModel(); // CustomRequestModel |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestContentItemIdFullPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestContentItemIdFullPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**CustomRequestModel**](CustomRequestModel.md)|  | [optional] 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiCustomRequestContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> CustomRequestModel ApiCustomRequestContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestContentItemIdMoveToFeatureApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidbulkupdateput"></a>
-# **ApiCustomRequestCustomRequestIdBulkUpdatePut**
-> CustomRequestModel ApiCustomRequestCustomRequestIdBulkUpdatePut (string customRequestId, BulkUpdateCustomRequestRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdBulkUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new BulkUpdateCustomRequestRequest(); // BulkUpdateCustomRequestRequest |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdBulkUpdatePut(customRequestId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdBulkUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**BulkUpdateCustomRequestRequest**](BulkUpdateCustomRequestRequest.md)|  | [optional] 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidbulkupdatestubput"></a>
-# **ApiCustomRequestCustomRequestIdBulkUpdateStubPut**
-> CustomRequestModel ApiCustomRequestCustomRequestIdBulkUpdateStubPut (string customRequestId, BulkUpdateCustomRequestStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdBulkUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new BulkUpdateCustomRequestStubRequest(); // BulkUpdateCustomRequestStubRequest |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdBulkUpdateStubPut(customRequestId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdBulkUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**BulkUpdateCustomRequestStubRequest**](BulkUpdateCustomRequestStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidcopypost"></a>
-# **ApiCustomRequestCustomRequestIdCopyPost**
-> CustomRequestModel ApiCustomRequestCustomRequestIdCopyPost (string customRequestId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdCopyPost(customRequestId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestiddelete"></a>
-# **ApiCustomRequestCustomRequestIdDelete**
-> CustomRequestModel ApiCustomRequestCustomRequestIdDelete (string customRequestId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdDelete(customRequestId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidisliveput"></a>
-# **ApiCustomRequestCustomRequestIdIsLivePut**
-> CustomRequestModel ApiCustomRequestCustomRequestIdIsLivePut (string customRequestId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdIsLivePut(customRequestId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidput"></a>
-# **ApiCustomRequestCustomRequestIdPut**
-> CustomRequestModel ApiCustomRequestCustomRequestIdPut (string customRequestId, UpdateCustomRequestRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new UpdateCustomRequestRequest(); // UpdateCustomRequestRequest |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdPut(customRequestId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**UpdateCustomRequestRequest**](UpdateCustomRequestRequest.md)|  | [optional] 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidresponsepost"></a>
-# **ApiCustomRequestCustomRequestIdResponsePost**
-> CustomRequestResponseModel ApiCustomRequestCustomRequestIdResponsePost (string customRequestId, NewCustomRequestResponseRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdResponsePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new NewCustomRequestResponseRequest(); // NewCustomRequestResponseRequest |  (optional) 
-
-            try
-            {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestCustomRequestIdResponsePost(customRequestId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdResponsePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**NewCustomRequestResponseRequest**](NewCustomRequestResponseRequest.md)|  | [optional] 
+ **customRequestResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
@@ -770,13 +98,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidshouldnotsyncput"></a>
-# **ApiCustomRequestCustomRequestIdShouldNotSyncPut**
-> CustomRequestModel ApiCustomRequestCustomRequestIdShouldNotSyncPut (string customRequestId, ToggleSyncRequest body = null)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> CustomRequestResponseModel AddLargeImage (string customRequestResponseId, string mediaItemId)
 
 
 
@@ -790,7 +118,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestCustomRequestIdShouldNotSyncPutExample
+    public class AddLargeImageExample
     {
         public void main()
         {
@@ -804,17 +132,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+            var customRequestResponseId = customRequestResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                CustomRequestModel result = apiInstance.ApiCustomRequestCustomRequestIdShouldNotSyncPut(customRequestId, body);
+                CustomRequestResponseModel result = apiInstance.AddLargeImage(customRequestResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdShouldNotSyncPut: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.AddLargeImage: " + e.Message );
             }
         }
     }
@@ -825,146 +153,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+ **customRequestResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidwebhooksbulkput"></a>
-# **ApiCustomRequestCustomRequestIdWebhooksBulkPut**
-> List<CustomRequestWebhookModel> ApiCustomRequestCustomRequestIdWebhooksBulkPut (string customRequestId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;CustomRequestWebhookModel&gt; result = apiInstance.ApiCustomRequestCustomRequestIdWebhooksBulkPut(customRequestId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<CustomRequestWebhookModel>**](CustomRequestWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidwebhooksget"></a>
-# **ApiCustomRequestCustomRequestIdWebhooksGet**
-> List<CustomRequestWebhookModel> ApiCustomRequestCustomRequestIdWebhooksGet (string customRequestId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestId = customRequestId_example;  // string | 
-
-            try
-            {
-                List&lt;CustomRequestWebhookModel&gt; result = apiInstance.ApiCustomRequestCustomRequestIdWebhooksGet(customRequestId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestId** | **string**|  | 
-
-### Return type
-
-[**List<CustomRequestWebhookModel>**](CustomRequestWebhookModel.md)
+[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
 
 ### Authorization
 
@@ -976,9 +170,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidwebhookswebhookidpost"></a>
-# **ApiCustomRequestCustomRequestIdWebhooksWebhookIdPost**
-> CustomRequestWebhookModel ApiCustomRequestCustomRequestIdWebhooksWebhookIdPost (string customRequestId, string webhookId, WebhookParametersRequest body = null)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> CustomRequestResponseModel AddSmallImage (string customRequestResponseId, string mediaItemId)
 
 
 
@@ -992,7 +186,143 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestCustomRequestIdWebhooksWebhookIdPostExample
+    public class AddSmallImageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestResponseId = customRequestResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                CustomRequestResponseModel result = apiInstance.AddSmallImage(customRequestResponseId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.AddSmallImage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> CustomRequestResponseModel AddVideoFile (string customRequestResponseId, string mediaItemId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddVideoFileExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestResponseId = customRequestResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                CustomRequestResponseModel result = apiInstance.AddVideoFile(customRequestResponseId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.AddVideoFile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> CustomRequestWebhookModel AddWebhook (string customRequestId, string webhookId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1012,12 +342,12 @@ namespace Example
 
             try
             {
-                CustomRequestWebhookModel result = apiInstance.ApiCustomRequestCustomRequestIdWebhooksWebhookIdPost(customRequestId, webhookId, body);
+                CustomRequestWebhookModel result = apiInstance.AddWebhook(customRequestId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1046,9 +376,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestidwebhookswebhookinstanceidput"></a>
-# **ApiCustomRequestCustomRequestIdWebhooksWebhookInstanceIdPut**
-> CustomRequestWebhookModel ApiCustomRequestCustomRequestIdWebhooksWebhookInstanceIdPut (string customRequestId, string webhookInstanceId, WebhookParametersRequest body = null)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<CustomRequestWebhookModel> BulkUpdateAttachedWebhooks (string customRequestId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1062,7 +392,1341 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestCustomRequestIdWebhooksWebhookInstanceIdPutExample
+    public class BulkUpdateAttachedWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
+
+            try
+            {
+                List&lt;CustomRequestWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(customRequestId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.BulkUpdateAttachedWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<CustomRequestWebhookModel>**](CustomRequestWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatecustomrequest"></a>
+# **BulkUpdateCustomRequest**
+> CustomRequestModel BulkUpdateCustomRequest (string customRequestId, BulkUpdateCustomRequestRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateCustomRequestExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new BulkUpdateCustomRequestRequest(); // BulkUpdateCustomRequestRequest |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.BulkUpdateCustomRequest(customRequestId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.BulkUpdateCustomRequest: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+ **body** | [**BulkUpdateCustomRequestRequest**](BulkUpdateCustomRequestRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatecustomrequeststub"></a>
+# **BulkUpdateCustomRequestStub**
+> CustomRequestModel BulkUpdateCustomRequestStub (string customRequestId, BulkUpdateCustomRequestStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateCustomRequestStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new BulkUpdateCustomRequestStubRequest(); // BulkUpdateCustomRequestStubRequest |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.BulkUpdateCustomRequestStub(customRequestId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.BulkUpdateCustomRequestStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+ **body** | [**BulkUpdateCustomRequestStubRequest**](BulkUpdateCustomRequestStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> CustomRequestModel CopyContentItem (string customRequestId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.CopyContentItem(customRequestId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createcustomrequest"></a>
+# **CreateCustomRequest**
+> CustomRequestModel CreateCustomRequest (NewCustomRequestRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateCustomRequestExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var body = new NewCustomRequestRequest(); // NewCustomRequestRequest |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.CreateCustomRequest(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.CreateCustomRequest: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewCustomRequestRequest**](NewCustomRequestRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createcustomrequeststub"></a>
+# **CreateCustomRequestStub**
+> CustomRequestModel CreateCustomRequestStub (NewCustomRequestStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateCustomRequestStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var body = new NewCustomRequestStubRequest(); // NewCustomRequestStubRequest |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.CreateCustomRequestStub(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.CreateCustomRequestStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewCustomRequestStubRequest**](NewCustomRequestStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createfullcontentitem"></a>
+# **CreateFullContentItem**
+> CustomRequestModel CreateFullContentItem (CustomRequestModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var body = new CustomRequestModel(); // CustomRequestModel |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.CreateFullContentItem(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.CreateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**CustomRequestModel**](CustomRequestModel.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createresponse"></a>
+# **CreateResponse**
+> CustomRequestResponseModel CreateResponse (string customRequestId, NewCustomRequestResponseRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new NewCustomRequestResponseRequest(); // NewCustomRequestResponseRequest |  (optional) 
+
+            try
+            {
+                CustomRequestResponseModel result = apiInstance.CreateResponse(customRequestId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.CreateResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+ **body** | [**NewCustomRequestResponseRequest**](NewCustomRequestResponseRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deletecustomrequest"></a>
+# **DeleteCustomRequest**
+> CustomRequestModel DeleteCustomRequest (string customRequestId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteCustomRequestExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.DeleteCustomRequest(customRequestId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.DeleteCustomRequest: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deleteresponse"></a>
+# **DeleteResponse**
+> CustomRequestResponseModel DeleteResponse (string customRequestResponseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestResponseId = customRequestResponseId_example;  // string | 
+
+            try
+            {
+                CustomRequestResponseModel result = apiInstance.DeleteResponse(customRequestResponseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.DeleteResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestResponseId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> CustomRequestModel FindFullById (string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindFullByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var id = id_example;  // string | 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.FindFullById(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.FindFullById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**|  | 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<CustomRequestModel> GetByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;CustomRequestModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.GetByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<CustomRequestModel>**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmediaitemsforcustomrequest"></a>
+# **GetMediaItemsForCustomRequest**
+> List<MediaItemModel> GetMediaItemsForCustomRequest (string customRequestResponseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMediaItemsForCustomRequestExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestResponseId = customRequestResponseId_example;  // string | 
+
+            try
+            {
+                List&lt;MediaItemModel&gt; result = apiInstance.GetMediaItemsForCustomRequest(customRequestResponseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.GetMediaItemsForCustomRequest: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestResponseId** | **string**|  | 
+
+### Return type
+
+[**List<MediaItemModel>**](MediaItemModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmessagesforapplication"></a>
+# **GetMessagesForApplication**
+> List<CustomRequestModel> GetMessagesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMessagesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;CustomRequestModel&gt; result = apiInstance.GetMessagesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.GetMessagesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<CustomRequestModel>**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmessagesformodule"></a>
+# **GetMessagesForModule**
+> List<CustomRequestModel> GetMessagesForModule (string applicationModuleId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMessagesForModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var applicationModuleId = applicationModuleId_example;  // string | 
+
+            try
+            {
+                List&lt;CustomRequestModel&gt; result = apiInstance.GetMessagesForModule(applicationModuleId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.GetMessagesForModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationModuleId** | **string**|  | 
+
+### Return type
+
+[**List<CustomRequestModel>**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<CustomRequestWebhookModel> GetWebhooks (string customRequestId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+
+            try
+            {
+                List&lt;CustomRequestWebhookModel&gt; result = apiInstance.GetWebhooks(customRequestId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+
+### Return type
+
+[**List<CustomRequestWebhookModel>**](CustomRequestWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> CustomRequestModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.MoveContentItemToApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> CustomRequestWebhookModel RemoveWebhook (string customRequestWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestWebhookId = customRequestWebhookId_example;  // string | 
+
+            try
+            {
+                CustomRequestWebhookModel result = apiInstance.RemoveWebhook(customRequestWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestWebhookId** | **string**|  | 
+
+### Return type
+
+[**CustomRequestWebhookModel**](CustomRequestWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglelive"></a>
+# **ToggleLive**
+> CustomRequestModel ToggleLive (string customRequestId, ToggleLiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.ToggleLive(customRequestId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.ToggleLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> CustomRequestModel ToggleSync (string customRequestId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new CustomRequestApi();
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                CustomRequestModel result = apiInstance.ToggleSync(customRequestId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomRequestApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customRequestId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**CustomRequestModel**](CustomRequestModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> CustomRequestWebhookModel UpdateAttachedWebhook (string customRequestId, string webhookInstanceId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
     {
         public void main()
         {
@@ -1082,12 +1746,12 @@ namespace Example
 
             try
             {
-                CustomRequestWebhookModel result = apiInstance.ApiCustomRequestCustomRequestIdWebhooksWebhookInstanceIdPut(customRequestId, webhookInstanceId, body);
+                CustomRequestWebhookModel result = apiInstance.UpdateAttachedWebhook(customRequestId, webhookInstanceId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestIdWebhooksWebhookInstanceIdPut: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.UpdateAttachedWebhook: " + e.Message );
             }
         }
     }
@@ -1116,9 +1780,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestresponseidaddaudiofilemediaitemidput"></a>
-# **ApiCustomRequestCustomRequestResponseIdAddAudioFileMediaItemIdPut**
-> CustomRequestResponseModel ApiCustomRequestCustomRequestResponseIdAddAudioFileMediaItemIdPut (string customRequestResponseId, string mediaItemId)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> CustomRequestModel UpdateFullContentItem (string contentItemId, CustomRequestModel body = null)
 
 
 
@@ -1132,7 +1796,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestCustomRequestResponseIdAddAudioFileMediaItemIdPutExample
+    public class UpdateFullContentItemExample
     {
         public void main()
         {
@@ -1146,354 +1810,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new CustomRequestApi();
-            var customRequestResponseId = customRequestResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestCustomRequestResponseIdAddAudioFileMediaItemIdPut(customRequestResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestResponseIdAddAudioFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestresponseidaddlargeimagemediaitemidput"></a>
-# **ApiCustomRequestCustomRequestResponseIdAddLargeImageMediaItemIdPut**
-> CustomRequestResponseModel ApiCustomRequestCustomRequestResponseIdAddLargeImageMediaItemIdPut (string customRequestResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestResponseIdAddLargeImageMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestResponseId = customRequestResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestCustomRequestResponseIdAddLargeImageMediaItemIdPut(customRequestResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestResponseIdAddLargeImageMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestresponseidaddsmallimagemediaitemidput"></a>
-# **ApiCustomRequestCustomRequestResponseIdAddSmallImageMediaItemIdPut**
-> CustomRequestResponseModel ApiCustomRequestCustomRequestResponseIdAddSmallImageMediaItemIdPut (string customRequestResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestResponseIdAddSmallImageMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestResponseId = customRequestResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestCustomRequestResponseIdAddSmallImageMediaItemIdPut(customRequestResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestResponseIdAddSmallImageMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestcustomrequestresponseidaddvideofilemediaitemidput"></a>
-# **ApiCustomRequestCustomRequestResponseIdAddVideoFileMediaItemIdPut**
-> CustomRequestResponseModel ApiCustomRequestCustomRequestResponseIdAddVideoFileMediaItemIdPut (string customRequestResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestCustomRequestResponseIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestResponseId = customRequestResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestCustomRequestResponseIdAddVideoFileMediaItemIdPut(customRequestResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestCustomRequestResponseIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestfullidget"></a>
-# **ApiCustomRequestFullIdGet**
-> CustomRequestModel ApiCustomRequestFullIdGet (string id)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestFullIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var id = id_example;  // string | 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestFullIdGet(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestFullIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestfullpost"></a>
-# **ApiCustomRequestFullPost**
-> CustomRequestModel ApiCustomRequestFullPost (CustomRequestModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestFullPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
+            var contentItemId = contentItemId_example;  // string | 
             var body = new CustomRequestModel(); // CustomRequestModel |  (optional) 
 
             try
             {
-                CustomRequestModel result = apiInstance.ApiCustomRequestFullPost(body);
+                CustomRequestModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestFullPost: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.UpdateFullContentItem: " + e.Message );
             }
         }
     }
@@ -1504,6 +1831,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
  **body** | [**CustomRequestModel**](CustomRequestModel.md)|  | [optional] 
 
 ### Return type
@@ -1520,9 +1848,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestmoduleapplicationmoduleidget"></a>
-# **ApiCustomRequestModuleApplicationModuleIdGet**
-> List<CustomRequestModel> ApiCustomRequestModuleApplicationModuleIdGet (string applicationModuleId)
+<a name="updatemessage"></a>
+# **UpdateMessage**
+> CustomRequestModel UpdateMessage (string customRequestId, UpdateCustomRequestRequest body = null)
 
 
 
@@ -1536,7 +1864,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestModuleApplicationModuleIdGetExample
+    public class UpdateMessageExample
     {
         public void main()
         {
@@ -1550,16 +1878,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new CustomRequestApi();
-            var applicationModuleId = applicationModuleId_example;  // string | 
+            var customRequestId = customRequestId_example;  // string | 
+            var body = new UpdateCustomRequestRequest(); // UpdateCustomRequestRequest |  (optional) 
 
             try
             {
-                List&lt;CustomRequestModel&gt; result = apiInstance.ApiCustomRequestModuleApplicationModuleIdGet(applicationModuleId);
+                CustomRequestModel result = apiInstance.UpdateMessage(customRequestId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestModuleApplicationModuleIdGet: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.UpdateMessage: " + e.Message );
             }
         }
     }
@@ -1570,73 +1899,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationModuleId** | **string**|  | 
-
-### Return type
-
-[**List<CustomRequestModel>**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestpost"></a>
-# **ApiCustomRequestPost**
-> CustomRequestModel ApiCustomRequestPost (NewCustomRequestRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var body = new NewCustomRequestRequest(); // NewCustomRequestRequest |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewCustomRequestRequest**](NewCustomRequestRequest.md)|  | [optional] 
+ **customRequestId** | **string**|  | 
+ **body** | [**UpdateCustomRequestRequest**](UpdateCustomRequestRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -1652,9 +1916,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestresponsecustomrequestresponseiddelete"></a>
-# **ApiCustomRequestResponseCustomRequestResponseIdDelete**
-> CustomRequestResponseModel ApiCustomRequestResponseCustomRequestResponseIdDelete (string customRequestResponseId)
+<a name="updateresponse"></a>
+# **UpdateResponse**
+> CustomRequestResponseModel UpdateResponse (string customRequestResponseId, UpdateCustomRequestResponseRequest body = null)
 
 
 
@@ -1668,139 +1932,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiCustomRequestResponseCustomRequestResponseIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestResponseId = customRequestResponseId_example;  // string | 
-
-            try
-            {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestResponseCustomRequestResponseIdDelete(customRequestResponseId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestResponseCustomRequestResponseIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestResponseId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestResponseModel**](CustomRequestResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestresponsecustomrequestresponseidmediaget"></a>
-# **ApiCustomRequestResponseCustomRequestResponseIdMediaGet**
-> List<MediaItemModel> ApiCustomRequestResponseCustomRequestResponseIdMediaGet (string customRequestResponseId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestResponseCustomRequestResponseIdMediaGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestResponseId = customRequestResponseId_example;  // string | 
-
-            try
-            {
-                List&lt;MediaItemModel&gt; result = apiInstance.ApiCustomRequestResponseCustomRequestResponseIdMediaGet(customRequestResponseId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestResponseCustomRequestResponseIdMediaGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestResponseId** | **string**|  | 
-
-### Return type
-
-[**List<MediaItemModel>**](MediaItemModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestresponsecustomrequestresponseidput"></a>
-# **ApiCustomRequestResponseCustomRequestResponseIdPut**
-> CustomRequestResponseModel ApiCustomRequestResponseCustomRequestResponseIdPut (string customRequestResponseId, UpdateCustomRequestResponseRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestResponseCustomRequestResponseIdPutExample
+    public class UpdateResponseExample
     {
         public void main()
         {
@@ -1819,12 +1951,12 @@ namespace Example
 
             try
             {
-                CustomRequestResponseModel result = apiInstance.ApiCustomRequestResponseCustomRequestResponseIdPut(customRequestResponseId, body);
+                CustomRequestResponseModel result = apiInstance.UpdateResponse(customRequestResponseId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestResponseCustomRequestResponseIdPut: " + e.Message );
+                Debug.Print("Exception when calling CustomRequestApi.UpdateResponse: " + e.Message );
             }
         }
     }
@@ -1849,138 +1981,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequeststubpost"></a>
-# **ApiCustomRequestStubPost**
-> CustomRequestModel ApiCustomRequestStubPost (NewCustomRequestStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestStubPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var body = new NewCustomRequestStubRequest(); // NewCustomRequestStubRequest |  (optional) 
-
-            try
-            {
-                CustomRequestModel result = apiInstance.ApiCustomRequestStubPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestStubPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewCustomRequestStubRequest**](NewCustomRequestStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**CustomRequestModel**](CustomRequestModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apicustomrequestwebhookcustomrequestwebhookiddelete"></a>
-# **ApiCustomRequestWebhookCustomRequestWebhookIdDelete**
-> CustomRequestWebhookModel ApiCustomRequestWebhookCustomRequestWebhookIdDelete (string customRequestWebhookId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiCustomRequestWebhookCustomRequestWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new CustomRequestApi();
-            var customRequestWebhookId = customRequestWebhookId_example;  // string | 
-
-            try
-            {
-                CustomRequestWebhookModel result = apiInstance.ApiCustomRequestWebhookCustomRequestWebhookIdDelete(customRequestWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomRequestApi.ApiCustomRequestWebhookCustomRequestWebhookIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customRequestWebhookId** | **string**|  | 
-
-### Return type
-
-[**CustomRequestWebhookModel**](CustomRequestWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

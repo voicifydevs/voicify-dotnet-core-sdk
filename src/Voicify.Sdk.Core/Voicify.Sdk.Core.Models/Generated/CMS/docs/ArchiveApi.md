@@ -4,14 +4,14 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiArchiveArchiveIdDelete**](ArchiveApi.md#apiarchivearchiveiddelete) | **DELETE** /api/Archive/{archiveId} | 
-[**ApiArchiveArchiveIdGet**](ArchiveApi.md#apiarchivearchiveidget) | **GET** /api/Archive/{archiveId} | 
-[**ApiArchiveForAppApplicationIdGet**](ArchiveApi.md#apiarchiveforappapplicationidget) | **GET** /api/Archive/forApp/{applicationId} | 
-[**ApiArchiveQueuePost**](ArchiveApi.md#apiarchivequeuepost) | **POST** /api/Archive/queue | 
+[**DeleteArchive**](ArchiveApi.md#deletearchive) | **DELETE** /api/Archive/{archiveId} | 
+[**FindArchive**](ArchiveApi.md#findarchive) | **GET** /api/Archive/{archiveId} | 
+[**GetAppArchives**](ArchiveApi.md#getapparchives) | **GET** /api/Archive/forApp/{applicationId} | 
+[**QueueArchive**](ArchiveApi.md#queuearchive) | **POST** /api/Archive/queue | 
 
-<a name="apiarchivearchiveiddelete"></a>
-# **ApiArchiveArchiveIdDelete**
-> ApplicationArchiveModel ApiArchiveArchiveIdDelete (string archiveId)
+<a name="deletearchive"></a>
+# **DeleteArchive**
+> ApplicationArchiveModel DeleteArchive (string archiveId)
 
 
 
@@ -25,7 +25,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiArchiveArchiveIdDeleteExample
+    public class DeleteArchiveExample
     {
         public void main()
         {
@@ -43,12 +43,12 @@ namespace Example
 
             try
             {
-                ApplicationArchiveModel result = apiInstance.ApiArchiveArchiveIdDelete(archiveId);
+                ApplicationArchiveModel result = apiInstance.DeleteArchive(archiveId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ArchiveApi.ApiArchiveArchiveIdDelete: " + e.Message );
+                Debug.Print("Exception when calling ArchiveApi.DeleteArchive: " + e.Message );
             }
         }
     }
@@ -75,9 +75,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiarchivearchiveidget"></a>
-# **ApiArchiveArchiveIdGet**
-> ApplicationArchiveModel ApiArchiveArchiveIdGet (string archiveId)
+<a name="findarchive"></a>
+# **FindArchive**
+> ApplicationArchiveModel FindArchive (string archiveId)
 
 
 
@@ -91,7 +91,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiArchiveArchiveIdGetExample
+    public class FindArchiveExample
     {
         public void main()
         {
@@ -109,12 +109,12 @@ namespace Example
 
             try
             {
-                ApplicationArchiveModel result = apiInstance.ApiArchiveArchiveIdGet(archiveId);
+                ApplicationArchiveModel result = apiInstance.FindArchive(archiveId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ArchiveApi.ApiArchiveArchiveIdGet: " + e.Message );
+                Debug.Print("Exception when calling ArchiveApi.FindArchive: " + e.Message );
             }
         }
     }
@@ -141,9 +141,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiarchiveforappapplicationidget"></a>
-# **ApiArchiveForAppApplicationIdGet**
-> List<ApplicationArchiveModel> ApiArchiveForAppApplicationIdGet (string applicationId)
+<a name="getapparchives"></a>
+# **GetAppArchives**
+> List<ApplicationArchiveModel> GetAppArchives (string applicationId)
 
 
 
@@ -157,7 +157,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiArchiveForAppApplicationIdGetExample
+    public class GetAppArchivesExample
     {
         public void main()
         {
@@ -175,12 +175,12 @@ namespace Example
 
             try
             {
-                List&lt;ApplicationArchiveModel&gt; result = apiInstance.ApiArchiveForAppApplicationIdGet(applicationId);
+                List&lt;ApplicationArchiveModel&gt; result = apiInstance.GetAppArchives(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ArchiveApi.ApiArchiveForAppApplicationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ArchiveApi.GetAppArchives: " + e.Message );
             }
         }
     }
@@ -207,9 +207,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiarchivequeuepost"></a>
-# **ApiArchiveQueuePost**
-> ApplicationArchiveModel ApiArchiveQueuePost (NewArchiveRequest body = null)
+<a name="queuearchive"></a>
+# **QueueArchive**
+> ApplicationArchiveModel QueueArchive (NewArchiveRequest body = null)
 
 
 
@@ -223,7 +223,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiArchiveQueuePostExample
+    public class QueueArchiveExample
     {
         public void main()
         {
@@ -241,12 +241,12 @@ namespace Example
 
             try
             {
-                ApplicationArchiveModel result = apiInstance.ApiArchiveQueuePost(body);
+                ApplicationArchiveModel result = apiInstance.QueueArchive(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ArchiveApi.ApiArchiveQueuePost: " + e.Message );
+                Debug.Print("Exception when calling ArchiveApi.QueueArchive: " + e.Message );
             }
         }
     }

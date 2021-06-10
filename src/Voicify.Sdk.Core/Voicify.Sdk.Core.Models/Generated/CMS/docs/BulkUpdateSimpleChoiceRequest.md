@@ -3,6 +3,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ChoiceType** | **SimpleChoiceType** |  | 
+**Title** | **string** |  | 
+**Responses** | [**List&lt;UpdateSimpleChoiceResponseRequest&gt;**](UpdateSimpleChoiceResponseRequest.md) |  | 
 **ApplicationId** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
@@ -14,9 +17,6 @@ Name | Type | Description | Notes
 **DisplayTextOverride** | **string** |  | [optional] 
 **DisplayTitleOverride** | **string** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
-**ChoiceType** | **SimpleChoiceType** |  | 
-**Title** | **string** |  | 
-**Responses** | [**List&lt;UpdateSimpleChoiceResponseRequest&gt;**](UpdateSimpleChoiceResponseRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

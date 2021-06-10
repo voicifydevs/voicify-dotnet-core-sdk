@@ -43,6 +43,12 @@ namespace Voicify.Sdk.Core.Models.Model
         }
         
         /// <summary>
+        /// Gets or Sets Platform
+        /// </summary>
+        [DataMember(Name="platform", EmitDefaultValue=false)]
+        public string Platform { get; private set; }
+
+        /// <summary>
         /// Gets or Sets ApplicationIds
         /// </summary>
         [DataMember(Name="applicationIds", EmitDefaultValue=false)]
@@ -61,12 +67,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public string Id { get; set; }
 
         /// <summary>
-        /// Gets or Sets Platform
-        /// </summary>
-        [DataMember(Name="platform", EmitDefaultValue=false)]
-        public string Platform { get; private set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -74,10 +74,10 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ApplicationsByAmazonAccount {\n");
+            sb.Append("  Platform: ").Append(Platform).Append("\n");
             sb.Append("  ApplicationIds: ").Append(ApplicationIds).Append("\n");
             sb.Append("  UserName: ").Append(UserName).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  Platform: ").Append(Platform).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -113,6 +113,11 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
+                    this.Platform == input.Platform ||
+                    (this.Platform != null &&
+                    this.Platform.Equals(input.Platform))
+                ) && 
+                (
                     this.ApplicationIds == input.ApplicationIds ||
                     this.ApplicationIds != null &&
                     input.ApplicationIds != null &&
@@ -127,11 +132,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Id == input.Id ||
                     (this.Id != null &&
                     this.Id.Equals(input.Id))
-                ) && 
-                (
-                    this.Platform == input.Platform ||
-                    (this.Platform != null &&
-                    this.Platform.Equals(input.Platform))
                 );
         }
 
@@ -144,14 +144,14 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Platform != null)
+                    hashCode = hashCode * 59 + this.Platform.GetHashCode();
                 if (this.ApplicationIds != null)
                     hashCode = hashCode * 59 + this.ApplicationIds.GetHashCode();
                 if (this.UserName != null)
                     hashCode = hashCode * 59 + this.UserName.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.Platform != null)
-                    hashCode = hashCode * 59 + this.Platform.GetHashCode();
                 return hashCode;
             }
         }

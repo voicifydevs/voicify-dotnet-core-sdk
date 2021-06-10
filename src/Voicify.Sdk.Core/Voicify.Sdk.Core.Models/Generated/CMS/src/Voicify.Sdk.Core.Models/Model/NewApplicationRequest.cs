@@ -38,7 +38,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="invocationPhrase">invocationPhrase (required).</param>
         /// <param name="keywords">keywords.</param>
         /// <param name="defaultLanguageId">defaultLanguageId.</param>
-        public NewApplicationRequest(string name = default(string), string shortDescription = default(string), string description = default(string), string invocationPhrase = default(string), string keywords = default(string), string defaultLanguageId = default(string))
+        /// <param name="metadata">metadata.</param>
+        public NewApplicationRequest(string name = default(string), string shortDescription = default(string), string description = default(string), string invocationPhrase = default(string), string keywords = default(string), string defaultLanguageId = default(string), Dictionary<string, object> metadata = default(Dictionary<string, object>))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -62,6 +63,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.Description = description;
             this.Keywords = keywords;
             this.DefaultLanguageId = defaultLanguageId;
+            this.Metadata = metadata;
         }
         
         /// <summary>
@@ -101,6 +103,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string DefaultLanguageId { get; set; }
 
         /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public Dictionary<string, object> Metadata { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -114,6 +122,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  InvocationPhrase: ").Append(InvocationPhrase).Append("\n");
             sb.Append("  Keywords: ").Append(Keywords).Append("\n");
             sb.Append("  DefaultLanguageId: ").Append(DefaultLanguageId).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -177,6 +186,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.DefaultLanguageId == input.DefaultLanguageId ||
                     (this.DefaultLanguageId != null &&
                     this.DefaultLanguageId.Equals(input.DefaultLanguageId))
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    this.Metadata != null &&
+                    input.Metadata != null &&
+                    this.Metadata.SequenceEqual(input.Metadata)
                 );
         }
 
@@ -201,6 +216,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Keywords.GetHashCode();
                 if (this.DefaultLanguageId != null)
                     hashCode = hashCode * 59 + this.DefaultLanguageId.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 return hashCode;
             }
         }

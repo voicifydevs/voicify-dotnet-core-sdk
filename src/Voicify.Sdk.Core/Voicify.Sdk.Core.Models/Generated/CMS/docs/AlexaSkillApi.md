@@ -4,11 +4,11 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiAlexaSkillSkillsVendorIdTokenIdGet**](AlexaSkillApi.md#apialexaskillskillsvendoridtokenidget) | **GET** /api/AlexaSkill/Skills/{vendorId}/{tokenId} | 
+[**ListAlexaSkills**](AlexaSkillApi.md#listalexaskills) | **GET** /api/AlexaSkill/Skills/{vendorId}/{tokenId} | 
 
-<a name="apialexaskillskillsvendoridtokenidget"></a>
-# **ApiAlexaSkillSkillsVendorIdTokenIdGet**
-> List<SkillSummary> ApiAlexaSkillSkillsVendorIdTokenIdGet (string tokenId, string vendorId)
+<a name="listalexaskills"></a>
+# **ListAlexaSkills**
+> List<SkillSummary> ListAlexaSkills (string tokenId, string vendorId)
 
 
 
@@ -22,7 +22,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAlexaSkillSkillsVendorIdTokenIdGetExample
+    public class ListAlexaSkillsExample
     {
         public void main()
         {
@@ -41,12 +41,12 @@ namespace Example
 
             try
             {
-                List&lt;SkillSummary&gt; result = apiInstance.ApiAlexaSkillSkillsVendorIdTokenIdGet(tokenId, vendorId);
+                List&lt;SkillSummary&gt; result = apiInstance.ListAlexaSkills(tokenId, vendorId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AlexaSkillApi.ApiAlexaSkillSkillsVendorIdTokenIdGet: " + e.Message );
+                Debug.Print("Exception when calling AlexaSkillApi.ListAlexaSkills: " + e.Message );
             }
         }
     }

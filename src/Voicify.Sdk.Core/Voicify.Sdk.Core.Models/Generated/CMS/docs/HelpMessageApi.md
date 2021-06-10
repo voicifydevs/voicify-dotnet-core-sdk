@@ -4,37 +4,37 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiHelpMessageApplicationIdGet**](HelpMessageApi.md#apihelpmessageapplicationidget) | **GET** /api/HelpMessage/{applicationId} | 
-[**ApiHelpMessageApplicationIdPost**](HelpMessageApi.md#apihelpmessageapplicationidpost) | **POST** /api/HelpMessage/{applicationId} | 
-[**ApiHelpMessageApplicationIdStubPost**](HelpMessageApi.md#apihelpmessageapplicationidstubpost) | **POST** /api/HelpMessage/{applicationId}/stub | 
-[**ApiHelpMessageByFeatureApplicationFeatureIdGet**](HelpMessageApi.md#apihelpmessagebyfeatureapplicationfeatureidget) | **GET** /api/HelpMessage/byFeature/{applicationFeatureId} | 
-[**ApiHelpMessageContentItemIdFullPut**](HelpMessageApi.md#apihelpmessagecontentitemidfullput) | **PUT** /api/HelpMessage/{contentItemId}/full | 
-[**ApiHelpMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**](HelpMessageApi.md#apihelpmessagecontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/HelpMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiHelpMessageFullIdGet**](HelpMessageApi.md#apihelpmessagefullidget) | **GET** /api/HelpMessage/full/{id} | 
-[**ApiHelpMessageFullPost**](HelpMessageApi.md#apihelpmessagefullpost) | **POST** /api/HelpMessage/full | 
-[**ApiHelpMessageHelpMessageIdAddAudioFileMediaItemIdPut**](HelpMessageApi.md#apihelpmessagehelpmessageidaddaudiofilemediaitemidput) | **PUT** /api/HelpMessage/{helpMessageId}/addAudioFile/{mediaItemId} | 
-[**ApiHelpMessageHelpMessageIdAddLargeImageMediaItemIdPut**](HelpMessageApi.md#apihelpmessagehelpmessageidaddlargeimagemediaitemidput) | **PUT** /api/HelpMessage/{helpMessageId}/addLargeImage/{mediaItemId} | 
-[**ApiHelpMessageHelpMessageIdAddSmallImageMediaItemIdPut**](HelpMessageApi.md#apihelpmessagehelpmessageidaddsmallimagemediaitemidput) | **PUT** /api/HelpMessage/{helpMessageId}/addSmallImage/{mediaItemId} | 
-[**ApiHelpMessageHelpMessageIdAddVideoFileMediaItemIdPut**](HelpMessageApi.md#apihelpmessagehelpmessageidaddvideofilemediaitemidput) | **PUT** /api/HelpMessage/{helpMessageId}/addVideoFile/{mediaItemId} | 
-[**ApiHelpMessageHelpMessageIdCopyPost**](HelpMessageApi.md#apihelpmessagehelpmessageidcopypost) | **POST** /api/HelpMessage/{helpMessageId}/copy | 
-[**ApiHelpMessageHelpMessageIdDelete**](HelpMessageApi.md#apihelpmessagehelpmessageiddelete) | **DELETE** /api/HelpMessage/{helpMessageId} | 
-[**ApiHelpMessageHelpMessageIdIsLivePut**](HelpMessageApi.md#apihelpmessagehelpmessageidisliveput) | **PUT** /api/HelpMessage/{helpMessageId}/isLive | 
-[**ApiHelpMessageHelpMessageIdShouldNotSyncPut**](HelpMessageApi.md#apihelpmessagehelpmessageidshouldnotsyncput) | **PUT** /api/HelpMessage/{helpMessageId}/shouldNotSync | 
-[**ApiHelpMessageHelpMessageIdUpdatePut**](HelpMessageApi.md#apihelpmessagehelpmessageidupdateput) | **PUT** /api/HelpMessage/{helpMessageId}/update | 
-[**ApiHelpMessageHelpMessageIdUpdateStubPut**](HelpMessageApi.md#apihelpmessagehelpmessageidupdatestubput) | **PUT** /api/HelpMessage/{helpMessageId}/update/stub | 
-[**ApiHelpMessageHelpMessageIdWebhooksBulkPut**](HelpMessageApi.md#apihelpmessagehelpmessageidwebhooksbulkput) | **PUT** /api/HelpMessage/{helpMessageId}/webhooks/bulk | 
-[**ApiHelpMessageHelpMessageIdWebhooksGet**](HelpMessageApi.md#apihelpmessagehelpmessageidwebhooksget) | **GET** /api/HelpMessage/{helpMessageId}/webhooks | 
-[**ApiHelpMessageHelpMessageIdWebhooksWebhookIdPost**](HelpMessageApi.md#apihelpmessagehelpmessageidwebhookswebhookidpost) | **POST** /api/HelpMessage/{helpMessageId}/webhooks/{webhookId} | 
-[**ApiHelpMessageHelpMessageIdWebhooksWebhookInstanceIdPut**](HelpMessageApi.md#apihelpmessagehelpmessageidwebhookswebhookinstanceidput) | **PUT** /api/HelpMessage/{helpMessageId}/webhooks/{webhookInstanceId} | 
-[**ApiHelpMessageWebhookHelpMessageWebhookIdDelete**](HelpMessageApi.md#apihelpmessagewebhookhelpmessagewebhookiddelete) | **DELETE** /api/HelpMessage/webhook/{helpMessageWebhookId} | 
-[**ApiHelpMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**](HelpMessageApi.md#apihelpmessagewebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/HelpMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiHelpMessageWebhookInstanceWebhookIdUserParametersPost**](HelpMessageApi.md#apihelpmessagewebhookinstancewebhookiduserparameterspost) | **POST** /api/HelpMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiHelpMessageWebhookInstanceWebhookIdUserParametersPut**](HelpMessageApi.md#apihelpmessagewebhookinstancewebhookiduserparametersput) | **PUT** /api/HelpMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiHelpMessageWebhookInstanceWebhookIdWebhookParametersPut**](HelpMessageApi.md#apihelpmessagewebhookinstancewebhookidwebhookparametersput) | **PUT** /api/HelpMessage/webhook/{instanceWebhookId}/webhookParameters | 
+[**AddAudioFileImage**](HelpMessageApi.md#addaudiofileimage) | **PUT** /api/HelpMessage/{helpMessageId}/addAudioFile/{mediaItemId} | 
+[**AddHelpMessage**](HelpMessageApi.md#addhelpmessage) | **POST** /api/HelpMessage/{applicationId} | 
+[**AddHelpMessageStub**](HelpMessageApi.md#addhelpmessagestub) | **POST** /api/HelpMessage/{applicationId}/stub | 
+[**AddLargeImage**](HelpMessageApi.md#addlargeimage) | **PUT** /api/HelpMessage/{helpMessageId}/addLargeImage/{mediaItemId} | 
+[**AddSmallImage**](HelpMessageApi.md#addsmallimage) | **PUT** /api/HelpMessage/{helpMessageId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](HelpMessageApi.md#addvideofile) | **PUT** /api/HelpMessage/{helpMessageId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](HelpMessageApi.md#addwebhook) | **POST** /api/HelpMessage/{helpMessageId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](HelpMessageApi.md#bulkupdateattachedwebhooks) | **PUT** /api/HelpMessage/{helpMessageId}/webhooks/bulk | 
+[**CopyContentItem**](HelpMessageApi.md#copycontentitem) | **POST** /api/HelpMessage/{helpMessageId}/copy | 
+[**CreateFullContentItem**](HelpMessageApi.md#createfullcontentitem) | **POST** /api/HelpMessage/full | 
+[**CreateUserDefinedParameter**](HelpMessageApi.md#createuserdefinedparameter) | **POST** /api/HelpMessage/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteHelpMessage**](HelpMessageApi.md#deletehelpmessage) | **DELETE** /api/HelpMessage/{helpMessageId} | 
+[**FindFullById**](HelpMessageApi.md#findfullbyid) | **GET** /api/HelpMessage/full/{id} | 
+[**GetByApplicationFeature**](HelpMessageApi.md#getbyapplicationfeature) | **GET** /api/HelpMessage/byFeature/{applicationFeatureId} | 
+[**GetHelpMessagesForApplication**](HelpMessageApi.md#gethelpmessagesforapplication) | **GET** /api/HelpMessage/{applicationId} | 
+[**GetWebhooks**](HelpMessageApi.md#getwebhooks) | **GET** /api/HelpMessage/{helpMessageId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](HelpMessageApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/HelpMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveUserDefinedParameter**](HelpMessageApi.md#removeuserdefinedparameter) | **DELETE** /api/HelpMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](HelpMessageApi.md#removewebhook) | **DELETE** /api/HelpMessage/webhook/{helpMessageWebhookId} | 
+[**ToggleIsLive**](HelpMessageApi.md#toggleislive) | **PUT** /api/HelpMessage/{helpMessageId}/isLive | 
+[**ToggleSync**](HelpMessageApi.md#togglesync) | **PUT** /api/HelpMessage/{helpMessageId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](HelpMessageApi.md#updateattachedwebhook) | **PUT** /api/HelpMessage/{helpMessageId}/webhooks/{webhookInstanceId} | 
+[**UpdateFullContentItem**](HelpMessageApi.md#updatefullcontentitem) | **PUT** /api/HelpMessage/{contentItemId}/full | 
+[**UpdateHelpMessage**](HelpMessageApi.md#updatehelpmessage) | **PUT** /api/HelpMessage/{helpMessageId}/update | 
+[**UpdateHelpMessageStub**](HelpMessageApi.md#updatehelpmessagestub) | **PUT** /api/HelpMessage/{helpMessageId}/update/stub | 
+[**UpdateUserDefinedParameter**](HelpMessageApi.md#updateuserdefinedparameter) | **PUT** /api/HelpMessage/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](HelpMessageApi.md#updatewebhookparameter) | **PUT** /api/HelpMessage/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apihelpmessageapplicationidget"></a>
-# **ApiHelpMessageApplicationIdGet**
-> List<HelpMessageModel> ApiHelpMessageApplicationIdGet (string applicationId)
+<a name="addaudiofileimage"></a>
+# **AddAudioFileImage**
+> HelpMessageModel AddAudioFileImage (string helpMessageId, string mediaItemId)
 
 
 
@@ -48,7 +48,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageApplicationIdGetExample
+    public class AddAudioFileImageExample
     {
         public void main()
         {
@@ -62,16 +62,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new HelpMessageApi();
-            var applicationId = applicationId_example;  // string | 
+            var helpMessageId = helpMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                List&lt;HelpMessageModel&gt; result = apiInstance.ApiHelpMessageApplicationIdGet(applicationId);
+                HelpMessageModel result = apiInstance.AddAudioFileImage(helpMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageApplicationIdGet: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddAudioFileImage: " + e.Message );
             }
         }
     }
@@ -82,11 +83,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
+ **helpMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
-[**List<HelpMessageModel>**](HelpMessageModel.md)
+[**HelpMessageModel**](HelpMessageModel.md)
 
 ### Authorization
 
@@ -98,9 +100,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessageapplicationidpost"></a>
-# **ApiHelpMessageApplicationIdPost**
-> HelpMessageModel ApiHelpMessageApplicationIdPost (string applicationId, NewHelpMessageRequest body = null)
+<a name="addhelpmessage"></a>
+# **AddHelpMessage**
+> HelpMessageModel AddHelpMessage (string applicationId, NewHelpMessageRequest body = null)
 
 
 
@@ -114,7 +116,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageApplicationIdPostExample
+    public class AddHelpMessageExample
     {
         public void main()
         {
@@ -133,12 +135,12 @@ namespace Example
 
             try
             {
-                HelpMessageModel result = apiInstance.ApiHelpMessageApplicationIdPost(applicationId, body);
+                HelpMessageModel result = apiInstance.AddHelpMessage(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageApplicationIdPost: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddHelpMessage: " + e.Message );
             }
         }
     }
@@ -166,9 +168,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessageapplicationidstubpost"></a>
-# **ApiHelpMessageApplicationIdStubPost**
-> HelpMessageModel ApiHelpMessageApplicationIdStubPost (string applicationId, NewHelpMessageStubRequest body = null)
+<a name="addhelpmessagestub"></a>
+# **AddHelpMessageStub**
+> HelpMessageModel AddHelpMessageStub (string applicationId, NewHelpMessageStubRequest body = null)
 
 
 
@@ -182,7 +184,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageApplicationIdStubPostExample
+    public class AddHelpMessageStubExample
     {
         public void main()
         {
@@ -201,12 +203,12 @@ namespace Example
 
             try
             {
-                HelpMessageModel result = apiInstance.ApiHelpMessageApplicationIdStubPost(applicationId, body);
+                HelpMessageModel result = apiInstance.AddHelpMessageStub(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageApplicationIdStubPost: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddHelpMessageStub: " + e.Message );
             }
         }
     }
@@ -234,9 +236,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagebyfeatureapplicationfeatureidget"></a>
-# **ApiHelpMessageByFeatureApplicationFeatureIdGet**
-> List<HelpMessageModel> ApiHelpMessageByFeatureApplicationFeatureIdGet (string applicationFeatureId)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> HelpMessageModel AddLargeImage (string helpMessageId, string mediaItemId)
 
 
 
@@ -250,341 +252,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageByFeatureApplicationFeatureIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                List&lt;HelpMessageModel&gt; result = apiInstance.ApiHelpMessageByFeatureApplicationFeatureIdGet(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageByFeatureApplicationFeatureIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<HelpMessageModel>**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagecontentitemidfullput"></a>
-# **ApiHelpMessageContentItemIdFullPut**
-> HelpMessageModel ApiHelpMessageContentItemIdFullPut (string contentItemId, HelpMessageModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageContentItemIdFullPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new HelpMessageModel(); // HelpMessageModel |  (optional) 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageContentItemIdFullPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageContentItemIdFullPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**HelpMessageModel**](HelpMessageModel.md)|  | [optional] 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagecontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiHelpMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> HelpMessageModel ApiHelpMessageContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageContentItemIdMoveToFeatureApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagefullidget"></a>
-# **ApiHelpMessageFullIdGet**
-> HelpMessageModel ApiHelpMessageFullIdGet (string id)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageFullIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var id = id_example;  // string | 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageFullIdGet(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageFullIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagefullpost"></a>
-# **ApiHelpMessageFullPost**
-> HelpMessageModel ApiHelpMessageFullPost (HelpMessageModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageFullPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var body = new HelpMessageModel(); // HelpMessageModel |  (optional) 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageFullPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageFullPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**HelpMessageModel**](HelpMessageModel.md)|  | [optional] 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidaddaudiofilemediaitemidput"></a>
-# **ApiHelpMessageHelpMessageIdAddAudioFileMediaItemIdPut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdAddAudioFileMediaItemIdPut (string helpMessageId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdAddAudioFileMediaItemIdPutExample
+    public class AddLargeImageExample
     {
         public void main()
         {
@@ -603,12 +271,12 @@ namespace Example
 
             try
             {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdAddAudioFileMediaItemIdPut(helpMessageId, mediaItemId);
+                HelpMessageModel result = apiInstance.AddLargeImage(helpMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdAddAudioFileMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddLargeImage: " + e.Message );
             }
         }
     }
@@ -636,9 +304,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidaddlargeimagemediaitemidput"></a>
-# **ApiHelpMessageHelpMessageIdAddLargeImageMediaItemIdPut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdAddLargeImageMediaItemIdPut (string helpMessageId, string mediaItemId)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> HelpMessageModel AddSmallImage (string helpMessageId, string mediaItemId)
 
 
 
@@ -652,7 +320,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageHelpMessageIdAddLargeImageMediaItemIdPutExample
+    public class AddSmallImageExample
     {
         public void main()
         {
@@ -671,12 +339,12 @@ namespace Example
 
             try
             {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdAddLargeImageMediaItemIdPut(helpMessageId, mediaItemId);
+                HelpMessageModel result = apiInstance.AddSmallImage(helpMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdAddLargeImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddSmallImage: " + e.Message );
             }
         }
     }
@@ -704,9 +372,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidaddsmallimagemediaitemidput"></a>
-# **ApiHelpMessageHelpMessageIdAddSmallImageMediaItemIdPut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdAddSmallImageMediaItemIdPut (string helpMessageId, string mediaItemId)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> HelpMessageModel AddVideoFile (string helpMessageId, string mediaItemId)
 
 
 
@@ -720,7 +388,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageHelpMessageIdAddSmallImageMediaItemIdPutExample
+    public class AddVideoFileExample
     {
         public void main()
         {
@@ -739,12 +407,12 @@ namespace Example
 
             try
             {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdAddSmallImageMediaItemIdPut(helpMessageId, mediaItemId);
+                HelpMessageModel result = apiInstance.AddVideoFile(helpMessageId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdAddSmallImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddVideoFile: " + e.Message );
             }
         }
     }
@@ -772,9 +440,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidaddvideofilemediaitemidput"></a>
-# **ApiHelpMessageHelpMessageIdAddVideoFileMediaItemIdPut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdAddVideoFileMediaItemIdPut (string helpMessageId, string mediaItemId)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> HelpMessageWebhookModel AddWebhook (string helpMessageId, string webhookId, WebhookParametersRequest body = null)
 
 
 
@@ -788,613 +456,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageHelpMessageIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdAddVideoFileMediaItemIdPut(helpMessageId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidcopypost"></a>
-# **ApiHelpMessageHelpMessageIdCopyPost**
-> HelpMessageModel ApiHelpMessageHelpMessageIdCopyPost (string helpMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdCopyPost(helpMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageiddelete"></a>
-# **ApiHelpMessageHelpMessageIdDelete**
-> HelpMessageModel ApiHelpMessageHelpMessageIdDelete (string helpMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdDelete(helpMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidisliveput"></a>
-# **ApiHelpMessageHelpMessageIdIsLivePut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdIsLivePut (string helpMessageId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdIsLivePut(helpMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidshouldnotsyncput"></a>
-# **ApiHelpMessageHelpMessageIdShouldNotSyncPut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdShouldNotSyncPut (string helpMessageId, ToggleSyncRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdShouldNotSyncPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdShouldNotSyncPut(helpMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdShouldNotSyncPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidupdateput"></a>
-# **ApiHelpMessageHelpMessageIdUpdatePut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdUpdatePut (string helpMessageId, UpdateHelpMessageRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-            var body = new UpdateHelpMessageRequest(); // UpdateHelpMessageRequest |  (optional) 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdUpdatePut(helpMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
- **body** | [**UpdateHelpMessageRequest**](UpdateHelpMessageRequest.md)|  | [optional] 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidupdatestubput"></a>
-# **ApiHelpMessageHelpMessageIdUpdateStubPut**
-> HelpMessageModel ApiHelpMessageHelpMessageIdUpdateStubPut (string helpMessageId, UpdateHelpMessageStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-            var body = new UpdateHelpMessageStubRequest(); // UpdateHelpMessageStubRequest |  (optional) 
-
-            try
-            {
-                HelpMessageModel result = apiInstance.ApiHelpMessageHelpMessageIdUpdateStubPut(helpMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
- **body** | [**UpdateHelpMessageStubRequest**](UpdateHelpMessageStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**HelpMessageModel**](HelpMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidwebhooksbulkput"></a>
-# **ApiHelpMessageHelpMessageIdWebhooksBulkPut**
-> List<HelpMessageWebhookModel> ApiHelpMessageHelpMessageIdWebhooksBulkPut (string helpMessageId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;HelpMessageWebhookModel&gt; result = apiInstance.ApiHelpMessageHelpMessageIdWebhooksBulkPut(helpMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<HelpMessageWebhookModel>**](HelpMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidwebhooksget"></a>
-# **ApiHelpMessageHelpMessageIdWebhooksGet**
-> List<HelpMessageWebhookModel> ApiHelpMessageHelpMessageIdWebhooksGet (string helpMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var helpMessageId = helpMessageId_example;  // string | 
-
-            try
-            {
-                List&lt;HelpMessageWebhookModel&gt; result = apiInstance.ApiHelpMessageHelpMessageIdWebhooksGet(helpMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **helpMessageId** | **string**|  | 
-
-### Return type
-
-[**List<HelpMessageWebhookModel>**](HelpMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidwebhookswebhookidpost"></a>
-# **ApiHelpMessageHelpMessageIdWebhooksWebhookIdPost**
-> HelpMessageWebhookModel ApiHelpMessageHelpMessageIdWebhooksWebhookIdPost (string helpMessageId, string webhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageHelpMessageIdWebhooksWebhookIdPostExample
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1414,12 +476,12 @@ namespace Example
 
             try
             {
-                HelpMessageWebhookModel result = apiInstance.ApiHelpMessageHelpMessageIdWebhooksWebhookIdPost(helpMessageId, webhookId, body);
+                HelpMessageWebhookModel result = apiInstance.AddWebhook(helpMessageId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1448,9 +510,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagehelpmessageidwebhookswebhookinstanceidput"></a>
-# **ApiHelpMessageHelpMessageIdWebhooksWebhookInstanceIdPut**
-> HelpMessageWebhookModel ApiHelpMessageHelpMessageIdWebhooksWebhookInstanceIdPut (string helpMessageId, string webhookInstanceId, WebhookParametersRequest body = null)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<HelpMessageWebhookModel> BulkUpdateAttachedWebhooks (string helpMessageId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1464,7 +526,943 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageHelpMessageIdWebhooksWebhookInstanceIdPutExample
+    public class BulkUpdateAttachedWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
+
+            try
+            {
+                List&lt;HelpMessageWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(helpMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.BulkUpdateAttachedWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<HelpMessageWebhookModel>**](HelpMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> HelpMessageModel CopyContentItem (string helpMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.CopyContentItem(helpMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createfullcontentitem"></a>
+# **CreateFullContentItem**
+> HelpMessageModel CreateFullContentItem (HelpMessageModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var body = new HelpMessageModel(); // HelpMessageModel |  (optional) 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.CreateFullContentItem(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.CreateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**HelpMessageModel**](HelpMessageModel.md)|  | [optional] 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.CreateUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deletehelpmessage"></a>
+# **DeleteHelpMessage**
+> HelpMessageModel DeleteHelpMessage (string helpMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteHelpMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.DeleteHelpMessage(helpMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.DeleteHelpMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> HelpMessageModel FindFullById (string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindFullByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var id = id_example;  // string | 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.FindFullById(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.FindFullById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**|  | 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<HelpMessageModel> GetByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;HelpMessageModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.GetByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<HelpMessageModel>**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="gethelpmessagesforapplication"></a>
+# **GetHelpMessagesForApplication**
+> List<HelpMessageModel> GetHelpMessagesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetHelpMessagesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;HelpMessageModel&gt; result = apiInstance.GetHelpMessagesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.GetHelpMessagesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<HelpMessageModel>**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<HelpMessageWebhookModel> GetWebhooks (string helpMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+
+            try
+            {
+                List&lt;HelpMessageWebhookModel&gt; result = apiInstance.GetWebhooks(helpMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+
+### Return type
+
+[**List<HelpMessageWebhookModel>**](HelpMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> HelpMessageModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.MoveContentItemToApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var parameterName = parameterName_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.RemoveUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **parameterName** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> HelpMessageWebhookModel RemoveWebhook (string helpMessageWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageWebhookId = helpMessageWebhookId_example;  // string | 
+
+            try
+            {
+                HelpMessageWebhookModel result = apiInstance.RemoveWebhook(helpMessageWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageWebhookId** | **string**|  | 
+
+### Return type
+
+[**HelpMessageWebhookModel**](HelpMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="toggleislive"></a>
+# **ToggleIsLive**
+> HelpMessageModel ToggleIsLive (string helpMessageId, ToggleLiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleIsLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.ToggleIsLive(helpMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.ToggleIsLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> HelpMessageModel ToggleSync (string helpMessageId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.ToggleSync(helpMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> HelpMessageWebhookModel UpdateAttachedWebhook (string helpMessageId, string webhookInstanceId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
     {
         public void main()
         {
@@ -1484,12 +1482,12 @@ namespace Example
 
             try
             {
-                HelpMessageWebhookModel result = apiInstance.ApiHelpMessageHelpMessageIdWebhooksWebhookInstanceIdPut(helpMessageId, webhookInstanceId, body);
+                HelpMessageWebhookModel result = apiInstance.UpdateAttachedWebhook(helpMessageId, webhookInstanceId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageHelpMessageIdWebhooksWebhookInstanceIdPut: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.UpdateAttachedWebhook: " + e.Message );
             }
         }
     }
@@ -1518,9 +1516,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagewebhookhelpmessagewebhookiddelete"></a>
-# **ApiHelpMessageWebhookHelpMessageWebhookIdDelete**
-> HelpMessageWebhookModel ApiHelpMessageWebhookHelpMessageWebhookIdDelete (string helpMessageWebhookId)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> HelpMessageModel UpdateFullContentItem (string contentItemId, HelpMessageModel body = null)
 
 
 
@@ -1534,7 +1532,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageWebhookHelpMessageWebhookIdDeleteExample
+    public class UpdateFullContentItemExample
     {
         public void main()
         {
@@ -1548,16 +1546,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new HelpMessageApi();
-            var helpMessageWebhookId = helpMessageWebhookId_example;  // string | 
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new HelpMessageModel(); // HelpMessageModel |  (optional) 
 
             try
             {
-                HelpMessageWebhookModel result = apiInstance.ApiHelpMessageWebhookHelpMessageWebhookIdDelete(helpMessageWebhookId);
+                HelpMessageModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageWebhookHelpMessageWebhookIdDelete: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.UpdateFullContentItem: " + e.Message );
             }
         }
     }
@@ -1568,147 +1567,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **helpMessageWebhookId** | **string**|  | 
+ **contentItemId** | **string**|  | 
+ **body** | [**HelpMessageModel**](HelpMessageModel.md)|  | [optional] 
 
 ### Return type
 
-[**HelpMessageWebhookModel**](HelpMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagewebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiHelpMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiHelpMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var parameterName = parameterName_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiHelpMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **parameterName** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagewebhookinstancewebhookiduserparameterspost"></a>
-# **ApiHelpMessageWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiHelpMessageWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiHelpMessageWebhookInstanceWebhookIdUserParametersPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new HelpMessageApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
-
-            try
-            {
-                bool? result = apiInstance.ApiHelpMessageWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
-
-### Return type
-
-**bool?**
+[**HelpMessageModel**](HelpMessageModel.md)
 
 ### Authorization
 
@@ -1720,9 +1584,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagewebhookinstancewebhookiduserparametersput"></a>
-# **ApiHelpMessageWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiHelpMessageWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="updatehelpmessage"></a>
+# **UpdateHelpMessage**
+> HelpMessageModel UpdateHelpMessage (string helpMessageId, UpdateHelpMessageRequest body = null)
 
 
 
@@ -1736,7 +1600,143 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageWebhookInstanceWebhookIdUserParametersPutExample
+    public class UpdateHelpMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+            var body = new UpdateHelpMessageRequest(); // UpdateHelpMessageRequest |  (optional) 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.UpdateHelpMessage(helpMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.UpdateHelpMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+ **body** | [**UpdateHelpMessageRequest**](UpdateHelpMessageRequest.md)|  | [optional] 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatehelpmessagestub"></a>
+# **UpdateHelpMessageStub**
+> HelpMessageModel UpdateHelpMessageStub (string helpMessageId, UpdateHelpMessageStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateHelpMessageStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new HelpMessageApi();
+            var helpMessageId = helpMessageId_example;  // string | 
+            var body = new UpdateHelpMessageStubRequest(); // UpdateHelpMessageStubRequest |  (optional) 
+
+            try
+            {
+                HelpMessageModel result = apiInstance.UpdateHelpMessageStub(helpMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling HelpMessageApi.UpdateHelpMessageStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **helpMessageId** | **string**|  | 
+ **body** | [**UpdateHelpMessageStubRequest**](UpdateHelpMessageStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**HelpMessageModel**](HelpMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -1755,12 +1755,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiHelpMessageWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -1788,9 +1788,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apihelpmessagewebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiHelpMessageWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiHelpMessageWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -1804,7 +1804,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiHelpMessageWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -1823,12 +1823,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiHelpMessageWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling HelpMessageApi.ApiHelpMessageWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling HelpMessageApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }

@@ -27,11 +27,26 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines VoicifyNotificationPriority
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum VoicifyNotificationPriority
+        public enum VoicifyNotificationPriority
     {
-        Low,
-        Medium,
-        High,
-        Urgent
-    }
+        /// <summary>
+        /// Enum Low for value: Low
+        /// </summary>
+        [EnumMember(Value = "Low")]
+        Low = 1,
+        /// <summary>
+        /// Enum Medium for value: Medium
+        /// </summary>
+        [EnumMember(Value = "Medium")]
+        Medium = 2,
+        /// <summary>
+        /// Enum High for value: High
+        /// </summary>
+        [EnumMember(Value = "High")]
+        High = 3,
+        /// <summary>
+        /// Enum Urgent for value: Urgent
+        /// </summary>
+        [EnumMember(Value = "Urgent")]
+        Urgent = 4    }
 }

@@ -32,6 +32,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateMediaResponseRequest" /> class.
         /// </summary>
+        /// <param name="id">id.</param>
         /// <param name="responseTemplateTypeId">responseTemplateTypeId (required).</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="displayTitle">displayTitle.</param>
@@ -43,8 +44,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="videoItemId">videoItemId.</param>
         /// <param name="deviceTargetId">deviceTargetId.</param>
         /// <param name="customMarkup">customMarkup.</param>
-        /// <param name="id">id.</param>
-        public UpdateMediaResponseRequest(string responseTemplateTypeId = default(string), string applicationId = default(string), string displayTitle = default(string), string displayText = default(string), string readoutOverride = default(string), string foregroundImageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string deviceTargetId = default(string), string customMarkup = default(string), string id = default(string))
+        public UpdateMediaResponseRequest(string id = default(string), string responseTemplateTypeId = default(string), string applicationId = default(string), string displayTitle = default(string), string displayText = default(string), string readoutOverride = default(string), string foregroundImageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string deviceTargetId = default(string), string customMarkup = default(string))
         {
             // to ensure "responseTemplateTypeId" is required (not null)
             if (responseTemplateTypeId == null)
@@ -64,6 +64,7 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.ApplicationId = applicationId;
             }
+            this.Id = id;
             this.DisplayTitle = displayTitle;
             this.DisplayText = displayText;
             this.ReadoutOverride = readoutOverride;
@@ -73,9 +74,14 @@ namespace Voicify.Sdk.Core.Models.Model
             this.VideoItemId = videoItemId;
             this.DeviceTargetId = deviceTargetId;
             this.CustomMarkup = customMarkup;
-            this.Id = id;
         }
         
+        /// <summary>
+        /// Gets or Sets Id
+        /// </summary>
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public string Id { get; set; }
+
         /// <summary>
         /// Gets or Sets ResponseTemplateTypeId
         /// </summary>
@@ -143,12 +149,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public string CustomMarkup { get; set; }
 
         /// <summary>
-        /// Gets or Sets Id
-        /// </summary>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public string Id { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -156,6 +156,7 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class UpdateMediaResponseRequest {\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  ResponseTemplateTypeId: ").Append(ResponseTemplateTypeId).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  DisplayTitle: ").Append(DisplayTitle).Append("\n");
@@ -167,7 +168,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  VideoItemId: ").Append(VideoItemId).Append("\n");
             sb.Append("  DeviceTargetId: ").Append(DeviceTargetId).Append("\n");
             sb.Append("  CustomMarkup: ").Append(CustomMarkup).Append("\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -202,6 +202,11 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Id == input.Id ||
+                    (this.Id != null &&
+                    this.Id.Equals(input.Id))
+                ) && 
                 (
                     this.ResponseTemplateTypeId == input.ResponseTemplateTypeId ||
                     (this.ResponseTemplateTypeId != null &&
@@ -256,11 +261,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.CustomMarkup == input.CustomMarkup ||
                     (this.CustomMarkup != null &&
                     this.CustomMarkup.Equals(input.CustomMarkup))
-                ) && 
-                (
-                    this.Id == input.Id ||
-                    (this.Id != null &&
-                    this.Id.Equals(input.Id))
                 );
         }
 
@@ -273,6 +273,8 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Id != null)
+                    hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.ResponseTemplateTypeId != null)
                     hashCode = hashCode * 59 + this.ResponseTemplateTypeId.GetHashCode();
                 if (this.ApplicationId != null)
@@ -295,8 +297,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DeviceTargetId.GetHashCode();
                 if (this.CustomMarkup != null)
                     hashCode = hashCode * 59 + this.CustomMarkup.GetHashCode();
-                if (this.Id != null)
-                    hashCode = hashCode * 59 + this.Id.GetHashCode();
                 return hashCode;
             }
         }

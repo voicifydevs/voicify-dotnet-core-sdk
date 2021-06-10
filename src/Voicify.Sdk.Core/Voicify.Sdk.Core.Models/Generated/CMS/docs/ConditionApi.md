@@ -4,12 +4,12 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiConditionConditionIdGet**](ConditionApi.md#apiconditionconditionidget) | **GET** /api/Condition/{conditionId} | 
-[**ApiConditionGet**](ConditionApi.md#apiconditionget) | **GET** /api/Condition | 
+[**GetCondition**](ConditionApi.md#getcondition) | **GET** /api/Condition/{conditionId} | 
+[**GetConditions**](ConditionApi.md#getconditions) | **GET** /api/Condition | 
 
-<a name="apiconditionconditionidget"></a>
-# **ApiConditionConditionIdGet**
-> ConditionModel ApiConditionConditionIdGet (string conditionId)
+<a name="getcondition"></a>
+# **GetCondition**
+> ConditionModel GetCondition (string conditionId)
 
 
 
@@ -23,7 +23,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiConditionConditionIdGetExample
+    public class GetConditionExample
     {
         public void main()
         {
@@ -41,12 +41,12 @@ namespace Example
 
             try
             {
-                ConditionModel result = apiInstance.ApiConditionConditionIdGet(conditionId);
+                ConditionModel result = apiInstance.GetCondition(conditionId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ConditionApi.ApiConditionConditionIdGet: " + e.Message );
+                Debug.Print("Exception when calling ConditionApi.GetCondition: " + e.Message );
             }
         }
     }
@@ -73,9 +73,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiconditionget"></a>
-# **ApiConditionGet**
-> List<ConditionModel> ApiConditionGet ()
+<a name="getconditions"></a>
+# **GetConditions**
+> List<ConditionModel> GetConditions ()
 
 
 
@@ -89,7 +89,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiConditionGetExample
+    public class GetConditionsExample
     {
         public void main()
         {
@@ -106,12 +106,12 @@ namespace Example
 
             try
             {
-                List&lt;ConditionModel&gt; result = apiInstance.ApiConditionGet();
+                List&lt;ConditionModel&gt; result = apiInstance.GetConditions();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ConditionApi.ApiConditionGet: " + e.Message );
+                Debug.Print("Exception when calling ConditionApi.GetConditions: " + e.Message );
             }
         }
     }

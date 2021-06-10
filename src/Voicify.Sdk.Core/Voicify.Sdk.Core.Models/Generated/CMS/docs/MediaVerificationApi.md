@@ -4,11 +4,11 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiMediaVerificationContentItemsMediaItemIdGet**](MediaVerificationApi.md#apimediaverificationcontentitemsmediaitemidget) | **GET** /api/MediaVerification/contentItems/{mediaItemId} | 
+[**GetContentItemsForMediaItem**](MediaVerificationApi.md#getcontentitemsformediaitem) | **GET** /api/MediaVerification/contentItems/{mediaItemId} | 
 
-<a name="apimediaverificationcontentitemsmediaitemidget"></a>
-# **ApiMediaVerificationContentItemsMediaItemIdGet**
-> MediaContentItems ApiMediaVerificationContentItemsMediaItemIdGet (string mediaItemId)
+<a name="getcontentitemsformediaitem"></a>
+# **GetContentItemsForMediaItem**
+> MediaContentItems GetContentItemsForMediaItem (string mediaItemId)
 
 
 
@@ -22,7 +22,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiMediaVerificationContentItemsMediaItemIdGetExample
+    public class GetContentItemsForMediaItemExample
     {
         public void main()
         {
@@ -40,12 +40,12 @@ namespace Example
 
             try
             {
-                MediaContentItems result = apiInstance.ApiMediaVerificationContentItemsMediaItemIdGet(mediaItemId);
+                MediaContentItems result = apiInstance.GetContentItemsForMediaItem(mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling MediaVerificationApi.ApiMediaVerificationContentItemsMediaItemIdGet: " + e.Message );
+                Debug.Print("Exception when calling MediaVerificationApi.GetContentItemsForMediaItem: " + e.Message );
             }
         }
     }

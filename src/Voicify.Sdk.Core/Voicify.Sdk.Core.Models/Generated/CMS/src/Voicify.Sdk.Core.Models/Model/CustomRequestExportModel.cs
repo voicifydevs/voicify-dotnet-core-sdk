@@ -60,8 +60,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="shouldNotSync">shouldNotSync.</param>
         /// <param name="webhookChainingType">webhookChainingType.</param>
         /// <param name="appliedApplicationTemplateFormId">appliedApplicationTemplateFormId.</param>
-        /// <param name="sharedReferences">sharedReferences.</param>
-        public CustomRequestExportModel(string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string id = default(string), bool? isLive = default(bool?), string applicationModuleId = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), List<CustomRequestResponseModel> responses = default(List<CustomRequestResponseModel>), List<CustomRequestWebhookModel> customRequestWebhooks = default(List<CustomRequestWebhookModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), string requestTypes = default(string), string requestNames = default(string), string platformFilter = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?), WebhookChainingType? webhookChainingType = default(WebhookChainingType?), string appliedApplicationTemplateFormId = default(string), SharedReferencesExportModel sharedReferences = default(SharedReferencesExportModel))
+        public CustomRequestExportModel(string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string id = default(string), bool? isLive = default(bool?), string applicationModuleId = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), List<CustomRequestResponseModel> responses = default(List<CustomRequestResponseModel>), List<CustomRequestWebhookModel> customRequestWebhooks = default(List<CustomRequestWebhookModel>), int? hits = default(int?), DateTime? modifiedDate = default(DateTime?), DateTime? createdDate = default(DateTime?), string requestTypes = default(string), string requestNames = default(string), string platformFilter = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?), WebhookChainingType? webhookChainingType = default(WebhookChainingType?), string appliedApplicationTemplateFormId = default(string))
         {
             this.ApplicationId = applicationId;
             this.ApplicationFeatureId = applicationFeatureId;
@@ -86,7 +85,6 @@ namespace Voicify.Sdk.Core.Models.Model
             this.ShouldNotSync = shouldNotSync;
             this.WebhookChainingType = webhookChainingType;
             this.AppliedApplicationTemplateFormId = appliedApplicationTemplateFormId;
-            this.SharedReferences = sharedReferences;
         }
         
         /// <summary>
@@ -223,12 +221,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public string AppliedApplicationTemplateFormId { get; set; }
 
         /// <summary>
-        /// Gets or Sets SharedReferences
-        /// </summary>
-        [DataMember(Name="sharedReferences", EmitDefaultValue=false)]
-        public SharedReferencesExportModel SharedReferences { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -259,7 +251,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  ShouldNotSync: ").Append(ShouldNotSync).Append("\n");
             sb.Append("  WebhookChainingType: ").Append(WebhookChainingType).Append("\n");
             sb.Append("  AppliedApplicationTemplateFormId: ").Append(AppliedApplicationTemplateFormId).Append("\n");
-            sb.Append("  SharedReferences: ").Append(SharedReferences).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -411,11 +402,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.AppliedApplicationTemplateFormId == input.AppliedApplicationTemplateFormId ||
                     (this.AppliedApplicationTemplateFormId != null &&
                     this.AppliedApplicationTemplateFormId.Equals(input.AppliedApplicationTemplateFormId))
-                ) && 
-                (
-                    this.SharedReferences == input.SharedReferences ||
-                    (this.SharedReferences != null &&
-                    this.SharedReferences.Equals(input.SharedReferences))
                 );
         }
 
@@ -474,8 +460,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.WebhookChainingType.GetHashCode();
                 if (this.AppliedApplicationTemplateFormId != null)
                     hashCode = hashCode * 59 + this.AppliedApplicationTemplateFormId.GetHashCode();
-                if (this.SharedReferences != null)
-                    hashCode = hashCode * 59 + this.SharedReferences.GetHashCode();
                 return hashCode;
             }
         }

@@ -32,12 +32,6 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BulkUpdateCustomRequestStubRequest" /> class.
         /// </summary>
-        /// <param name="requestTypes">requestTypes.</param>
-        /// <param name="requestNames">requestNames.</param>
-        /// <param name="platformFilter">platformFilter.</param>
-        /// <param name="startDate">startDate.</param>
-        /// <param name="endDate">endDate.</param>
-        /// <param name="responses">responses.</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="title">title (required).</param>
         /// <param name="imageItemId">imageItemId.</param>
@@ -49,9 +43,15 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="mediaResponseContainerId">mediaResponseContainerId.</param>
         /// <param name="displayTextOverride">displayTextOverride.</param>
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
+        /// <param name="responses">responses.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        public BulkUpdateCustomRequestStubRequest(string requestTypes = default(string), string requestNames = default(string), string platformFilter = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), List<UpdateCustomRequestResponseRequest> responses = default(List<UpdateCustomRequestResponseRequest>), string applicationId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
+        /// <param name="requestTypes">requestTypes.</param>
+        /// <param name="requestNames">requestNames.</param>
+        /// <param name="platformFilter">platformFilter.</param>
+        /// <param name="startDate">startDate.</param>
+        /// <param name="endDate">endDate.</param>
+        public BulkUpdateCustomRequestStubRequest(string applicationId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<UpdateCustomRequestResponseRequest> responses = default(List<UpdateCustomRequestResponseRequest>), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), string requestTypes = default(string), string requestNames = default(string), string platformFilter = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?))
         {
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)
@@ -71,12 +71,6 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Title = title;
             }
-            this.RequestTypes = requestTypes;
-            this.RequestNames = requestNames;
-            this.PlatformFilter = platformFilter;
-            this.StartDate = startDate;
-            this.EndDate = endDate;
-            this.Responses = responses;
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
             this.AudioItemId = audioItemId;
@@ -86,46 +80,16 @@ namespace Voicify.Sdk.Core.Models.Model
             this.MediaResponseContainerId = mediaResponseContainerId;
             this.DisplayTextOverride = displayTextOverride;
             this.DisplayTitleOverride = displayTitleOverride;
+            this.Responses = responses;
             this.RequiresParent = requiresParent;
             this.LanguageIds = languageIds;
+            this.RequestTypes = requestTypes;
+            this.RequestNames = requestNames;
+            this.PlatformFilter = platformFilter;
+            this.StartDate = startDate;
+            this.EndDate = endDate;
         }
         
-        /// <summary>
-        /// Gets or Sets RequestTypes
-        /// </summary>
-        [DataMember(Name="requestTypes", EmitDefaultValue=false)]
-        public string RequestTypes { get; set; }
-
-        /// <summary>
-        /// Gets or Sets RequestNames
-        /// </summary>
-        [DataMember(Name="requestNames", EmitDefaultValue=false)]
-        public string RequestNames { get; set; }
-
-        /// <summary>
-        /// Gets or Sets PlatformFilter
-        /// </summary>
-        [DataMember(Name="platformFilter", EmitDefaultValue=false)]
-        public string PlatformFilter { get; set; }
-
-        /// <summary>
-        /// Gets or Sets StartDate
-        /// </summary>
-        [DataMember(Name="startDate", EmitDefaultValue=false)]
-        public DateTime? StartDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets EndDate
-        /// </summary>
-        [DataMember(Name="endDate", EmitDefaultValue=false)]
-        public DateTime? EndDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<UpdateCustomRequestResponseRequest> Responses { get; set; }
-
         /// <summary>
         /// Gets or Sets ApplicationId
         /// </summary>
@@ -193,6 +157,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string DisplayTitleOverride { get; set; }
 
         /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<UpdateCustomRequestResponseRequest> Responses { get; set; }
+
+        /// <summary>
         /// Gets or Sets RequiresParent
         /// </summary>
         [DataMember(Name="requiresParent", EmitDefaultValue=false)]
@@ -205,6 +175,36 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
+        /// Gets or Sets RequestTypes
+        /// </summary>
+        [DataMember(Name="requestTypes", EmitDefaultValue=false)]
+        public string RequestTypes { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RequestNames
+        /// </summary>
+        [DataMember(Name="requestNames", EmitDefaultValue=false)]
+        public string RequestNames { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PlatformFilter
+        /// </summary>
+        [DataMember(Name="platformFilter", EmitDefaultValue=false)]
+        public string PlatformFilter { get; set; }
+
+        /// <summary>
+        /// Gets or Sets StartDate
+        /// </summary>
+        [DataMember(Name="startDate", EmitDefaultValue=false)]
+        public DateTime? StartDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EndDate
+        /// </summary>
+        [DataMember(Name="endDate", EmitDefaultValue=false)]
+        public DateTime? EndDate { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -212,12 +212,6 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class BulkUpdateCustomRequestStubRequest {\n");
-            sb.Append("  RequestTypes: ").Append(RequestTypes).Append("\n");
-            sb.Append("  RequestNames: ").Append(RequestNames).Append("\n");
-            sb.Append("  PlatformFilter: ").Append(PlatformFilter).Append("\n");
-            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
-            sb.Append("  EndDate: ").Append(EndDate).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
@@ -229,8 +223,14 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  MediaResponseContainerId: ").Append(MediaResponseContainerId).Append("\n");
             sb.Append("  DisplayTextOverride: ").Append(DisplayTextOverride).Append("\n");
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
+            sb.Append("  RequestTypes: ").Append(RequestTypes).Append("\n");
+            sb.Append("  RequestNames: ").Append(RequestNames).Append("\n");
+            sb.Append("  PlatformFilter: ").Append(PlatformFilter).Append("\n");
+            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
+            sb.Append("  EndDate: ").Append(EndDate).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -265,37 +265,6 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
-                (
-                    this.RequestTypes == input.RequestTypes ||
-                    (this.RequestTypes != null &&
-                    this.RequestTypes.Equals(input.RequestTypes))
-                ) && 
-                (
-                    this.RequestNames == input.RequestNames ||
-                    (this.RequestNames != null &&
-                    this.RequestNames.Equals(input.RequestNames))
-                ) && 
-                (
-                    this.PlatformFilter == input.PlatformFilter ||
-                    (this.PlatformFilter != null &&
-                    this.PlatformFilter.Equals(input.PlatformFilter))
-                ) && 
-                (
-                    this.StartDate == input.StartDate ||
-                    (this.StartDate != null &&
-                    this.StartDate.Equals(input.StartDate))
-                ) && 
-                (
-                    this.EndDate == input.EndDate ||
-                    (this.EndDate != null &&
-                    this.EndDate.Equals(input.EndDate))
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
-                ) && 
                 (
                     this.ApplicationId == input.ApplicationId ||
                     (this.ApplicationId != null &&
@@ -352,6 +321,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.DisplayTitleOverride.Equals(input.DisplayTitleOverride))
                 ) && 
                 (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
+                (
                     this.RequiresParent == input.RequiresParent ||
                     (this.RequiresParent != null &&
                     this.RequiresParent.Equals(input.RequiresParent))
@@ -361,6 +336,31 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
+                ) && 
+                (
+                    this.RequestTypes == input.RequestTypes ||
+                    (this.RequestTypes != null &&
+                    this.RequestTypes.Equals(input.RequestTypes))
+                ) && 
+                (
+                    this.RequestNames == input.RequestNames ||
+                    (this.RequestNames != null &&
+                    this.RequestNames.Equals(input.RequestNames))
+                ) && 
+                (
+                    this.PlatformFilter == input.PlatformFilter ||
+                    (this.PlatformFilter != null &&
+                    this.PlatformFilter.Equals(input.PlatformFilter))
+                ) && 
+                (
+                    this.StartDate == input.StartDate ||
+                    (this.StartDate != null &&
+                    this.StartDate.Equals(input.StartDate))
+                ) && 
+                (
+                    this.EndDate == input.EndDate ||
+                    (this.EndDate != null &&
+                    this.EndDate.Equals(input.EndDate))
                 );
         }
 
@@ -373,18 +373,6 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.RequestTypes != null)
-                    hashCode = hashCode * 59 + this.RequestTypes.GetHashCode();
-                if (this.RequestNames != null)
-                    hashCode = hashCode * 59 + this.RequestNames.GetHashCode();
-                if (this.PlatformFilter != null)
-                    hashCode = hashCode * 59 + this.PlatformFilter.GetHashCode();
-                if (this.StartDate != null)
-                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-                if (this.EndDate != null)
-                    hashCode = hashCode * 59 + this.EndDate.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.ApplicationId != null)
                     hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.Title != null)
@@ -407,10 +395,22 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DisplayTextOverride.GetHashCode();
                 if (this.DisplayTitleOverride != null)
                     hashCode = hashCode * 59 + this.DisplayTitleOverride.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.RequiresParent != null)
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
+                if (this.RequestTypes != null)
+                    hashCode = hashCode * 59 + this.RequestTypes.GetHashCode();
+                if (this.RequestNames != null)
+                    hashCode = hashCode * 59 + this.RequestNames.GetHashCode();
+                if (this.PlatformFilter != null)
+                    hashCode = hashCode * 59 + this.PlatformFilter.GetHashCode();
+                if (this.StartDate != null)
+                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
+                if (this.EndDate != null)
+                    hashCode = hashCode * 59 + this.EndDate.GetHashCode();
                 return hashCode;
             }
         }

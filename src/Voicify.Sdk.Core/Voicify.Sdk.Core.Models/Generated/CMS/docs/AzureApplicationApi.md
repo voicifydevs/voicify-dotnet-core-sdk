@@ -4,13 +4,13 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiAzureApplicationApplicationIdAzureSubscriptionsGet**](AzureApplicationApi.md#apiazureapplicationapplicationidazuresubscriptionsget) | **GET** /api/AzureApplication/{applicationId}/azureSubscriptions | 
-[**ApiAzureApplicationApplicationIdBotServiceAppsGet**](AzureApplicationApi.md#apiazureapplicationapplicationidbotserviceappsget) | **GET** /api/AzureApplication/{applicationId}/botServiceApps | 
-[**ApiAzureApplicationApplicationIdLuisAppsGet**](AzureApplicationApi.md#apiazureapplicationapplicationidluisappsget) | **GET** /api/AzureApplication/{applicationId}/luisApps | 
+[**GetAzureSubscriptions**](AzureApplicationApi.md#getazuresubscriptions) | **GET** /api/AzureApplication/{applicationId}/azureSubscriptions | 
+[**GetBotServiceApps**](AzureApplicationApi.md#getbotserviceapps) | **GET** /api/AzureApplication/{applicationId}/botServiceApps | 
+[**GetLuisApps**](AzureApplicationApi.md#getluisapps) | **GET** /api/AzureApplication/{applicationId}/luisApps | 
 
-<a name="apiazureapplicationapplicationidazuresubscriptionsget"></a>
-# **ApiAzureApplicationApplicationIdAzureSubscriptionsGet**
-> List<AzureSubscriptionInformation> ApiAzureApplicationApplicationIdAzureSubscriptionsGet (string applicationId)
+<a name="getazuresubscriptions"></a>
+# **GetAzureSubscriptions**
+> List<AzureSubscriptionInformation> GetAzureSubscriptions (string applicationId)
 
 
 
@@ -24,7 +24,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAzureApplicationApplicationIdAzureSubscriptionsGetExample
+    public class GetAzureSubscriptionsExample
     {
         public void main()
         {
@@ -42,12 +42,12 @@ namespace Example
 
             try
             {
-                List&lt;AzureSubscriptionInformation&gt; result = apiInstance.ApiAzureApplicationApplicationIdAzureSubscriptionsGet(applicationId);
+                List&lt;AzureSubscriptionInformation&gt; result = apiInstance.GetAzureSubscriptions(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AzureApplicationApi.ApiAzureApplicationApplicationIdAzureSubscriptionsGet: " + e.Message );
+                Debug.Print("Exception when calling AzureApplicationApi.GetAzureSubscriptions: " + e.Message );
             }
         }
     }
@@ -74,9 +74,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiazureapplicationapplicationidbotserviceappsget"></a>
-# **ApiAzureApplicationApplicationIdBotServiceAppsGet**
-> List<AzureBotServiceInformation> ApiAzureApplicationApplicationIdBotServiceAppsGet (string applicationId)
+<a name="getbotserviceapps"></a>
+# **GetBotServiceApps**
+> List<AzureBotServiceInformation> GetBotServiceApps (string applicationId)
 
 
 
@@ -90,7 +90,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAzureApplicationApplicationIdBotServiceAppsGetExample
+    public class GetBotServiceAppsExample
     {
         public void main()
         {
@@ -108,12 +108,12 @@ namespace Example
 
             try
             {
-                List&lt;AzureBotServiceInformation&gt; result = apiInstance.ApiAzureApplicationApplicationIdBotServiceAppsGet(applicationId);
+                List&lt;AzureBotServiceInformation&gt; result = apiInstance.GetBotServiceApps(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AzureApplicationApi.ApiAzureApplicationApplicationIdBotServiceAppsGet: " + e.Message );
+                Debug.Print("Exception when calling AzureApplicationApi.GetBotServiceApps: " + e.Message );
             }
         }
     }
@@ -140,9 +140,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiazureapplicationapplicationidluisappsget"></a>
-# **ApiAzureApplicationApplicationIdLuisAppsGet**
-> List<LuisApplicationInformation> ApiAzureApplicationApplicationIdLuisAppsGet (string applicationId)
+<a name="getluisapps"></a>
+# **GetLuisApps**
+> List<LuisApplicationInformation> GetLuisApps (string applicationId)
 
 
 
@@ -156,7 +156,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAzureApplicationApplicationIdLuisAppsGetExample
+    public class GetLuisAppsExample
     {
         public void main()
         {
@@ -174,12 +174,12 @@ namespace Example
 
             try
             {
-                List&lt;LuisApplicationInformation&gt; result = apiInstance.ApiAzureApplicationApplicationIdLuisAppsGet(applicationId);
+                List&lt;LuisApplicationInformation&gt; result = apiInstance.GetLuisApps(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AzureApplicationApi.ApiAzureApplicationApplicationIdLuisAppsGet: " + e.Message );
+                Debug.Print("Exception when calling AzureApplicationApi.GetLuisApps: " + e.Message );
             }
         }
     }

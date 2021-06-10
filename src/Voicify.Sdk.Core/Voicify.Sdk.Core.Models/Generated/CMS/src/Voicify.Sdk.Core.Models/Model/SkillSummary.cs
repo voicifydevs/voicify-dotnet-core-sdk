@@ -35,10 +35,10 @@ namespace Voicify.Sdk.Core.Models.Model
         [DataMember(Name="stage", EmitDefaultValue=false)]
         public SkillStage? Stage { get; set; }
         /// <summary>
-        /// Gets or Sets Status
+        /// Gets or Sets PublicationStatus
         /// </summary>
-        [DataMember(Name="status", EmitDefaultValue=false)]
-        public PublicationStatus? Status { get; set; }
+        [DataMember(Name="publicationStatus", EmitDefaultValue=false)]
+        public PublicationStatus? PublicationStatus { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="SkillSummary" /> class.
         /// </summary>
@@ -46,16 +46,16 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="nameByLocale">nameByLocale.</param>
         /// <param name="stage">stage.</param>
         /// <param name="apis">apis.</param>
-        /// <param name="status">status.</param>
+        /// <param name="publicationStatus">publicationStatus.</param>
         /// <param name="skillId">skillId.</param>
         /// <param name="links">links.</param>
-        public SkillSummary(DateTime? lastUpdated = default(DateTime?), Dictionary<string, string> nameByLocale = default(Dictionary<string, string>), SkillStage? stage = default(SkillStage?), List<string> apis = default(List<string>), PublicationStatus? status = default(PublicationStatus?), string skillId = default(string), Dictionary<string, ApiLink> links = default(Dictionary<string, ApiLink>))
+        public SkillSummary(DateTime? lastUpdated = default(DateTime?), Dictionary<string, string> nameByLocale = default(Dictionary<string, string>), SkillStage? stage = default(SkillStage?), List<string> apis = default(List<string>), PublicationStatus? publicationStatus = default(PublicationStatus?), string skillId = default(string), Dictionary<string, ApiLink> links = default(Dictionary<string, ApiLink>))
         {
             this.LastUpdated = lastUpdated;
             this.NameByLocale = nameByLocale;
             this.Stage = stage;
             this.Apis = apis;
-            this.Status = status;
+            this.PublicationStatus = publicationStatus;
             this.SkillId = skillId;
             this.Links = links;
         }
@@ -89,7 +89,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Gets or Sets Links
         /// </summary>
-        [DataMember(Name="links", EmitDefaultValue=false)]
+        [DataMember(Name="_links", EmitDefaultValue=false)]
         public Dictionary<string, ApiLink> Links { get; set; }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  NameByLocale: ").Append(NameByLocale).Append("\n");
             sb.Append("  Stage: ").Append(Stage).Append("\n");
             sb.Append("  Apis: ").Append(Apis).Append("\n");
-            sb.Append("  Status: ").Append(Status).Append("\n");
+            sb.Append("  PublicationStatus: ").Append(PublicationStatus).Append("\n");
             sb.Append("  SkillId: ").Append(SkillId).Append("\n");
             sb.Append("  Links: ").Append(Links).Append("\n");
             sb.Append("}\n");
@@ -164,9 +164,9 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Apis.SequenceEqual(input.Apis)
                 ) && 
                 (
-                    this.Status == input.Status ||
-                    (this.Status != null &&
-                    this.Status.Equals(input.Status))
+                    this.PublicationStatus == input.PublicationStatus ||
+                    (this.PublicationStatus != null &&
+                    this.PublicationStatus.Equals(input.PublicationStatus))
                 ) && 
                 (
                     this.SkillId == input.SkillId ||
@@ -198,8 +198,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Stage.GetHashCode();
                 if (this.Apis != null)
                     hashCode = hashCode * 59 + this.Apis.GetHashCode();
-                if (this.Status != null)
-                    hashCode = hashCode * 59 + this.Status.GetHashCode();
+                if (this.PublicationStatus != null)
+                    hashCode = hashCode * 59 + this.PublicationStatus.GetHashCode();
                 if (this.SkillId != null)
                     hashCode = hashCode * 59 + this.SkillId.GetHashCode();
                 if (this.Links != null)

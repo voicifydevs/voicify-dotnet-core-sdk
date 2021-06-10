@@ -32,7 +32,6 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewCustomRequestStubRequest" /> class.
         /// </summary>
-        /// <param name="responses">responses.</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
         /// <param name="startDate">startDate.</param>
@@ -50,9 +49,10 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="mediaResponseContainerId">mediaResponseContainerId.</param>
         /// <param name="displayTextOverride">displayTextOverride.</param>
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
+        /// <param name="responses">responses.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        public NewCustomRequestStubRequest(List<NewCustomRequestResponseRequest> responses = default(List<NewCustomRequestResponseRequest>), string applicationId = default(string), string applicationFeatureId = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string requestTypes = default(string), string requestNames = default(string), string platformFilter = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
+        public NewCustomRequestStubRequest(string applicationId = default(string), string applicationFeatureId = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string requestTypes = default(string), string requestNames = default(string), string platformFilter = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<NewCustomRequestResponseRequest> responses = default(List<NewCustomRequestResponseRequest>), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)
@@ -81,7 +81,6 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Title = title;
             }
-            this.Responses = responses;
             this.StartDate = startDate;
             this.EndDate = endDate;
             this.RequestTypes = requestTypes;
@@ -96,16 +95,11 @@ namespace Voicify.Sdk.Core.Models.Model
             this.MediaResponseContainerId = mediaResponseContainerId;
             this.DisplayTextOverride = displayTextOverride;
             this.DisplayTitleOverride = displayTitleOverride;
+            this.Responses = responses;
             this.RequiresParent = requiresParent;
             this.LanguageIds = languageIds;
         }
         
-        /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<NewCustomRequestResponseRequest> Responses { get; set; }
-
         /// <summary>
         /// Gets or Sets ApplicationId
         /// </summary>
@@ -209,6 +203,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string DisplayTitleOverride { get; set; }
 
         /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<NewCustomRequestResponseRequest> Responses { get; set; }
+
+        /// <summary>
         /// Gets or Sets RequiresParent
         /// </summary>
         [DataMember(Name="requiresParent", EmitDefaultValue=false)]
@@ -228,7 +228,6 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewCustomRequestStubRequest {\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
             sb.Append("  StartDate: ").Append(StartDate).Append("\n");
@@ -246,6 +245,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  MediaResponseContainerId: ").Append(MediaResponseContainerId).Append("\n");
             sb.Append("  DisplayTextOverride: ").Append(DisplayTextOverride).Append("\n");
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
             sb.Append("}\n");
@@ -282,12 +282,6 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
-                ) && 
                 (
                     this.ApplicationId == input.ApplicationId ||
                     (this.ApplicationId != null &&
@@ -374,6 +368,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.DisplayTitleOverride.Equals(input.DisplayTitleOverride))
                 ) && 
                 (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
+                (
                     this.RequiresParent == input.RequiresParent ||
                     (this.RequiresParent != null &&
                     this.RequiresParent.Equals(input.RequiresParent))
@@ -395,8 +395,6 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.ApplicationId != null)
                     hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ApplicationFeatureId != null)
@@ -431,6 +429,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DisplayTextOverride.GetHashCode();
                 if (this.DisplayTitleOverride != null)
                     hashCode = hashCode * 59 + this.DisplayTitleOverride.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.RequiresParent != null)
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)

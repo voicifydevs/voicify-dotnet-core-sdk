@@ -29,9 +29,24 @@ namespace Voicify.Sdk.Core.Models.Model
     [JsonConverter(typeof(StringEnumConverter))]
     public enum AppliedTemplateSyncStage
     {
-        Unknown,
-        Queued,
-        Processing,
-        Complete
-    }
+        /// <summary>
+        /// Enum Unknown for value: Unknown
+        /// </summary>
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
+        /// <summary>
+        /// Enum Queued for value: Queued
+        /// </summary>
+        [EnumMember(Value = "Queued")]
+        Queued = 2,
+        /// <summary>
+        /// Enum Processing for value: Processing
+        /// </summary>
+        [EnumMember(Value = "Processing")]
+        Processing = 3,
+        /// <summary>
+        /// Enum Complete for value: Complete
+        /// </summary>
+        [EnumMember(Value = "Complete")]
+        Complete = 4    }
 }

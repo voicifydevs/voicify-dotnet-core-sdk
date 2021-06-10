@@ -4,81 +4,19 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiOrganizationGet**](OrganizationApi.md#apiorganizationget) | **GET** /api/Organization | 
-[**ApiOrganizationMembersOrganizationMemberIdRemoveDelete**](OrganizationApi.md#apiorganizationmembersorganizationmemberidremovedelete) | **DELETE** /api/Organization/members/{organizationMemberId}/remove | 
-[**ApiOrganizationMembersOrganizationMemberIdRolePut**](OrganizationApi.md#apiorganizationmembersorganizationmemberidroleput) | **PUT** /api/Organization/members/{organizationMemberId}/role | 
-[**ApiOrganizationOrganizationIdLeaveDelete**](OrganizationApi.md#apiorganizationorganizationidleavedelete) | **DELETE** /api/Organization/{organizationId}/leave | 
-[**ApiOrganizationOrganizationIdMembersDetailedGet**](OrganizationApi.md#apiorganizationorganizationidmembersdetailedget) | **GET** /api/Organization/{organizationId}/members/detailed | 
-[**ApiOrganizationOrganizationIdMembersGet**](OrganizationApi.md#apiorganizationorganizationidmembersget) | **GET** /api/Organization/{organizationId}/members | 
-[**ApiOrganizationOrganizationIdPut**](OrganizationApi.md#apiorganizationorganizationidput) | **PUT** /api/Organization/{organizationId} | 
-[**ApiOrganizationOrganizationIdRegenerateSecretsPut**](OrganizationApi.md#apiorganizationorganizationidregeneratesecretsput) | **PUT** /api/Organization/{organizationId}/regenerateSecrets | 
-[**ApiOrganizationPost**](OrganizationApi.md#apiorganizationpost) | **POST** /api/Organization | 
+[**CreateOrganization**](OrganizationApi.md#createorganization) | **POST** /api/Organization | 
+[**GetDetailedMemberships**](OrganizationApi.md#getdetailedmemberships) | **GET** /api/Organization/{organizationId}/members/detailed | 
+[**GetForUser**](OrganizationApi.md#getforuser) | **GET** /api/Organization | 
+[**GetMembers**](OrganizationApi.md#getmembers) | **GET** /api/Organization/{organizationId}/members | 
+[**LeaveOrganization**](OrganizationApi.md#leaveorganization) | **DELETE** /api/Organization/{organizationId}/leave | 
+[**RegenerateOrganizationSecret**](OrganizationApi.md#regenerateorganizationsecret) | **PUT** /api/Organization/{organizationId}/regenerateSecrets | 
+[**RemoveMember**](OrganizationApi.md#removemember) | **DELETE** /api/Organization/members/{organizationMemberId}/remove | 
+[**UpdateDetails**](OrganizationApi.md#updatedetails) | **PUT** /api/Organization/{organizationId} | 
+[**UpdateMemberRole**](OrganizationApi.md#updatememberrole) | **PUT** /api/Organization/members/{organizationMemberId}/role | 
 
-<a name="apiorganizationget"></a>
-# **ApiOrganizationGet**
-> List<OrganizationModel> ApiOrganizationGet ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiOrganizationGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new OrganizationApi();
-
-            try
-            {
-                List&lt;OrganizationModel&gt; result = apiInstance.ApiOrganizationGet();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<OrganizationModel>**](OrganizationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationmembersorganizationmemberidremovedelete"></a>
-# **ApiOrganizationMembersOrganizationMemberIdRemoveDelete**
-> OrganizationMemberModel ApiOrganizationMembersOrganizationMemberIdRemoveDelete (string organizationMemberId)
+<a name="createorganization"></a>
+# **CreateOrganization**
+> OrganizationModel CreateOrganization (NewOrganizationRequest body = null)
 
 
 
@@ -92,7 +30,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiOrganizationMembersOrganizationMemberIdRemoveDeleteExample
+    public class CreateOrganizationExample
     {
         public void main()
         {
@@ -106,16 +44,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new OrganizationApi();
-            var organizationMemberId = organizationMemberId_example;  // string | 
+            var body = new NewOrganizationRequest(); // NewOrganizationRequest |  (optional) 
 
             try
             {
-                OrganizationMemberModel result = apiInstance.ApiOrganizationMembersOrganizationMemberIdRemoveDelete(organizationMemberId);
+                OrganizationModel result = apiInstance.CreateOrganization(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationMembersOrganizationMemberIdRemoveDelete: " + e.Message );
+                Debug.Print("Exception when calling OrganizationApi.CreateOrganization: " + e.Message );
             }
         }
     }
@@ -126,79 +64,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizationMemberId** | **string**|  | 
+ **body** | [**NewOrganizationRequest**](NewOrganizationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**OrganizationMemberModel**](OrganizationMemberModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationmembersorganizationmemberidroleput"></a>
-# **ApiOrganizationMembersOrganizationMemberIdRolePut**
-> OrganizationMemberModel ApiOrganizationMembersOrganizationMemberIdRolePut (string organizationMemberId, MemberRoleUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiOrganizationMembersOrganizationMemberIdRolePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new OrganizationApi();
-            var organizationMemberId = organizationMemberId_example;  // string | 
-            var body = new MemberRoleUpdateRequest(); // MemberRoleUpdateRequest |  (optional) 
-
-            try
-            {
-                OrganizationMemberModel result = apiInstance.ApiOrganizationMembersOrganizationMemberIdRolePut(organizationMemberId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationMembersOrganizationMemberIdRolePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationMemberId** | **string**|  | 
- **body** | [**MemberRoleUpdateRequest**](MemberRoleUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**OrganizationMemberModel**](OrganizationMemberModel.md)
+[**OrganizationModel**](OrganizationModel.md)
 
 ### Authorization
 
@@ -210,9 +80,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationorganizationidleavedelete"></a>
-# **ApiOrganizationOrganizationIdLeaveDelete**
-> OrganizationMemberModel ApiOrganizationOrganizationIdLeaveDelete (string organizationId)
+<a name="getdetailedmemberships"></a>
+# **GetDetailedMemberships**
+> List<MembershipModel> GetDetailedMemberships (string organizationId)
 
 
 
@@ -226,7 +96,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiOrganizationOrganizationIdLeaveDeleteExample
+    public class GetDetailedMembershipsExample
     {
         public void main()
         {
@@ -244,78 +114,12 @@ namespace Example
 
             try
             {
-                OrganizationMemberModel result = apiInstance.ApiOrganizationOrganizationIdLeaveDelete(organizationId);
+                List&lt;MembershipModel&gt; result = apiInstance.GetDetailedMemberships(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationOrganizationIdLeaveDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
-
-### Return type
-
-[**OrganizationMemberModel**](OrganizationMemberModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationorganizationidmembersdetailedget"></a>
-# **ApiOrganizationOrganizationIdMembersDetailedGet**
-> List<MembershipModel> ApiOrganizationOrganizationIdMembersDetailedGet (string organizationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiOrganizationOrganizationIdMembersDetailedGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new OrganizationApi();
-            var organizationId = organizationId_example;  // string | 
-
-            try
-            {
-                List&lt;MembershipModel&gt; result = apiInstance.ApiOrganizationOrganizationIdMembersDetailedGet(organizationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationOrganizationIdMembersDetailedGet: " + e.Message );
+                Debug.Print("Exception when calling OrganizationApi.GetDetailedMemberships: " + e.Message );
             }
         }
     }
@@ -342,9 +146,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationorganizationidmembersget"></a>
-# **ApiOrganizationOrganizationIdMembersGet**
-> List<OrganizationMemberModel> ApiOrganizationOrganizationIdMembersGet (string organizationId)
+<a name="getforuser"></a>
+# **GetForUser**
+> List<OrganizationModel> GetForUser ()
 
 
 
@@ -358,7 +162,69 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiOrganizationOrganizationIdMembersGetExample
+    public class GetForUserExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new OrganizationApi();
+
+            try
+            {
+                List&lt;OrganizationModel&gt; result = apiInstance.GetForUser();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrganizationApi.GetForUser: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<OrganizationModel>**](OrganizationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmembers"></a>
+# **GetMembers**
+> List<OrganizationMemberModel> GetMembers (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMembersExample
     {
         public void main()
         {
@@ -376,12 +242,12 @@ namespace Example
 
             try
             {
-                List&lt;OrganizationMemberModel&gt; result = apiInstance.ApiOrganizationOrganizationIdMembersGet(organizationId);
+                List&lt;OrganizationMemberModel&gt; result = apiInstance.GetMembers(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationOrganizationIdMembersGet: " + e.Message );
+                Debug.Print("Exception when calling OrganizationApi.GetMembers: " + e.Message );
             }
         }
     }
@@ -408,9 +274,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationorganizationidput"></a>
-# **ApiOrganizationOrganizationIdPut**
-> OrganizationModel ApiOrganizationOrganizationIdPut (string organizationId, UpdateOrganizationRequest body = null)
+<a name="leaveorganization"></a>
+# **LeaveOrganization**
+> OrganizationMemberModel LeaveOrganization (string organizationId)
 
 
 
@@ -424,7 +290,205 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiOrganizationOrganizationIdPutExample
+    public class LeaveOrganizationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new OrganizationApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                OrganizationMemberModel result = apiInstance.LeaveOrganization(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrganizationApi.LeaveOrganization: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**OrganizationMemberModel**](OrganizationMemberModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="regenerateorganizationsecret"></a>
+# **RegenerateOrganizationSecret**
+> OrganizationModel RegenerateOrganizationSecret (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RegenerateOrganizationSecretExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new OrganizationApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                OrganizationModel result = apiInstance.RegenerateOrganizationSecret(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrganizationApi.RegenerateOrganizationSecret: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**OrganizationModel**](OrganizationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removemember"></a>
+# **RemoveMember**
+> OrganizationMemberModel RemoveMember (string organizationMemberId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveMemberExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new OrganizationApi();
+            var organizationMemberId = organizationMemberId_example;  // string | 
+
+            try
+            {
+                OrganizationMemberModel result = apiInstance.RemoveMember(organizationMemberId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrganizationApi.RemoveMember: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationMemberId** | **string**|  | 
+
+### Return type
+
+[**OrganizationMemberModel**](OrganizationMemberModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatedetails"></a>
+# **UpdateDetails**
+> OrganizationModel UpdateDetails (string organizationId, UpdateOrganizationRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateDetailsExample
     {
         public void main()
         {
@@ -443,12 +507,12 @@ namespace Example
 
             try
             {
-                OrganizationModel result = apiInstance.ApiOrganizationOrganizationIdPut(organizationId, body);
+                OrganizationModel result = apiInstance.UpdateDetails(organizationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationOrganizationIdPut: " + e.Message );
+                Debug.Print("Exception when calling OrganizationApi.UpdateDetails: " + e.Message );
             }
         }
     }
@@ -476,9 +540,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationorganizationidregeneratesecretsput"></a>
-# **ApiOrganizationOrganizationIdRegenerateSecretsPut**
-> OrganizationModel ApiOrganizationOrganizationIdRegenerateSecretsPut (string organizationId)
+<a name="updatememberrole"></a>
+# **UpdateMemberRole**
+> OrganizationMemberModel UpdateMemberRole (string organizationMemberId, MemberRoleUpdateRequest body = null)
 
 
 
@@ -492,7 +556,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiOrganizationOrganizationIdRegenerateSecretsPutExample
+    public class UpdateMemberRoleExample
     {
         public void main()
         {
@@ -506,16 +570,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new OrganizationApi();
-            var organizationId = organizationId_example;  // string | 
+            var organizationMemberId = organizationMemberId_example;  // string | 
+            var body = new MemberRoleUpdateRequest(); // MemberRoleUpdateRequest |  (optional) 
 
             try
             {
-                OrganizationModel result = apiInstance.ApiOrganizationOrganizationIdRegenerateSecretsPut(organizationId);
+                OrganizationMemberModel result = apiInstance.UpdateMemberRole(organizationMemberId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationOrganizationIdRegenerateSecretsPut: " + e.Message );
+                Debug.Print("Exception when calling OrganizationApi.UpdateMemberRole: " + e.Message );
             }
         }
     }
@@ -526,77 +591,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
+ **organizationMemberId** | **string**|  | 
+ **body** | [**MemberRoleUpdateRequest**](MemberRoleUpdateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**OrganizationModel**](OrganizationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiorganizationpost"></a>
-# **ApiOrganizationPost**
-> OrganizationModel ApiOrganizationPost (NewOrganizationRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiOrganizationPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new OrganizationApi();
-            var body = new NewOrganizationRequest(); // NewOrganizationRequest |  (optional) 
-
-            try
-            {
-                OrganizationModel result = apiInstance.ApiOrganizationPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrganizationApi.ApiOrganizationPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewOrganizationRequest**](NewOrganizationRequest.md)|  | [optional] 
-
-### Return type
-
-[**OrganizationModel**](OrganizationModel.md)
+[**OrganizationMemberModel**](OrganizationMemberModel.md)
 
 ### Authorization
 

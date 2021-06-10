@@ -32,17 +32,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BulkUpdateEventStubRequest" /> class.
         /// </summary>
-        /// <param name="eventName">eventName.</param>
-        /// <param name="startDate">startDate.</param>
-        /// <param name="responses">responses.</param>
         /// <param name="title">title (required).</param>
+        /// <param name="eventName">eventName.</param>
         /// <param name="description">description.</param>
         /// <param name="locationName">locationName.</param>
         /// <param name="categoryNames">categoryNames.</param>
         /// <param name="ownerName">ownerName.</param>
         /// <param name="address">address.</param>
         /// <param name="status">status.</param>
+        /// <param name="startDate">startDate.</param>
         /// <param name="endDate">endDate.</param>
+        /// <param name="responses">responses.</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="backgroundImageItemId">backgroundImageItemId.</param>
         /// <param name="audioItemId">audioItemId.</param>
@@ -54,7 +54,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        public BulkUpdateEventStubRequest(string eventName = default(string), DateTime? startDate = default(DateTime?), List<UpdateEventResponseRequest> responses = default(List<UpdateEventResponseRequest>), string title = default(string), string description = default(string), string locationName = default(string), List<string> categoryNames = default(List<string>), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? endDate = default(DateTime?), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
+        public BulkUpdateEventStubRequest(string title = default(string), string eventName = default(string), string description = default(string), string locationName = default(string), List<string> categoryNames = default(List<string>), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), List<UpdateEventResponseRequest> responses = default(List<UpdateEventResponseRequest>), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
             // to ensure "title" is required (not null)
             if (title == null)
@@ -66,15 +66,15 @@ namespace Voicify.Sdk.Core.Models.Model
                 this.Title = title;
             }
             this.EventName = eventName;
-            this.StartDate = startDate;
-            this.Responses = responses;
             this.Description = description;
             this.LocationName = locationName;
             this.CategoryNames = categoryNames;
             this.OwnerName = ownerName;
             this.Address = address;
             this.Status = status;
+            this.StartDate = startDate;
             this.EndDate = endDate;
+            this.Responses = responses;
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
             this.AudioItemId = audioItemId;
@@ -89,28 +89,16 @@ namespace Voicify.Sdk.Core.Models.Model
         }
         
         /// <summary>
-        /// Gets or Sets EventName
-        /// </summary>
-        [DataMember(Name="eventName", EmitDefaultValue=false)]
-        public string EventName { get; set; }
-
-        /// <summary>
-        /// Gets or Sets StartDate
-        /// </summary>
-        [DataMember(Name="startDate", EmitDefaultValue=false)]
-        public DateTime? StartDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<UpdateEventResponseRequest> Responses { get; set; }
-
-        /// <summary>
         /// Gets or Sets Title
         /// </summary>
         [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EventName
+        /// </summary>
+        [DataMember(Name="eventName", EmitDefaultValue=false)]
+        public string EventName { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
@@ -149,10 +137,22 @@ namespace Voicify.Sdk.Core.Models.Model
         public string Status { get; set; }
 
         /// <summary>
+        /// Gets or Sets StartDate
+        /// </summary>
+        [DataMember(Name="startDate", EmitDefaultValue=false)]
+        public DateTime? StartDate { get; set; }
+
+        /// <summary>
         /// Gets or Sets EndDate
         /// </summary>
         [DataMember(Name="endDate", EmitDefaultValue=false)]
         public DateTime? EndDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<UpdateEventResponseRequest> Responses { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageItemId
@@ -228,17 +228,17 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class BulkUpdateEventStubRequest {\n");
-            sb.Append("  EventName: ").Append(EventName).Append("\n");
-            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
+            sb.Append("  EventName: ").Append(EventName).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  LocationName: ").Append(LocationName).Append("\n");
             sb.Append("  CategoryNames: ").Append(CategoryNames).Append("\n");
             sb.Append("  OwnerName: ").Append(OwnerName).Append("\n");
             sb.Append("  Address: ").Append(Address).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
+            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
             sb.Append("  EndDate: ").Append(EndDate).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  BackgroundImageItemId: ").Append(BackgroundImageItemId).Append("\n");
             sb.Append("  AudioItemId: ").Append(AudioItemId).Append("\n");
@@ -285,25 +285,14 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
-                    this.EventName == input.EventName ||
-                    (this.EventName != null &&
-                    this.EventName.Equals(input.EventName))
-                ) && 
-                (
-                    this.StartDate == input.StartDate ||
-                    (this.StartDate != null &&
-                    this.StartDate.Equals(input.StartDate))
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
-                ) && 
-                (
                     this.Title == input.Title ||
                     (this.Title != null &&
                     this.Title.Equals(input.Title))
+                ) && 
+                (
+                    this.EventName == input.EventName ||
+                    (this.EventName != null &&
+                    this.EventName.Equals(input.EventName))
                 ) && 
                 (
                     this.Description == input.Description ||
@@ -337,9 +326,20 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Status.Equals(input.Status))
                 ) && 
                 (
+                    this.StartDate == input.StartDate ||
+                    (this.StartDate != null &&
+                    this.StartDate.Equals(input.StartDate))
+                ) && 
+                (
                     this.EndDate == input.EndDate ||
                     (this.EndDate != null &&
                     this.EndDate.Equals(input.EndDate))
+                ) && 
+                (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
                 ) && 
                 (
                     this.ImageItemId == input.ImageItemId ||
@@ -408,14 +408,10 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.EventName != null)
-                    hashCode = hashCode * 59 + this.EventName.GetHashCode();
-                if (this.StartDate != null)
-                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
+                if (this.EventName != null)
+                    hashCode = hashCode * 59 + this.EventName.GetHashCode();
                 if (this.Description != null)
                     hashCode = hashCode * 59 + this.Description.GetHashCode();
                 if (this.LocationName != null)
@@ -428,8 +424,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Address.GetHashCode();
                 if (this.Status != null)
                     hashCode = hashCode * 59 + this.Status.GetHashCode();
+                if (this.StartDate != null)
+                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
                 if (this.EndDate != null)
                     hashCode = hashCode * 59 + this.EndDate.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.ImageItemId != null)
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
                 if (this.BackgroundImageItemId != null)

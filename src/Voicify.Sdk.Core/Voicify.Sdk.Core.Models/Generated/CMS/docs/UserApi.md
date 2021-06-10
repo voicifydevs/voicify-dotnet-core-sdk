@@ -4,87 +4,21 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiUserApiUserPost**](UserApi.md#apiuserapiuserpost) | **POST** /api/User/ApiUser | 
-[**ApiUserChangePasswordPut**](UserApi.md#apiuserchangepasswordput) | **PUT** /api/User/ChangePassword | 
-[**ApiUserMeGet**](UserApi.md#apiusermeget) | **GET** /api/User/me | 
-[**ApiUserPost**](UserApi.md#apiuserpost) | **POST** /api/User | 
-[**ApiUserResetPasswordPost**](UserApi.md#apiuserresetpasswordpost) | **POST** /api/User/ResetPassword | 
-[**ApiUserSetPasswordPut**](UserApi.md#apiusersetpasswordput) | **PUT** /api/User/SetPassword | 
-[**ApiUserSystemRolesGet**](UserApi.md#apiusersystemrolesget) | **GET** /api/User/SystemRoles | 
-[**ApiUserTermsGet**](UserApi.md#apiusertermsget) | **GET** /api/User/terms | 
-[**ApiUserUpdateDetailsPut**](UserApi.md#apiuserupdatedetailsput) | **PUT** /api/User/UpdateDetails | 
-[**ApiUserUpdateImagePost**](UserApi.md#apiuserupdateimagepost) | **POST** /api/User/UpdateImage | 
-[**ApiUserUseSsoEmailGet**](UserApi.md#apiuserusessoemailget) | **GET** /api/User/useSso/{email} | 
+[**ChangePassword**](UserApi.md#changepassword) | **PUT** /api/User/ChangePassword | 
+[**CreateApiUser**](UserApi.md#createapiuser) | **POST** /api/User/ApiUser | 
+[**CreateUser**](UserApi.md#createuser) | **POST** /api/User | 
+[**GetCurrentUserData**](UserApi.md#getcurrentuserdata) | **GET** /api/User/me | 
+[**GetCurrentUserTermsAgreement**](UserApi.md#getcurrentusertermsagreement) | **GET** /api/User/terms | 
+[**GetSingleSignOnAvailability**](UserApi.md#getsinglesignonavailability) | **GET** /api/User/useSso/{email} | 
+[**GetSystemUserRoles**](UserApi.md#getsystemuserroles) | **GET** /api/User/SystemRoles | 
+[**RequestPasswordReset**](UserApi.md#requestpasswordreset) | **POST** /api/User/ResetPassword | 
+[**SetPassword**](UserApi.md#setpassword) | **PUT** /api/User/SetPassword | 
+[**UpdateDetails**](UserApi.md#updatedetails) | **PUT** /api/User/UpdateDetails | 
+[**UpdateProfileImage**](UserApi.md#updateprofileimage) | **POST** /api/User/UpdateImage | 
 
-<a name="apiuserapiuserpost"></a>
-# **ApiUserApiUserPost**
-> ApiUserModel ApiUserApiUserPost (NewApiUserRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiUserApiUserPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new UserApi();
-            var body = new NewApiUserRequest(); // NewApiUserRequest |  (optional) 
-
-            try
-            {
-                ApiUserModel result = apiInstance.ApiUserApiUserPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UserApi.ApiUserApiUserPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewApiUserRequest**](NewApiUserRequest.md)|  | [optional] 
-
-### Return type
-
-[**ApiUserModel**](ApiUserModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiuserchangepasswordput"></a>
-# **ApiUserChangePasswordPut**
-> void ApiUserChangePasswordPut (ChangePasswordRequest body = null)
+<a name="changepassword"></a>
+# **ChangePassword**
+> void ChangePassword (ChangePasswordRequest body = null)
 
 
 
@@ -98,7 +32,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserChangePasswordPutExample
+    public class ChangePasswordExample
     {
         public void main()
         {
@@ -116,11 +50,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiUserChangePasswordPut(body);
+                apiInstance.ChangePassword(body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserChangePasswordPut: " + e.Message );
+                Debug.Print("Exception when calling UserApi.ChangePassword: " + e.Message );
             }
         }
     }
@@ -147,9 +81,9 @@ void (empty response body)
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiusermeget"></a>
-# **ApiUserMeGet**
-> UserModel ApiUserMeGet ()
+<a name="createapiuser"></a>
+# **CreateApiUser**
+> ApiUserModel CreateApiUser (NewApiUserRequest body = null)
 
 
 
@@ -163,7 +97,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserMeGetExample
+    public class CreateApiUserExample
     {
         public void main()
         {
@@ -177,15 +111,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new UserApi();
+            var body = new NewApiUserRequest(); // NewApiUserRequest |  (optional) 
 
             try
             {
-                UserModel result = apiInstance.ApiUserMeGet();
+                ApiUserModel result = apiInstance.CreateApiUser(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserMeGet: " + e.Message );
+                Debug.Print("Exception when calling UserApi.CreateApiUser: " + e.Message );
             }
         }
     }
@@ -193,11 +128,14 @@ namespace Example
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewApiUserRequest**](NewApiUserRequest.md)|  | [optional] 
 
 ### Return type
 
-[**UserModel**](UserModel.md)
+[**ApiUserModel**](ApiUserModel.md)
 
 ### Authorization
 
@@ -205,13 +143,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiuserpost"></a>
-# **ApiUserPost**
-> UserModel ApiUserPost (NewUserRequest body = null)
+<a name="createuser"></a>
+# **CreateUser**
+> UserModel CreateUser (NewUserRequest body = null)
 
 
 
@@ -225,7 +163,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserPostExample
+    public class CreateUserExample
     {
         public void main()
         {
@@ -243,12 +181,12 @@ namespace Example
 
             try
             {
-                UserModel result = apiInstance.ApiUserPost(body);
+                UserModel result = apiInstance.CreateUser(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserPost: " + e.Message );
+                Debug.Print("Exception when calling UserApi.CreateUser: " + e.Message );
             }
         }
     }
@@ -275,9 +213,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiuserresetpasswordpost"></a>
-# **ApiUserResetPasswordPost**
-> PasswordResetModel ApiUserResetPasswordPost (ResetRequest body = null)
+<a name="getcurrentuserdata"></a>
+# **GetCurrentUserData**
+> UserModel GetCurrentUserData ()
 
 
 
@@ -291,7 +229,259 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserResetPasswordPostExample
+    public class GetCurrentUserDataExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new UserApi();
+
+            try
+            {
+                UserModel result = apiInstance.GetCurrentUserData();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UserApi.GetCurrentUserData: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**UserModel**](UserModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getcurrentusertermsagreement"></a>
+# **GetCurrentUserTermsAgreement**
+> UserTermAgreementModel GetCurrentUserTermsAgreement ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetCurrentUserTermsAgreementExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new UserApi();
+
+            try
+            {
+                UserTermAgreementModel result = apiInstance.GetCurrentUserTermsAgreement();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UserApi.GetCurrentUserTermsAgreement: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**UserTermAgreementModel**](UserTermAgreementModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getsinglesignonavailability"></a>
+# **GetSingleSignOnAvailability**
+> bool? GetSingleSignOnAvailability (string email)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetSingleSignOnAvailabilityExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new UserApi();
+            var email = email_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.GetSingleSignOnAvailability(email);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UserApi.GetSingleSignOnAvailability: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **email** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getsystemuserroles"></a>
+# **GetSystemUserRoles**
+> List<UserRoleModel> GetSystemUserRoles ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetSystemUserRolesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new UserApi();
+
+            try
+            {
+                List&lt;UserRoleModel&gt; result = apiInstance.GetSystemUserRoles();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UserApi.GetSystemUserRoles: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<UserRoleModel>**](UserRoleModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="requestpasswordreset"></a>
+# **RequestPasswordReset**
+> PasswordResetModel RequestPasswordReset (ResetRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RequestPasswordResetExample
     {
         public void main()
         {
@@ -309,12 +499,12 @@ namespace Example
 
             try
             {
-                PasswordResetModel result = apiInstance.ApiUserResetPasswordPost(body);
+                PasswordResetModel result = apiInstance.RequestPasswordReset(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserResetPasswordPost: " + e.Message );
+                Debug.Print("Exception when calling UserApi.RequestPasswordReset: " + e.Message );
             }
         }
     }
@@ -341,9 +531,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiusersetpasswordput"></a>
-# **ApiUserSetPasswordPut**
-> void ApiUserSetPasswordPut (SetNewPasswordRequest body = null)
+<a name="setpassword"></a>
+# **SetPassword**
+> void SetPassword (SetNewPasswordRequest body = null)
 
 
 
@@ -357,7 +547,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserSetPasswordPutExample
+    public class SetPasswordExample
     {
         public void main()
         {
@@ -375,11 +565,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiUserSetPasswordPut(body);
+                apiInstance.SetPassword(body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserSetPasswordPut: " + e.Message );
+                Debug.Print("Exception when calling UserApi.SetPassword: " + e.Message );
             }
         }
     }
@@ -406,9 +596,9 @@ void (empty response body)
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiusersystemrolesget"></a>
-# **ApiUserSystemRolesGet**
-> List<UserRoleModel> ApiUserSystemRolesGet ()
+<a name="updatedetails"></a>
+# **UpdateDetails**
+> void UpdateDetails (UpdateUserRequest body = null)
 
 
 
@@ -422,131 +612,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserSystemRolesGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new UserApi();
-
-            try
-            {
-                List&lt;UserRoleModel&gt; result = apiInstance.ApiUserSystemRolesGet();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UserApi.ApiUserSystemRolesGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<UserRoleModel>**](UserRoleModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiusertermsget"></a>
-# **ApiUserTermsGet**
-> UserTermAgreementModel ApiUserTermsGet ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiUserTermsGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new UserApi();
-
-            try
-            {
-                UserTermAgreementModel result = apiInstance.ApiUserTermsGet();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UserApi.ApiUserTermsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**UserTermAgreementModel**](UserTermAgreementModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiuserupdatedetailsput"></a>
-# **ApiUserUpdateDetailsPut**
-> void ApiUserUpdateDetailsPut (UpdateUserRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiUserUpdateDetailsPutExample
+    public class UpdateDetailsExample
     {
         public void main()
         {
@@ -564,11 +630,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiUserUpdateDetailsPut(body);
+                apiInstance.UpdateDetails(body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserUpdateDetailsPut: " + e.Message );
+                Debug.Print("Exception when calling UserApi.UpdateDetails: " + e.Message );
             }
         }
     }
@@ -595,9 +661,9 @@ void (empty response body)
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiuserupdateimagepost"></a>
-# **ApiUserUpdateImagePost**
-> UserModel ApiUserUpdateImagePost ()
+<a name="updateprofileimage"></a>
+# **UpdateProfileImage**
+> UserModel UpdateProfileImage ()
 
 
 
@@ -611,7 +677,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiUserUpdateImagePostExample
+    public class UpdateProfileImageExample
     {
         public void main()
         {
@@ -628,12 +694,12 @@ namespace Example
 
             try
             {
-                UserModel result = apiInstance.ApiUserUpdateImagePost();
+                UserModel result = apiInstance.UpdateProfileImage();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling UserApi.ApiUserUpdateImagePost: " + e.Message );
+                Debug.Print("Exception when calling UserApi.UpdateProfileImage: " + e.Message );
             }
         }
     }
@@ -654,72 +720,6 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiuserusessoemailget"></a>
-# **ApiUserUseSsoEmailGet**
-> bool? ApiUserUseSsoEmailGet (string email)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiUserUseSsoEmailGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new UserApi();
-            var email = email_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiUserUseSsoEmailGet(email);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UserApi.ApiUserUseSsoEmailGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **email** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

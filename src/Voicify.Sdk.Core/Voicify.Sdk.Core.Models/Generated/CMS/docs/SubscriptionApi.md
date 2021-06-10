@@ -4,13 +4,13 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiSubscriptionForOrganizationOrganizationIdGet**](SubscriptionApi.md#apisubscriptionfororganizationorganizationidget) | **GET** /api/Subscription/forOrganization/{organizationId} | 
-[**ApiSubscriptionOrganizationIdDefaultGet**](SubscriptionApi.md#apisubscriptionorganizationiddefaultget) | **GET** /api/Subscription/{organizationId}/default | 
-[**ApiSubscriptionTypesGet**](SubscriptionApi.md#apisubscriptiontypesget) | **GET** /api/Subscription/types | 
+[**GetBuiltInTypes**](SubscriptionApi.md#getbuiltintypes) | **GET** /api/Subscription/types | 
+[**GetDefaultSubscriptionForOrganization**](SubscriptionApi.md#getdefaultsubscriptionfororganization) | **GET** /api/Subscription/{organizationId}/default | 
+[**GetSubscriptionsForOrganization**](SubscriptionApi.md#getsubscriptionsfororganization) | **GET** /api/Subscription/forOrganization/{organizationId} | 
 
-<a name="apisubscriptionfororganizationorganizationidget"></a>
-# **ApiSubscriptionForOrganizationOrganizationIdGet**
-> List<SubscriptionModel> ApiSubscriptionForOrganizationOrganizationIdGet (string organizationId)
+<a name="getbuiltintypes"></a>
+# **GetBuiltInTypes**
+> List<SubscriptionTypeModel> GetBuiltInTypes ()
 
 
 
@@ -24,7 +24,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSubscriptionForOrganizationOrganizationIdGetExample
+    public class GetBuiltInTypesExample
     {
         public void main()
         {
@@ -38,16 +38,15 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new SubscriptionApi();
-            var organizationId = organizationId_example;  // string | 
 
             try
             {
-                List&lt;SubscriptionModel&gt; result = apiInstance.ApiSubscriptionForOrganizationOrganizationIdGet(organizationId);
+                List&lt;SubscriptionTypeModel&gt; result = apiInstance.GetBuiltInTypes();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SubscriptionApi.ApiSubscriptionForOrganizationOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling SubscriptionApi.GetBuiltInTypes: " + e.Message );
             }
         }
     }
@@ -55,14 +54,11 @@ namespace Example
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
+This endpoint does not need any parameter.
 
 ### Return type
 
-[**List<SubscriptionModel>**](SubscriptionModel.md)
+[**List<SubscriptionTypeModel>**](SubscriptionTypeModel.md)
 
 ### Authorization
 
@@ -74,9 +70,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisubscriptionorganizationiddefaultget"></a>
-# **ApiSubscriptionOrganizationIdDefaultGet**
-> SubscriptionModel ApiSubscriptionOrganizationIdDefaultGet (string organizationId)
+<a name="getdefaultsubscriptionfororganization"></a>
+# **GetDefaultSubscriptionForOrganization**
+> SubscriptionModel GetDefaultSubscriptionForOrganization (string organizationId)
 
 
 
@@ -90,7 +86,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSubscriptionOrganizationIdDefaultGetExample
+    public class GetDefaultSubscriptionForOrganizationExample
     {
         public void main()
         {
@@ -108,12 +104,12 @@ namespace Example
 
             try
             {
-                SubscriptionModel result = apiInstance.ApiSubscriptionOrganizationIdDefaultGet(organizationId);
+                SubscriptionModel result = apiInstance.GetDefaultSubscriptionForOrganization(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SubscriptionApi.ApiSubscriptionOrganizationIdDefaultGet: " + e.Message );
+                Debug.Print("Exception when calling SubscriptionApi.GetDefaultSubscriptionForOrganization: " + e.Message );
             }
         }
     }
@@ -140,9 +136,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisubscriptiontypesget"></a>
-# **ApiSubscriptionTypesGet**
-> List<SubscriptionTypeModel> ApiSubscriptionTypesGet ()
+<a name="getsubscriptionsfororganization"></a>
+# **GetSubscriptionsForOrganization**
+> List<SubscriptionModel> GetSubscriptionsForOrganization (string organizationId)
 
 
 
@@ -156,7 +152,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSubscriptionTypesGetExample
+    public class GetSubscriptionsForOrganizationExample
     {
         public void main()
         {
@@ -170,15 +166,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new SubscriptionApi();
+            var organizationId = organizationId_example;  // string | 
 
             try
             {
-                List&lt;SubscriptionTypeModel&gt; result = apiInstance.ApiSubscriptionTypesGet();
+                List&lt;SubscriptionModel&gt; result = apiInstance.GetSubscriptionsForOrganization(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SubscriptionApi.ApiSubscriptionTypesGet: " + e.Message );
+                Debug.Print("Exception when calling SubscriptionApi.GetSubscriptionsForOrganization: " + e.Message );
             }
         }
     }
@@ -186,11 +183,14 @@ namespace Example
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
 
 ### Return type
 
-[**List<SubscriptionTypeModel>**](SubscriptionTypeModel.md)
+[**List<SubscriptionModel>**](SubscriptionModel.md)
 
 ### Authorization
 

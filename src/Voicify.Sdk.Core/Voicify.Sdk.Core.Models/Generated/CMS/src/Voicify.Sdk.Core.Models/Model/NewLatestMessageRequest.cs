@@ -32,6 +32,10 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewLatestMessageRequest" /> class.
         /// </summary>
+        /// <param name="responses">responses (required).</param>
+        /// <param name="startDate">startDate (required).</param>
+        /// <param name="endDate">endDate (required).</param>
+        /// <param name="category">category (required).</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
         /// <param name="title">title (required).</param>
@@ -46,39 +50,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="responses">responses (required).</param>
-        /// <param name="startDate">startDate (required).</param>
-        /// <param name="endDate">endDate (required).</param>
-        /// <param name="category">category (required).</param>
-        public NewLatestMessageRequest(string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), List<NewLatestMessageResponseRequest> responses = default(List<NewLatestMessageResponseRequest>), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string category = default(string))
+        public NewLatestMessageRequest(List<NewLatestMessageResponseRequest> responses = default(List<NewLatestMessageResponseRequest>), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string category = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
-            // to ensure "applicationId" is required (not null)
-            if (applicationId == null)
-            {
-                throw new InvalidDataException("applicationId is a required property for NewLatestMessageRequest and cannot be null");
-            }
-            else
-            {
-                this.ApplicationId = applicationId;
-            }
-            // to ensure "applicationFeatureId" is required (not null)
-            if (applicationFeatureId == null)
-            {
-                throw new InvalidDataException("applicationFeatureId is a required property for NewLatestMessageRequest and cannot be null");
-            }
-            else
-            {
-                this.ApplicationFeatureId = applicationFeatureId;
-            }
-            // to ensure "title" is required (not null)
-            if (title == null)
-            {
-                throw new InvalidDataException("title is a required property for NewLatestMessageRequest and cannot be null");
-            }
-            else
-            {
-                this.Title = title;
-            }
             // to ensure "responses" is required (not null)
             if (responses == null)
             {
@@ -115,6 +88,33 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Category = category;
             }
+            // to ensure "applicationId" is required (not null)
+            if (applicationId == null)
+            {
+                throw new InvalidDataException("applicationId is a required property for NewLatestMessageRequest and cannot be null");
+            }
+            else
+            {
+                this.ApplicationId = applicationId;
+            }
+            // to ensure "applicationFeatureId" is required (not null)
+            if (applicationFeatureId == null)
+            {
+                throw new InvalidDataException("applicationFeatureId is a required property for NewLatestMessageRequest and cannot be null");
+            }
+            else
+            {
+                this.ApplicationFeatureId = applicationFeatureId;
+            }
+            // to ensure "title" is required (not null)
+            if (title == null)
+            {
+                throw new InvalidDataException("title is a required property for NewLatestMessageRequest and cannot be null");
+            }
+            else
+            {
+                this.Title = title;
+            }
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
             this.AudioItemId = audioItemId;
@@ -128,6 +128,30 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<NewLatestMessageResponseRequest> Responses { get; set; }
+
+        /// <summary>
+        /// Gets or Sets StartDate
+        /// </summary>
+        [DataMember(Name="startDate", EmitDefaultValue=false)]
+        public DateTime? StartDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EndDate
+        /// </summary>
+        [DataMember(Name="endDate", EmitDefaultValue=false)]
+        public DateTime? EndDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Category
+        /// </summary>
+        [DataMember(Name="category", EmitDefaultValue=false)]
+        public string Category { get; set; }
+
         /// <summary>
         /// Gets or Sets ApplicationId
         /// </summary>
@@ -213,30 +237,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<NewLatestMessageResponseRequest> Responses { get; set; }
-
-        /// <summary>
-        /// Gets or Sets StartDate
-        /// </summary>
-        [DataMember(Name="startDate", EmitDefaultValue=false)]
-        public DateTime? StartDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets EndDate
-        /// </summary>
-        [DataMember(Name="endDate", EmitDefaultValue=false)]
-        public DateTime? EndDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Category
-        /// </summary>
-        [DataMember(Name="category", EmitDefaultValue=false)]
-        public string Category { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -244,6 +244,10 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewLatestMessageRequest {\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
+            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
+            sb.Append("  EndDate: ").Append(EndDate).Append("\n");
+            sb.Append("  Category: ").Append(Category).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
@@ -258,10 +262,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
-            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
-            sb.Append("  EndDate: ").Append(EndDate).Append("\n");
-            sb.Append("  Category: ").Append(Category).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -296,6 +296,27 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
+                (
+                    this.StartDate == input.StartDate ||
+                    (this.StartDate != null &&
+                    this.StartDate.Equals(input.StartDate))
+                ) && 
+                (
+                    this.EndDate == input.EndDate ||
+                    (this.EndDate != null &&
+                    this.EndDate.Equals(input.EndDate))
+                ) && 
+                (
+                    this.Category == input.Category ||
+                    (this.Category != null &&
+                    this.Category.Equals(input.Category))
+                ) && 
                 (
                     this.ApplicationId == input.ApplicationId ||
                     (this.ApplicationId != null &&
@@ -366,27 +387,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
-                ) && 
-                (
-                    this.StartDate == input.StartDate ||
-                    (this.StartDate != null &&
-                    this.StartDate.Equals(input.StartDate))
-                ) && 
-                (
-                    this.EndDate == input.EndDate ||
-                    (this.EndDate != null &&
-                    this.EndDate.Equals(input.EndDate))
-                ) && 
-                (
-                    this.Category == input.Category ||
-                    (this.Category != null &&
-                    this.Category.Equals(input.Category))
                 );
         }
 
@@ -399,6 +399,14 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
+                if (this.StartDate != null)
+                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
+                if (this.EndDate != null)
+                    hashCode = hashCode * 59 + this.EndDate.GetHashCode();
+                if (this.Category != null)
+                    hashCode = hashCode * 59 + this.Category.GetHashCode();
                 if (this.ApplicationId != null)
                     hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ApplicationFeatureId != null)
@@ -427,14 +435,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
-                if (this.StartDate != null)
-                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-                if (this.EndDate != null)
-                    hashCode = hashCode * 59 + this.EndDate.GetHashCode();
-                if (this.Category != null)
-                    hashCode = hashCode * 59 + this.Category.GetHashCode();
                 return hashCode;
             }
         }

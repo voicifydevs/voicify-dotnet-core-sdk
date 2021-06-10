@@ -32,6 +32,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewNumberRangeRequest" /> class.
         /// </summary>
+        /// <param name="responses">responses (required).</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
         /// <param name="minimumValue">minimumValue.</param>
@@ -47,9 +48,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTextOverride">displayTextOverride.</param>
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="responses">responses (required).</param>
-        public NewNumberRangeRequest(string applicationId = default(string), string applicationFeatureId = default(string), double? minimumValue = default(double?), double? maximumValue = default(double?), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>), List<NewNumberRangeResponseRequest> responses = default(List<NewNumberRangeResponseRequest>))
+        public NewNumberRangeRequest(List<NewNumberRangeResponseRequest> responses = default(List<NewNumberRangeResponseRequest>), string applicationId = default(string), string applicationFeatureId = default(string), double? minimumValue = default(double?), double? maximumValue = default(double?), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>))
         {
+            // to ensure "responses" is required (not null)
+            if (responses == null)
+            {
+                throw new InvalidDataException("responses is a required property for NewNumberRangeRequest and cannot be null");
+            }
+            else
+            {
+                this.Responses = responses;
+            }
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)
             {
@@ -77,15 +86,6 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Title = title;
             }
-            // to ensure "responses" is required (not null)
-            if (responses == null)
-            {
-                throw new InvalidDataException("responses is a required property for NewNumberRangeRequest and cannot be null");
-            }
-            else
-            {
-                this.Responses = responses;
-            }
             this.MinimumValue = minimumValue;
             this.MaximumValue = maximumValue;
             this.ImageItemId = imageItemId;
@@ -100,6 +100,12 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<NewNumberRangeResponseRequest> Responses { get; set; }
+
         /// <summary>
         /// Gets or Sets ApplicationId
         /// </summary>
@@ -191,12 +197,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<NewNumberRangeResponseRequest> Responses { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -204,6 +204,7 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewNumberRangeRequest {\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
             sb.Append("  MinimumValue: ").Append(MinimumValue).Append("\n");
@@ -219,7 +220,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTextOverride: ").Append(DisplayTextOverride).Append("\n");
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -254,6 +254,12 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
                 (
                     this.ApplicationId == input.ApplicationId ||
                     (this.ApplicationId != null &&
@@ -329,12 +335,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
                 );
         }
 
@@ -347,6 +347,8 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.ApplicationId != null)
                     hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ApplicationFeatureId != null)
@@ -377,8 +379,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DisplayTitleOverride.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 return hashCode;
             }
         }

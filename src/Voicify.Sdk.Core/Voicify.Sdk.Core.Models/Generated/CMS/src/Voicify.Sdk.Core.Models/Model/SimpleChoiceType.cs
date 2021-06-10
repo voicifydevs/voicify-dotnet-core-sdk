@@ -27,10 +27,21 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines SimpleChoiceType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum SimpleChoiceType
+        public enum SimpleChoiceType
     {
-        Yes,
-        No,
-        Maybe
-    }
+        /// <summary>
+        /// Enum Yes for value: Yes
+        /// </summary>
+        [EnumMember(Value = "Yes")]
+        Yes = 1,
+        /// <summary>
+        /// Enum No for value: No
+        /// </summary>
+        [EnumMember(Value = "No")]
+        No = 2,
+        /// <summary>
+        /// Enum Maybe for value: Maybe
+        /// </summary>
+        [EnumMember(Value = "Maybe")]
+        Maybe = 3    }
 }

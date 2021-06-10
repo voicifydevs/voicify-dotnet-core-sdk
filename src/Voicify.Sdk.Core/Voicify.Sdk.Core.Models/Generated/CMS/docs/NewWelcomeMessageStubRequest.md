@@ -3,9 +3,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Content** | **string** |  | [optional] 
 **Title** | **string** |  | 
 **ApplicationId** | **string** |  | [optional] 
+**Content** | **string** |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 
 **AudioItemId** | **string** |  | [optional] 

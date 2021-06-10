@@ -32,6 +32,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BulkUpdateEventRequest" /> class.
         /// </summary>
+        /// <param name="eventName">eventName (required).</param>
+        /// <param name="startDate">startDate (required).</param>
+        /// <param name="responses">responses (required).</param>
         /// <param name="title">title (required).</param>
         /// <param name="description">description.</param>
         /// <param name="locationName">locationName.</param>
@@ -51,20 +54,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="eventName">eventName (required).</param>
-        /// <param name="startDate">startDate (required).</param>
-        /// <param name="responses">responses (required).</param>
-        public BulkUpdateEventRequest(string title = default(string), string description = default(string), string locationName = default(string), List<string> categoryNames = default(List<string>), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? endDate = default(DateTime?), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>), string eventName = default(string), DateTime? startDate = default(DateTime?), List<UpdateEventResponseRequest> responses = default(List<UpdateEventResponseRequest>))
+        public BulkUpdateEventRequest(string eventName = default(string), DateTime? startDate = default(DateTime?), List<UpdateEventResponseRequest> responses = default(List<UpdateEventResponseRequest>), string title = default(string), string description = default(string), string locationName = default(string), List<string> categoryNames = default(List<string>), string ownerName = default(string), string address = default(string), string status = default(string), DateTime? endDate = default(DateTime?), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
-            // to ensure "title" is required (not null)
-            if (title == null)
-            {
-                throw new InvalidDataException("title is a required property for BulkUpdateEventRequest and cannot be null");
-            }
-            else
-            {
-                this.Title = title;
-            }
             // to ensure "eventName" is required (not null)
             if (eventName == null)
             {
@@ -92,6 +83,15 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Responses = responses;
             }
+            // to ensure "title" is required (not null)
+            if (title == null)
+            {
+                throw new InvalidDataException("title is a required property for BulkUpdateEventRequest and cannot be null");
+            }
+            else
+            {
+                this.Title = title;
+            }
             this.Description = description;
             this.LocationName = locationName;
             this.CategoryNames = categoryNames;
@@ -112,6 +112,24 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets EventName
+        /// </summary>
+        [DataMember(Name="eventName", EmitDefaultValue=false)]
+        public string EventName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets StartDate
+        /// </summary>
+        [DataMember(Name="startDate", EmitDefaultValue=false)]
+        public DateTime? StartDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<UpdateEventResponseRequest> Responses { get; set; }
+
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
@@ -227,24 +245,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets EventName
-        /// </summary>
-        [DataMember(Name="eventName", EmitDefaultValue=false)]
-        public string EventName { get; set; }
-
-        /// <summary>
-        /// Gets or Sets StartDate
-        /// </summary>
-        [DataMember(Name="startDate", EmitDefaultValue=false)]
-        public DateTime? StartDate { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<UpdateEventResponseRequest> Responses { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -252,6 +252,9 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class BulkUpdateEventRequest {\n");
+            sb.Append("  EventName: ").Append(EventName).Append("\n");
+            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  LocationName: ").Append(LocationName).Append("\n");
@@ -271,9 +274,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  RequiresParent: ").Append(RequiresParent).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  EventName: ").Append(EventName).Append("\n");
-            sb.Append("  StartDate: ").Append(StartDate).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -308,6 +308,22 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.EventName == input.EventName ||
+                    (this.EventName != null &&
+                    this.EventName.Equals(input.EventName))
+                ) && 
+                (
+                    this.StartDate == input.StartDate ||
+                    (this.StartDate != null &&
+                    this.StartDate.Equals(input.StartDate))
+                ) && 
+                (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
                 (
                     this.Title == input.Title ||
                     (this.Title != null &&
@@ -404,22 +420,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.EventName == input.EventName ||
-                    (this.EventName != null &&
-                    this.EventName.Equals(input.EventName))
-                ) && 
-                (
-                    this.StartDate == input.StartDate ||
-                    (this.StartDate != null &&
-                    this.StartDate.Equals(input.StartDate))
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
                 );
         }
 
@@ -432,6 +432,12 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.EventName != null)
+                    hashCode = hashCode * 59 + this.EventName.GetHashCode();
+                if (this.StartDate != null)
+                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.Description != null)
@@ -470,12 +476,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.RequiresParent.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.EventName != null)
-                    hashCode = hashCode * 59 + this.EventName.GetHashCode();
-                if (this.StartDate != null)
-                    hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
                 return hashCode;
             }
         }

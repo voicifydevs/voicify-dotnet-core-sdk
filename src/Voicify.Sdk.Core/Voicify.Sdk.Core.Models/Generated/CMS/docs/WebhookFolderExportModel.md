@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Children** | [**List&lt;WebhookFolderExportModel&gt;**](WebhookFolderExportModel.md) |  | [optional] 
 **Id** | **string** |  | [optional] 
 **ParentId** | **string** |  | [optional] 
 **Name** | **string** |  | [optional] 

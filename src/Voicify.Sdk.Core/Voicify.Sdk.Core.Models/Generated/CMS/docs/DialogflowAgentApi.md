@@ -4,11 +4,11 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiDialogflowAgentAgentsTokenIdGet**](DialogflowAgentApi.md#apidialogflowagentagentstokenidget) | **GET** /api/DialogflowAgent/Agents/{tokenId} | 
+[**ListDialogflowAgentsAsync**](DialogflowAgentApi.md#listdialogflowagentsasync) | **GET** /api/DialogflowAgent/Agents/{tokenId} | 
 
-<a name="apidialogflowagentagentstokenidget"></a>
-# **ApiDialogflowAgentAgentsTokenIdGet**
-> List<DialogflowAgentInformation> ApiDialogflowAgentAgentsTokenIdGet (string tokenId)
+<a name="listdialogflowagentsasync"></a>
+# **ListDialogflowAgentsAsync**
+> List<DialogflowAgentInformation> ListDialogflowAgentsAsync (string tokenId)
 
 
 
@@ -22,7 +22,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiDialogflowAgentAgentsTokenIdGetExample
+    public class ListDialogflowAgentsAsyncExample
     {
         public void main()
         {
@@ -40,12 +40,12 @@ namespace Example
 
             try
             {
-                List&lt;DialogflowAgentInformation&gt; result = apiInstance.ApiDialogflowAgentAgentsTokenIdGet(tokenId);
+                List&lt;DialogflowAgentInformation&gt; result = apiInstance.ListDialogflowAgentsAsync(tokenId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling DialogflowAgentApi.ApiDialogflowAgentAgentsTokenIdGet: " + e.Message );
+                Debug.Print("Exception when calling DialogflowAgentApi.ListDialogflowAgentsAsync: " + e.Message );
             }
         }
     }

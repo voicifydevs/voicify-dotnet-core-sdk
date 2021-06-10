@@ -40,7 +40,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="webhookParameters">webhookParameters.</param>
         /// <param name="webhooks">webhooks.</param>
         /// <param name="webhookFolders">webhookFolders.</param>
-        public SharedReferencesExportModel(List<MediaItemModel> mediaItems = default(List<MediaItemModel>), List<MediaResponseModel> mediaResponses = default(List<MediaResponseModel>), List<MediaResponseContainerModel> mediaResponseContainers = default(List<MediaResponseContainerModel>), List<FollowUpModel> followUps = default(List<FollowUpModel>), List<RepromptModel> reprompts = default(List<RepromptModel>), List<WebhookParameterModel> webhookParameters = default(List<WebhookParameterModel>), List<WebhookModel> webhooks = default(List<WebhookModel>), List<WebhookFolderExportModel> webhookFolders = default(List<WebhookFolderExportModel>))
+        /// <param name="applicationConversationFlags">applicationConversationFlags.</param>
+        public SharedReferencesExportModel(List<MediaItemModel> mediaItems = default(List<MediaItemModel>), List<MediaResponseModel> mediaResponses = default(List<MediaResponseModel>), List<MediaResponseContainerModel> mediaResponseContainers = default(List<MediaResponseContainerModel>), List<FollowUpModel> followUps = default(List<FollowUpModel>), List<RepromptModel> reprompts = default(List<RepromptModel>), List<WebhookParameterModel> webhookParameters = default(List<WebhookParameterModel>), List<WebhookModel> webhooks = default(List<WebhookModel>), List<WebhookFolderExportModel> webhookFolders = default(List<WebhookFolderExportModel>), List<ApplicationConversationFlagModel> applicationConversationFlags = default(List<ApplicationConversationFlagModel>))
         {
             this.MediaItems = mediaItems;
             this.MediaResponses = mediaResponses;
@@ -50,6 +51,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.WebhookParameters = webhookParameters;
             this.Webhooks = webhooks;
             this.WebhookFolders = webhookFolders;
+            this.ApplicationConversationFlags = applicationConversationFlags;
         }
         
         /// <summary>
@@ -101,6 +103,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<WebhookFolderExportModel> WebhookFolders { get; set; }
 
         /// <summary>
+        /// Gets or Sets ApplicationConversationFlags
+        /// </summary>
+        [DataMember(Name="applicationConversationFlags", EmitDefaultValue=false)]
+        public List<ApplicationConversationFlagModel> ApplicationConversationFlags { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -116,6 +124,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  WebhookParameters: ").Append(WebhookParameters).Append("\n");
             sb.Append("  Webhooks: ").Append(Webhooks).Append("\n");
             sb.Append("  WebhookFolders: ").Append(WebhookFolders).Append("\n");
+            sb.Append("  ApplicationConversationFlags: ").Append(ApplicationConversationFlags).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -197,6 +206,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.WebhookFolders != null &&
                     input.WebhookFolders != null &&
                     this.WebhookFolders.SequenceEqual(input.WebhookFolders)
+                ) && 
+                (
+                    this.ApplicationConversationFlags == input.ApplicationConversationFlags ||
+                    this.ApplicationConversationFlags != null &&
+                    input.ApplicationConversationFlags != null &&
+                    this.ApplicationConversationFlags.SequenceEqual(input.ApplicationConversationFlags)
                 );
         }
 
@@ -225,6 +240,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Webhooks.GetHashCode();
                 if (this.WebhookFolders != null)
                     hashCode = hashCode * 59 + this.WebhookFolders.GetHashCode();
+                if (this.ApplicationConversationFlags != null)
+                    hashCode = hashCode * 59 + this.ApplicationConversationFlags.GetHashCode();
                 return hashCode;
             }
         }

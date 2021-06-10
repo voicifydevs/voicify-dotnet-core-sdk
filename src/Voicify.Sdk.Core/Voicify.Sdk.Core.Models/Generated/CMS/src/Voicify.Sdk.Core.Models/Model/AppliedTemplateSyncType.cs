@@ -27,13 +27,36 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines AppliedTemplateSyncType
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum AppliedTemplateSyncType
+        public enum AppliedTemplateSyncType
     {
-        Unknown,
-        ApplyTemplateToApp,
-        ApplyTemplateToAppDynamic,
-        UpdateAppliedTemplate,
-        UpdateAppliedTemplateDynamic,
-        RemoveAppliedTemplate
-    }
+        /// <summary>
+        /// Enum Unknown for value: Unknown
+        /// </summary>
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
+        /// <summary>
+        /// Enum ApplyTemplateToApp for value: ApplyTemplateToApp
+        /// </summary>
+        [EnumMember(Value = "ApplyTemplateToApp")]
+        ApplyTemplateToApp = 2,
+        /// <summary>
+        /// Enum ApplyTemplateToAppDynamic for value: ApplyTemplateToAppDynamic
+        /// </summary>
+        [EnumMember(Value = "ApplyTemplateToAppDynamic")]
+        ApplyTemplateToAppDynamic = 3,
+        /// <summary>
+        /// Enum UpdateAppliedTemplate for value: UpdateAppliedTemplate
+        /// </summary>
+        [EnumMember(Value = "UpdateAppliedTemplate")]
+        UpdateAppliedTemplate = 4,
+        /// <summary>
+        /// Enum UpdateAppliedTemplateDynamic for value: UpdateAppliedTemplateDynamic
+        /// </summary>
+        [EnumMember(Value = "UpdateAppliedTemplateDynamic")]
+        UpdateAppliedTemplateDynamic = 5,
+        /// <summary>
+        /// Enum RemoveAppliedTemplate for value: RemoveAppliedTemplate
+        /// </summary>
+        [EnumMember(Value = "RemoveAppliedTemplate")]
+        RemoveAppliedTemplate = 6    }
 }

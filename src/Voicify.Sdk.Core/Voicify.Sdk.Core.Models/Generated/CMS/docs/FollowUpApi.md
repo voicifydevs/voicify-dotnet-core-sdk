@@ -4,85 +4,19 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiFollowUpApplicationIdGet**](FollowUpApi.md#apifollowupapplicationidget) | **GET** /api/FollowUp/{applicationId} | 
-[**ApiFollowUpApplicationIdPost**](FollowUpApi.md#apifollowupapplicationidpost) | **POST** /api/FollowUp/{applicationId} | 
-[**ApiFollowUpFindFollowUpIdChildrenGet**](FollowUpApi.md#apifollowupfindfollowupidchildrenget) | **GET** /api/FollowUp/find/{followUpId}/children | 
-[**ApiFollowUpFindFollowUpIdGet**](FollowUpApi.md#apifollowupfindfollowupidget) | **GET** /api/FollowUp/find/{followUpId} | 
-[**ApiFollowUpFollowUpIdDelete**](FollowUpApi.md#apifollowupfollowupiddelete) | **DELETE** /api/FollowUp/{followUpId} | 
-[**ApiFollowUpFollowUpIdShouldNotSyncPut**](FollowUpApi.md#apifollowupfollowupidshouldnotsyncput) | **PUT** /api/FollowUp/{followUpId}/shouldNotSync | 
-[**ApiFollowUpParentsFeatureTypeIdContentIdContentGet**](FollowUpApi.md#apifollowupparentsfeaturetypeidcontentidcontentget) | **GET** /api/FollowUp/parents/{featureTypeId}/{contentId}/content | 
-[**ApiFollowUpParentsFeatureTypeIdContentIdGet**](FollowUpApi.md#apifollowupparentsfeaturetypeidcontentidget) | **GET** /api/FollowUp/parents/{featureTypeId}/{contentId} | 
-[**ApiFollowUpPut**](FollowUpApi.md#apifollowupput) | **PUT** /api/FollowUp | 
+[**CreateFollowUp**](FollowUpApi.md#createfollowup) | **POST** /api/FollowUp/{applicationId} | 
+[**DeleteFollowUp**](FollowUpApi.md#deletefollowup) | **DELETE** /api/FollowUp/{followUpId} | 
+[**FindChildContentContainer**](FollowUpApi.md#findchildcontentcontainer) | **GET** /api/FollowUp/find/{followUpId}/children | 
+[**FindFollowUp**](FollowUpApi.md#findfollowup) | **GET** /api/FollowUp/find/{followUpId} | 
+[**GetForApplication**](FollowUpApi.md#getforapplication) | **GET** /api/FollowUp/{applicationId} | 
+[**GetParentContentItems**](FollowUpApi.md#getparentcontentitems) | **GET** /api/FollowUp/parents/{featureTypeId}/{contentId}/content | 
+[**GetParentsOfContent**](FollowUpApi.md#getparentsofcontent) | **GET** /api/FollowUp/parents/{featureTypeId}/{contentId} | 
+[**UpdateFollowUp**](FollowUpApi.md#updatefollowup) | **PUT** /api/FollowUp | 
+[**UpdateFollowUp_0**](FollowUpApi.md#updatefollowup_0) | **PUT** /api/FollowUp/{followUpId}/shouldNotSync | 
 
-<a name="apifollowupapplicationidget"></a>
-# **ApiFollowUpApplicationIdGet**
-> List<FollowUpModel> ApiFollowUpApplicationIdGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFollowUpApplicationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FollowUpApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;FollowUpModel&gt; result = apiInstance.ApiFollowUpApplicationIdGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpApplicationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<FollowUpModel>**](FollowUpModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupapplicationidpost"></a>
-# **ApiFollowUpApplicationIdPost**
-> FollowUpModel ApiFollowUpApplicationIdPost (string applicationId, CreateFollowUpRequest body = null)
+<a name="createfollowup"></a>
+# **CreateFollowUp**
+> FollowUpModel CreateFollowUp (string applicationId, CreateFollowUpRequest body = null)
 
 
 
@@ -96,7 +30,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpApplicationIdPostExample
+    public class CreateFollowUpExample
     {
         public void main()
         {
@@ -115,12 +49,12 @@ namespace Example
 
             try
             {
-                FollowUpModel result = apiInstance.ApiFollowUpApplicationIdPost(applicationId, body);
+                FollowUpModel result = apiInstance.CreateFollowUp(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpApplicationIdPost: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.CreateFollowUp: " + e.Message );
             }
         }
     }
@@ -148,9 +82,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupfindfollowupidchildrenget"></a>
-# **ApiFollowUpFindFollowUpIdChildrenGet**
-> ChildContentContainerModel ApiFollowUpFindFollowUpIdChildrenGet (string followUpId)
+<a name="deletefollowup"></a>
+# **DeleteFollowUp**
+> FollowUpModel DeleteFollowUp (string followUpId)
 
 
 
@@ -164,7 +98,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpFindFollowUpIdChildrenGetExample
+    public class DeleteFollowUpExample
     {
         public void main()
         {
@@ -182,12 +116,78 @@ namespace Example
 
             try
             {
-                ChildContentContainerModel result = apiInstance.ApiFollowUpFindFollowUpIdChildrenGet(followUpId);
+                FollowUpModel result = apiInstance.DeleteFollowUp(followUpId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpFindFollowUpIdChildrenGet: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.DeleteFollowUp: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **followUpId** | **string**|  | 
+
+### Return type
+
+[**FollowUpModel**](FollowUpModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findchildcontentcontainer"></a>
+# **FindChildContentContainer**
+> ChildContentContainerModel FindChildContentContainer (string followUpId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindChildContentContainerExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FollowUpApi();
+            var followUpId = followUpId_example;  // string | 
+
+            try
+            {
+                ChildContentContainerModel result = apiInstance.FindChildContentContainer(followUpId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FollowUpApi.FindChildContentContainer: " + e.Message );
             }
         }
     }
@@ -214,9 +214,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupfindfollowupidget"></a>
-# **ApiFollowUpFindFollowUpIdGet**
-> FollowUpModel ApiFollowUpFindFollowUpIdGet (string followUpId)
+<a name="findfollowup"></a>
+# **FindFollowUp**
+> FollowUpModel FindFollowUp (string followUpId)
 
 
 
@@ -230,7 +230,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpFindFollowUpIdGetExample
+    public class FindFollowUpExample
     {
         public void main()
         {
@@ -248,12 +248,12 @@ namespace Example
 
             try
             {
-                FollowUpModel result = apiInstance.ApiFollowUpFindFollowUpIdGet(followUpId);
+                FollowUpModel result = apiInstance.FindFollowUp(followUpId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpFindFollowUpIdGet: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.FindFollowUp: " + e.Message );
             }
         }
     }
@@ -280,9 +280,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupfollowupiddelete"></a>
-# **ApiFollowUpFollowUpIdDelete**
-> FollowUpModel ApiFollowUpFollowUpIdDelete (string followUpId)
+<a name="getforapplication"></a>
+# **GetForApplication**
+> List<FollowUpModel> GetForApplication (string applicationId)
 
 
 
@@ -296,7 +296,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpFollowUpIdDeleteExample
+    public class GetForApplicationExample
     {
         public void main()
         {
@@ -310,16 +310,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FollowUpApi();
-            var followUpId = followUpId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                FollowUpModel result = apiInstance.ApiFollowUpFollowUpIdDelete(followUpId);
+                List&lt;FollowUpModel&gt; result = apiInstance.GetForApplication(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpFollowUpIdDelete: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.GetForApplication: " + e.Message );
             }
         }
     }
@@ -330,11 +330,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **followUpId** | **string**|  | 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**FollowUpModel**](FollowUpModel.md)
+[**List<FollowUpModel>**](FollowUpModel.md)
 
 ### Authorization
 
@@ -346,9 +346,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupfollowupidshouldnotsyncput"></a>
-# **ApiFollowUpFollowUpIdShouldNotSyncPut**
-> FollowUpModel ApiFollowUpFollowUpIdShouldNotSyncPut (string followUpId, ToggleSyncRequest body = null)
+<a name="getparentcontentitems"></a>
+# **GetParentContentItems**
+> ParentContentContainerModel GetParentContentItems (string featureTypeId, string contentId)
 
 
 
@@ -362,75 +362,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpFollowUpIdShouldNotSyncPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FollowUpApi();
-            var followUpId = followUpId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
-
-            try
-            {
-                FollowUpModel result = apiInstance.ApiFollowUpFollowUpIdShouldNotSyncPut(followUpId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpFollowUpIdShouldNotSyncPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **followUpId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
-
-### Return type
-
-[**FollowUpModel**](FollowUpModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupparentsfeaturetypeidcontentidcontentget"></a>
-# **ApiFollowUpParentsFeatureTypeIdContentIdContentGet**
-> ParentContentContainerModel ApiFollowUpParentsFeatureTypeIdContentIdContentGet (string featureTypeId, string contentId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFollowUpParentsFeatureTypeIdContentIdContentGetExample
+    public class GetParentContentItemsExample
     {
         public void main()
         {
@@ -449,12 +381,12 @@ namespace Example
 
             try
             {
-                ParentContentContainerModel result = apiInstance.ApiFollowUpParentsFeatureTypeIdContentIdContentGet(featureTypeId, contentId);
+                ParentContentContainerModel result = apiInstance.GetParentContentItems(featureTypeId, contentId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpParentsFeatureTypeIdContentIdContentGet: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.GetParentContentItems: " + e.Message );
             }
         }
     }
@@ -482,9 +414,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupparentsfeaturetypeidcontentidget"></a>
-# **ApiFollowUpParentsFeatureTypeIdContentIdGet**
-> List<FollowUpModel> ApiFollowUpParentsFeatureTypeIdContentIdGet (string featureTypeId, string contentId)
+<a name="getparentsofcontent"></a>
+# **GetParentsOfContent**
+> List<FollowUpModel> GetParentsOfContent (string featureTypeId, string contentId)
 
 
 
@@ -498,7 +430,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpParentsFeatureTypeIdContentIdGetExample
+    public class GetParentsOfContentExample
     {
         public void main()
         {
@@ -517,12 +449,12 @@ namespace Example
 
             try
             {
-                List&lt;FollowUpModel&gt; result = apiInstance.ApiFollowUpParentsFeatureTypeIdContentIdGet(featureTypeId, contentId);
+                List&lt;FollowUpModel&gt; result = apiInstance.GetParentsOfContent(featureTypeId, contentId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpParentsFeatureTypeIdContentIdGet: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.GetParentsOfContent: " + e.Message );
             }
         }
     }
@@ -550,9 +482,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifollowupput"></a>
-# **ApiFollowUpPut**
-> FollowUpModel ApiFollowUpPut (UpdateFollowUpRequest body = null)
+<a name="updatefollowup"></a>
+# **UpdateFollowUp**
+> FollowUpModel UpdateFollowUp (UpdateFollowUpRequest body = null)
 
 
 
@@ -566,7 +498,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFollowUpPutExample
+    public class UpdateFollowUpExample
     {
         public void main()
         {
@@ -584,12 +516,12 @@ namespace Example
 
             try
             {
-                FollowUpModel result = apiInstance.ApiFollowUpPut(body);
+                FollowUpModel result = apiInstance.UpdateFollowUp(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FollowUpApi.ApiFollowUpPut: " + e.Message );
+                Debug.Print("Exception when calling FollowUpApi.UpdateFollowUp: " + e.Message );
             }
         }
     }
@@ -601,6 +533,74 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**UpdateFollowUpRequest**](UpdateFollowUpRequest.md)|  | [optional] 
+
+### Return type
+
+[**FollowUpModel**](FollowUpModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatefollowup_0"></a>
+# **UpdateFollowUp_0**
+> FollowUpModel UpdateFollowUp_0 (string followUpId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateFollowUp_0Example
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FollowUpApi();
+            var followUpId = followUpId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                FollowUpModel result = apiInstance.UpdateFollowUp_0(followUpId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FollowUpApi.UpdateFollowUp_0: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **followUpId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
 
 ### Return type
 

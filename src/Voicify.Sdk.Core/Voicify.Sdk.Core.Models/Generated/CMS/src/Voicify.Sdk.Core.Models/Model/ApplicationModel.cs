@@ -47,12 +47,14 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="imageUrl">imageUrl.</param>
         /// <param name="shortCode">shortCode.</param>
         /// <param name="imageItemId">imageItemId.</param>
+        /// <param name="allowsTemplating">allowsTemplating.</param>
         /// <param name="applicationInformationItems">applicationInformationItems.</param>
         /// <param name="languages">languages.</param>
         /// <param name="regions">regions.</param>
         /// <param name="isDisabled">isDisabled.</param>
         /// <param name="alexaFallbackSensitivity">alexaFallbackSensitivity.</param>
-        public ApplicationModel(string id = default(string), string name = default(string), string secret = default(string), string shortDescription = default(string), string description = default(string), string keywords = default(string), string invocationPhrase = default(string), string imageUrl = default(string), string shortCode = default(string), string imageItemId = default(string), List<ApplicationInformationModel> applicationInformationItems = default(List<ApplicationInformationModel>), List<LanguageModel> languages = default(List<LanguageModel>), List<VoicifyRegionModel> regions = default(List<VoicifyRegionModel>), bool? isDisabled = default(bool?), AlexaFallbackSensitivityLevel? alexaFallbackSensitivity = default(AlexaFallbackSensitivityLevel?))
+        /// <param name="metadata">metadata.</param>
+        public ApplicationModel(string id = default(string), string name = default(string), string secret = default(string), string shortDescription = default(string), string description = default(string), string keywords = default(string), string invocationPhrase = default(string), string imageUrl = default(string), string shortCode = default(string), string imageItemId = default(string), bool? allowsTemplating = default(bool?), List<ApplicationInformationModel> applicationInformationItems = default(List<ApplicationInformationModel>), List<LanguageModel> languages = default(List<LanguageModel>), List<VoicifyRegionModel> regions = default(List<VoicifyRegionModel>), bool? isDisabled = default(bool?), AlexaFallbackSensitivityLevel? alexaFallbackSensitivity = default(AlexaFallbackSensitivityLevel?), Dictionary<string, object> metadata = default(Dictionary<string, object>))
         {
             this.Id = id;
             this.Name = name;
@@ -64,11 +66,13 @@ namespace Voicify.Sdk.Core.Models.Model
             this.ImageUrl = imageUrl;
             this.ShortCode = shortCode;
             this.ImageItemId = imageItemId;
+            this.AllowsTemplating = allowsTemplating;
             this.ApplicationInformationItems = applicationInformationItems;
             this.Languages = languages;
             this.Regions = regions;
             this.IsDisabled = isDisabled;
             this.AlexaFallbackSensitivity = alexaFallbackSensitivity;
+            this.Metadata = metadata;
         }
         
         /// <summary>
@@ -132,6 +136,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string ImageItemId { get; set; }
 
         /// <summary>
+        /// Gets or Sets AllowsTemplating
+        /// </summary>
+        [DataMember(Name="allowsTemplating", EmitDefaultValue=false)]
+        public bool? AllowsTemplating { get; set; }
+
+        /// <summary>
         /// Gets or Sets ApplicationInformationItems
         /// </summary>
         [DataMember(Name="applicationInformationItems", EmitDefaultValue=false)]
@@ -157,6 +167,12 @@ namespace Voicify.Sdk.Core.Models.Model
 
 
         /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public Dictionary<string, object> Metadata { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -174,11 +190,13 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  ImageUrl: ").Append(ImageUrl).Append("\n");
             sb.Append("  ShortCode: ").Append(ShortCode).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
+            sb.Append("  AllowsTemplating: ").Append(AllowsTemplating).Append("\n");
             sb.Append("  ApplicationInformationItems: ").Append(ApplicationInformationItems).Append("\n");
             sb.Append("  Languages: ").Append(Languages).Append("\n");
             sb.Append("  Regions: ").Append(Regions).Append("\n");
             sb.Append("  IsDisabled: ").Append(IsDisabled).Append("\n");
             sb.Append("  AlexaFallbackSensitivity: ").Append(AlexaFallbackSensitivity).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -264,6 +282,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ImageItemId.Equals(input.ImageItemId))
                 ) && 
                 (
+                    this.AllowsTemplating == input.AllowsTemplating ||
+                    (this.AllowsTemplating != null &&
+                    this.AllowsTemplating.Equals(input.AllowsTemplating))
+                ) && 
+                (
                     this.ApplicationInformationItems == input.ApplicationInformationItems ||
                     this.ApplicationInformationItems != null &&
                     input.ApplicationInformationItems != null &&
@@ -290,6 +313,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.AlexaFallbackSensitivity == input.AlexaFallbackSensitivity ||
                     (this.AlexaFallbackSensitivity != null &&
                     this.AlexaFallbackSensitivity.Equals(input.AlexaFallbackSensitivity))
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    this.Metadata != null &&
+                    input.Metadata != null &&
+                    this.Metadata.SequenceEqual(input.Metadata)
                 );
         }
 
@@ -322,6 +351,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.ShortCode.GetHashCode();
                 if (this.ImageItemId != null)
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
+                if (this.AllowsTemplating != null)
+                    hashCode = hashCode * 59 + this.AllowsTemplating.GetHashCode();
                 if (this.ApplicationInformationItems != null)
                     hashCode = hashCode * 59 + this.ApplicationInformationItems.GetHashCode();
                 if (this.Languages != null)
@@ -332,6 +363,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.IsDisabled.GetHashCode();
                 if (this.AlexaFallbackSensitivity != null)
                     hashCode = hashCode * 59 + this.AlexaFallbackSensitivity.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 return hashCode;
             }
         }

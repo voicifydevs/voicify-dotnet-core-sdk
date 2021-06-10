@@ -4,114 +4,46 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiApplicationApplicationIdAlexaFallbackSensitivitySensitivityLevelPut**](ApplicationApi.md#apiapplicationapplicationidalexafallbacksensitivitysensitivitylevelput) | **PUT** /api/Application/{applicationId}/alexaFallbackSensitivity/{sensitivityLevel} | 
-[**ApiApplicationApplicationIdConversationCountGet**](ApplicationApi.md#apiapplicationapplicationidconversationcountget) | **GET** /api/Application/{applicationId}/conversationCount | 
-[**ApiApplicationApplicationIdDefaultLanguageLanguageIdPut**](ApplicationApi.md#apiapplicationapplicationiddefaultlanguagelanguageidput) | **PUT** /api/Application/{applicationId}/defaultLanguage/{languageId} | 
-[**ApiApplicationApplicationIdDefaultWebhookTimeoutPut**](ApplicationApi.md#apiapplicationapplicationiddefaultwebhooktimeoutput) | **PUT** /api/Application/{applicationId}/defaultWebhookTimeout | 
-[**ApiApplicationApplicationIdDelete**](ApplicationApi.md#apiapplicationapplicationiddelete) | **DELETE** /api/Application/{applicationId} | 
-[**ApiApplicationApplicationIdDisableDelete**](ApplicationApi.md#apiapplicationapplicationiddisabledelete) | **DELETE** /api/Application/{applicationId}/disable | 
-[**ApiApplicationApplicationIdEnablePut**](ApplicationApi.md#apiapplicationapplicationidenableput) | **PUT** /api/Application/{applicationId}/enable | 
-[**ApiApplicationApplicationIdFulfillmentEndpointsGet**](ApplicationApi.md#apiapplicationapplicationidfulfillmentendpointsget) | **GET** /api/Application/{applicationId}/fulfillmentEndpoints | 
-[**ApiApplicationApplicationIdLanguagesPut**](ApplicationApi.md#apiapplicationapplicationidlanguagesput) | **PUT** /api/Application/{applicationId}/languages | 
-[**ApiApplicationApplicationIdMembersBulkAddPost**](ApplicationApi.md#apiapplicationapplicationidmembersbulkaddpost) | **POST** /api/Application/{applicationId}/members/bulkAdd | 
-[**ApiApplicationApplicationIdMembersGet**](ApplicationApi.md#apiapplicationapplicationidmembersget) | **GET** /api/Application/{applicationId}/members | 
-[**ApiApplicationApplicationIdMembersPost**](ApplicationApi.md#apiapplicationapplicationidmemberspost) | **POST** /api/Application/{applicationId}/members | 
-[**ApiApplicationApplicationIdPut**](ApplicationApi.md#apiapplicationapplicationidput) | **PUT** /api/Application/{applicationId} | 
-[**ApiApplicationApplicationIdSetImageImageItemIdPut**](ApplicationApi.md#apiapplicationapplicationidsetimageimageitemidput) | **PUT** /api/Application/{applicationId}/setImage/{imageItemId} | 
-[**ApiApplicationApplicationIdToggleAllowsTemplatePut**](ApplicationApi.md#apiapplicationapplicationidtoggleallowstemplateput) | **PUT** /api/Application/{applicationId}/toggleAllowsTemplate | 
-[**ApiApplicationApplicationIdWebhooksBulkPut**](ApplicationApi.md#apiapplicationapplicationidwebhooksbulkput) | **PUT** /api/Application/{applicationId}/webhooks/bulk | 
-[**ApiApplicationApplicationIdWebhooksGet**](ApplicationApi.md#apiapplicationapplicationidwebhooksget) | **GET** /api/Application/{applicationId}/webhooks | 
-[**ApiApplicationApplicationIdWebhooksWebhookIdPost**](ApplicationApi.md#apiapplicationapplicationidwebhookswebhookidpost) | **POST** /api/Application/{applicationId}/webhooks/{webhookId} | 
-[**ApiApplicationApplicationIdWebhooksWebhookInstanceIdPut**](ApplicationApi.md#apiapplicationapplicationidwebhookswebhookinstanceidput) | **PUT** /api/Application/{applicationId}/webhooks/{webhookInstanceId} | 
-[**ApiApplicationFindApplicationIdGet**](ApplicationApi.md#apiapplicationfindapplicationidget) | **GET** /api/Application/find/{applicationId} | 
-[**ApiApplicationFindApplicationIdWithFeaturesGet**](ApplicationApi.md#apiapplicationfindapplicationidwithfeaturesget) | **GET** /api/Application/find/{applicationId}/withFeatures | 
-[**ApiApplicationMembersApplicationMemberIdDelete**](ApplicationApi.md#apiapplicationmembersapplicationmemberiddelete) | **DELETE** /api/Application/members/{applicationMemberId} | 
-[**ApiApplicationMembersApplicationMemberIdPut**](ApplicationApi.md#apiapplicationmembersapplicationmemberidput) | **PUT** /api/Application/members/{applicationMemberId} | 
-[**ApiApplicationOrganizationIdAppsConversationCountsGet**](ApplicationApi.md#apiapplicationorganizationidappsconversationcountsget) | **GET** /api/Application/{organizationId}/apps/conversationCounts | 
-[**ApiApplicationOrganizationIdConversationAndFeatureCountsGet**](ApplicationApi.md#apiapplicationorganizationidconversationandfeaturecountsget) | **GET** /api/Application/{organizationId}/conversationAndFeatureCounts | 
-[**ApiApplicationOrganizationIdGet**](ApplicationApi.md#apiapplicationorganizationidget) | **GET** /api/Application/{organizationId} | 
-[**ApiApplicationOrganizationIdPost**](ApplicationApi.md#apiapplicationorganizationidpost) | **POST** /api/Application/{organizationId} | 
-[**ApiApplicationOrganizationIdWithFeaturesGet**](ApplicationApi.md#apiapplicationorganizationidwithfeaturesget) | **GET** /api/Application/{organizationId}/withFeatures | 
-[**ApiApplicationOrganizationIdWithMembersSearchGet**](ApplicationApi.md#apiapplicationorganizationidwithmemberssearchget) | **GET** /api/Application/{organizationId}/withMembers/search | 
-[**ApiApplicationOrganizationIdWithSamplesPost**](ApplicationApi.md#apiapplicationorganizationidwithsamplespost) | **POST** /api/Application/{organizationId}/withSamples | 
-[**ApiApplicationSetInitialPriorityPost**](ApplicationApi.md#apiapplicationsetinitialprioritypost) | **POST** /api/Application/setInitialPriority | 
-[**ApiApplicationWebhookApplicationWebhookIdDelete**](ApplicationApi.md#apiapplicationwebhookapplicationwebhookiddelete) | **DELETE** /api/Application/webhook/{applicationWebhookId} | 
-[**ApiApplicationWebhookInstanceWebhookIdUserParametersParameterNameDelete**](ApplicationApi.md#apiapplicationwebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/Application/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiApplicationWebhookInstanceWebhookIdUserParametersPost**](ApplicationApi.md#apiapplicationwebhookinstancewebhookiduserparameterspost) | **POST** /api/Application/webhook/{instanceWebhookId}/userParameters | 
-[**ApiApplicationWebhookInstanceWebhookIdUserParametersPut**](ApplicationApi.md#apiapplicationwebhookinstancewebhookiduserparametersput) | **PUT** /api/Application/webhook/{instanceWebhookId}/userParameters | 
-[**ApiApplicationWebhookInstanceWebhookIdWebhookParametersPut**](ApplicationApi.md#apiapplicationwebhookinstancewebhookidwebhookparametersput) | **PUT** /api/Application/webhook/{instanceWebhookId}/webhookParameters | 
+[**AddMemberAsync**](ApplicationApi.md#addmemberasync) | **POST** /api/Application/{applicationId}/members | 
+[**AddWebhook**](ApplicationApi.md#addwebhook) | **POST** /api/Application/{applicationId}/webhooks/{webhookId} | 
+[**BulkAddMemberAsync**](ApplicationApi.md#bulkaddmemberasync) | **POST** /api/Application/{applicationId}/members/bulkAdd | 
+[**BulkUpdateAttachedWebhooks**](ApplicationApi.md#bulkupdateattachedwebhooks) | **PUT** /api/Application/{applicationId}/webhooks/bulk | 
+[**CreateApplicationWithSampleContent**](ApplicationApi.md#createapplicationwithsamplecontent) | **POST** /api/Application/{organizationId}/withSamples | 
+[**CreateEmptyApplication**](ApplicationApi.md#createemptyapplication) | **POST** /api/Application/{organizationId} | 
+[**CreateUserDefinedParameter**](ApplicationApi.md#createuserdefinedparameter) | **POST** /api/Application/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteApplication**](ApplicationApi.md#deleteapplication) | **DELETE** /api/Application/{applicationId} | 
+[**DisableApplication**](ApplicationApi.md#disableapplication) | **DELETE** /api/Application/{applicationId}/disable | 
+[**EnableApplication**](ApplicationApi.md#enableapplication) | **PUT** /api/Application/{applicationId}/enable | 
+[**FindApplication**](ApplicationApi.md#findapplication) | **GET** /api/Application/find/{applicationId} | 
+[**FindApplicationWithFeatures**](ApplicationApi.md#findapplicationwithfeatures) | **GET** /api/Application/find/{applicationId}/withFeatures | 
+[**GetAppConversationCount**](ApplicationApi.md#getappconversationcount) | **GET** /api/Application/{applicationId}/conversationCount | 
+[**GetAppConversationCount_0**](ApplicationApi.md#getappconversationcount_0) | **GET** /api/Application/{organizationId}/conversationAndFeatureCounts | 
+[**GetAppConversationCounts**](ApplicationApi.md#getappconversationcounts) | **GET** /api/Application/{organizationId}/apps/conversationCounts | 
+[**GetAppMembers**](ApplicationApi.md#getappmembers) | **GET** /api/Application/{applicationId}/members | 
+[**GetApplicationsForOrganization**](ApplicationApi.md#getapplicationsfororganization) | **GET** /api/Application/{organizationId} | 
+[**GetApplicationsWithFeaturesForOrganization**](ApplicationApi.md#getapplicationswithfeaturesfororganization) | **GET** /api/Application/{organizationId}/withFeatures | 
+[**GetApplicationsWithMembersForOrganization**](ApplicationApi.md#getapplicationswithmembersfororganization) | **GET** /api/Application/{organizationId}/withMembers/search | 
+[**GetFulfillmentEndpoints**](ApplicationApi.md#getfulfillmentendpoints) | **GET** /api/Application/{applicationId}/fulfillmentEndpoints | 
+[**GetWebhooks**](ApplicationApi.md#getwebhooks) | **GET** /api/Application/{applicationId}/webhooks | 
+[**RemoveMember**](ApplicationApi.md#removemember) | **DELETE** /api/Application/members/{applicationMemberId} | 
+[**RemoveUserDefinedParameter**](ApplicationApi.md#removeuserdefinedparameter) | **DELETE** /api/Application/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](ApplicationApi.md#removewebhook) | **DELETE** /api/Application/webhook/{applicationWebhookId} | 
+[**SetImage**](ApplicationApi.md#setimage) | **PUT** /api/Application/{applicationId}/setImage/{imageItemId} | 
+[**SetInitialPriority**](ApplicationApi.md#setinitialpriority) | **POST** /api/Application/setInitialPriority | 
+[**ToggleAllowsTemplate**](ApplicationApi.md#toggleallowstemplate) | **PUT** /api/Application/{applicationId}/toggleAllowsTemplate | 
+[**UpdateAlexaFallbackSensitivity**](ApplicationApi.md#updatealexafallbacksensitivity) | **PUT** /api/Application/{applicationId}/alexaFallbackSensitivity/{sensitivityLevel} | 
+[**UpdateApplicationInformation**](ApplicationApi.md#updateapplicationinformation) | **PUT** /api/Application/{applicationId} | 
+[**UpdateAttachedWebhook**](ApplicationApi.md#updateattachedwebhook) | **PUT** /api/Application/{applicationId}/webhooks/{webhookInstanceId} | 
+[**UpdateDefaultLangauge**](ApplicationApi.md#updatedefaultlangauge) | **PUT** /api/Application/{applicationId}/defaultLanguage/{languageId} | 
+[**UpdateDefaultWebhookTimeout**](ApplicationApi.md#updatedefaultwebhooktimeout) | **PUT** /api/Application/{applicationId}/defaultWebhookTimeout | 
+[**UpdateLangauges**](ApplicationApi.md#updatelangauges) | **PUT** /api/Application/{applicationId}/languages | 
+[**UpdateMemberRole**](ApplicationApi.md#updatememberrole) | **PUT** /api/Application/members/{applicationMemberId} | 
+[**UpdateUserDefinedParameter**](ApplicationApi.md#updateuserdefinedparameter) | **PUT** /api/Application/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](ApplicationApi.md#updatewebhookparameter) | **PUT** /api/Application/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apiapplicationapplicationidalexafallbacksensitivitysensitivitylevelput"></a>
-# **ApiApplicationApplicationIdAlexaFallbackSensitivitySensitivityLevelPut**
-> bool? ApiApplicationApplicationIdAlexaFallbackSensitivitySensitivityLevelPut (string applicationId, AlexaFallbackSensitivityLevel sensitivityLevel)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdAlexaFallbackSensitivitySensitivityLevelPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var sensitivityLevel = new AlexaFallbackSensitivityLevel(); // AlexaFallbackSensitivityLevel | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationApplicationIdAlexaFallbackSensitivitySensitivityLevelPut(applicationId, sensitivityLevel);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdAlexaFallbackSensitivitySensitivityLevelPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **sensitivityLevel** | [**AlexaFallbackSensitivityLevel**](AlexaFallbackSensitivityLevel.md)|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidconversationcountget"></a>
-# **ApiApplicationApplicationIdConversationCountGet**
-> ApplicationCountsModel ApiApplicationApplicationIdConversationCountGet (string applicationId)
+<a name="addmemberasync"></a>
+# **AddMemberAsync**
+> ApplicationMemberModel AddMemberAsync (string applicationId, NewApplicationMemberRequest body = null)
 
 
 
@@ -125,675 +57,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationApplicationIdConversationCountGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                ApplicationCountsModel result = apiInstance.ApiApplicationApplicationIdConversationCountGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdConversationCountGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**ApplicationCountsModel**](ApplicationCountsModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationiddefaultlanguagelanguageidput"></a>
-# **ApiApplicationApplicationIdDefaultLanguageLanguageIdPut**
-> ApplicationModel ApiApplicationApplicationIdDefaultLanguageLanguageIdPut (string applicationId, string languageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdDefaultLanguageLanguageIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var languageId = languageId_example;  // string | 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdDefaultLanguageLanguageIdPut(applicationId, languageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdDefaultLanguageLanguageIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **languageId** | **string**|  | 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationiddefaultwebhooktimeoutput"></a>
-# **ApiApplicationApplicationIdDefaultWebhookTimeoutPut**
-> bool? ApiApplicationApplicationIdDefaultWebhookTimeoutPut (string applicationId, UpdateApplicationDefaultTimeoutRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdDefaultWebhookTimeoutPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new UpdateApplicationDefaultTimeoutRequest(); // UpdateApplicationDefaultTimeoutRequest |  (optional) 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationApplicationIdDefaultWebhookTimeoutPut(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdDefaultWebhookTimeoutPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**UpdateApplicationDefaultTimeoutRequest**](UpdateApplicationDefaultTimeoutRequest.md)|  | [optional] 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationiddelete"></a>
-# **ApiApplicationApplicationIdDelete**
-> ApplicationModel ApiApplicationApplicationIdDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationiddisabledelete"></a>
-# **ApiApplicationApplicationIdDisableDelete**
-> ApplicationModel ApiApplicationApplicationIdDisableDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdDisableDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdDisableDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdDisableDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidenableput"></a>
-# **ApiApplicationApplicationIdEnablePut**
-> ApplicationModel ApiApplicationApplicationIdEnablePut (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdEnablePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdEnablePut(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdEnablePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidfulfillmentendpointsget"></a>
-# **ApiApplicationApplicationIdFulfillmentEndpointsGet**
-> ApplicationFulfillmentEndpoints ApiApplicationApplicationIdFulfillmentEndpointsGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdFulfillmentEndpointsGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                ApplicationFulfillmentEndpoints result = apiInstance.ApiApplicationApplicationIdFulfillmentEndpointsGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdFulfillmentEndpointsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**ApplicationFulfillmentEndpoints**](ApplicationFulfillmentEndpoints.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidlanguagesput"></a>
-# **ApiApplicationApplicationIdLanguagesPut**
-> ApplicationModel ApiApplicationApplicationIdLanguagesPut (string applicationId, List<string> body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdLanguagesPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new List<string>(); // List<string> |  (optional) 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdLanguagesPut(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdLanguagesPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**List&lt;string&gt;**](string.md)|  | [optional] 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidmembersbulkaddpost"></a>
-# **ApiApplicationApplicationIdMembersBulkAddPost**
-> List<ApplicationMemberModel> ApiApplicationApplicationIdMembersBulkAddPost (string applicationId, NewBulkApplicationMemberRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdMembersBulkAddPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new NewBulkApplicationMemberRequest(); // NewBulkApplicationMemberRequest |  (optional) 
-
-            try
-            {
-                List&lt;ApplicationMemberModel&gt; result = apiInstance.ApiApplicationApplicationIdMembersBulkAddPost(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdMembersBulkAddPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**NewBulkApplicationMemberRequest**](NewBulkApplicationMemberRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<ApplicationMemberModel>**](ApplicationMemberModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidmembersget"></a>
-# **ApiApplicationApplicationIdMembersGet**
-> List<ApplicationMemberModel> ApiApplicationApplicationIdMembersGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdMembersGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;ApplicationMemberModel&gt; result = apiInstance.ApiApplicationApplicationIdMembersGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdMembersGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<ApplicationMemberModel>**](ApplicationMemberModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidmemberspost"></a>
-# **ApiApplicationApplicationIdMembersPost**
-> ApplicationMemberModel ApiApplicationApplicationIdMembersPost (string applicationId, NewApplicationMemberRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdMembersPostExample
+    public class AddMemberAsyncExample
     {
         public void main()
         {
@@ -812,12 +76,12 @@ namespace Example
 
             try
             {
-                ApplicationMemberModel result = apiInstance.ApiApplicationApplicationIdMembersPost(applicationId, body);
+                ApplicationMemberModel result = apiInstance.AddMemberAsync(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdMembersPost: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.AddMemberAsync: " + e.Message );
             }
         }
     }
@@ -845,9 +109,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidput"></a>
-# **ApiApplicationApplicationIdPut**
-> ApplicationModel ApiApplicationApplicationIdPut (string applicationId, UpdateApplicationRequest body = null)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> ApplicationWebhookModel AddWebhook (string applicationId, string webhookId, WebhookParametersRequest body = null)
 
 
 
@@ -861,345 +125,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationApplicationIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new UpdateApplicationRequest(); // UpdateApplicationRequest |  (optional) 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdPut(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**UpdateApplicationRequest**](UpdateApplicationRequest.md)|  | [optional] 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidsetimageimageitemidput"></a>
-# **ApiApplicationApplicationIdSetImageImageItemIdPut**
-> ApplicationModel ApiApplicationApplicationIdSetImageImageItemIdPut (string applicationId, string imageItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdSetImageImageItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var imageItemId = imageItemId_example;  // string | 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdSetImageImageItemIdPut(applicationId, imageItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdSetImageImageItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **imageItemId** | **string**|  | 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidtoggleallowstemplateput"></a>
-# **ApiApplicationApplicationIdToggleAllowsTemplatePut**
-> ApplicationModel ApiApplicationApplicationIdToggleAllowsTemplatePut (string applicationId, ToggleTemplateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdToggleAllowsTemplatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new ToggleTemplateRequest(); // ToggleTemplateRequest |  (optional) 
-
-            try
-            {
-                ApplicationModel result = apiInstance.ApiApplicationApplicationIdToggleAllowsTemplatePut(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdToggleAllowsTemplatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**ToggleTemplateRequest**](ToggleTemplateRequest.md)|  | [optional] 
-
-### Return type
-
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidwebhooksbulkput"></a>
-# **ApiApplicationApplicationIdWebhooksBulkPut**
-> List<ApplicationWebhookModel> ApiApplicationApplicationIdWebhooksBulkPut (string applicationId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;ApplicationWebhookModel&gt; result = apiInstance.ApiApplicationApplicationIdWebhooksBulkPut(applicationId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<ApplicationWebhookModel>**](ApplicationWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidwebhooksget"></a>
-# **ApiApplicationApplicationIdWebhooksGet**
-> List<ApplicationWebhookModel> ApiApplicationApplicationIdWebhooksGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;ApplicationWebhookModel&gt; result = apiInstance.ApiApplicationApplicationIdWebhooksGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<ApplicationWebhookModel>**](ApplicationWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidwebhookswebhookidpost"></a>
-# **ApiApplicationApplicationIdWebhooksWebhookIdPost**
-> ApplicationWebhookModel ApiApplicationApplicationIdWebhooksWebhookIdPost (string applicationId, string webhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationApplicationIdWebhooksWebhookIdPostExample
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1219,12 +145,12 @@ namespace Example
 
             try
             {
-                ApplicationWebhookModel result = apiInstance.ApiApplicationApplicationIdWebhooksWebhookIdPost(applicationId, webhookId, body);
+                ApplicationWebhookModel result = apiInstance.AddWebhook(applicationId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1253,9 +179,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationapplicationidwebhookswebhookinstanceidput"></a>
-# **ApiApplicationApplicationIdWebhooksWebhookInstanceIdPut**
-> ApplicationWebhookModel ApiApplicationApplicationIdWebhooksWebhookInstanceIdPut (string applicationId, string webhookInstanceId, WebhookParametersRequest body = null)
+<a name="bulkaddmemberasync"></a>
+# **BulkAddMemberAsync**
+> List<ApplicationMemberModel> BulkAddMemberAsync (string applicationId, NewBulkApplicationMemberRequest body = null)
 
 
 
@@ -1269,7 +195,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationApplicationIdWebhooksWebhookInstanceIdPutExample
+    public class BulkAddMemberAsyncExample
     {
         public void main()
         {
@@ -1284,17 +210,16 @@ namespace Example
 
             var apiInstance = new ApplicationApi();
             var applicationId = applicationId_example;  // string | 
-            var webhookInstanceId = webhookInstanceId_example;  // string | 
-            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+            var body = new NewBulkApplicationMemberRequest(); // NewBulkApplicationMemberRequest |  (optional) 
 
             try
             {
-                ApplicationWebhookModel result = apiInstance.ApiApplicationApplicationIdWebhooksWebhookInstanceIdPut(applicationId, webhookInstanceId, body);
+                List&lt;ApplicationMemberModel&gt; result = apiInstance.BulkAddMemberAsync(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationApplicationIdWebhooksWebhookInstanceIdPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.BulkAddMemberAsync: " + e.Message );
             }
         }
     }
@@ -1306,12 +231,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **applicationId** | **string**|  | 
- **webhookInstanceId** | **string**|  | 
- **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+ **body** | [**NewBulkApplicationMemberRequest**](NewBulkApplicationMemberRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ApplicationWebhookModel**](ApplicationWebhookModel.md)
+[**List<ApplicationMemberModel>**](ApplicationMemberModel.md)
 
 ### Authorization
 
@@ -1323,9 +247,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationfindapplicationidget"></a>
-# **ApiApplicationFindApplicationIdGet**
-> ApplicationModel ApiApplicationFindApplicationIdGet (string applicationId)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<ApplicationWebhookModel> BulkUpdateAttachedWebhooks (string applicationId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1339,7 +263,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationFindApplicationIdGetExample
+    public class BulkUpdateAttachedWebhooksExample
     {
         public void main()
         {
@@ -1354,15 +278,16 @@ namespace Example
 
             var apiInstance = new ApplicationApi();
             var applicationId = applicationId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
 
             try
             {
-                ApplicationModel result = apiInstance.ApiApplicationFindApplicationIdGet(applicationId);
+                List&lt;ApplicationWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationFindApplicationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.BulkUpdateAttachedWebhooks: " + e.Message );
             }
         }
     }
@@ -1374,210 +299,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **applicationId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationfindapplicationidwithfeaturesget"></a>
-# **ApiApplicationFindApplicationIdWithFeaturesGet**
-> ApplicationWithFeaturesModel ApiApplicationFindApplicationIdWithFeaturesGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationFindApplicationIdWithFeaturesGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                ApplicationWithFeaturesModel result = apiInstance.ApiApplicationFindApplicationIdWithFeaturesGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationFindApplicationIdWithFeaturesGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**ApplicationWithFeaturesModel**](ApplicationWithFeaturesModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationmembersapplicationmemberiddelete"></a>
-# **ApiApplicationMembersApplicationMemberIdDelete**
-> ApplicationMemberModel ApiApplicationMembersApplicationMemberIdDelete (string applicationMemberId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationMembersApplicationMemberIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationMemberId = applicationMemberId_example;  // string | 
-
-            try
-            {
-                ApplicationMemberModel result = apiInstance.ApiApplicationMembersApplicationMemberIdDelete(applicationMemberId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationMembersApplicationMemberIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationMemberId** | **string**|  | 
-
-### Return type
-
-[**ApplicationMemberModel**](ApplicationMemberModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationmembersapplicationmemberidput"></a>
-# **ApiApplicationMembersApplicationMemberIdPut**
-> ApplicationMemberModel ApiApplicationMembersApplicationMemberIdPut (string applicationMemberId, MemberRoleUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationMembersApplicationMemberIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var applicationMemberId = applicationMemberId_example;  // string | 
-            var body = new MemberRoleUpdateRequest(); // MemberRoleUpdateRequest |  (optional) 
-
-            try
-            {
-                ApplicationMemberModel result = apiInstance.ApiApplicationMembersApplicationMemberIdPut(applicationMemberId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationMembersApplicationMemberIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationMemberId** | **string**|  | 
- **body** | [**MemberRoleUpdateRequest**](MemberRoleUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**ApplicationMemberModel**](ApplicationMemberModel.md)
+[**List<ApplicationWebhookModel>**](ApplicationWebhookModel.md)
 
 ### Authorization
 
@@ -1589,9 +315,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidappsconversationcountsget"></a>
-# **ApiApplicationOrganizationIdAppsConversationCountsGet**
-> List<ApplicationCountsModel> ApiApplicationOrganizationIdAppsConversationCountsGet (string organizationId)
+<a name="createapplicationwithsamplecontent"></a>
+# **CreateApplicationWithSampleContent**
+> ApplicationModel CreateApplicationWithSampleContent (string organizationId, NewApplicationRequest body = null)
 
 
 
@@ -1605,207 +331,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationOrganizationIdAppsConversationCountsGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var organizationId = organizationId_example;  // string | 
-
-            try
-            {
-                List&lt;ApplicationCountsModel&gt; result = apiInstance.ApiApplicationOrganizationIdAppsConversationCountsGet(organizationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdAppsConversationCountsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
-
-### Return type
-
-[**List<ApplicationCountsModel>**](ApplicationCountsModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidconversationandfeaturecountsget"></a>
-# **ApiApplicationOrganizationIdConversationAndFeatureCountsGet**
-> List<ApplicationCountsModel> ApiApplicationOrganizationIdConversationAndFeatureCountsGet (string organizationId, List<string> appIds = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationOrganizationIdConversationAndFeatureCountsGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var organizationId = organizationId_example;  // string | 
-            var appIds = new List<string>(); // List<string> |  (optional) 
-
-            try
-            {
-                List&lt;ApplicationCountsModel&gt; result = apiInstance.ApiApplicationOrganizationIdConversationAndFeatureCountsGet(organizationId, appIds);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdConversationAndFeatureCountsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
- **appIds** | [**List&lt;string&gt;**](string.md)|  | [optional] 
-
-### Return type
-
-[**List<ApplicationCountsModel>**](ApplicationCountsModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidget"></a>
-# **ApiApplicationOrganizationIdGet**
-> List<ApplicationModel> ApiApplicationOrganizationIdGet (string organizationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationOrganizationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-            var organizationId = organizationId_example;  // string | 
-
-            try
-            {
-                List&lt;ApplicationModel&gt; result = apiInstance.ApiApplicationOrganizationIdGet(organizationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
-
-### Return type
-
-[**List<ApplicationModel>**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidpost"></a>
-# **ApiApplicationOrganizationIdPost**
-> ApplicationModel ApiApplicationOrganizationIdPost (string organizationId, NewApplicationRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationOrganizationIdPostExample
+    public class CreateApplicationWithSampleContentExample
     {
         public void main()
         {
@@ -1824,12 +350,12 @@ namespace Example
 
             try
             {
-                ApplicationModel result = apiInstance.ApiApplicationOrganizationIdPost(organizationId, body);
+                ApplicationModel result = apiInstance.CreateApplicationWithSampleContent(organizationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdPost: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.CreateApplicationWithSampleContent: " + e.Message );
             }
         }
     }
@@ -1857,9 +383,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidwithfeaturesget"></a>
-# **ApiApplicationOrganizationIdWithFeaturesGet**
-> List<ApplicationWithFeaturesModel> ApiApplicationOrganizationIdWithFeaturesGet (string organizationId)
+<a name="createemptyapplication"></a>
+# **CreateEmptyApplication**
+> ApplicationModel CreateEmptyApplication (string organizationId, NewApplicationRequest body = null)
 
 
 
@@ -1873,7 +399,607 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationOrganizationIdWithFeaturesGetExample
+    public class CreateEmptyApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var organizationId = organizationId_example;  // string | 
+            var body = new NewApplicationRequest(); // NewApplicationRequest |  (optional) 
+
+            try
+            {
+                ApplicationModel result = apiInstance.CreateEmptyApplication(organizationId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.CreateEmptyApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+ **body** | [**NewApplicationRequest**](NewApplicationRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.CreateUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deleteapplication"></a>
+# **DeleteApplication**
+> ApplicationModel DeleteApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                ApplicationModel result = apiInstance.DeleteApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.DeleteApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="disableapplication"></a>
+# **DisableApplication**
+> ApplicationModel DisableApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DisableApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                ApplicationModel result = apiInstance.DisableApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.DisableApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="enableapplication"></a>
+# **EnableApplication**
+> ApplicationModel EnableApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class EnableApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                ApplicationModel result = apiInstance.EnableApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.EnableApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findapplication"></a>
+# **FindApplication**
+> ApplicationModel FindApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                ApplicationModel result = apiInstance.FindApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.FindApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findapplicationwithfeatures"></a>
+# **FindApplicationWithFeatures**
+> ApplicationWithFeaturesModel FindApplicationWithFeatures (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindApplicationWithFeaturesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                ApplicationWithFeaturesModel result = apiInstance.FindApplicationWithFeatures(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.FindApplicationWithFeatures: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**ApplicationWithFeaturesModel**](ApplicationWithFeaturesModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getappconversationcount"></a>
+# **GetAppConversationCount**
+> ApplicationCountsModel GetAppConversationCount (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAppConversationCountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                ApplicationCountsModel result = apiInstance.GetAppConversationCount(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.GetAppConversationCount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**ApplicationCountsModel**](ApplicationCountsModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getappconversationcount_0"></a>
+# **GetAppConversationCount_0**
+> List<ApplicationCountsModel> GetAppConversationCount_0 (string organizationId, List<string> appIds = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAppConversationCount_0Example
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var organizationId = organizationId_example;  // string | 
+            var appIds = new List<string>(); // List<string> |  (optional) 
+
+            try
+            {
+                List&lt;ApplicationCountsModel&gt; result = apiInstance.GetAppConversationCount_0(organizationId, appIds);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.GetAppConversationCount_0: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+ **appIds** | [**List&lt;string&gt;**](string.md)|  | [optional] 
+
+### Return type
+
+[**List<ApplicationCountsModel>**](ApplicationCountsModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getappconversationcounts"></a>
+# **GetAppConversationCounts**
+> List<ApplicationCountsModel> GetAppConversationCounts (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAppConversationCountsExample
     {
         public void main()
         {
@@ -1891,12 +1017,210 @@ namespace Example
 
             try
             {
-                List&lt;ApplicationWithFeaturesModel&gt; result = apiInstance.ApiApplicationOrganizationIdWithFeaturesGet(organizationId);
+                List&lt;ApplicationCountsModel&gt; result = apiInstance.GetAppConversationCounts(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdWithFeaturesGet: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.GetAppConversationCounts: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationCountsModel>**](ApplicationCountsModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getappmembers"></a>
+# **GetAppMembers**
+> List<ApplicationMemberModel> GetAppMembers (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAppMembersExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationMemberModel&gt; result = apiInstance.GetAppMembers(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.GetAppMembers: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationMemberModel>**](ApplicationMemberModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationsfororganization"></a>
+# **GetApplicationsForOrganization**
+> List<ApplicationModel> GetApplicationsForOrganization (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationsForOrganizationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationModel&gt; result = apiInstance.GetApplicationsForOrganization(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.GetApplicationsForOrganization: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationModel>**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationswithfeaturesfororganization"></a>
+# **GetApplicationsWithFeaturesForOrganization**
+> List<ApplicationWithFeaturesModel> GetApplicationsWithFeaturesForOrganization (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationsWithFeaturesForOrganizationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationWithFeaturesModel&gt; result = apiInstance.GetApplicationsWithFeaturesForOrganization(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.GetApplicationsWithFeaturesForOrganization: " + e.Message );
             }
         }
     }
@@ -1923,9 +1247,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidwithmemberssearchget"></a>
-# **ApiApplicationOrganizationIdWithMembersSearchGet**
-> ApplicationsSearchResult ApiApplicationOrganizationIdWithMembersSearchGet (string organizationId, int? skip = null, int? take = null, string search = null, string sortBy = null)
+<a name="getapplicationswithmembersfororganization"></a>
+# **GetApplicationsWithMembersForOrganization**
+> ApplicationsSearchResult GetApplicationsWithMembersForOrganization (string organizationId, int? skip = null, int? take = null, string search = null, string sortBy = null)
 
 
 
@@ -1939,7 +1263,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationOrganizationIdWithMembersSearchGetExample
+    public class GetApplicationsWithMembersForOrganizationExample
     {
         public void main()
         {
@@ -1961,12 +1285,12 @@ namespace Example
 
             try
             {
-                ApplicationsSearchResult result = apiInstance.ApiApplicationOrganizationIdWithMembersSearchGet(organizationId, skip, take, search, sortBy);
+                ApplicationsSearchResult result = apiInstance.GetApplicationsWithMembersForOrganization(organizationId, skip, take, search, sortBy);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdWithMembersSearchGet: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.GetApplicationsWithMembersForOrganization: " + e.Message );
             }
         }
     }
@@ -1997,9 +1321,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationorganizationidwithsamplespost"></a>
-# **ApiApplicationOrganizationIdWithSamplesPost**
-> ApplicationModel ApiApplicationOrganizationIdWithSamplesPost (string organizationId, NewApplicationRequest body = null)
+<a name="getfulfillmentendpoints"></a>
+# **GetFulfillmentEndpoints**
+> ApplicationFulfillmentEndpoints GetFulfillmentEndpoints (string applicationId)
 
 
 
@@ -2013,7 +1337,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationOrganizationIdWithSamplesPostExample
+    public class GetFulfillmentEndpointsExample
     {
         public void main()
         {
@@ -2027,17 +1351,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ApplicationApi();
-            var organizationId = organizationId_example;  // string | 
-            var body = new NewApplicationRequest(); // NewApplicationRequest |  (optional) 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                ApplicationModel result = apiInstance.ApiApplicationOrganizationIdWithSamplesPost(organizationId, body);
+                ApplicationFulfillmentEndpoints result = apiInstance.GetFulfillmentEndpoints(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationOrganizationIdWithSamplesPost: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.GetFulfillmentEndpoints: " + e.Message );
             }
         }
     }
@@ -2048,74 +1371,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
- **body** | [**NewApplicationRequest**](NewApplicationRequest.md)|  | [optional] 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**ApplicationModel**](ApplicationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationsetinitialprioritypost"></a>
-# **ApiApplicationSetInitialPriorityPost**
-> bool? ApiApplicationSetInitialPriorityPost ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationSetInitialPriorityPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationApi();
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationSetInitialPriorityPost();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationSetInitialPriorityPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-**bool?**
+[**ApplicationFulfillmentEndpoints**](ApplicationFulfillmentEndpoints.md)
 
 ### Authorization
 
@@ -2127,9 +1387,9 @@ This endpoint does not need any parameter.
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationwebhookapplicationwebhookiddelete"></a>
-# **ApiApplicationWebhookApplicationWebhookIdDelete**
-> ApplicationWebhookModel ApiApplicationWebhookApplicationWebhookIdDelete (string applicationWebhookId)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<ApplicationWebhookModel> GetWebhooks (string applicationId)
 
 
 
@@ -2143,7 +1403,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationWebhookApplicationWebhookIdDeleteExample
+    public class GetWebhooksExample
     {
         public void main()
         {
@@ -2157,16 +1417,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ApplicationApi();
-            var applicationWebhookId = applicationWebhookId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                ApplicationWebhookModel result = apiInstance.ApiApplicationWebhookApplicationWebhookIdDelete(applicationWebhookId);
+                List&lt;ApplicationWebhookModel&gt; result = apiInstance.GetWebhooks(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationWebhookApplicationWebhookIdDelete: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.GetWebhooks: " + e.Message );
             }
         }
     }
@@ -2177,11 +1437,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationWebhookId** | **string**|  | 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**ApplicationWebhookModel**](ApplicationWebhookModel.md)
+[**List<ApplicationWebhookModel>**](ApplicationWebhookModel.md)
 
 ### Authorization
 
@@ -2193,9 +1453,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationwebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiApplicationWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiApplicationWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
+<a name="removemember"></a>
+# **RemoveMember**
+> ApplicationMemberModel RemoveMember (string applicationMemberId)
 
 
 
@@ -2209,7 +1469,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
+    public class RemoveMemberExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationMemberId = applicationMemberId_example;  // string | 
+
+            try
+            {
+                ApplicationMemberModel result = apiInstance.RemoveMember(applicationMemberId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.RemoveMember: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationMemberId** | **string**|  | 
+
+### Return type
+
+[**ApplicationMemberModel**](ApplicationMemberModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
     {
         public void main()
         {
@@ -2228,12 +1554,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.RemoveUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -2261,9 +1587,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationwebhookinstancewebhookiduserparameterspost"></a>
-# **ApiApplicationWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiApplicationWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> ApplicationWebhookModel RemoveWebhook (string applicationWebhookId)
 
 
 
@@ -2277,7 +1603,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationWebhookInstanceWebhookIdUserParametersPostExample
+    public class RemoveWebhookExample
     {
         public void main()
         {
@@ -2291,17 +1617,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ApplicationApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+            var applicationWebhookId = applicationWebhookId_example;  // string | 
 
             try
             {
-                bool? result = apiInstance.ApiApplicationWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
+                ApplicationWebhookModel result = apiInstance.RemoveWebhook(applicationWebhookId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.RemoveWebhook: " + e.Message );
             }
         }
     }
@@ -2312,8 +1637,547 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+ **applicationWebhookId** | **string**|  | 
+
+### Return type
+
+[**ApplicationWebhookModel**](ApplicationWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="setimage"></a>
+# **SetImage**
+> ApplicationModel SetImage (string applicationId, string imageItemId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class SetImageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var imageItemId = imageItemId_example;  // string | 
+
+            try
+            {
+                ApplicationModel result = apiInstance.SetImage(applicationId, imageItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.SetImage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **imageItemId** | **string**|  | 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="setinitialpriority"></a>
+# **SetInitialPriority**
+> bool? SetInitialPriority ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class SetInitialPriorityExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+
+            try
+            {
+                bool? result = apiInstance.SetInitialPriority();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.SetInitialPriority: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="toggleallowstemplate"></a>
+# **ToggleAllowsTemplate**
+> ApplicationModel ToggleAllowsTemplate (string applicationId, ToggleTemplateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleAllowsTemplateExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new ToggleTemplateRequest(); // ToggleTemplateRequest |  (optional) 
+
+            try
+            {
+                ApplicationModel result = apiInstance.ToggleAllowsTemplate(applicationId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.ToggleAllowsTemplate: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**ToggleTemplateRequest**](ToggleTemplateRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatealexafallbacksensitivity"></a>
+# **UpdateAlexaFallbackSensitivity**
+> bool? UpdateAlexaFallbackSensitivity (string applicationId, AlexaFallbackSensitivityLevel sensitivityLevel)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAlexaFallbackSensitivityExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var sensitivityLevel = new AlexaFallbackSensitivityLevel(); // AlexaFallbackSensitivityLevel | 
+
+            try
+            {
+                bool? result = apiInstance.UpdateAlexaFallbackSensitivity(applicationId, sensitivityLevel);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateAlexaFallbackSensitivity: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **sensitivityLevel** | [**AlexaFallbackSensitivityLevel**](AlexaFallbackSensitivityLevel.md)|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateapplicationinformation"></a>
+# **UpdateApplicationInformation**
+> ApplicationModel UpdateApplicationInformation (string applicationId, UpdateApplicationRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateApplicationInformationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new UpdateApplicationRequest(); // UpdateApplicationRequest |  (optional) 
+
+            try
+            {
+                ApplicationModel result = apiInstance.UpdateApplicationInformation(applicationId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateApplicationInformation: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**UpdateApplicationRequest**](UpdateApplicationRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> ApplicationWebhookModel UpdateAttachedWebhook (string applicationId, string webhookInstanceId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var webhookInstanceId = webhookInstanceId_example;  // string | 
+            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+
+            try
+            {
+                ApplicationWebhookModel result = apiInstance.UpdateAttachedWebhook(applicationId, webhookInstanceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateAttachedWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **webhookInstanceId** | **string**|  | 
+ **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationWebhookModel**](ApplicationWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatedefaultlangauge"></a>
+# **UpdateDefaultLangauge**
+> ApplicationModel UpdateDefaultLangauge (string applicationId, string languageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateDefaultLangaugeExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var languageId = languageId_example;  // string | 
+
+            try
+            {
+                ApplicationModel result = apiInstance.UpdateDefaultLangauge(applicationId, languageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateDefaultLangauge: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **languageId** | **string**|  | 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatedefaultwebhooktimeout"></a>
+# **UpdateDefaultWebhookTimeout**
+> bool? UpdateDefaultWebhookTimeout (string applicationId, UpdateApplicationDefaultTimeoutRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateDefaultWebhookTimeoutExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new UpdateApplicationDefaultTimeoutRequest(); // UpdateApplicationDefaultTimeoutRequest |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.UpdateDefaultWebhookTimeout(applicationId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateDefaultWebhookTimeout: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**UpdateApplicationDefaultTimeoutRequest**](UpdateApplicationDefaultTimeoutRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -2329,9 +2193,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationwebhookinstancewebhookiduserparametersput"></a>
-# **ApiApplicationWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiApplicationWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="updatelangauges"></a>
+# **UpdateLangauges**
+> ApplicationModel UpdateLangauges (string applicationId, List<string> body = null)
 
 
 
@@ -2345,7 +2209,143 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationWebhookInstanceWebhookIdUserParametersPutExample
+    public class UpdateLangaugesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new List<string>(); // List<string> |  (optional) 
+
+            try
+            {
+                ApplicationModel result = apiInstance.UpdateLangauges(applicationId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateLangauges: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**List&lt;string&gt;**](string.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationModel**](ApplicationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatememberrole"></a>
+# **UpdateMemberRole**
+> ApplicationMemberModel UpdateMemberRole (string applicationMemberId, MemberRoleUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateMemberRoleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationApi();
+            var applicationMemberId = applicationMemberId_example;  // string | 
+            var body = new MemberRoleUpdateRequest(); // MemberRoleUpdateRequest |  (optional) 
+
+            try
+            {
+                ApplicationMemberModel result = apiInstance.UpdateMemberRole(applicationMemberId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UpdateMemberRole: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationMemberId** | **string**|  | 
+ **body** | [**MemberRoleUpdateRequest**](MemberRoleUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationMemberModel**](ApplicationMemberModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -2364,12 +2364,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -2397,9 +2397,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationwebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiApplicationWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiApplicationWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -2413,7 +2413,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -2432,12 +2432,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationApi.ApiApplicationWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }

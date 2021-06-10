@@ -27,14 +27,41 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines PublicationStatus
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum PublicationStatus
+        public enum PublicationStatus
     {
-        Development = 0,
-        Certification = 1,
-        Published = 2,
-        Suppressed = 3,
-        Pulled = 4,
-        Hidden = 5,
-        Removed = 6
-    }
+        /// <summary>
+        /// Enum DEVELOPMENT for value: DEVELOPMENT
+        /// </summary>
+        [EnumMember(Value = "DEVELOPMENT")]
+        DEVELOPMENT = 1,
+        /// <summary>
+        /// Enum CERTIFICATION for value: CERTIFICATION
+        /// </summary>
+        [EnumMember(Value = "CERTIFICATION")]
+        CERTIFICATION = 2,
+        /// <summary>
+        /// Enum PUBLISHED for value: PUBLISHED
+        /// </summary>
+        [EnumMember(Value = "PUBLISHED")]
+        PUBLISHED = 3,
+        /// <summary>
+        /// Enum SUPPRESSED for value: SUPPRESSED
+        /// </summary>
+        [EnumMember(Value = "SUPPRESSED")]
+        SUPPRESSED = 4,
+        /// <summary>
+        /// Enum PULLED for value: PULLED
+        /// </summary>
+        [EnumMember(Value = "PULLED")]
+        PULLED = 5,
+        /// <summary>
+        /// Enum HIDDEN for value: HIDDEN
+        /// </summary>
+        [EnumMember(Value = "HIDDEN")]
+        HIDDEN = 6,
+        /// <summary>
+        /// Enum REMOVED for value: REMOVED
+        /// </summary>
+        [EnumMember(Value = "REMOVED")]
+        REMOVED = 7    }
 }
