@@ -4,109 +4,43 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiLatestMessageApplicationIdGet**](LatestMessageApi.md#apilatestmessageapplicationidget) | **GET** /api/LatestMessage/{applicationId} | 
-[**ApiLatestMessageByFeatureApplicationFeatureIdGet**](LatestMessageApi.md#apilatestmessagebyfeatureapplicationfeatureidget) | **GET** /api/LatestMessage/byFeature/{applicationFeatureId} | 
-[**ApiLatestMessageContentItemIdFullPut**](LatestMessageApi.md#apilatestmessagecontentitemidfullput) | **PUT** /api/LatestMessage/{contentItemId}/full | 
-[**ApiLatestMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**](LatestMessageApi.md#apilatestmessagecontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/LatestMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiLatestMessageFullIdGet**](LatestMessageApi.md#apilatestmessagefullidget) | **GET** /api/LatestMessage/full/{id} | 
-[**ApiLatestMessageFullPost**](LatestMessageApi.md#apilatestmessagefullpost) | **POST** /api/LatestMessage/full | 
-[**ApiLatestMessageLatestMessageIdBulkUpdatePut**](LatestMessageApi.md#apilatestmessagelatestmessageidbulkupdateput) | **PUT** /api/LatestMessage/{latestMessageId}/bulkUpdate | 
-[**ApiLatestMessageLatestMessageIdBulkUpdateStubPut**](LatestMessageApi.md#apilatestmessagelatestmessageidbulkupdatestubput) | **PUT** /api/LatestMessage/{latestMessageId}/bulkUpdate/stub | 
-[**ApiLatestMessageLatestMessageIdCopyPost**](LatestMessageApi.md#apilatestmessagelatestmessageidcopypost) | **POST** /api/LatestMessage/{latestMessageId}/copy | 
-[**ApiLatestMessageLatestMessageIdDelete**](LatestMessageApi.md#apilatestmessagelatestmessageiddelete) | **DELETE** /api/LatestMessage/{latestMessageId} | 
-[**ApiLatestMessageLatestMessageIdIsLivePut**](LatestMessageApi.md#apilatestmessagelatestmessageidisliveput) | **PUT** /api/LatestMessage/{latestMessageId}/isLive | 
-[**ApiLatestMessageLatestMessageIdPut**](LatestMessageApi.md#apilatestmessagelatestmessageidput) | **PUT** /api/LatestMessage/{latestMessageId} | 
-[**ApiLatestMessageLatestMessageIdResponsePost**](LatestMessageApi.md#apilatestmessagelatestmessageidresponsepost) | **POST** /api/LatestMessage/{latestMessageId}/response | 
-[**ApiLatestMessageLatestMessageIdShouldNotSyncPut**](LatestMessageApi.md#apilatestmessagelatestmessageidshouldnotsyncput) | **PUT** /api/LatestMessage/{latestMessageId}/shouldNotSync | 
-[**ApiLatestMessageLatestMessageIdWebhooksBulkPut**](LatestMessageApi.md#apilatestmessagelatestmessageidwebhooksbulkput) | **PUT** /api/LatestMessage/{latestMessageId}/webhooks/bulk | 
-[**ApiLatestMessageLatestMessageIdWebhooksGet**](LatestMessageApi.md#apilatestmessagelatestmessageidwebhooksget) | **GET** /api/LatestMessage/{latestMessageId}/webhooks | 
-[**ApiLatestMessageLatestMessageIdWebhooksWebhookIdPost**](LatestMessageApi.md#apilatestmessagelatestmessageidwebhookswebhookidpost) | **POST** /api/LatestMessage/{latestMessageId}/webhooks/{webhookId} | 
-[**ApiLatestMessageLatestMessageIdWebhooksWebhookInstanceIdPut**](LatestMessageApi.md#apilatestmessagelatestmessageidwebhookswebhookinstanceidput) | **PUT** /api/LatestMessage/{latestMessageId}/webhooks/{webhookInstanceId} | 
-[**ApiLatestMessageLatestMessageResponseIdAddAudioFileMediaItemIdPut**](LatestMessageApi.md#apilatestmessagelatestmessageresponseidaddaudiofilemediaitemidput) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addAudioFile/{mediaItemId} | 
-[**ApiLatestMessageLatestMessageResponseIdAddLargeImageMediaItemIdPut**](LatestMessageApi.md#apilatestmessagelatestmessageresponseidaddlargeimagemediaitemidput) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addLargeImage/{mediaItemId} | 
-[**ApiLatestMessageLatestMessageResponseIdAddSmallImageMediaItemIdPut**](LatestMessageApi.md#apilatestmessagelatestmessageresponseidaddsmallimagemediaitemidput) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addSmallImage/{mediaItemId} | 
-[**ApiLatestMessageLatestMessageResponseIdAddVideoFileMediaItemIdPut**](LatestMessageApi.md#apilatestmessagelatestmessageresponseidaddvideofilemediaitemidput) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addVideoFile/{mediaItemId} | 
-[**ApiLatestMessageModuleApplicationModuleIdGet**](LatestMessageApi.md#apilatestmessagemoduleapplicationmoduleidget) | **GET** /api/LatestMessage/module/{applicationModuleId} | 
-[**ApiLatestMessagePost**](LatestMessageApi.md#apilatestmessagepost) | **POST** /api/LatestMessage | 
-[**ApiLatestMessageResponseLatestMessageResponseIdDelete**](LatestMessageApi.md#apilatestmessageresponselatestmessageresponseiddelete) | **DELETE** /api/LatestMessage/response/{latestMessageResponseId} | 
-[**ApiLatestMessageResponseLatestMessageResponseIdMediaGet**](LatestMessageApi.md#apilatestmessageresponselatestmessageresponseidmediaget) | **GET** /api/LatestMessage/response/{latestMessageResponseId}/media | 
-[**ApiLatestMessageResponseLatestMessageResponseIdPut**](LatestMessageApi.md#apilatestmessageresponselatestmessageresponseidput) | **PUT** /api/LatestMessage/response/{latestMessageResponseId} | 
-[**ApiLatestMessageStubPost**](LatestMessageApi.md#apilatestmessagestubpost) | **POST** /api/LatestMessage/stub | 
-[**ApiLatestMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**](LatestMessageApi.md#apilatestmessagewebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/LatestMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiLatestMessageWebhookInstanceWebhookIdUserParametersPost**](LatestMessageApi.md#apilatestmessagewebhookinstancewebhookiduserparameterspost) | **POST** /api/LatestMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiLatestMessageWebhookInstanceWebhookIdUserParametersPut**](LatestMessageApi.md#apilatestmessagewebhookinstancewebhookiduserparametersput) | **PUT** /api/LatestMessage/webhook/{instanceWebhookId}/userParameters | 
-[**ApiLatestMessageWebhookInstanceWebhookIdWebhookParametersPut**](LatestMessageApi.md#apilatestmessagewebhookinstancewebhookidwebhookparametersput) | **PUT** /api/LatestMessage/webhook/{instanceWebhookId}/webhookParameters | 
-[**ApiLatestMessageWebhookLatestMessageWebhookIdDelete**](LatestMessageApi.md#apilatestmessagewebhooklatestmessagewebhookiddelete) | **DELETE** /api/LatestMessage/webhook/{latestMessageWebhookId} | 
+[**AddAudioFile**](LatestMessageApi.md#addaudiofile) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addAudioFile/{mediaItemId} | 
+[**AddLargeImage**](LatestMessageApi.md#addlargeimage) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addLargeImage/{mediaItemId} | 
+[**AddSmallImage**](LatestMessageApi.md#addsmallimage) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](LatestMessageApi.md#addvideofile) | **PUT** /api/LatestMessage/{latestMessageResponseId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](LatestMessageApi.md#addwebhook) | **POST** /api/LatestMessage/{latestMessageId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](LatestMessageApi.md#bulkupdateattachedwebhooks) | **PUT** /api/LatestMessage/{latestMessageId}/webhooks/bulk | 
+[**BulkUpdateLatestMessage**](LatestMessageApi.md#bulkupdatelatestmessage) | **PUT** /api/LatestMessage/{latestMessageId}/bulkUpdate | 
+[**BulkUpdateLatestMessageStub**](LatestMessageApi.md#bulkupdatelatestmessagestub) | **PUT** /api/LatestMessage/{latestMessageId}/bulkUpdate/stub | 
+[**CopyContentItem**](LatestMessageApi.md#copycontentitem) | **POST** /api/LatestMessage/{latestMessageId}/copy | 
+[**CreateFullContentItem**](LatestMessageApi.md#createfullcontentitem) | **POST** /api/LatestMessage/full | 
+[**CreateLatestMessage**](LatestMessageApi.md#createlatestmessage) | **POST** /api/LatestMessage | 
+[**CreateLatestMessageStub**](LatestMessageApi.md#createlatestmessagestub) | **POST** /api/LatestMessage/stub | 
+[**CreateResponse**](LatestMessageApi.md#createresponse) | **POST** /api/LatestMessage/{latestMessageId}/response | 
+[**CreateUserDefinedParameter**](LatestMessageApi.md#createuserdefinedparameter) | **POST** /api/LatestMessage/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteLatestMessage**](LatestMessageApi.md#deletelatestmessage) | **DELETE** /api/LatestMessage/{latestMessageId} | 
+[**DeleteResponse**](LatestMessageApi.md#deleteresponse) | **DELETE** /api/LatestMessage/response/{latestMessageResponseId} | 
+[**FindFullById**](LatestMessageApi.md#findfullbyid) | **GET** /api/LatestMessage/full/{id} | 
+[**GetByApplicationFeature**](LatestMessageApi.md#getbyapplicationfeature) | **GET** /api/LatestMessage/byFeature/{applicationFeatureId} | 
+[**GetMediaItemsForLatestMessage**](LatestMessageApi.md#getmediaitemsforlatestmessage) | **GET** /api/LatestMessage/response/{latestMessageResponseId}/media | 
+[**GetMessagesForApplication**](LatestMessageApi.md#getmessagesforapplication) | **GET** /api/LatestMessage/{applicationId} | 
+[**GetMessagesForModule**](LatestMessageApi.md#getmessagesformodule) | **GET** /api/LatestMessage/module/{applicationModuleId} | 
+[**GetWebhooks**](LatestMessageApi.md#getwebhooks) | **GET** /api/LatestMessage/{latestMessageId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](LatestMessageApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/LatestMessage/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveUserDefinedParameter**](LatestMessageApi.md#removeuserdefinedparameter) | **DELETE** /api/LatestMessage/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](LatestMessageApi.md#removewebhook) | **DELETE** /api/LatestMessage/webhook/{latestMessageWebhookId} | 
+[**ToggleLive**](LatestMessageApi.md#togglelive) | **PUT** /api/LatestMessage/{latestMessageId}/isLive | 
+[**ToggleSync**](LatestMessageApi.md#togglesync) | **PUT** /api/LatestMessage/{latestMessageId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](LatestMessageApi.md#updateattachedwebhook) | **PUT** /api/LatestMessage/{latestMessageId}/webhooks/{webhookInstanceId} | 
+[**UpdateFullContentItem**](LatestMessageApi.md#updatefullcontentitem) | **PUT** /api/LatestMessage/{contentItemId}/full | 
+[**UpdateMessage**](LatestMessageApi.md#updatemessage) | **PUT** /api/LatestMessage/{latestMessageId} | 
+[**UpdateResponse**](LatestMessageApi.md#updateresponse) | **PUT** /api/LatestMessage/response/{latestMessageResponseId} | 
+[**UpdateUserDefinedParameter**](LatestMessageApi.md#updateuserdefinedparameter) | **PUT** /api/LatestMessage/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](LatestMessageApi.md#updatewebhookparameter) | **PUT** /api/LatestMessage/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apilatestmessageapplicationidget"></a>
-# **ApiLatestMessageApplicationIdGet**
-> List<LatestMessageModel> ApiLatestMessageApplicationIdGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageApplicationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;LatestMessageModel&gt; result = apiInstance.ApiLatestMessageApplicationIdGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageApplicationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<LatestMessageModel>**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagebyfeatureapplicationfeatureidget"></a>
-# **ApiLatestMessageByFeatureApplicationFeatureIdGet**
-> List<LatestMessageModel> ApiLatestMessageByFeatureApplicationFeatureIdGet (string applicationFeatureId)
+<a name="addaudiofile"></a>
+# **AddAudioFile**
+> LatestMessageResponseModel AddAudioFile (string latestMessageResponseId, string mediaItemId)
 
 
 
@@ -120,7 +54,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageByFeatureApplicationFeatureIdGetExample
+    public class AddAudioFileExample
     {
         public void main()
         {
@@ -134,16 +68,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new LatestMessageApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                List&lt;LatestMessageModel&gt; result = apiInstance.ApiLatestMessageByFeatureApplicationFeatureIdGet(applicationFeatureId);
+                LatestMessageResponseModel result = apiInstance.AddAudioFile(latestMessageResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageByFeatureApplicationFeatureIdGet: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.AddAudioFile: " + e.Message );
             }
         }
     }
@@ -154,747 +89,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<LatestMessageModel>**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagecontentitemidfullput"></a>
-# **ApiLatestMessageContentItemIdFullPut**
-> LatestMessageModel ApiLatestMessageContentItemIdFullPut (string contentItemId, LatestMessageModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageContentItemIdFullPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new LatestMessageModel(); // LatestMessageModel |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageContentItemIdFullPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageContentItemIdFullPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**LatestMessageModel**](LatestMessageModel.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagecontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiLatestMessageContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> LatestMessageModel ApiLatestMessageContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageContentItemIdMoveToFeatureApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagefullidget"></a>
-# **ApiLatestMessageFullIdGet**
-> LatestMessageModel ApiLatestMessageFullIdGet (string id)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageFullIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var id = id_example;  // string | 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageFullIdGet(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageFullIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagefullpost"></a>
-# **ApiLatestMessageFullPost**
-> LatestMessageModel ApiLatestMessageFullPost (LatestMessageModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageFullPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var body = new LatestMessageModel(); // LatestMessageModel |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageFullPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageFullPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**LatestMessageModel**](LatestMessageModel.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidbulkupdateput"></a>
-# **ApiLatestMessageLatestMessageIdBulkUpdatePut**
-> LatestMessageModel ApiLatestMessageLatestMessageIdBulkUpdatePut (string latestMessageId, BulkUpdateLatestMessageRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdBulkUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new BulkUpdateLatestMessageRequest(); // BulkUpdateLatestMessageRequest |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdBulkUpdatePut(latestMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdBulkUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**BulkUpdateLatestMessageRequest**](BulkUpdateLatestMessageRequest.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidbulkupdatestubput"></a>
-# **ApiLatestMessageLatestMessageIdBulkUpdateStubPut**
-> LatestMessageModel ApiLatestMessageLatestMessageIdBulkUpdateStubPut (string latestMessageId, BulkUpdateLatestMessageStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdBulkUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new BulkUpdateLatestMessageStubRequest(); // BulkUpdateLatestMessageStubRequest |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdBulkUpdateStubPut(latestMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdBulkUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**BulkUpdateLatestMessageStubRequest**](BulkUpdateLatestMessageStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidcopypost"></a>
-# **ApiLatestMessageLatestMessageIdCopyPost**
-> LatestMessageModel ApiLatestMessageLatestMessageIdCopyPost (string latestMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdCopyPost(latestMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageiddelete"></a>
-# **ApiLatestMessageLatestMessageIdDelete**
-> LatestMessageModel ApiLatestMessageLatestMessageIdDelete (string latestMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdDelete(latestMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidisliveput"></a>
-# **ApiLatestMessageLatestMessageIdIsLivePut**
-> LatestMessageModel ApiLatestMessageLatestMessageIdIsLivePut (string latestMessageId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdIsLivePut(latestMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidput"></a>
-# **ApiLatestMessageLatestMessageIdPut**
-> LatestMessageModel ApiLatestMessageLatestMessageIdPut (string latestMessageId, UpdateLatestMessageRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new UpdateLatestMessageRequest(); // UpdateLatestMessageRequest |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdPut(latestMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**UpdateLatestMessageRequest**](UpdateLatestMessageRequest.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidresponsepost"></a>
-# **ApiLatestMessageLatestMessageIdResponsePost**
-> LatestMessageResponseModel ApiLatestMessageLatestMessageIdResponsePost (string latestMessageId, NewLatestMessageResponseRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdResponsePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new NewLatestMessageResponseRequest(); // NewLatestMessageResponseRequest |  (optional) 
-
-            try
-            {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageLatestMessageIdResponsePost(latestMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdResponsePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**NewLatestMessageResponseRequest**](NewLatestMessageResponseRequest.md)|  | [optional] 
+ **latestMessageResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
@@ -906,13 +102,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidshouldnotsyncput"></a>
-# **ApiLatestMessageLatestMessageIdShouldNotSyncPut**
-> LatestMessageModel ApiLatestMessageLatestMessageIdShouldNotSyncPut (string latestMessageId, ToggleSyncRequest body = null)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> LatestMessageResponseModel AddLargeImage (string latestMessageResponseId, string mediaItemId)
 
 
 
@@ -926,7 +122,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageLatestMessageIdShouldNotSyncPutExample
+    public class AddLargeImageExample
     {
         public void main()
         {
@@ -940,17 +136,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
 
             try
             {
-                LatestMessageModel result = apiInstance.ApiLatestMessageLatestMessageIdShouldNotSyncPut(latestMessageId, body);
+                LatestMessageResponseModel result = apiInstance.AddLargeImage(latestMessageResponseId, mediaItemId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdShouldNotSyncPut: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.AddLargeImage: " + e.Message );
             }
         }
     }
@@ -961,146 +157,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+ **latestMessageResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
 
 ### Return type
 
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidwebhooksbulkput"></a>
-# **ApiLatestMessageLatestMessageIdWebhooksBulkPut**
-> List<LatestMessageWebhookModel> ApiLatestMessageLatestMessageIdWebhooksBulkPut (string latestMessageId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;LatestMessageWebhookModel&gt; result = apiInstance.ApiLatestMessageLatestMessageIdWebhooksBulkPut(latestMessageId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<LatestMessageWebhookModel>**](LatestMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidwebhooksget"></a>
-# **ApiLatestMessageLatestMessageIdWebhooksGet**
-> List<LatestMessageWebhookModel> ApiLatestMessageLatestMessageIdWebhooksGet (string latestMessageId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageId = latestMessageId_example;  // string | 
-
-            try
-            {
-                List&lt;LatestMessageWebhookModel&gt; result = apiInstance.ApiLatestMessageLatestMessageIdWebhooksGet(latestMessageId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageId** | **string**|  | 
-
-### Return type
-
-[**List<LatestMessageWebhookModel>**](LatestMessageWebhookModel.md)
+[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
 
 ### Authorization
 
@@ -1112,9 +174,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidwebhookswebhookidpost"></a>
-# **ApiLatestMessageLatestMessageIdWebhooksWebhookIdPost**
-> LatestMessageWebhookModel ApiLatestMessageLatestMessageIdWebhooksWebhookIdPost (string latestMessageId, string webhookId, WebhookParametersRequest body = null)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> LatestMessageResponseModel AddSmallImage (string latestMessageResponseId, string mediaItemId)
 
 
 
@@ -1128,7 +190,143 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageLatestMessageIdWebhooksWebhookIdPostExample
+    public class AddSmallImageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                LatestMessageResponseModel result = apiInstance.AddSmallImage(latestMessageResponseId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.AddSmallImage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> LatestMessageResponseModel AddVideoFile (string latestMessageResponseId, string mediaItemId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddVideoFileExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                LatestMessageResponseModel result = apiInstance.AddVideoFile(latestMessageResponseId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.AddVideoFile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageResponseId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> LatestMessageWebhookModel AddWebhook (string latestMessageId, string webhookId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -1148,12 +346,12 @@ namespace Example
 
             try
             {
-                LatestMessageWebhookModel result = apiInstance.ApiLatestMessageLatestMessageIdWebhooksWebhookIdPost(latestMessageId, webhookId, body);
+                LatestMessageWebhookModel result = apiInstance.AddWebhook(latestMessageId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -1182,9 +380,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageidwebhookswebhookinstanceidput"></a>
-# **ApiLatestMessageLatestMessageIdWebhooksWebhookInstanceIdPut**
-> LatestMessageWebhookModel ApiLatestMessageLatestMessageIdWebhooksWebhookInstanceIdPut (string latestMessageId, string webhookInstanceId, WebhookParametersRequest body = null)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<LatestMessageWebhookModel> BulkUpdateAttachedWebhooks (string latestMessageId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -1198,7 +396,1477 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageLatestMessageIdWebhooksWebhookInstanceIdPutExample
+    public class BulkUpdateAttachedWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
+
+            try
+            {
+                List&lt;LatestMessageWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(latestMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.BulkUpdateAttachedWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<LatestMessageWebhookModel>**](LatestMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatelatestmessage"></a>
+# **BulkUpdateLatestMessage**
+> LatestMessageModel BulkUpdateLatestMessage (string latestMessageId, BulkUpdateLatestMessageRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateLatestMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new BulkUpdateLatestMessageRequest(); // BulkUpdateLatestMessageRequest |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.BulkUpdateLatestMessage(latestMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.BulkUpdateLatestMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+ **body** | [**BulkUpdateLatestMessageRequest**](BulkUpdateLatestMessageRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatelatestmessagestub"></a>
+# **BulkUpdateLatestMessageStub**
+> LatestMessageModel BulkUpdateLatestMessageStub (string latestMessageId, BulkUpdateLatestMessageStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateLatestMessageStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new BulkUpdateLatestMessageStubRequest(); // BulkUpdateLatestMessageStubRequest |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.BulkUpdateLatestMessageStub(latestMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.BulkUpdateLatestMessageStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+ **body** | [**BulkUpdateLatestMessageStubRequest**](BulkUpdateLatestMessageStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> LatestMessageModel CopyContentItem (string latestMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.CopyContentItem(latestMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createfullcontentitem"></a>
+# **CreateFullContentItem**
+> LatestMessageModel CreateFullContentItem (LatestMessageModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var body = new LatestMessageModel(); // LatestMessageModel |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.CreateFullContentItem(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.CreateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**LatestMessageModel**](LatestMessageModel.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createlatestmessage"></a>
+# **CreateLatestMessage**
+> LatestMessageModel CreateLatestMessage (NewLatestMessageRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateLatestMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var body = new NewLatestMessageRequest(); // NewLatestMessageRequest |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.CreateLatestMessage(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.CreateLatestMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewLatestMessageRequest**](NewLatestMessageRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createlatestmessagestub"></a>
+# **CreateLatestMessageStub**
+> LatestMessageModel CreateLatestMessageStub (NewLatestMessageStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateLatestMessageStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var body = new NewLatestMessageStubRequest(); // NewLatestMessageStubRequest |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.CreateLatestMessageStub(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.CreateLatestMessageStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewLatestMessageStubRequest**](NewLatestMessageStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createresponse"></a>
+# **CreateResponse**
+> LatestMessageResponseModel CreateResponse (string latestMessageId, NewLatestMessageResponseRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new NewLatestMessageResponseRequest(); // NewLatestMessageResponseRequest |  (optional) 
+
+            try
+            {
+                LatestMessageResponseModel result = apiInstance.CreateResponse(latestMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.CreateResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+ **body** | [**NewLatestMessageResponseRequest**](NewLatestMessageResponseRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.CreateUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deletelatestmessage"></a>
+# **DeleteLatestMessage**
+> LatestMessageModel DeleteLatestMessage (string latestMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteLatestMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.DeleteLatestMessage(latestMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.DeleteLatestMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deleteresponse"></a>
+# **DeleteResponse**
+> LatestMessageResponseModel DeleteResponse (string latestMessageResponseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteResponseExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+
+            try
+            {
+                LatestMessageResponseModel result = apiInstance.DeleteResponse(latestMessageResponseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.DeleteResponse: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageResponseId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> LatestMessageModel FindFullById (string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FindFullByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var id = id_example;  // string | 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.FindFullById(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.FindFullById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**|  | 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<LatestMessageModel> GetByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;LatestMessageModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.GetByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<LatestMessageModel>**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmediaitemsforlatestmessage"></a>
+# **GetMediaItemsForLatestMessage**
+> List<MediaItemModel> GetMediaItemsForLatestMessage (string latestMessageResponseId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMediaItemsForLatestMessageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+
+            try
+            {
+                List&lt;MediaItemModel&gt; result = apiInstance.GetMediaItemsForLatestMessage(latestMessageResponseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.GetMediaItemsForLatestMessage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageResponseId** | **string**|  | 
+
+### Return type
+
+[**List<MediaItemModel>**](MediaItemModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmessagesforapplication"></a>
+# **GetMessagesForApplication**
+> List<LatestMessageModel> GetMessagesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMessagesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;LatestMessageModel&gt; result = apiInstance.GetMessagesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.GetMessagesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<LatestMessageModel>**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmessagesformodule"></a>
+# **GetMessagesForModule**
+> List<LatestMessageModel> GetMessagesForModule (string applicationModuleId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetMessagesForModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var applicationModuleId = applicationModuleId_example;  // string | 
+
+            try
+            {
+                List&lt;LatestMessageModel&gt; result = apiInstance.GetMessagesForModule(applicationModuleId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.GetMessagesForModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationModuleId** | **string**|  | 
+
+### Return type
+
+[**List<LatestMessageModel>**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<LatestMessageWebhookModel> GetWebhooks (string latestMessageId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+
+            try
+            {
+                List&lt;LatestMessageWebhookModel&gt; result = apiInstance.GetWebhooks(latestMessageId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+
+### Return type
+
+[**List<LatestMessageWebhookModel>**](LatestMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> LatestMessageModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.MoveContentItemToApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var parameterName = parameterName_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.RemoveUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **parameterName** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> LatestMessageWebhookModel RemoveWebhook (string latestMessageWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageWebhookId = latestMessageWebhookId_example;  // string | 
+
+            try
+            {
+                LatestMessageWebhookModel result = apiInstance.RemoveWebhook(latestMessageWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageWebhookId** | **string**|  | 
+
+### Return type
+
+[**LatestMessageWebhookModel**](LatestMessageWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglelive"></a>
+# **ToggleLive**
+> LatestMessageModel ToggleLive (string latestMessageId, ToggleLiveRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.ToggleLive(latestMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.ToggleLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> LatestMessageModel ToggleSync (string latestMessageId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new LatestMessageApi();
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                LatestMessageModel result = apiInstance.ToggleSync(latestMessageId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LatestMessageApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **latestMessageId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**LatestMessageModel**](LatestMessageModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> LatestMessageWebhookModel UpdateAttachedWebhook (string latestMessageId, string webhookInstanceId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
     {
         public void main()
         {
@@ -1218,12 +1886,12 @@ namespace Example
 
             try
             {
-                LatestMessageWebhookModel result = apiInstance.ApiLatestMessageLatestMessageIdWebhooksWebhookInstanceIdPut(latestMessageId, webhookInstanceId, body);
+                LatestMessageWebhookModel result = apiInstance.UpdateAttachedWebhook(latestMessageId, webhookInstanceId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageIdWebhooksWebhookInstanceIdPut: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.UpdateAttachedWebhook: " + e.Message );
             }
         }
     }
@@ -1252,9 +1920,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageresponseidaddaudiofilemediaitemidput"></a>
-# **ApiLatestMessageLatestMessageResponseIdAddAudioFileMediaItemIdPut**
-> LatestMessageResponseModel ApiLatestMessageLatestMessageResponseIdAddAudioFileMediaItemIdPut (string latestMessageResponseId, string mediaItemId)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> LatestMessageModel UpdateFullContentItem (string contentItemId, LatestMessageModel body = null)
 
 
 
@@ -1268,7 +1936,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageLatestMessageResponseIdAddAudioFileMediaItemIdPutExample
+    public class UpdateFullContentItemExample
     {
         public void main()
         {
@@ -1282,17 +1950,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new LatestMessageApi();
-            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new LatestMessageModel(); // LatestMessageModel |  (optional) 
 
             try
             {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageLatestMessageResponseIdAddAudioFileMediaItemIdPut(latestMessageResponseId, mediaItemId);
+                LatestMessageModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageResponseIdAddAudioFileMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.UpdateFullContentItem: " + e.Message );
             }
         }
     }
@@ -1303,344 +1971,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **latestMessageResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageresponseidaddlargeimagemediaitemidput"></a>
-# **ApiLatestMessageLatestMessageResponseIdAddLargeImageMediaItemIdPut**
-> LatestMessageResponseModel ApiLatestMessageLatestMessageResponseIdAddLargeImageMediaItemIdPut (string latestMessageResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageResponseIdAddLargeImageMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageLatestMessageResponseIdAddLargeImageMediaItemIdPut(latestMessageResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageResponseIdAddLargeImageMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageresponseidaddsmallimagemediaitemidput"></a>
-# **ApiLatestMessageLatestMessageResponseIdAddSmallImageMediaItemIdPut**
-> LatestMessageResponseModel ApiLatestMessageLatestMessageResponseIdAddSmallImageMediaItemIdPut (string latestMessageResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageResponseIdAddSmallImageMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageLatestMessageResponseIdAddSmallImageMediaItemIdPut(latestMessageResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageResponseIdAddSmallImageMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagelatestmessageresponseidaddvideofilemediaitemidput"></a>
-# **ApiLatestMessageLatestMessageResponseIdAddVideoFileMediaItemIdPut**
-> LatestMessageResponseModel ApiLatestMessageLatestMessageResponseIdAddVideoFileMediaItemIdPut (string latestMessageResponseId, string mediaItemId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageLatestMessageResponseIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageLatestMessageResponseIdAddVideoFileMediaItemIdPut(latestMessageResponseId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageLatestMessageResponseIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageResponseId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagemoduleapplicationmoduleidget"></a>
-# **ApiLatestMessageModuleApplicationModuleIdGet**
-> List<LatestMessageModel> ApiLatestMessageModuleApplicationModuleIdGet (string applicationModuleId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageModuleApplicationModuleIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var applicationModuleId = applicationModuleId_example;  // string | 
-
-            try
-            {
-                List&lt;LatestMessageModel&gt; result = apiInstance.ApiLatestMessageModuleApplicationModuleIdGet(applicationModuleId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageModuleApplicationModuleIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationModuleId** | **string**|  | 
-
-### Return type
-
-[**List<LatestMessageModel>**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagepost"></a>
-# **ApiLatestMessagePost**
-> LatestMessageModel ApiLatestMessagePost (NewLatestMessageRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessagePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var body = new NewLatestMessageRequest(); // NewLatestMessageRequest |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessagePost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessagePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewLatestMessageRequest**](NewLatestMessageRequest.md)|  | [optional] 
+ **contentItemId** | **string**|  | 
+ **body** | [**LatestMessageModel**](LatestMessageModel.md)|  | [optional] 
 
 ### Return type
 
@@ -1656,9 +1988,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessageresponselatestmessageresponseiddelete"></a>
-# **ApiLatestMessageResponseLatestMessageResponseIdDelete**
-> LatestMessageResponseModel ApiLatestMessageResponseLatestMessageResponseIdDelete (string latestMessageResponseId)
+<a name="updatemessage"></a>
+# **UpdateMessage**
+> LatestMessageModel UpdateMessage (string latestMessageId, UpdateLatestMessageRequest body = null)
 
 
 
@@ -1672,7 +2004,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageResponseLatestMessageResponseIdDeleteExample
+    public class UpdateMessageExample
     {
         public void main()
         {
@@ -1686,16 +2018,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new LatestMessageApi();
-            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
+            var latestMessageId = latestMessageId_example;  // string | 
+            var body = new UpdateLatestMessageRequest(); // UpdateLatestMessageRequest |  (optional) 
 
             try
             {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageResponseLatestMessageResponseIdDelete(latestMessageResponseId);
+                LatestMessageModel result = apiInstance.UpdateMessage(latestMessageId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageResponseLatestMessageResponseIdDelete: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.UpdateMessage: " + e.Message );
             }
         }
     }
@@ -1706,11 +2039,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **latestMessageResponseId** | **string**|  | 
+ **latestMessageId** | **string**|  | 
+ **body** | [**UpdateLatestMessageRequest**](UpdateLatestMessageRequest.md)|  | [optional] 
 
 ### Return type
 
-[**LatestMessageResponseModel**](LatestMessageResponseModel.md)
+[**LatestMessageModel**](LatestMessageModel.md)
 
 ### Authorization
 
@@ -1718,13 +2052,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessageresponselatestmessageresponseidmediaget"></a>
-# **ApiLatestMessageResponseLatestMessageResponseIdMediaGet**
-> List<MediaItemModel> ApiLatestMessageResponseLatestMessageResponseIdMediaGet (string latestMessageResponseId)
+<a name="updateresponse"></a>
+# **UpdateResponse**
+> LatestMessageResponseModel UpdateResponse (string latestMessageResponseId, UpdateLatestMessageResponseRequest body = null)
 
 
 
@@ -1738,73 +2072,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageResponseLatestMessageResponseIdMediaGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageResponseId = latestMessageResponseId_example;  // string | 
-
-            try
-            {
-                List&lt;MediaItemModel&gt; result = apiInstance.ApiLatestMessageResponseLatestMessageResponseIdMediaGet(latestMessageResponseId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageResponseLatestMessageResponseIdMediaGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageResponseId** | **string**|  | 
-
-### Return type
-
-[**List<MediaItemModel>**](MediaItemModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessageresponselatestmessageresponseidput"></a>
-# **ApiLatestMessageResponseLatestMessageResponseIdPut**
-> LatestMessageResponseModel ApiLatestMessageResponseLatestMessageResponseIdPut (string latestMessageResponseId, UpdateLatestMessageResponseRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageResponseLatestMessageResponseIdPutExample
+    public class UpdateResponseExample
     {
         public void main()
         {
@@ -1823,12 +2091,12 @@ namespace Example
 
             try
             {
-                LatestMessageResponseModel result = apiInstance.ApiLatestMessageResponseLatestMessageResponseIdPut(latestMessageResponseId, body);
+                LatestMessageResponseModel result = apiInstance.UpdateResponse(latestMessageResponseId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageResponseLatestMessageResponseIdPut: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.UpdateResponse: " + e.Message );
             }
         }
     }
@@ -1856,9 +2124,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagestubpost"></a>
-# **ApiLatestMessageStubPost**
-> LatestMessageModel ApiLatestMessageStubPost (NewLatestMessageStubRequest body = null)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
 
 
 
@@ -1872,209 +2140,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageStubPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var body = new NewLatestMessageStubRequest(); // NewLatestMessageStubRequest |  (optional) 
-
-            try
-            {
-                LatestMessageModel result = apiInstance.ApiLatestMessageStubPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageStubPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewLatestMessageStubRequest**](NewLatestMessageStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**LatestMessageModel**](LatestMessageModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagewebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiLatestMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiLatestMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var parameterName = parameterName_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiLatestMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **parameterName** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagewebhookinstancewebhookiduserparameterspost"></a>
-# **ApiLatestMessageWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiLatestMessageWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageWebhookInstanceWebhookIdUserParametersPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
-
-            try
-            {
-                bool? result = apiInstance.ApiLatestMessageWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagewebhookinstancewebhookiduserparametersput"></a>
-# **ApiLatestMessageWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiLatestMessageWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageWebhookInstanceWebhookIdUserParametersPutExample
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -2093,12 +2159,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiLatestMessageWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -2126,9 +2192,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagewebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiLatestMessageWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiLatestMessageWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -2142,7 +2208,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLatestMessageWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -2161,12 +2227,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiLatestMessageWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling LatestMessageApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }
@@ -2191,72 +2257,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilatestmessagewebhooklatestmessagewebhookiddelete"></a>
-# **ApiLatestMessageWebhookLatestMessageWebhookIdDelete**
-> LatestMessageWebhookModel ApiLatestMessageWebhookLatestMessageWebhookIdDelete (string latestMessageWebhookId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiLatestMessageWebhookLatestMessageWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new LatestMessageApi();
-            var latestMessageWebhookId = latestMessageWebhookId_example;  // string | 
-
-            try
-            {
-                LatestMessageWebhookModel result = apiInstance.ApiLatestMessageWebhookLatestMessageWebhookIdDelete(latestMessageWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling LatestMessageApi.ApiLatestMessageWebhookLatestMessageWebhookIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **latestMessageWebhookId** | **string**|  | 
-
-### Return type
-
-[**LatestMessageWebhookModel**](LatestMessageWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -30,13 +30,13 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum TemplateType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum ContentTemplate for value: ContentTemplate
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "ContentTemplate")]
+        ContentTemplate = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum Integration for value: Integration
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2    }
+        [EnumMember(Value = "Integration")]
+        Integration = 2    }
 }

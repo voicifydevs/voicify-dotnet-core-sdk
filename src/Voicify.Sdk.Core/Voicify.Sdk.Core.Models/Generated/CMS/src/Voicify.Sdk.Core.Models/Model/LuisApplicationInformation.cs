@@ -32,30 +32,18 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LuisApplicationInformation" /> class.
         /// </summary>
-        /// <param name="id">id.</param>
-        /// <param name="name">name.</param>
         /// <param name="endpoints">endpoints.</param>
         /// <param name="activeVersion">activeVersion.</param>
-        public LuisApplicationInformation(string id = default(string), string name = default(string), LuisAppEndpointsContainer endpoints = default(LuisAppEndpointsContainer), string activeVersion = default(string))
+        /// <param name="id">id.</param>
+        /// <param name="name">name.</param>
+        public LuisApplicationInformation(LuisAppEndpointsContainer endpoints = default(LuisAppEndpointsContainer), string activeVersion = default(string), string id = default(string), string name = default(string))
         {
-            this.Id = id;
-            this.Name = name;
             this.Endpoints = endpoints;
             this.ActiveVersion = activeVersion;
+            this.Id = id;
+            this.Name = name;
         }
         
-        /// <summary>
-        /// Gets or Sets Id
-        /// </summary>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public string Id { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Name
-        /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
         /// <summary>
         /// Gets or Sets Endpoints
         /// </summary>
@@ -69,6 +57,18 @@ namespace Voicify.Sdk.Core.Models.Model
         public string ActiveVersion { get; set; }
 
         /// <summary>
+        /// Gets or Sets Id
+        /// </summary>
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Name
+        /// </summary>
+        [DataMember(Name="name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -76,10 +76,10 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class LuisApplicationInformation {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Endpoints: ").Append(Endpoints).Append("\n");
             sb.Append("  ActiveVersion: ").Append(ActiveVersion).Append("\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -115,16 +115,6 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
-                    this.Id == input.Id ||
-                    (this.Id != null &&
-                    this.Id.Equals(input.Id))
-                ) && 
-                (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
-                ) && 
-                (
                     this.Endpoints == input.Endpoints ||
                     (this.Endpoints != null &&
                     this.Endpoints.Equals(input.Endpoints))
@@ -133,6 +123,16 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ActiveVersion == input.ActiveVersion ||
                     (this.ActiveVersion != null &&
                     this.ActiveVersion.Equals(input.ActiveVersion))
+                ) && 
+                (
+                    this.Id == input.Id ||
+                    (this.Id != null &&
+                    this.Id.Equals(input.Id))
+                ) && 
+                (
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
                 );
         }
 
@@ -145,14 +145,14 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Id != null)
-                    hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.Name != null)
-                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.Endpoints != null)
                     hashCode = hashCode * 59 + this.Endpoints.GetHashCode();
                 if (this.ActiveVersion != null)
                     hashCode = hashCode * 59 + this.ActiveVersion.GetHashCode();
+                if (this.Id != null)
+                    hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.Name != null)
+                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 return hashCode;
             }
         }

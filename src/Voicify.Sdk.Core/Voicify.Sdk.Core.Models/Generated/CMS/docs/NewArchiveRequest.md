@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **ArchiveType** | **ArchiveType** |  | [optional] 
 **Name** | **string** |  | [optional] 
 **BulkContentRequest** | [**BulkContentRequest**](BulkContentRequest.md) |  | [optional] 
+**BulkWebhookRequest** | [**BulkWebhookRequest**](BulkWebhookRequest.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

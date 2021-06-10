@@ -32,6 +32,9 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChildContentContainerModel" /> class.
         /// </summary>
+        /// <param name="id">id.</param>
+        /// <param name="isLimitedToChildren">isLimitedToChildren.</param>
+        /// <param name="applicationId">applicationId.</param>
         /// <param name="welcomeMessages">welcomeMessages.</param>
         /// <param name="helpMessages">helpMessages.</param>
         /// <param name="fallbackMessages">fallbackMessages.</param>
@@ -44,11 +47,11 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="numberRanges">numberRanges.</param>
         /// <param name="customRequests">customRequests.</param>
         /// <param name="contentItems">contentItems.</param>
-        /// <param name="id">id.</param>
-        /// <param name="isLimitedToChildren">isLimitedToChildren.</param>
-        /// <param name="applicationId">applicationId.</param>
-        public ChildContentContainerModel(List<WelcomeMessageModel> welcomeMessages = default(List<WelcomeMessageModel>), List<HelpMessageModel> helpMessages = default(List<HelpMessageModel>), List<FallbackMessageModel> fallbackMessages = default(List<FallbackMessageModel>), List<ExitMessageModel> exitMessages = default(List<ExitMessageModel>), List<QuestionAnswerModel> questionAnswers = default(List<QuestionAnswerModel>), List<LatestMessageModel> latestMessages = default(List<LatestMessageModel>), List<EventItemModel> eventItems = default(List<EventItemModel>), List<RecipeModel> recipes = default(List<RecipeModel>), List<SimpleChoiceModel> simpleChoices = default(List<SimpleChoiceModel>), List<NumberRangeModel> numberRanges = default(List<NumberRangeModel>), List<CustomRequestModel> customRequests = default(List<CustomRequestModel>), List<GenericContentModel> contentItems = default(List<GenericContentModel>), string id = default(string), bool? isLimitedToChildren = default(bool?), string applicationId = default(string))
+        public ChildContentContainerModel(string id = default(string), bool? isLimitedToChildren = default(bool?), string applicationId = default(string), List<WelcomeMessageModel> welcomeMessages = default(List<WelcomeMessageModel>), List<HelpMessageModel> helpMessages = default(List<HelpMessageModel>), List<FallbackMessageModel> fallbackMessages = default(List<FallbackMessageModel>), List<ExitMessageModel> exitMessages = default(List<ExitMessageModel>), List<QuestionAnswerModel> questionAnswers = default(List<QuestionAnswerModel>), List<LatestMessageModel> latestMessages = default(List<LatestMessageModel>), List<EventItemModel> eventItems = default(List<EventItemModel>), List<RecipeModel> recipes = default(List<RecipeModel>), List<SimpleChoiceModel> simpleChoices = default(List<SimpleChoiceModel>), List<NumberRangeModel> numberRanges = default(List<NumberRangeModel>), List<CustomRequestModel> customRequests = default(List<CustomRequestModel>), List<GenericContentModel> contentItems = default(List<GenericContentModel>))
         {
+            this.Id = id;
+            this.IsLimitedToChildren = isLimitedToChildren;
+            this.ApplicationId = applicationId;
             this.WelcomeMessages = welcomeMessages;
             this.HelpMessages = helpMessages;
             this.FallbackMessages = fallbackMessages;
@@ -61,11 +64,26 @@ namespace Voicify.Sdk.Core.Models.Model
             this.NumberRanges = numberRanges;
             this.CustomRequests = customRequests;
             this.ContentItems = contentItems;
-            this.Id = id;
-            this.IsLimitedToChildren = isLimitedToChildren;
-            this.ApplicationId = applicationId;
         }
         
+        /// <summary>
+        /// Gets or Sets Id
+        /// </summary>
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsLimitedToChildren
+        /// </summary>
+        [DataMember(Name="isLimitedToChildren", EmitDefaultValue=false)]
+        public bool? IsLimitedToChildren { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationId
+        /// </summary>
+        [DataMember(Name="applicationId", EmitDefaultValue=false)]
+        public string ApplicationId { get; set; }
+
         /// <summary>
         /// Gets or Sets WelcomeMessages
         /// </summary>
@@ -139,24 +157,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<GenericContentModel> ContentItems { get; set; }
 
         /// <summary>
-        /// Gets or Sets Id
-        /// </summary>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public string Id { get; set; }
-
-        /// <summary>
-        /// Gets or Sets IsLimitedToChildren
-        /// </summary>
-        [DataMember(Name="isLimitedToChildren", EmitDefaultValue=false)]
-        public bool? IsLimitedToChildren { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationId
-        /// </summary>
-        [DataMember(Name="applicationId", EmitDefaultValue=false)]
-        public string ApplicationId { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -164,6 +164,9 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ChildContentContainerModel {\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  IsLimitedToChildren: ").Append(IsLimitedToChildren).Append("\n");
+            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  WelcomeMessages: ").Append(WelcomeMessages).Append("\n");
             sb.Append("  HelpMessages: ").Append(HelpMessages).Append("\n");
             sb.Append("  FallbackMessages: ").Append(FallbackMessages).Append("\n");
@@ -176,9 +179,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  NumberRanges: ").Append(NumberRanges).Append("\n");
             sb.Append("  CustomRequests: ").Append(CustomRequests).Append("\n");
             sb.Append("  ContentItems: ").Append(ContentItems).Append("\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  IsLimitedToChildren: ").Append(IsLimitedToChildren).Append("\n");
-            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -213,6 +213,21 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Id == input.Id ||
+                    (this.Id != null &&
+                    this.Id.Equals(input.Id))
+                ) && 
+                (
+                    this.IsLimitedToChildren == input.IsLimitedToChildren ||
+                    (this.IsLimitedToChildren != null &&
+                    this.IsLimitedToChildren.Equals(input.IsLimitedToChildren))
+                ) && 
+                (
+                    this.ApplicationId == input.ApplicationId ||
+                    (this.ApplicationId != null &&
+                    this.ApplicationId.Equals(input.ApplicationId))
+                ) && 
                 (
                     this.WelcomeMessages == input.WelcomeMessages ||
                     this.WelcomeMessages != null &&
@@ -284,21 +299,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ContentItems != null &&
                     input.ContentItems != null &&
                     this.ContentItems.SequenceEqual(input.ContentItems)
-                ) && 
-                (
-                    this.Id == input.Id ||
-                    (this.Id != null &&
-                    this.Id.Equals(input.Id))
-                ) && 
-                (
-                    this.IsLimitedToChildren == input.IsLimitedToChildren ||
-                    (this.IsLimitedToChildren != null &&
-                    this.IsLimitedToChildren.Equals(input.IsLimitedToChildren))
-                ) && 
-                (
-                    this.ApplicationId == input.ApplicationId ||
-                    (this.ApplicationId != null &&
-                    this.ApplicationId.Equals(input.ApplicationId))
                 );
         }
 
@@ -311,6 +311,12 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Id != null)
+                    hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.IsLimitedToChildren != null)
+                    hashCode = hashCode * 59 + this.IsLimitedToChildren.GetHashCode();
+                if (this.ApplicationId != null)
+                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.WelcomeMessages != null)
                     hashCode = hashCode * 59 + this.WelcomeMessages.GetHashCode();
                 if (this.HelpMessages != null)
@@ -335,12 +341,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.CustomRequests.GetHashCode();
                 if (this.ContentItems != null)
                     hashCode = hashCode * 59 + this.ContentItems.GetHashCode();
-                if (this.Id != null)
-                    hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.IsLimitedToChildren != null)
-                    hashCode = hashCode * 59 + this.IsLimitedToChildren.GetHashCode();
-                if (this.ApplicationId != null)
-                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 return hashCode;
             }
         }

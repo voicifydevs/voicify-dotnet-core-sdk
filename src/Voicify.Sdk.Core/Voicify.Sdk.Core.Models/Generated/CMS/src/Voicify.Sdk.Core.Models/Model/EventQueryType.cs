@@ -30,23 +30,23 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum EventQueryType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum General for value: General
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "General")]
+        General = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum Location for value: Location
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "Location")]
+        Location = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum StartDate for value: StartDate
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "StartDate")]
+        StartDate = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum Status for value: Status
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4    }
+        [EnumMember(Value = "Status")]
+        Status = 4    }
 }

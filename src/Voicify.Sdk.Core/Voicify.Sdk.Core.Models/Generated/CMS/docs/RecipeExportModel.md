@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Description** | **string** |  | [optional] 
 **MealType** | **string** |  | [optional] 
 **Servings** | **string** |  | [optional] 
-**TotalTime** | [**TimeSpan**](TimeSpan.md) |  | [optional] 
+**TotalTime** | **string** |  | [optional] 
 **Calories** | **int?** |  | [optional] 
 **CreatedDate** | **DateTime?** |  | [optional] 
 **ModifiedDate** | **DateTime?** |  | [optional] 
@@ -39,7 +39,6 @@ Name | Type | Description | Notes
 **ShouldNotSync** | **bool?** |  | [optional] 
 **WebhookChainingType** | **WebhookChainingType** |  | [optional] 
 **AppliedApplicationTemplateFormId** | **string** |  | [optional] 
-**SharedReferences** | [**SharedReferencesExportModel**](SharedReferencesExportModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

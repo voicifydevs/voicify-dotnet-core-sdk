@@ -41,12 +41,14 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="archiveType">archiveType.</param>
         /// <param name="name">name.</param>
         /// <param name="bulkContentRequest">bulkContentRequest.</param>
-        public NewArchiveRequest(string applicationId = default(string), ArchiveType? archiveType = default(ArchiveType?), string name = default(string), BulkContentRequest bulkContentRequest = default(BulkContentRequest))
+        /// <param name="bulkWebhookRequest">bulkWebhookRequest.</param>
+        public NewArchiveRequest(string applicationId = default(string), ArchiveType? archiveType = default(ArchiveType?), string name = default(string), BulkContentRequest bulkContentRequest = default(BulkContentRequest), BulkWebhookRequest bulkWebhookRequest = default(BulkWebhookRequest))
         {
             this.ApplicationId = applicationId;
             this.ArchiveType = archiveType;
             this.Name = name;
             this.BulkContentRequest = bulkContentRequest;
+            this.BulkWebhookRequest = bulkWebhookRequest;
         }
         
         /// <summary>
@@ -69,6 +71,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public BulkContentRequest BulkContentRequest { get; set; }
 
         /// <summary>
+        /// Gets or Sets BulkWebhookRequest
+        /// </summary>
+        [DataMember(Name="bulkWebhookRequest", EmitDefaultValue=false)]
+        public BulkWebhookRequest BulkWebhookRequest { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -80,6 +88,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  ArchiveType: ").Append(ArchiveType).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  BulkContentRequest: ").Append(BulkContentRequest).Append("\n");
+            sb.Append("  BulkWebhookRequest: ").Append(BulkWebhookRequest).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -133,6 +142,11 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.BulkContentRequest == input.BulkContentRequest ||
                     (this.BulkContentRequest != null &&
                     this.BulkContentRequest.Equals(input.BulkContentRequest))
+                ) && 
+                (
+                    this.BulkWebhookRequest == input.BulkWebhookRequest ||
+                    (this.BulkWebhookRequest != null &&
+                    this.BulkWebhookRequest.Equals(input.BulkWebhookRequest))
                 );
         }
 
@@ -153,6 +167,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.BulkContentRequest != null)
                     hashCode = hashCode * 59 + this.BulkContentRequest.GetHashCode();
+                if (this.BulkWebhookRequest != null)
+                    hashCode = hashCode * 59 + this.BulkWebhookRequest.GetHashCode();
                 return hashCode;
             }
         }

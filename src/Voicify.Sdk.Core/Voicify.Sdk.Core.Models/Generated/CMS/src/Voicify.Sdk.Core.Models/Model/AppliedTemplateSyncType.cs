@@ -30,33 +30,33 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum AppliedTemplateSyncType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Unknown for value: Unknown
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum ApplyTemplateToApp for value: ApplyTemplateToApp
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "ApplyTemplateToApp")]
+        ApplyTemplateToApp = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum ApplyTemplateToAppDynamic for value: ApplyTemplateToAppDynamic
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "ApplyTemplateToAppDynamic")]
+        ApplyTemplateToAppDynamic = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum UpdateAppliedTemplate for value: UpdateAppliedTemplate
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4,
+        [EnumMember(Value = "UpdateAppliedTemplate")]
+        UpdateAppliedTemplate = 4,
         /// <summary>
-        /// Enum NUMBER_4 for value: 4
+        /// Enum UpdateAppliedTemplateDynamic for value: UpdateAppliedTemplateDynamic
         /// </summary>
-        [EnumMember(Value = "4")]
-        NUMBER_4 = 5,
+        [EnumMember(Value = "UpdateAppliedTemplateDynamic")]
+        UpdateAppliedTemplateDynamic = 5,
         /// <summary>
-        /// Enum NUMBER_5 for value: 5
+        /// Enum RemoveAppliedTemplate for value: RemoveAppliedTemplate
         /// </summary>
-        [EnumMember(Value = "5")]
-        NUMBER_5 = 6    }
+        [EnumMember(Value = "RemoveAppliedTemplate")]
+        RemoveAppliedTemplate = 6    }
 }

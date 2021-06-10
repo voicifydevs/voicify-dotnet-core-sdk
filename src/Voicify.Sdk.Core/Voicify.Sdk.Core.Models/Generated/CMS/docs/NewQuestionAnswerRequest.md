@@ -3,6 +3,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Questions** | [**List&lt;CreateQuestionRequest&gt;**](CreateQuestionRequest.md) |  | 
+**Answers** | [**List&lt;CreateAnswerRequest&gt;**](CreateAnswerRequest.md) |  | 
 **Title** | **string** |  | 
 **ApplicationId** | **string** |  | 
 **ApplicationFeatureId** | **string** |  | 
@@ -17,8 +19,6 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
-**Questions** | [**List&lt;CreateQuestionRequest&gt;**](CreateQuestionRequest.md) |  | 
-**Answers** | [**List&lt;CreateAnswerRequest&gt;**](CreateAnswerRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -39,7 +39,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="invocationPhrase">invocationPhrase.</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="applicationInformationItems">applicationInformationItems.</param>
-        public UpdateApplicationRequest(string name = default(string), string shortDescription = default(string), string description = default(string), string keywords = default(string), string invocationPhrase = default(string), string imageItemId = default(string), List<UpdateApplicationInformationByLanguageRequest> applicationInformationItems = default(List<UpdateApplicationInformationByLanguageRequest>))
+        /// <param name="metadata">metadata.</param>
+        public UpdateApplicationRequest(string name = default(string), string shortDescription = default(string), string description = default(string), string keywords = default(string), string invocationPhrase = default(string), string imageItemId = default(string), List<UpdateApplicationInformationByLanguageRequest> applicationInformationItems = default(List<UpdateApplicationInformationByLanguageRequest>), Dictionary<string, object> metadata = default(Dictionary<string, object>))
         {
             this.Name = name;
             this.ShortDescription = shortDescription;
@@ -48,6 +49,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.InvocationPhrase = invocationPhrase;
             this.ImageItemId = imageItemId;
             this.ApplicationInformationItems = applicationInformationItems;
+            this.Metadata = metadata;
         }
         
         /// <summary>
@@ -93,6 +95,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<UpdateApplicationInformationByLanguageRequest> ApplicationInformationItems { get; set; }
 
         /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public Dictionary<string, object> Metadata { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -107,6 +115,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  InvocationPhrase: ").Append(InvocationPhrase).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  ApplicationInformationItems: ").Append(ApplicationInformationItems).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -176,6 +185,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ApplicationInformationItems != null &&
                     input.ApplicationInformationItems != null &&
                     this.ApplicationInformationItems.SequenceEqual(input.ApplicationInformationItems)
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    this.Metadata != null &&
+                    input.Metadata != null &&
+                    this.Metadata.SequenceEqual(input.Metadata)
                 );
         }
 
@@ -202,6 +217,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
                 if (this.ApplicationInformationItems != null)
                     hashCode = hashCode * 59 + this.ApplicationInformationItems.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 return hashCode;
             }
         }

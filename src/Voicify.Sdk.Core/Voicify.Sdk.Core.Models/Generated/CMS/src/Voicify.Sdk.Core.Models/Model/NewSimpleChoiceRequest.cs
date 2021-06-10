@@ -37,6 +37,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewSimpleChoiceRequest" /> class.
         /// </summary>
+        /// <param name="responses">responses (required).</param>
+        /// <param name="choiceType">choiceType (required).</param>
         /// <param name="applicationId">applicationId (required).</param>
         /// <param name="applicationFeatureId">applicationFeatureId (required).</param>
         /// <param name="title">title (required).</param>
@@ -50,10 +52,26 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTextOverride">displayTextOverride.</param>
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="languageIds">languageIds.</param>
-        /// <param name="responses">responses (required).</param>
-        /// <param name="choiceType">choiceType (required).</param>
-        public NewSimpleChoiceRequest(string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>), List<NewSimpleChoiceResponseRequest> responses = default(List<NewSimpleChoiceResponseRequest>), SimpleChoiceType choiceType = default(SimpleChoiceType))
+        public NewSimpleChoiceRequest(List<NewSimpleChoiceResponseRequest> responses = default(List<NewSimpleChoiceResponseRequest>), SimpleChoiceType choiceType = default(SimpleChoiceType), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), List<string> languageIds = default(List<string>))
         {
+            // to ensure "responses" is required (not null)
+            if (responses == null)
+            {
+                throw new InvalidDataException("responses is a required property for NewSimpleChoiceRequest and cannot be null");
+            }
+            else
+            {
+                this.Responses = responses;
+            }
+            // to ensure "choiceType" is required (not null)
+            if (choiceType == null)
+            {
+                throw new InvalidDataException("choiceType is a required property for NewSimpleChoiceRequest and cannot be null");
+            }
+            else
+            {
+                this.ChoiceType = choiceType;
+            }
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)
             {
@@ -81,24 +99,6 @@ namespace Voicify.Sdk.Core.Models.Model
             {
                 this.Title = title;
             }
-            // to ensure "responses" is required (not null)
-            if (responses == null)
-            {
-                throw new InvalidDataException("responses is a required property for NewSimpleChoiceRequest and cannot be null");
-            }
-            else
-            {
-                this.Responses = responses;
-            }
-            // to ensure "choiceType" is required (not null)
-            if (choiceType == null)
-            {
-                throw new InvalidDataException("choiceType is a required property for NewSimpleChoiceRequest and cannot be null");
-            }
-            else
-            {
-                this.ChoiceType = choiceType;
-            }
             this.ImageItemId = imageItemId;
             this.BackgroundImageItemId = backgroundImageItemId;
             this.AudioItemId = audioItemId;
@@ -111,6 +111,13 @@ namespace Voicify.Sdk.Core.Models.Model
             this.LanguageIds = languageIds;
         }
         
+        /// <summary>
+        /// Gets or Sets Responses
+        /// </summary>
+        [DataMember(Name="responses", EmitDefaultValue=false)]
+        public List<NewSimpleChoiceResponseRequest> Responses { get; set; }
+
+
         /// <summary>
         /// Gets or Sets ApplicationId
         /// </summary>
@@ -190,13 +197,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<string> LanguageIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets Responses
-        /// </summary>
-        [DataMember(Name="responses", EmitDefaultValue=false)]
-        public List<NewSimpleChoiceResponseRequest> Responses { get; set; }
-
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -204,6 +204,8 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class NewSimpleChoiceRequest {\n");
+            sb.Append("  Responses: ").Append(Responses).Append("\n");
+            sb.Append("  ChoiceType: ").Append(ChoiceType).Append("\n");
             sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ApplicationFeatureId: ").Append(ApplicationFeatureId).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
@@ -217,8 +219,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTextOverride: ").Append(DisplayTextOverride).Append("\n");
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  LanguageIds: ").Append(LanguageIds).Append("\n");
-            sb.Append("  Responses: ").Append(Responses).Append("\n");
-            sb.Append("  ChoiceType: ").Append(ChoiceType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -253,6 +253,17 @@ namespace Voicify.Sdk.Core.Models.Model
                 return false;
 
             return 
+                (
+                    this.Responses == input.Responses ||
+                    this.Responses != null &&
+                    input.Responses != null &&
+                    this.Responses.SequenceEqual(input.Responses)
+                ) && 
+                (
+                    this.ChoiceType == input.ChoiceType ||
+                    (this.ChoiceType != null &&
+                    this.ChoiceType.Equals(input.ChoiceType))
+                ) && 
                 (
                     this.ApplicationId == input.ApplicationId ||
                     (this.ApplicationId != null &&
@@ -318,17 +329,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.LanguageIds != null &&
                     input.LanguageIds != null &&
                     this.LanguageIds.SequenceEqual(input.LanguageIds)
-                ) && 
-                (
-                    this.Responses == input.Responses ||
-                    this.Responses != null &&
-                    input.Responses != null &&
-                    this.Responses.SequenceEqual(input.Responses)
-                ) && 
-                (
-                    this.ChoiceType == input.ChoiceType ||
-                    (this.ChoiceType != null &&
-                    this.ChoiceType.Equals(input.ChoiceType))
                 );
         }
 
@@ -341,6 +341,10 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Responses != null)
+                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
+                if (this.ChoiceType != null)
+                    hashCode = hashCode * 59 + this.ChoiceType.GetHashCode();
                 if (this.ApplicationId != null)
                     hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ApplicationFeatureId != null)
@@ -367,10 +371,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.DisplayTitleOverride.GetHashCode();
                 if (this.LanguageIds != null)
                     hashCode = hashCode * 59 + this.LanguageIds.GetHashCode();
-                if (this.Responses != null)
-                    hashCode = hashCode * 59 + this.Responses.GetHashCode();
-                if (this.ChoiceType != null)
-                    hashCode = hashCode * 59 + this.ChoiceType.GetHashCode();
                 return hashCode;
             }
         }

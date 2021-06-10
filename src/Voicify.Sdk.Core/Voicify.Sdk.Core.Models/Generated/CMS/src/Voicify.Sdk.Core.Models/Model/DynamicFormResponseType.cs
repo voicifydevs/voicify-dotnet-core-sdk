@@ -30,23 +30,23 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum DynamicFormResponseType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Continue for value: Continue
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "Continue")]
+        Continue = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum Invalid for value: Invalid
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "Invalid")]
+        Invalid = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum Custom for value: Custom
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "Custom")]
+        Custom = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum Oauth for value: Oauth
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4    }
+        [EnumMember(Value = "Oauth")]
+        Oauth = 4    }
 }

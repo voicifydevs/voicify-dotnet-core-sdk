@@ -32,8 +32,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateWelcomeMessageStubRequest" /> class.
         /// </summary>
-        /// <param name="content">content.</param>
         /// <param name="title">title (required).</param>
+        /// <param name="content">content.</param>
         /// <param name="imageItemId">imageItemId.</param>
         /// <param name="backgroundImageItemId">backgroundImageItemId.</param>
         /// <param name="audioItemId">audioItemId.</param>
@@ -45,7 +45,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="requiresParent">requiresParent.</param>
         /// <param name="languageIds">languageIds.</param>
-        public UpdateWelcomeMessageStubRequest(string content = default(string), string title = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
+        public UpdateWelcomeMessageStubRequest(string title = default(string), string content = default(string), string imageItemId = default(string), string backgroundImageItemId = default(string), string audioItemId = default(string), string videoItemId = default(string), string followUpId = default(string), string repromptId = default(string), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), List<string> languageIds = default(List<string>))
         {
             // to ensure "title" is required (not null)
             if (title == null)
@@ -71,16 +71,16 @@ namespace Voicify.Sdk.Core.Models.Model
         }
         
         /// <summary>
-        /// Gets or Sets Content
-        /// </summary>
-        [DataMember(Name="content", EmitDefaultValue=false)]
-        public string Content { get; set; }
-
-        /// <summary>
         /// Gets or Sets Title
         /// </summary>
         [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Content
+        /// </summary>
+        [DataMember(Name="content", EmitDefaultValue=false)]
+        public string Content { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageItemId
@@ -156,8 +156,8 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class UpdateWelcomeMessageStubRequest {\n");
-            sb.Append("  Content: ").Append(Content).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
+            sb.Append("  Content: ").Append(Content).Append("\n");
             sb.Append("  ImageItemId: ").Append(ImageItemId).Append("\n");
             sb.Append("  BackgroundImageItemId: ").Append(BackgroundImageItemId).Append("\n");
             sb.Append("  AudioItemId: ").Append(AudioItemId).Append("\n");
@@ -204,14 +204,14 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
-                    this.Content == input.Content ||
-                    (this.Content != null &&
-                    this.Content.Equals(input.Content))
-                ) && 
-                (
                     this.Title == input.Title ||
                     (this.Title != null &&
                     this.Title.Equals(input.Title))
+                ) && 
+                (
+                    this.Content == input.Content ||
+                    (this.Content != null &&
+                    this.Content.Equals(input.Content))
                 ) && 
                 (
                     this.ImageItemId == input.ImageItemId ||
@@ -280,10 +280,10 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Content != null)
-                    hashCode = hashCode * 59 + this.Content.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
+                if (this.Content != null)
+                    hashCode = hashCode * 59 + this.Content.GetHashCode();
                 if (this.ImageItemId != null)
                     hashCode = hashCode * 59 + this.ImageItemId.GetHashCode();
                 if (this.BackgroundImageItemId != null)

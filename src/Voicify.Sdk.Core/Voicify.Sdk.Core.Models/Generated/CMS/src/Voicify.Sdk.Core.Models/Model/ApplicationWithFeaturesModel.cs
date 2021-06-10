@@ -46,7 +46,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="languages">languages.</param>
         /// <param name="applicationInformationItems">applicationInformationItems.</param>
         /// <param name="regions">regions.</param>
-        public ApplicationWithFeaturesModel(string id = default(string), string name = default(string), string secret = default(string), string imageUrl = default(string), string invocationPhrase = default(string), string description = default(string), string shortDescription = default(string), string keywords = default(string), string imageItemId = default(string), string defaultLanguageId = default(string), List<ApplicationFeatureModel> applicationFeatures = default(List<ApplicationFeatureModel>), List<LanguageModel> languages = default(List<LanguageModel>), List<ApplicationInformationModel> applicationInformationItems = default(List<ApplicationInformationModel>), List<VoicifyRegionModel> regions = default(List<VoicifyRegionModel>))
+        /// <param name="metadata">metadata.</param>
+        public ApplicationWithFeaturesModel(string id = default(string), string name = default(string), string secret = default(string), string imageUrl = default(string), string invocationPhrase = default(string), string description = default(string), string shortDescription = default(string), string keywords = default(string), string imageItemId = default(string), string defaultLanguageId = default(string), List<ApplicationFeatureModel> applicationFeatures = default(List<ApplicationFeatureModel>), List<LanguageModel> languages = default(List<LanguageModel>), List<ApplicationInformationModel> applicationInformationItems = default(List<ApplicationInformationModel>), List<VoicifyRegionModel> regions = default(List<VoicifyRegionModel>), Dictionary<string, object> metadata = default(Dictionary<string, object>))
         {
             this.Id = id;
             this.Name = name;
@@ -62,6 +63,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.Languages = languages;
             this.ApplicationInformationItems = applicationInformationItems;
             this.Regions = regions;
+            this.Metadata = metadata;
         }
         
         /// <summary>
@@ -149,6 +151,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public List<VoicifyRegionModel> Regions { get; set; }
 
         /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public Dictionary<string, object> Metadata { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -170,6 +178,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  Languages: ").Append(Languages).Append("\n");
             sb.Append("  ApplicationInformationItems: ").Append(ApplicationInformationItems).Append("\n");
             sb.Append("  Regions: ").Append(Regions).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -277,6 +286,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Regions != null &&
                     input.Regions != null &&
                     this.Regions.SequenceEqual(input.Regions)
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    this.Metadata != null &&
+                    input.Metadata != null &&
+                    this.Metadata.SequenceEqual(input.Metadata)
                 );
         }
 
@@ -317,6 +332,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.ApplicationInformationItems.GetHashCode();
                 if (this.Regions != null)
                     hashCode = hashCode * 59 + this.Regions.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 return hashCode;
             }
         }

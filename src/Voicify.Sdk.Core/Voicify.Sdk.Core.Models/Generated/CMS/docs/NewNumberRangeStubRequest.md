@@ -3,8 +3,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Responses** | [**List&lt;NewNumberRangeResponseRequest&gt;**](NewNumberRangeResponseRequest.md) |  | [optional] 
 **ApplicationId** | **string** |  | 
+**Responses** | [**List&lt;NewNumberRangeResponseRequest&gt;**](NewNumberRangeResponseRequest.md) |  | [optional] 
 **ApplicationFeatureId** | **string** |  | 
 **MinimumValue** | **double?** |  | [optional] 
 **MaximumValue** | **double?** |  | [optional] 

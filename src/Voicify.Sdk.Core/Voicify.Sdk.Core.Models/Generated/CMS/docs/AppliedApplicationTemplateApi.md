@@ -4,17 +4,17 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiAppliedApplicationTemplateApplicationIdAddTemplateConfigurationIdPost**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateapplicationidaddtemplateconfigurationidpost) | **POST** /api/AppliedApplicationTemplate/{applicationId}/add/{templateConfigurationId} | 
-[**ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdDelete**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateappliedapplicationtemplateformiddelete) | **DELETE** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId} | 
-[**ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinalizeFormPut**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateappliedapplicationtemplateformidfinalizeformput) | **PUT** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId}/finalizeForm | 
-[**ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinishSectionPut**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateappliedapplicationtemplateformidfinishsectionput) | **PUT** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId}/finishSection | 
-[**ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdGet**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateappliedapplicationtemplateformidget) | **GET** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId} | 
-[**ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdPut**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateappliedapplicationtemplateformidput) | **PUT** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId} | 
-[**ApiAppliedApplicationTemplateForAppApplicationIdGet**](AppliedApplicationTemplateApi.md#apiappliedapplicationtemplateforappapplicationidget) | **GET** /api/AppliedApplicationTemplate/forApp/{applicationId} | 
+[**AddAppliedTemplateToApp**](AppliedApplicationTemplateApi.md#addappliedtemplatetoapp) | **POST** /api/AppliedApplicationTemplate/{applicationId}/add/{templateConfigurationId} | 
+[**DeleteAppliedTemplate**](AppliedApplicationTemplateApi.md#deleteappliedtemplate) | **DELETE** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId} | 
+[**FinalizeTemplateForm**](AppliedApplicationTemplateApi.md#finalizetemplateform) | **PUT** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId}/finalizeForm | 
+[**FindAppliedTemplateById**](AppliedApplicationTemplateApi.md#findappliedtemplatebyid) | **GET** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId} | 
+[**FinishTemplateFormSection**](AppliedApplicationTemplateApi.md#finishtemplateformsection) | **PUT** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId}/finishSection | 
+[**GetAppliedTemplatesForApplication**](AppliedApplicationTemplateApi.md#getappliedtemplatesforapplication) | **GET** /api/AppliedApplicationTemplate/forApp/{applicationId} | 
+[**UpdateAppliedTemplate**](AppliedApplicationTemplateApi.md#updateappliedtemplate) | **PUT** /api/AppliedApplicationTemplate/{appliedApplicationTemplateFormId} | 
 
-<a name="apiappliedapplicationtemplateapplicationidaddtemplateconfigurationidpost"></a>
-# **ApiAppliedApplicationTemplateApplicationIdAddTemplateConfigurationIdPost**
-> AppliedApplicationTemplateFormModel ApiAppliedApplicationTemplateApplicationIdAddTemplateConfigurationIdPost (string applicationId, string templateConfigurationId)
+<a name="addappliedtemplatetoapp"></a>
+# **AddAppliedTemplateToApp**
+> AppliedApplicationTemplateFormModel AddAppliedTemplateToApp (string applicationId, string templateConfigurationId)
 
 
 
@@ -28,7 +28,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedApplicationTemplateApplicationIdAddTemplateConfigurationIdPostExample
+    public class AddAppliedTemplateToAppExample
     {
         public void main()
         {
@@ -47,12 +47,12 @@ namespace Example
 
             try
             {
-                AppliedApplicationTemplateFormModel result = apiInstance.ApiAppliedApplicationTemplateApplicationIdAddTemplateConfigurationIdPost(applicationId, templateConfigurationId);
+                AppliedApplicationTemplateFormModel result = apiInstance.AddAppliedTemplateToApp(applicationId, templateConfigurationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateApplicationIdAddTemplateConfigurationIdPost: " + e.Message );
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.AddAppliedTemplateToApp: " + e.Message );
             }
         }
     }
@@ -80,9 +80,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedapplicationtemplateappliedapplicationtemplateformiddelete"></a>
-# **ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdDelete**
-> AppliedApplicationTemplateFormModel ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdDelete (string appliedApplicationTemplateFormId)
+<a name="deleteappliedtemplate"></a>
+# **DeleteAppliedTemplate**
+> AppliedApplicationTemplateFormModel DeleteAppliedTemplate (string appliedApplicationTemplateFormId)
 
 
 
@@ -96,7 +96,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdDeleteExample
+    public class DeleteAppliedTemplateExample
     {
         public void main()
         {
@@ -114,12 +114,12 @@ namespace Example
 
             try
             {
-                AppliedApplicationTemplateFormModel result = apiInstance.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdDelete(appliedApplicationTemplateFormId);
+                AppliedApplicationTemplateFormModel result = apiInstance.DeleteAppliedTemplate(appliedApplicationTemplateFormId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdDelete: " + e.Message );
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.DeleteAppliedTemplate: " + e.Message );
             }
         }
     }
@@ -146,9 +146,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedapplicationtemplateappliedapplicationtemplateformidfinalizeformput"></a>
-# **ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinalizeFormPut**
-> FinalizeTemplateFormResult ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinalizeFormPut (string appliedApplicationTemplateFormId, FinalizeTemplateFormRequest body = null)
+<a name="finalizetemplateform"></a>
+# **FinalizeTemplateForm**
+> FinalizeTemplateFormResult FinalizeTemplateForm (string appliedApplicationTemplateFormId, FinalizeTemplateFormRequest body = null)
 
 
 
@@ -162,7 +162,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinalizeFormPutExample
+    public class FinalizeTemplateFormExample
     {
         public void main()
         {
@@ -181,12 +181,12 @@ namespace Example
 
             try
             {
-                FinalizeTemplateFormResult result = apiInstance.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinalizeFormPut(appliedApplicationTemplateFormId, body);
+                FinalizeTemplateFormResult result = apiInstance.FinalizeTemplateForm(appliedApplicationTemplateFormId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinalizeFormPut: " + e.Message );
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.FinalizeTemplateForm: " + e.Message );
             }
         }
     }
@@ -214,9 +214,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedapplicationtemplateappliedapplicationtemplateformidfinishsectionput"></a>
-# **ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinishSectionPut**
-> DynamicFormResponse ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinishSectionPut (string appliedApplicationTemplateFormId, FinishTemplateFormSectionRequest body = null)
+<a name="findappliedtemplatebyid"></a>
+# **FindAppliedTemplateById**
+> AppliedApplicationTemplateFormModel FindAppliedTemplateById (string appliedApplicationTemplateFormId)
 
 
 
@@ -230,7 +230,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinishSectionPutExample
+    public class FindAppliedTemplateByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new AppliedApplicationTemplateApi();
+            var appliedApplicationTemplateFormId = appliedApplicationTemplateFormId_example;  // string | 
+
+            try
+            {
+                AppliedApplicationTemplateFormModel result = apiInstance.FindAppliedTemplateById(appliedApplicationTemplateFormId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.FindAppliedTemplateById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appliedApplicationTemplateFormId** | **string**|  | 
+
+### Return type
+
+[**AppliedApplicationTemplateFormModel**](AppliedApplicationTemplateFormModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="finishtemplateformsection"></a>
+# **FinishTemplateFormSection**
+> DynamicFormResponse FinishTemplateFormSection (string appliedApplicationTemplateFormId, FinishTemplateFormSectionRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class FinishTemplateFormSectionExample
     {
         public void main()
         {
@@ -249,12 +315,12 @@ namespace Example
 
             try
             {
-                DynamicFormResponse result = apiInstance.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinishSectionPut(appliedApplicationTemplateFormId, body);
+                DynamicFormResponse result = apiInstance.FinishTemplateFormSection(appliedApplicationTemplateFormId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdFinishSectionPut: " + e.Message );
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.FinishTemplateFormSection: " + e.Message );
             }
         }
     }
@@ -282,9 +348,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedapplicationtemplateappliedapplicationtemplateformidget"></a>
-# **ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdGet**
-> AppliedApplicationTemplateFormModel ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdGet (string appliedApplicationTemplateFormId)
+<a name="getappliedtemplatesforapplication"></a>
+# **GetAppliedTemplatesForApplication**
+> List<AppliedApplicationTemplateFormModel> GetAppliedTemplatesForApplication (string applicationId)
 
 
 
@@ -298,7 +364,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdGetExample
+    public class GetAppliedTemplatesForApplicationExample
     {
         public void main()
         {
@@ -312,16 +378,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new AppliedApplicationTemplateApi();
-            var appliedApplicationTemplateFormId = appliedApplicationTemplateFormId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                AppliedApplicationTemplateFormModel result = apiInstance.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdGet(appliedApplicationTemplateFormId);
+                List&lt;AppliedApplicationTemplateFormModel&gt; result = apiInstance.GetAppliedTemplatesForApplication(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdGet: " + e.Message );
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.GetAppliedTemplatesForApplication: " + e.Message );
             }
         }
     }
@@ -332,11 +398,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **appliedApplicationTemplateFormId** | **string**|  | 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**AppliedApplicationTemplateFormModel**](AppliedApplicationTemplateFormModel.md)
+[**List<AppliedApplicationTemplateFormModel>**](AppliedApplicationTemplateFormModel.md)
 
 ### Authorization
 
@@ -348,9 +414,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedapplicationtemplateappliedapplicationtemplateformidput"></a>
-# **ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdPut**
-> AppliedApplicationTemplateFormModel ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdPut (string appliedApplicationTemplateFormId, UpdateAppliedApplicationTemplateFormRequest body = null)
+<a name="updateappliedtemplate"></a>
+# **UpdateAppliedTemplate**
+> AppliedApplicationTemplateFormModel UpdateAppliedTemplate (string appliedApplicationTemplateFormId, UpdateAppliedApplicationTemplateFormRequest body = null)
 
 
 
@@ -364,7 +430,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdPutExample
+    public class UpdateAppliedTemplateExample
     {
         public void main()
         {
@@ -383,12 +449,12 @@ namespace Example
 
             try
             {
-                AppliedApplicationTemplateFormModel result = apiInstance.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdPut(appliedApplicationTemplateFormId, body);
+                AppliedApplicationTemplateFormModel result = apiInstance.UpdateAppliedTemplate(appliedApplicationTemplateFormId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateAppliedApplicationTemplateFormIdPut: " + e.Message );
+                Debug.Print("Exception when calling AppliedApplicationTemplateApi.UpdateAppliedTemplate: " + e.Message );
             }
         }
     }
@@ -413,72 +479,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiappliedapplicationtemplateforappapplicationidget"></a>
-# **ApiAppliedApplicationTemplateForAppApplicationIdGet**
-> List<AppliedApplicationTemplateFormModel> ApiAppliedApplicationTemplateForAppApplicationIdGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiAppliedApplicationTemplateForAppApplicationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new AppliedApplicationTemplateApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;AppliedApplicationTemplateFormModel&gt; result = apiInstance.ApiAppliedApplicationTemplateForAppApplicationIdGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AppliedApplicationTemplateApi.ApiAppliedApplicationTemplateForAppApplicationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<AppliedApplicationTemplateFormModel>**](AppliedApplicationTemplateFormModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

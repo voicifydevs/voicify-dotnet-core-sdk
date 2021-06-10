@@ -32,17 +32,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LuisAppEndpointsContainer" /> class.
         /// </summary>
-        /// <param name="production">production.</param>
-        public LuisAppEndpointsContainer(LuisAppEndpoint production = default(LuisAppEndpoint))
+        /// <param name="pRODUCTION">pRODUCTION.</param>
+        public LuisAppEndpointsContainer(LuisAppEndpoint pRODUCTION = default(LuisAppEndpoint))
         {
-            this.Production = production;
+            this.PRODUCTION = pRODUCTION;
         }
         
         /// <summary>
-        /// Gets or Sets Production
+        /// Gets or Sets PRODUCTION
         /// </summary>
-        [DataMember(Name="production", EmitDefaultValue=false)]
-        public LuisAppEndpoint Production { get; set; }
+        [DataMember(Name="PRODUCTION", EmitDefaultValue=false)]
+        public LuisAppEndpoint PRODUCTION { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -52,7 +52,7 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class LuisAppEndpointsContainer {\n");
-            sb.Append("  Production: ").Append(Production).Append("\n");
+            sb.Append("  PRODUCTION: ").Append(PRODUCTION).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -88,9 +88,9 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
-                    this.Production == input.Production ||
-                    (this.Production != null &&
-                    this.Production.Equals(input.Production))
+                    this.PRODUCTION == input.PRODUCTION ||
+                    (this.PRODUCTION != null &&
+                    this.PRODUCTION.Equals(input.PRODUCTION))
                 );
         }
 
@@ -103,8 +103,8 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Production != null)
-                    hashCode = hashCode * 59 + this.Production.GetHashCode();
+                if (this.PRODUCTION != null)
+                    hashCode = hashCode * 59 + this.PRODUCTION.GetHashCode();
                 return hashCode;
             }
         }

@@ -3,7 +3,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Responses** | [**List&lt;NewCustomRequestResponseRequest&gt;**](NewCustomRequestResponseRequest.md) |  | [optional] 
 **ApplicationId** | **string** |  | 
 **ApplicationFeatureId** | **string** |  | 
 **StartDate** | **DateTime?** |  | [optional] 
@@ -21,6 +20,7 @@ Name | Type | Description | Notes
 **MediaResponseContainerId** | **string** |  | [optional] 
 **DisplayTextOverride** | **string** |  | [optional] 
 **DisplayTitleOverride** | **string** |  | [optional] 
+**Responses** | [**List&lt;NewCustomRequestResponseRequest&gt;**](NewCustomRequestResponseRequest.md) |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
 

@@ -4,12 +4,12 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**SingleSignOnRedirectOauth2Get**](SingleSignOnRedirectApi.md#singlesignonredirectoauth2get) | **GET** /SingleSignOnRedirect/oauth2 | 
-[**SingleSignOnRedirectSamlPost**](SingleSignOnRedirectApi.md#singlesignonredirectsamlpost) | **POST** /SingleSignOnRedirect/saml | 
+[**OAuth2CallbackGet**](SingleSignOnRedirectApi.md#oauth2callbackget) | **GET** /SingleSignOnRedirect/oauth2 | 
+[**SAMLCallback**](SingleSignOnRedirectApi.md#samlcallback) | **POST** /SingleSignOnRedirect/saml | 
 
-<a name="singlesignonredirectoauth2get"></a>
-# **SingleSignOnRedirectOauth2Get**
-> void SingleSignOnRedirectOauth2Get (string code = null, string state = null, string error = null)
+<a name="oauth2callbackget"></a>
+# **OAuth2CallbackGet**
+> void OAuth2CallbackGet (string code = null, string state = null, string error = null)
 
 
 
@@ -23,7 +23,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class SingleSignOnRedirectOauth2GetExample
+    public class OAuth2CallbackGetExample
     {
         public void main()
         {
@@ -43,11 +43,11 @@ namespace Example
 
             try
             {
-                apiInstance.SingleSignOnRedirectOauth2Get(code, state, error);
+                apiInstance.OAuth2CallbackGet(code, state, error);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SingleSignOnRedirectApi.SingleSignOnRedirectOauth2Get: " + e.Message );
+                Debug.Print("Exception when calling SingleSignOnRedirectApi.OAuth2CallbackGet: " + e.Message );
             }
         }
     }
@@ -76,9 +76,9 @@ void (empty response body)
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="singlesignonredirectsamlpost"></a>
-# **SingleSignOnRedirectSamlPost**
-> void SingleSignOnRedirectSamlPost (string redirectUrl = null, string email = null, string clientId = null)
+<a name="samlcallback"></a>
+# **SAMLCallback**
+> void SAMLCallback (string redirectUrl = null, string email = null, string clientId = null)
 
 
 
@@ -92,7 +92,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class SingleSignOnRedirectSamlPostExample
+    public class SAMLCallbackExample
     {
         public void main()
         {
@@ -112,11 +112,11 @@ namespace Example
 
             try
             {
-                apiInstance.SingleSignOnRedirectSamlPost(redirectUrl, email, clientId);
+                apiInstance.SAMLCallback(redirectUrl, email, clientId);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SingleSignOnRedirectApi.SingleSignOnRedirectSamlPost: " + e.Message );
+                Debug.Print("Exception when calling SingleSignOnRedirectApi.SAMLCallback: " + e.Message );
             }
         }
     }

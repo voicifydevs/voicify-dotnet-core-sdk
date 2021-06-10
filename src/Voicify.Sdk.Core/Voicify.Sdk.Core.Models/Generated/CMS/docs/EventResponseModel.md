@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **ApplicationFeatureId** | **string** |  | [optional] 
 **ResponseId** | **string** |  | [optional] 
 **Conditions** | [**List&lt;ConditionInstanceModel&gt;**](ConditionInstanceModel.md) |  | [optional] 
+**FlagRules** | [**List&lt;ResponseFlagRuleModel&gt;**](ResponseFlagRuleModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

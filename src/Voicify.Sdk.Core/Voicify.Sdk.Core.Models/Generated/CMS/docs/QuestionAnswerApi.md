@@ -4,47 +4,47 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiQuestionAnswerAnswerAnswerIdDelete**](QuestionAnswerApi.md#apiquestionansweransweransweriddelete) | **DELETE** /api/QuestionAnswer/answer/{answerId} | 
-[**ApiQuestionAnswerAnswerAnswerIdPut**](QuestionAnswerApi.md#apiquestionansweransweransweridput) | **PUT** /api/QuestionAnswer/Answer/{answerId} | 
-[**ApiQuestionAnswerAnswerMessageIdAddAudioFileMediaItemIdPut**](QuestionAnswerApi.md#apiquestionansweranswermessageidaddaudiofilemediaitemidput) | **PUT** /api/QuestionAnswer/{answerMessageId}/addAudioFile/{mediaItemId} | 
-[**ApiQuestionAnswerAnswerMessageIdAddLargeImageMediaItemIdPut**](QuestionAnswerApi.md#apiquestionansweranswermessageidaddlargeimagemediaitemidput) | **PUT** /api/QuestionAnswer/{answerMessageId}/addLargeImage/{mediaItemId} | 
-[**ApiQuestionAnswerAnswerMessageIdAddSmallImageMediaItemIdPut**](QuestionAnswerApi.md#apiquestionansweranswermessageidaddsmallimagemediaitemidput) | **PUT** /api/QuestionAnswer/{answerMessageId}/addSmallImage/{mediaItemId} | 
-[**ApiQuestionAnswerAnswerMessageIdAddVideoFileMediaItemIdPut**](QuestionAnswerApi.md#apiquestionansweranswermessageidaddvideofilemediaitemidput) | **PUT** /api/QuestionAnswer/{answerMessageId}/addVideoFile/{mediaItemId} | 
-[**ApiQuestionAnswerApplicationIdFaqsGet**](QuestionAnswerApi.md#apiquestionanswerapplicationidfaqsget) | **GET** /api/QuestionAnswer/{applicationId}/faqs | 
-[**ApiQuestionAnswerByFeatureApplicationFeatureIdCountGet**](QuestionAnswerApi.md#apiquestionanswerbyfeatureapplicationfeatureidcountget) | **GET** /api/QuestionAnswer/byFeature/{applicationFeatureId}/count | 
-[**ApiQuestionAnswerByFeatureApplicationFeatureIdGet**](QuestionAnswerApi.md#apiquestionanswerbyfeatureapplicationfeatureidget) | **GET** /api/QuestionAnswer/byFeature/{applicationFeatureId} | 
-[**ApiQuestionAnswerByFeatureApplicationFeatureIdPaginatedGet**](QuestionAnswerApi.md#apiquestionanswerbyfeatureapplicationfeatureidpaginatedget) | **GET** /api/QuestionAnswer/byFeature/{applicationFeatureId}/paginated | 
-[**ApiQuestionAnswerContentItemIdFullPut**](QuestionAnswerApi.md#apiquestionanswercontentitemidfullput) | **PUT** /api/QuestionAnswer/{contentItemId}/full | 
-[**ApiQuestionAnswerContentItemIdMoveToFeatureApplicationFeatureIdPut**](QuestionAnswerApi.md#apiquestionanswercontentitemidmovetofeatureapplicationfeatureidput) | **PUT** /api/QuestionAnswer/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
-[**ApiQuestionAnswerContentItemIdRequiredPhrasesPut**](QuestionAnswerApi.md#apiquestionanswercontentitemidrequiredphrasesput) | **PUT** /api/QuestionAnswer/{contentItemId}/RequiredPhrases | 
-[**ApiQuestionAnswerFullIdGet**](QuestionAnswerApi.md#apiquestionanswerfullidget) | **GET** /api/QuestionAnswer/full/{id} | 
-[**ApiQuestionAnswerFullPost**](QuestionAnswerApi.md#apiquestionanswerfullpost) | **POST** /api/QuestionAnswer/full | 
-[**ApiQuestionAnswerPost**](QuestionAnswerApi.md#apiquestionanswerpost) | **POST** /api/QuestionAnswer | 
-[**ApiQuestionAnswerQuestionAnswerIdAnswerPost**](QuestionAnswerApi.md#apiquestionanswerquestionansweridanswerpost) | **POST** /api/QuestionAnswer/{questionAnswerId}/Answer | 
-[**ApiQuestionAnswerQuestionAnswerIdBulkUpdatePut**](QuestionAnswerApi.md#apiquestionanswerquestionansweridbulkupdateput) | **PUT** /api/QuestionAnswer/{questionAnswerId}/bulkUpdate | 
-[**ApiQuestionAnswerQuestionAnswerIdBulkUpdateStubPut**](QuestionAnswerApi.md#apiquestionanswerquestionansweridbulkupdatestubput) | **PUT** /api/QuestionAnswer/{questionAnswerId}/bulkUpdate/stub | 
-[**ApiQuestionAnswerQuestionAnswerIdCopyPost**](QuestionAnswerApi.md#apiquestionanswerquestionansweridcopypost) | **POST** /api/QuestionAnswer/{questionAnswerId}/copy | 
-[**ApiQuestionAnswerQuestionAnswerIdDelete**](QuestionAnswerApi.md#apiquestionanswerquestionansweriddelete) | **DELETE** /api/QuestionAnswer/{questionAnswerId} | 
-[**ApiQuestionAnswerQuestionAnswerIdGet**](QuestionAnswerApi.md#apiquestionanswerquestionansweridget) | **GET** /api/QuestionAnswer/{questionAnswerId} | 
-[**ApiQuestionAnswerQuestionAnswerIdIsLivePut**](QuestionAnswerApi.md#apiquestionanswerquestionansweridisliveput) | **PUT** /api/QuestionAnswer/{questionAnswerId}/isLive | 
-[**ApiQuestionAnswerQuestionAnswerIdQuestionPost**](QuestionAnswerApi.md#apiquestionanswerquestionansweridquestionpost) | **POST** /api/QuestionAnswer/{questionAnswerId}/Question | 
-[**ApiQuestionAnswerQuestionAnswerIdShouldNotSyncPut**](QuestionAnswerApi.md#apiquestionanswerquestionansweridshouldnotsyncput) | **PUT** /api/QuestionAnswer/{questionAnswerId}/shouldNotSync | 
-[**ApiQuestionAnswerQuestionAnswerIdWebhooksBulkPut**](QuestionAnswerApi.md#apiquestionanswerquestionansweridwebhooksbulkput) | **PUT** /api/QuestionAnswer/{questionAnswerId}/webhooks/bulk | 
-[**ApiQuestionAnswerQuestionAnswerIdWebhooksGet**](QuestionAnswerApi.md#apiquestionanswerquestionansweridwebhooksget) | **GET** /api/QuestionAnswer/{questionAnswerId}/webhooks | 
-[**ApiQuestionAnswerQuestionAnswerIdWebhooksInstanceWebhookIdPut**](QuestionAnswerApi.md#apiquestionanswerquestionansweridwebhooksinstancewebhookidput) | **PUT** /api/QuestionAnswer/{questionAnswerId}/webhooks/{instanceWebhookId} | 
-[**ApiQuestionAnswerQuestionAnswerIdWebhooksWebhookIdPost**](QuestionAnswerApi.md#apiquestionanswerquestionansweridwebhookswebhookidpost) | **POST** /api/QuestionAnswer/{questionAnswerId}/webhooks/{webhookId} | 
-[**ApiQuestionAnswerQuestionQuestionIdDelete**](QuestionAnswerApi.md#apiquestionanswerquestionquestioniddelete) | **DELETE** /api/QuestionAnswer/question/{questionId} | 
-[**ApiQuestionAnswerQuestionQuestionIdPut**](QuestionAnswerApi.md#apiquestionanswerquestionquestionidput) | **PUT** /api/QuestionAnswer/Question/{questionId} | 
-[**ApiQuestionAnswerStubPost**](QuestionAnswerApi.md#apiquestionanswerstubpost) | **POST** /api/QuestionAnswer/stub | 
-[**ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersParameterNameDelete**](QuestionAnswerApi.md#apiquestionanswerwebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/QuestionAnswer/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPost**](QuestionAnswerApi.md#apiquestionanswerwebhookinstancewebhookiduserparameterspost) | **POST** /api/QuestionAnswer/webhook/{instanceWebhookId}/userParameters | 
-[**ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPut**](QuestionAnswerApi.md#apiquestionanswerwebhookinstancewebhookiduserparametersput) | **PUT** /api/QuestionAnswer/webhook/{instanceWebhookId}/userParameters | 
-[**ApiQuestionAnswerWebhookInstanceWebhookIdWebhookParametersPut**](QuestionAnswerApi.md#apiquestionanswerwebhookinstancewebhookidwebhookparametersput) | **PUT** /api/QuestionAnswer/webhook/{instanceWebhookId}/webhookParameters | 
-[**ApiQuestionAnswerWebhookQuestionAnswerWebhookIdDelete**](QuestionAnswerApi.md#apiquestionanswerwebhookquestionanswerwebhookiddelete) | **DELETE** /api/QuestionAnswer/webhook/{questionAnswerWebhookId} | 
+[**AddAudioFileImage**](QuestionAnswerApi.md#addaudiofileimage) | **PUT** /api/QuestionAnswer/{answerMessageId}/addAudioFile/{mediaItemId} | 
+[**AddLargeImage**](QuestionAnswerApi.md#addlargeimage) | **PUT** /api/QuestionAnswer/{answerMessageId}/addLargeImage/{mediaItemId} | 
+[**AddOrUpdateRequiredPhrases**](QuestionAnswerApi.md#addorupdaterequiredphrases) | **PUT** /api/QuestionAnswer/{contentItemId}/RequiredPhrases | 
+[**AddSmallImage**](QuestionAnswerApi.md#addsmallimage) | **PUT** /api/QuestionAnswer/{answerMessageId}/addSmallImage/{mediaItemId} | 
+[**AddVideoFile**](QuestionAnswerApi.md#addvideofile) | **PUT** /api/QuestionAnswer/{answerMessageId}/addVideoFile/{mediaItemId} | 
+[**AddWebhook**](QuestionAnswerApi.md#addwebhook) | **POST** /api/QuestionAnswer/{questionAnswerId}/webhooks/{webhookId} | 
+[**BulkUpdate**](QuestionAnswerApi.md#bulkupdate) | **PUT** /api/QuestionAnswer/{questionAnswerId}/bulkUpdate | 
+[**BulkUpdateAttachedWebhooks**](QuestionAnswerApi.md#bulkupdateattachedwebhooks) | **PUT** /api/QuestionAnswer/{questionAnswerId}/webhooks/bulk | 
+[**BulkUpdateStub**](QuestionAnswerApi.md#bulkupdatestub) | **PUT** /api/QuestionAnswer/{questionAnswerId}/bulkUpdate/stub | 
+[**CopyContentItem**](QuestionAnswerApi.md#copycontentitem) | **POST** /api/QuestionAnswer/{questionAnswerId}/copy | 
+[**CountByApplicationFeature**](QuestionAnswerApi.md#countbyapplicationfeature) | **GET** /api/QuestionAnswer/byFeature/{applicationFeatureId}/count | 
+[**Create**](QuestionAnswerApi.md#create) | **POST** /api/QuestionAnswer | 
+[**CreateAnswer**](QuestionAnswerApi.md#createanswer) | **POST** /api/QuestionAnswer/{questionAnswerId}/Answer | 
+[**CreateFullContentItem**](QuestionAnswerApi.md#createfullcontentitem) | **POST** /api/QuestionAnswer/full | 
+[**CreateQuestion**](QuestionAnswerApi.md#createquestion) | **POST** /api/QuestionAnswer/{questionAnswerId}/Question | 
+[**CreateStub**](QuestionAnswerApi.md#createstub) | **POST** /api/QuestionAnswer/stub | 
+[**CreateUserDefinedParameter**](QuestionAnswerApi.md#createuserdefinedparameter) | **POST** /api/QuestionAnswer/webhook/{instanceWebhookId}/userParameters | 
+[**Delete**](QuestionAnswerApi.md#delete) | **DELETE** /api/QuestionAnswer/{questionAnswerId} | 
+[**DeleteAnswer**](QuestionAnswerApi.md#deleteanswer) | **DELETE** /api/QuestionAnswer/answer/{answerId} | 
+[**DeleteQuestion**](QuestionAnswerApi.md#deletequestion) | **DELETE** /api/QuestionAnswer/question/{questionId} | 
+[**EditAnswer**](QuestionAnswerApi.md#editanswer) | **PUT** /api/QuestionAnswer/Answer/{answerId} | 
+[**EditQuestion**](QuestionAnswerApi.md#editquestion) | **PUT** /api/QuestionAnswer/Question/{questionId} | 
+[**FindFullById**](QuestionAnswerApi.md#findfullbyid) | **GET** /api/QuestionAnswer/full/{id} | 
+[**Get**](QuestionAnswerApi.md#get) | **GET** /api/QuestionAnswer/{questionAnswerId} | 
+[**GetAllByApplicationFeature**](QuestionAnswerApi.md#getallbyapplicationfeature) | **GET** /api/QuestionAnswer/byFeature/{applicationFeatureId} | 
+[**GetByApplicationFeature**](QuestionAnswerApi.md#getbyapplicationfeature) | **GET** /api/QuestionAnswer/byFeature/{applicationFeatureId}/paginated | 
+[**GetQuestionAnswersForApplication**](QuestionAnswerApi.md#getquestionanswersforapplication) | **GET** /api/QuestionAnswer/{applicationId}/faqs | 
+[**GetWebhooks**](QuestionAnswerApi.md#getwebhooks) | **GET** /api/QuestionAnswer/{questionAnswerId}/webhooks | 
+[**MoveContentItemToApplicationFeature**](QuestionAnswerApi.md#movecontentitemtoapplicationfeature) | **PUT** /api/QuestionAnswer/{contentItemId}/MoveToFeature/{applicationFeatureId} | 
+[**RemoveUserDefinedParameter**](QuestionAnswerApi.md#removeuserdefinedparameter) | **DELETE** /api/QuestionAnswer/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](QuestionAnswerApi.md#removewebhook) | **DELETE** /api/QuestionAnswer/webhook/{questionAnswerWebhookId} | 
+[**ToggleIsLive**](QuestionAnswerApi.md#toggleislive) | **PUT** /api/QuestionAnswer/{questionAnswerId}/isLive | 
+[**ToggleSync**](QuestionAnswerApi.md#togglesync) | **PUT** /api/QuestionAnswer/{questionAnswerId}/shouldNotSync | 
+[**UpdateAttachedWebhook**](QuestionAnswerApi.md#updateattachedwebhook) | **PUT** /api/QuestionAnswer/{questionAnswerId}/webhooks/{instanceWebhookId} | 
+[**UpdateFullContentItem**](QuestionAnswerApi.md#updatefullcontentitem) | **PUT** /api/QuestionAnswer/{contentItemId}/full | 
+[**UpdateUserDefinedParameter**](QuestionAnswerApi.md#updateuserdefinedparameter) | **PUT** /api/QuestionAnswer/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](QuestionAnswerApi.md#updatewebhookparameter) | **PUT** /api/QuestionAnswer/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apiquestionansweransweransweriddelete"></a>
-# **ApiQuestionAnswerAnswerAnswerIdDelete**
-> AnswerModel ApiQuestionAnswerAnswerAnswerIdDelete (string answerId)
+<a name="addaudiofileimage"></a>
+# **AddAudioFileImage**
+> AnswerModel AddAudioFileImage (string answerMessageId, string mediaItemId)
 
 
 
@@ -58,7 +58,1221 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerAnswerAnswerIdDeleteExample
+    public class AddAudioFileImageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var answerMessageId = answerMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                AnswerModel result = apiInstance.AddAudioFileImage(answerMessageId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.AddAudioFileImage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **answerMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**AnswerModel**](AnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addlargeimage"></a>
+# **AddLargeImage**
+> AnswerModel AddLargeImage (string answerMessageId, string mediaItemId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddLargeImageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var answerMessageId = answerMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                AnswerModel result = apiInstance.AddLargeImage(answerMessageId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.AddLargeImage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **answerMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**AnswerModel**](AnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addorupdaterequiredphrases"></a>
+# **AddOrUpdateRequiredPhrases**
+> QuestionAnswerModel AddOrUpdateRequiredPhrases (string contentItemId, RequiredPhrasesRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddOrUpdateRequiredPhrasesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new RequiredPhrasesRequest(); // RequiredPhrasesRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.AddOrUpdateRequiredPhrases(contentItemId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.AddOrUpdateRequiredPhrases: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **body** | [**RequiredPhrasesRequest**](RequiredPhrasesRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addsmallimage"></a>
+# **AddSmallImage**
+> AnswerModel AddSmallImage (string answerMessageId, string mediaItemId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddSmallImageExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var answerMessageId = answerMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                AnswerModel result = apiInstance.AddSmallImage(answerMessageId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.AddSmallImage: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **answerMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**AnswerModel**](AnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addvideofile"></a>
+# **AddVideoFile**
+> AnswerModel AddVideoFile (string answerMessageId, string mediaItemId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddVideoFileExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var answerMessageId = answerMessageId_example;  // string | 
+            var mediaItemId = mediaItemId_example;  // string | 
+
+            try
+            {
+                AnswerModel result = apiInstance.AddVideoFile(answerMessageId, mediaItemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.AddVideoFile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **answerMessageId** | **string**|  | 
+ **mediaItemId** | **string**|  | 
+
+### Return type
+
+[**AnswerModel**](AnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> QuestionAnswerWebhookModel AddWebhook (string questionAnswerId, string webhookId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var webhookId = webhookId_example;  // string | 
+            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerWebhookModel result = apiInstance.AddWebhook(questionAnswerId, webhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.AddWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **webhookId** | **string**|  | 
+ **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerWebhookModel**](QuestionAnswerWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdate"></a>
+# **BulkUpdate**
+> QuestionAnswerModel BulkUpdate (string questionAnswerId, BulkQuestionAnswerUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new BulkQuestionAnswerUpdateRequest(); // BulkQuestionAnswerUpdateRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.BulkUpdate(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.BulkUpdate: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**BulkQuestionAnswerUpdateRequest**](BulkQuestionAnswerUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<NumberRangeWebhookModel> BulkUpdateAttachedWebhooks (string questionAnswerId, BulkWebhookInstancesUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateAttachedWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
+
+            try
+            {
+                List&lt;NumberRangeWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.BulkUpdateAttachedWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
+
+### Return type
+
+[**List<NumberRangeWebhookModel>**](NumberRangeWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="bulkupdatestub"></a>
+# **BulkUpdateStub**
+> QuestionAnswerModel BulkUpdateStub (string questionAnswerId, BulkQuestionAnswerUpdateStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class BulkUpdateStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new BulkQuestionAnswerUpdateStubRequest(); // BulkQuestionAnswerUpdateStubRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.BulkUpdateStub(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.BulkUpdateStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**BulkQuestionAnswerUpdateStubRequest**](BulkQuestionAnswerUpdateStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="copycontentitem"></a>
+# **CopyContentItem**
+> QuestionAnswerModel CopyContentItem (string questionAnswerId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CopyContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.CopyContentItem(questionAnswerId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CopyContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="countbyapplicationfeature"></a>
+# **CountByApplicationFeature**
+> int? CountByApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CountByApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                int? result = apiInstance.CountByApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CountByApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+**int?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="create"></a>
+# **Create**
+> QuestionAnswerModel Create (NewQuestionAnswerRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var body = new NewQuestionAnswerRequest(); // NewQuestionAnswerRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.Create(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.Create: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewQuestionAnswerRequest**](NewQuestionAnswerRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createanswer"></a>
+# **CreateAnswer**
+> AnswerModel CreateAnswer (string questionAnswerId, CreateAnswerRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateAnswerExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new CreateAnswerRequest(); // CreateAnswerRequest |  (optional) 
+
+            try
+            {
+                AnswerModel result = apiInstance.CreateAnswer(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CreateAnswer: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**CreateAnswerRequest**](CreateAnswerRequest.md)|  | [optional] 
+
+### Return type
+
+[**AnswerModel**](AnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createfullcontentitem"></a>
+# **CreateFullContentItem**
+> QuestionAnswerModel CreateFullContentItem (QuestionAnswerModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var body = new QuestionAnswerModel(); // QuestionAnswerModel |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.CreateFullContentItem(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CreateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**QuestionAnswerModel**](QuestionAnswerModel.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createquestion"></a>
+# **CreateQuestion**
+> QuestionModel CreateQuestion (string questionAnswerId, CreateQuestionRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateQuestionExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new CreateQuestionRequest(); // CreateQuestionRequest |  (optional) 
+
+            try
+            {
+                QuestionModel result = apiInstance.CreateQuestion(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CreateQuestion: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**CreateQuestionRequest**](CreateQuestionRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionModel**](QuestionModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createstub"></a>
+# **CreateStub**
+> QuestionAnswerModel CreateStub (NewQuestionAnswerStubRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateStubExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var body = new NewQuestionAnswerStubRequest(); // NewQuestionAnswerStubRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.CreateStub(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CreateStub: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NewQuestionAnswerStubRequest**](NewQuestionAnswerStubRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class CreateUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.CreateUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="delete"></a>
+# **Delete**
+> QuestionAnswerModel Delete (string questionAnswerId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.Delete(questionAnswerId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.Delete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deleteanswer"></a>
+# **DeleteAnswer**
+> AnswerModel DeleteAnswer (string answerId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteAnswerExample
     {
         public void main()
         {
@@ -76,12 +1290,12 @@ namespace Example
 
             try
             {
-                AnswerModel result = apiInstance.ApiQuestionAnswerAnswerAnswerIdDelete(answerId);
+                AnswerModel result = apiInstance.DeleteAnswer(answerId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerAnswerAnswerIdDelete: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.DeleteAnswer: " + e.Message );
             }
         }
     }
@@ -108,9 +1322,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionansweransweransweridput"></a>
-# **ApiQuestionAnswerAnswerAnswerIdPut**
-> AnswerModel ApiQuestionAnswerAnswerAnswerIdPut (string answerId, UpdateAnswerRequest body = null)
+<a name="deletequestion"></a>
+# **DeleteQuestion**
+> QuestionModel DeleteQuestion (string questionId)
 
 
 
@@ -124,7 +1338,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerAnswerAnswerIdPutExample
+    public class DeleteQuestionExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionId = questionId_example;  // string | 
+
+            try
+            {
+                QuestionModel result = apiInstance.DeleteQuestion(questionId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.DeleteQuestion: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionId** | **string**|  | 
+
+### Return type
+
+[**QuestionModel**](QuestionModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="editanswer"></a>
+# **EditAnswer**
+> AnswerModel EditAnswer (string answerId, UpdateAnswerRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class EditAnswerExample
     {
         public void main()
         {
@@ -143,12 +1423,12 @@ namespace Example
 
             try
             {
-                AnswerModel result = apiInstance.ApiQuestionAnswerAnswerAnswerIdPut(answerId, body);
+                AnswerModel result = apiInstance.EditAnswer(answerId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerAnswerAnswerIdPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.EditAnswer: " + e.Message );
             }
         }
     }
@@ -176,9 +1456,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionansweranswermessageidaddaudiofilemediaitemidput"></a>
-# **ApiQuestionAnswerAnswerMessageIdAddAudioFileMediaItemIdPut**
-> AnswerModel ApiQuestionAnswerAnswerMessageIdAddAudioFileMediaItemIdPut (string answerMessageId, string mediaItemId)
+<a name="editquestion"></a>
+# **EditQuestion**
+> QuestionModel EditQuestion (string questionId, UpdateQuestionRequest body = null)
 
 
 
@@ -192,7 +1472,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerAnswerMessageIdAddAudioFileMediaItemIdPutExample
+    public class EditQuestionExample
     {
         public void main()
         {
@@ -206,17 +1486,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new QuestionAnswerApi();
-            var answerMessageId = answerMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
+            var questionId = questionId_example;  // string | 
+            var body = new UpdateQuestionRequest(); // UpdateQuestionRequest |  (optional) 
 
             try
             {
-                AnswerModel result = apiInstance.ApiQuestionAnswerAnswerMessageIdAddAudioFileMediaItemIdPut(answerMessageId, mediaItemId);
+                QuestionModel result = apiInstance.EditQuestion(questionId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerAnswerMessageIdAddAudioFileMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.EditQuestion: " + e.Message );
             }
         }
     }
@@ -227,12 +1507,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **answerMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
+ **questionId** | **string**|  | 
+ **body** | [**UpdateQuestionRequest**](UpdateQuestionRequest.md)|  | [optional] 
 
 ### Return type
 
-[**AnswerModel**](AnswerModel.md)
+[**QuestionModel**](QuestionModel.md)
 
 ### Authorization
 
@@ -240,13 +1520,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionansweranswermessageidaddlargeimagemediaitemidput"></a>
-# **ApiQuestionAnswerAnswerMessageIdAddLargeImageMediaItemIdPut**
-> AnswerModel ApiQuestionAnswerAnswerMessageIdAddLargeImageMediaItemIdPut (string answerMessageId, string mediaItemId)
+<a name="findfullbyid"></a>
+# **FindFullById**
+> QuestionAnswerModel FindFullById (string id)
 
 
 
@@ -260,7 +1540,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerAnswerMessageIdAddLargeImageMediaItemIdPutExample
+    public class FindFullByIdExample
     {
         public void main()
         {
@@ -274,17 +1554,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new QuestionAnswerApi();
-            var answerMessageId = answerMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
+            var id = id_example;  // string | 
 
             try
             {
-                AnswerModel result = apiInstance.ApiQuestionAnswerAnswerMessageIdAddLargeImageMediaItemIdPut(answerMessageId, mediaItemId);
+                QuestionAnswerModel result = apiInstance.FindFullById(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerAnswerMessageIdAddLargeImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.FindFullById: " + e.Message );
             }
         }
     }
@@ -295,12 +1574,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **answerMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
+ **id** | **string**|  | 
 
 ### Return type
 
-[**AnswerModel**](AnswerModel.md)
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
 
 ### Authorization
 
@@ -312,9 +1590,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionansweranswermessageidaddsmallimagemediaitemidput"></a>
-# **ApiQuestionAnswerAnswerMessageIdAddSmallImageMediaItemIdPut**
-> AnswerModel ApiQuestionAnswerAnswerMessageIdAddSmallImageMediaItemIdPut (string answerMessageId, string mediaItemId)
+<a name="get"></a>
+# **Get**
+> QuestionAnswerModel Get (string questionAnswerId)
 
 
 
@@ -328,7 +1606,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerAnswerMessageIdAddSmallImageMediaItemIdPutExample
+    public class GetExample
     {
         public void main()
         {
@@ -342,17 +1620,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new QuestionAnswerApi();
-            var answerMessageId = answerMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
+            var questionAnswerId = questionAnswerId_example;  // string | 
 
             try
             {
-                AnswerModel result = apiInstance.ApiQuestionAnswerAnswerMessageIdAddSmallImageMediaItemIdPut(answerMessageId, mediaItemId);
+                QuestionAnswerModel result = apiInstance.Get(questionAnswerId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerAnswerMessageIdAddSmallImageMediaItemIdPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.Get: " + e.Message );
             }
         }
     }
@@ -363,12 +1640,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **answerMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
+ **questionAnswerId** | **string**|  | 
 
 ### Return type
 
-[**AnswerModel**](AnswerModel.md)
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
 
 ### Authorization
 
@@ -380,9 +1656,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionansweranswermessageidaddvideofilemediaitemidput"></a>
-# **ApiQuestionAnswerAnswerMessageIdAddVideoFileMediaItemIdPut**
-> AnswerModel ApiQuestionAnswerAnswerMessageIdAddVideoFileMediaItemIdPut (string answerMessageId, string mediaItemId)
+<a name="getallbyapplicationfeature"></a>
+# **GetAllByApplicationFeature**
+> List<QuestionAnswerModel> GetAllByApplicationFeature (string applicationFeatureId)
 
 
 
@@ -396,141 +1672,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerAnswerMessageIdAddVideoFileMediaItemIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var answerMessageId = answerMessageId_example;  // string | 
-            var mediaItemId = mediaItemId_example;  // string | 
-
-            try
-            {
-                AnswerModel result = apiInstance.ApiQuestionAnswerAnswerMessageIdAddVideoFileMediaItemIdPut(answerMessageId, mediaItemId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerAnswerMessageIdAddVideoFileMediaItemIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **answerMessageId** | **string**|  | 
- **mediaItemId** | **string**|  | 
-
-### Return type
-
-[**AnswerModel**](AnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerapplicationidfaqsget"></a>
-# **ApiQuestionAnswerApplicationIdFaqsGet**
-> List<QuestionAnswerModel> ApiQuestionAnswerApplicationIdFaqsGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerApplicationIdFaqsGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                List&lt;QuestionAnswerModel&gt; result = apiInstance.ApiQuestionAnswerApplicationIdFaqsGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerApplicationIdFaqsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**List<QuestionAnswerModel>**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerbyfeatureapplicationfeatureidcountget"></a>
-# **ApiQuestionAnswerByFeatureApplicationFeatureIdCountGet**
-> int? ApiQuestionAnswerByFeatureApplicationFeatureIdCountGet (string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerByFeatureApplicationFeatureIdCountGetExample
+    public class GetAllByApplicationFeatureExample
     {
         public void main()
         {
@@ -548,78 +1690,12 @@ namespace Example
 
             try
             {
-                int? result = apiInstance.ApiQuestionAnswerByFeatureApplicationFeatureIdCountGet(applicationFeatureId);
+                List&lt;QuestionAnswerModel&gt; result = apiInstance.GetAllByApplicationFeature(applicationFeatureId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerByFeatureApplicationFeatureIdCountGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-**int?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerbyfeatureapplicationfeatureidget"></a>
-# **ApiQuestionAnswerByFeatureApplicationFeatureIdGet**
-> List<QuestionAnswerModel> ApiQuestionAnswerByFeatureApplicationFeatureIdGet (string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerByFeatureApplicationFeatureIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                List&lt;QuestionAnswerModel&gt; result = apiInstance.ApiQuestionAnswerByFeatureApplicationFeatureIdGet(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerByFeatureApplicationFeatureIdGet: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.GetAllByApplicationFeature: " + e.Message );
             }
         }
     }
@@ -646,9 +1722,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerbyfeatureapplicationfeatureidpaginatedget"></a>
-# **ApiQuestionAnswerByFeatureApplicationFeatureIdPaginatedGet**
-> List<QuestionAnswerModel> ApiQuestionAnswerByFeatureApplicationFeatureIdPaginatedGet (string applicationFeatureId, string sortBy = null, int? skip = null, int? take = null)
+<a name="getbyapplicationfeature"></a>
+# **GetByApplicationFeature**
+> List<QuestionAnswerModel> GetByApplicationFeature (string applicationFeatureId, string sortBy = null, int? skip = null, int? take = null)
 
 
 
@@ -662,7 +1738,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerByFeatureApplicationFeatureIdPaginatedGetExample
+    public class GetByApplicationFeatureExample
     {
         public void main()
         {
@@ -683,12 +1759,12 @@ namespace Example
 
             try
             {
-                List&lt;QuestionAnswerModel&gt; result = apiInstance.ApiQuestionAnswerByFeatureApplicationFeatureIdPaginatedGet(applicationFeatureId, sortBy, skip, take);
+                List&lt;QuestionAnswerModel&gt; result = apiInstance.GetByApplicationFeature(applicationFeatureId, sortBy, skip, take);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerByFeatureApplicationFeatureIdPaginatedGet: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.GetByApplicationFeature: " + e.Message );
             }
         }
     }
@@ -718,9 +1794,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswercontentitemidfullput"></a>
-# **ApiQuestionAnswerContentItemIdFullPut**
-> QuestionAnswerModel ApiQuestionAnswerContentItemIdFullPut (string contentItemId, QuestionAnswerModel body = null)
+<a name="getquestionanswersforapplication"></a>
+# **GetQuestionAnswersForApplication**
+> List<QuestionAnswerModel> GetQuestionAnswersForApplication (string applicationId)
 
 
 
@@ -734,7 +1810,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerContentItemIdFullPutExample
+    public class GetQuestionAnswersForApplicationExample
     {
         public void main()
         {
@@ -748,17 +1824,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new QuestionAnswerApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new QuestionAnswerModel(); // QuestionAnswerModel |  (optional) 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerContentItemIdFullPut(contentItemId, body);
+                List&lt;QuestionAnswerModel&gt; result = apiInstance.GetQuestionAnswersForApplication(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerContentItemIdFullPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.GetQuestionAnswersForApplication: " + e.Message );
             }
         }
     }
@@ -769,12 +1844,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**QuestionAnswerModel**](QuestionAnswerModel.md)|  | [optional] 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
+[**List<QuestionAnswerModel>**](QuestionAnswerModel.md)
 
 ### Authorization
 
@@ -782,13 +1856,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswercontentitemidmovetofeatureapplicationfeatureidput"></a>
-# **ApiQuestionAnswerContentItemIdMoveToFeatureApplicationFeatureIdPut**
-> QuestionAnswerModel ApiQuestionAnswerContentItemIdMoveToFeatureApplicationFeatureIdPut (string contentItemId, string applicationFeatureId)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<QuestionAnswerWebhookModel> GetWebhooks (string questionAnswerId)
 
 
 
@@ -802,7 +1876,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerContentItemIdMoveToFeatureApplicationFeatureIdPutExample
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+
+            try
+            {
+                List&lt;QuestionAnswerWebhookModel&gt; result = apiInstance.GetWebhooks(questionAnswerId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+
+### Return type
+
+[**List<QuestionAnswerWebhookModel>**](QuestionAnswerWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="movecontentitemtoapplicationfeature"></a>
+# **MoveContentItemToApplicationFeature**
+> QuestionAnswerModel MoveContentItemToApplicationFeature (string contentItemId, string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class MoveContentItemToApplicationFeatureExample
     {
         public void main()
         {
@@ -821,12 +1961,12 @@ namespace Example
 
             try
             {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerContentItemIdMoveToFeatureApplicationFeatureIdPut(contentItemId, applicationFeatureId);
+                QuestionAnswerModel result = apiInstance.MoveContentItemToApplicationFeature(contentItemId, applicationFeatureId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerContentItemIdMoveToFeatureApplicationFeatureIdPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.MoveContentItemToApplicationFeature: " + e.Message );
             }
         }
     }
@@ -854,9 +1994,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswercontentitemidrequiredphrasesput"></a>
-# **ApiQuestionAnswerContentItemIdRequiredPhrasesPut**
-> QuestionAnswerModel ApiQuestionAnswerContentItemIdRequiredPhrasesPut (string contentItemId, RequiredPhrasesRequest body = null)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
 
 
 
@@ -870,1353 +2010,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerContentItemIdRequiredPhrasesPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var contentItemId = contentItemId_example;  // string | 
-            var body = new RequiredPhrasesRequest(); // RequiredPhrasesRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerContentItemIdRequiredPhrasesPut(contentItemId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerContentItemIdRequiredPhrasesPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentItemId** | **string**|  | 
- **body** | [**RequiredPhrasesRequest**](RequiredPhrasesRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerfullidget"></a>
-# **ApiQuestionAnswerFullIdGet**
-> QuestionAnswerModel ApiQuestionAnswerFullIdGet (string id)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerFullIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var id = id_example;  // string | 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerFullIdGet(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerFullIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**|  | 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerfullpost"></a>
-# **ApiQuestionAnswerFullPost**
-> QuestionAnswerModel ApiQuestionAnswerFullPost (QuestionAnswerModel body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerFullPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var body = new QuestionAnswerModel(); // QuestionAnswerModel |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerFullPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerFullPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**QuestionAnswerModel**](QuestionAnswerModel.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerpost"></a>
-# **ApiQuestionAnswerPost**
-> QuestionAnswerModel ApiQuestionAnswerPost (NewQuestionAnswerRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var body = new NewQuestionAnswerRequest(); // NewQuestionAnswerRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewQuestionAnswerRequest**](NewQuestionAnswerRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridanswerpost"></a>
-# **ApiQuestionAnswerQuestionAnswerIdAnswerPost**
-> AnswerModel ApiQuestionAnswerQuestionAnswerIdAnswerPost (string questionAnswerId, CreateAnswerRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdAnswerPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new CreateAnswerRequest(); // CreateAnswerRequest |  (optional) 
-
-            try
-            {
-                AnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdAnswerPost(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdAnswerPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**CreateAnswerRequest**](CreateAnswerRequest.md)|  | [optional] 
-
-### Return type
-
-[**AnswerModel**](AnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridbulkupdateput"></a>
-# **ApiQuestionAnswerQuestionAnswerIdBulkUpdatePut**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdBulkUpdatePut (string questionAnswerId, BulkQuestionAnswerUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdBulkUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new BulkQuestionAnswerUpdateRequest(); // BulkQuestionAnswerUpdateRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdBulkUpdatePut(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdBulkUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**BulkQuestionAnswerUpdateRequest**](BulkQuestionAnswerUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridbulkupdatestubput"></a>
-# **ApiQuestionAnswerQuestionAnswerIdBulkUpdateStubPut**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdBulkUpdateStubPut (string questionAnswerId, BulkQuestionAnswerUpdateStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdBulkUpdateStubPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new BulkQuestionAnswerUpdateStubRequest(); // BulkQuestionAnswerUpdateStubRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdBulkUpdateStubPut(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdBulkUpdateStubPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**BulkQuestionAnswerUpdateStubRequest**](BulkQuestionAnswerUpdateStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridcopypost"></a>
-# **ApiQuestionAnswerQuestionAnswerIdCopyPost**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdCopyPost (string questionAnswerId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdCopyPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdCopyPost(questionAnswerId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdCopyPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweriddelete"></a>
-# **ApiQuestionAnswerQuestionAnswerIdDelete**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdDelete (string questionAnswerId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdDelete(questionAnswerId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridget"></a>
-# **ApiQuestionAnswerQuestionAnswerIdGet**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdGet (string questionAnswerId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdGet(questionAnswerId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridisliveput"></a>
-# **ApiQuestionAnswerQuestionAnswerIdIsLivePut**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdIsLivePut (string questionAnswerId, ToggleLiveRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdIsLivePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdIsLivePut(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdIsLivePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridquestionpost"></a>
-# **ApiQuestionAnswerQuestionAnswerIdQuestionPost**
-> QuestionModel ApiQuestionAnswerQuestionAnswerIdQuestionPost (string questionAnswerId, CreateQuestionRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdQuestionPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new CreateQuestionRequest(); // CreateQuestionRequest |  (optional) 
-
-            try
-            {
-                QuestionModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdQuestionPost(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdQuestionPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**CreateQuestionRequest**](CreateQuestionRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionModel**](QuestionModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridshouldnotsyncput"></a>
-# **ApiQuestionAnswerQuestionAnswerIdShouldNotSyncPut**
-> QuestionAnswerModel ApiQuestionAnswerQuestionAnswerIdShouldNotSyncPut (string questionAnswerId, ToggleSyncRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdShouldNotSyncPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdShouldNotSyncPut(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdShouldNotSyncPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridwebhooksbulkput"></a>
-# **ApiQuestionAnswerQuestionAnswerIdWebhooksBulkPut**
-> List<NumberRangeWebhookModel> ApiQuestionAnswerQuestionAnswerIdWebhooksBulkPut (string questionAnswerId, BulkWebhookInstancesUpdateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;NumberRangeWebhookModel&gt; result = apiInstance.ApiQuestionAnswerQuestionAnswerIdWebhooksBulkPut(questionAnswerId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<NumberRangeWebhookModel>**](NumberRangeWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridwebhooksget"></a>
-# **ApiQuestionAnswerQuestionAnswerIdWebhooksGet**
-> List<QuestionAnswerWebhookModel> ApiQuestionAnswerQuestionAnswerIdWebhooksGet (string questionAnswerId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-
-            try
-            {
-                List&lt;QuestionAnswerWebhookModel&gt; result = apiInstance.ApiQuestionAnswerQuestionAnswerIdWebhooksGet(questionAnswerId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
-
-### Return type
-
-[**List<QuestionAnswerWebhookModel>**](QuestionAnswerWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridwebhooksinstancewebhookidput"></a>
-# **ApiQuestionAnswerQuestionAnswerIdWebhooksInstanceWebhookIdPut**
-> QuestionAnswerWebhookModel ApiQuestionAnswerQuestionAnswerIdWebhooksInstanceWebhookIdPut (string questionAnswerId, string instanceWebhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdWebhooksInstanceWebhookIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerWebhookModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdWebhooksInstanceWebhookIdPut(questionAnswerId, instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdWebhooksInstanceWebhookIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **instanceWebhookId** | **string**|  | 
- **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerWebhookModel**](QuestionAnswerWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionansweridwebhookswebhookidpost"></a>
-# **ApiQuestionAnswerQuestionAnswerIdWebhooksWebhookIdPost**
-> QuestionAnswerWebhookModel ApiQuestionAnswerQuestionAnswerIdWebhooksWebhookIdPost (string questionAnswerId, string webhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionAnswerIdWebhooksWebhookIdPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerId = questionAnswerId_example;  // string | 
-            var webhookId = webhookId_example;  // string | 
-            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerWebhookModel result = apiInstance.ApiQuestionAnswerQuestionAnswerIdWebhooksWebhookIdPost(questionAnswerId, webhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionAnswerIdWebhooksWebhookIdPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerId** | **string**|  | 
- **webhookId** | **string**|  | 
- **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerWebhookModel**](QuestionAnswerWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionquestioniddelete"></a>
-# **ApiQuestionAnswerQuestionQuestionIdDelete**
-> QuestionModel ApiQuestionAnswerQuestionQuestionIdDelete (string questionId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionQuestionIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionId = questionId_example;  // string | 
-
-            try
-            {
-                QuestionModel result = apiInstance.ApiQuestionAnswerQuestionQuestionIdDelete(questionId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionQuestionIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionId** | **string**|  | 
-
-### Return type
-
-[**QuestionModel**](QuestionModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerquestionquestionidput"></a>
-# **ApiQuestionAnswerQuestionQuestionIdPut**
-> QuestionModel ApiQuestionAnswerQuestionQuestionIdPut (string questionId, UpdateQuestionRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerQuestionQuestionIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionId = questionId_example;  // string | 
-            var body = new UpdateQuestionRequest(); // UpdateQuestionRequest |  (optional) 
-
-            try
-            {
-                QuestionModel result = apiInstance.ApiQuestionAnswerQuestionQuestionIdPut(questionId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerQuestionQuestionIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionId** | **string**|  | 
- **body** | [**UpdateQuestionRequest**](UpdateQuestionRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionModel**](QuestionModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerstubpost"></a>
-# **ApiQuestionAnswerStubPost**
-> QuestionAnswerModel ApiQuestionAnswerStubPost (NewQuestionAnswerStubRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerStubPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var body = new NewQuestionAnswerStubRequest(); // NewQuestionAnswerStubRequest |  (optional) 
-
-            try
-            {
-                QuestionAnswerModel result = apiInstance.ApiQuestionAnswerStubPost(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerStubPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**NewQuestionAnswerStubRequest**](NewQuestionAnswerStubRequest.md)|  | [optional] 
-
-### Return type
-
-[**QuestionAnswerModel**](QuestionAnswerModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerwebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
+    public class RemoveUserDefinedParameterExample
     {
         public void main()
         {
@@ -2235,12 +2029,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.RemoveUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -2268,9 +2062,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerwebhookinstancewebhookiduserparameterspost"></a>
-# **ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> QuestionAnswerWebhookModel RemoveWebhook (string questionAnswerWebhookId)
 
 
 
@@ -2284,7 +2078,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPostExample
+    public class RemoveWebhookExample
     {
         public void main()
         {
@@ -2298,17 +2092,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new QuestionAnswerApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
+            var questionAnswerWebhookId = questionAnswerWebhookId_example;  // string | 
 
             try
             {
-                bool? result = apiInstance.ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
+                QuestionAnswerWebhookModel result = apiInstance.RemoveWebhook(questionAnswerWebhookId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.RemoveWebhook: " + e.Message );
             }
         }
     }
@@ -2319,12 +2112,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
+ **questionAnswerWebhookId** | **string**|  | 
 
 ### Return type
 
-**bool?**
+[**QuestionAnswerWebhookModel**](QuestionAnswerWebhookModel.md)
 
 ### Authorization
 
@@ -2332,13 +2124,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerwebhookinstancewebhookiduserparametersput"></a>
-# **ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="toggleislive"></a>
+# **ToggleIsLive**
+> QuestionAnswerModel ToggleIsLive (string questionAnswerId, ToggleLiveRequest body = null)
 
 
 
@@ -2352,7 +2144,281 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPutExample
+    public class ToggleIsLiveExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new ToggleLiveRequest(); // ToggleLiveRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.ToggleIsLive(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.ToggleIsLive: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**ToggleLiveRequest**](ToggleLiveRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="togglesync"></a>
+# **ToggleSync**
+> QuestionAnswerModel ToggleSync (string questionAnswerId, ToggleSyncRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class ToggleSyncExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var body = new ToggleSyncRequest(); // ToggleSyncRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.ToggleSync(questionAnswerId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.ToggleSync: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **body** | [**ToggleSyncRequest**](ToggleSyncRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> QuestionAnswerWebhookModel UpdateAttachedWebhook (string questionAnswerId, string instanceWebhookId, WebhookParametersRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateAttachedWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var questionAnswerId = questionAnswerId_example;  // string | 
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+
+            try
+            {
+                QuestionAnswerWebhookModel result = apiInstance.UpdateAttachedWebhook(questionAnswerId, instanceWebhookId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.UpdateAttachedWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **questionAnswerId** | **string**|  | 
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerWebhookModel**](QuestionAnswerWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updatefullcontentitem"></a>
+# **UpdateFullContentItem**
+> QuestionAnswerModel UpdateFullContentItem (string contentItemId, QuestionAnswerModel body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateFullContentItemExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new QuestionAnswerApi();
+            var contentItemId = contentItemId_example;  // string | 
+            var body = new QuestionAnswerModel(); // QuestionAnswerModel |  (optional) 
+
+            try
+            {
+                QuestionAnswerModel result = apiInstance.UpdateFullContentItem(contentItemId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuestionAnswerApi.UpdateFullContentItem: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contentItemId** | **string**|  | 
+ **body** | [**QuestionAnswerModel**](QuestionAnswerModel.md)|  | [optional] 
+
+### Return type
+
+[**QuestionAnswerModel**](QuestionAnswerModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -2371,12 +2437,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -2404,9 +2470,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerwebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiQuestionAnswerWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiQuestionAnswerWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -2420,7 +2486,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiQuestionAnswerWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -2439,12 +2505,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiQuestionAnswerWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling QuestionAnswerApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }
@@ -2469,72 +2535,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiquestionanswerwebhookquestionanswerwebhookiddelete"></a>
-# **ApiQuestionAnswerWebhookQuestionAnswerWebhookIdDelete**
-> QuestionAnswerWebhookModel ApiQuestionAnswerWebhookQuestionAnswerWebhookIdDelete (string questionAnswerWebhookId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiQuestionAnswerWebhookQuestionAnswerWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new QuestionAnswerApi();
-            var questionAnswerWebhookId = questionAnswerWebhookId_example;  // string | 
-
-            try
-            {
-                QuestionAnswerWebhookModel result = apiInstance.ApiQuestionAnswerWebhookQuestionAnswerWebhookIdDelete(questionAnswerWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling QuestionAnswerApi.ApiQuestionAnswerWebhookQuestionAnswerWebhookIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **questionAnswerWebhookId** | **string**|  | 
-
-### Return type
-
-[**QuestionAnswerWebhookModel**](QuestionAnswerWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

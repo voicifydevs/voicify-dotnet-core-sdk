@@ -4,20 +4,20 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiModuleAddCustomModulesApplicationIdPut**](ModuleApi.md#apimoduleaddcustommodulesapplicationidput) | **PUT** /api/Module/addCustomModules/{applicationId} | 
-[**ApiModuleAddFeatureApplicationModuleIdPut**](ModuleApi.md#apimoduleaddfeatureapplicationmoduleidput) | **PUT** /api/Module/addFeature/{applicationModuleId} | 
-[**ApiModuleAddModuleApplicationIdPut**](ModuleApi.md#apimoduleaddmoduleapplicationidput) | **PUT** /api/Module/addModule/{applicationId} | 
-[**ApiModuleAddUncategorizedFeatureApplicationIdPut**](ModuleApi.md#apimoduleadduncategorizedfeatureapplicationidput) | **PUT** /api/Module/addUncategorizedFeature/{applicationId} | 
-[**ApiModuleApplicationIdGet**](ModuleApi.md#apimoduleapplicationidget) | **GET** /api/Module/{applicationId} | 
-[**ApiModuleApplicationModuleIdDisableDelete**](ModuleApi.md#apimoduleapplicationmoduleiddisabledelete) | **DELETE** /api/Module/{applicationModuleId}/disable | 
-[**ApiModuleApplicationModuleIdUpdatePut**](ModuleApi.md#apimoduleapplicationmoduleidupdateput) | **PUT** /api/Module/{applicationModuleId}/update | 
-[**ApiModuleCustomApplicationIdPost**](ModuleApi.md#apimodulecustomapplicationidpost) | **POST** /api/Module/custom/{applicationId} | 
-[**ApiModuleReorderModulesApplicationIdPut**](ModuleApi.md#apimodulereordermodulesapplicationidput) | **PUT** /api/Module/reorderModules/{applicationId} | 
-[**ApiModuleSystemModulesGet**](ModuleApi.md#apimodulesystemmodulesget) | **GET** /api/Module/SystemModules | 
+[**AddCustomModulesToApplication**](ModuleApi.md#addcustommodulestoapplication) | **PUT** /api/Module/addCustomModules/{applicationId} | 
+[**AddFeatureToGeneralModule**](ModuleApi.md#addfeaturetogeneralmodule) | **PUT** /api/Module/addUncategorizedFeature/{applicationId} | 
+[**AddFeatureToModule**](ModuleApi.md#addfeaturetomodule) | **PUT** /api/Module/addFeature/{applicationModuleId} | 
+[**AddModuleToApplication**](ModuleApi.md#addmoduletoapplication) | **PUT** /api/Module/addModule/{applicationId} | 
+[**ChangeApplicationModuleOrder**](ModuleApi.md#changeapplicationmoduleorder) | **PUT** /api/Module/reorderModules/{applicationId} | 
+[**CreateCustomModule**](ModuleApi.md#createcustommodule) | **POST** /api/Module/custom/{applicationId} | 
+[**DisableApplicationModule**](ModuleApi.md#disableapplicationmodule) | **DELETE** /api/Module/{applicationModuleId}/disable | 
+[**GetModulesForApplication**](ModuleApi.md#getmodulesforapplication) | **GET** /api/Module/{applicationId} | 
+[**GetSystemModules**](ModuleApi.md#getsystemmodules) | **GET** /api/Module/SystemModules | 
+[**UpdateApplicationModule**](ModuleApi.md#updateapplicationmodule) | **PUT** /api/Module/{applicationModuleId}/update | 
 
-<a name="apimoduleaddcustommodulesapplicationidput"></a>
-# **ApiModuleAddCustomModulesApplicationIdPut**
-> void ApiModuleAddCustomModulesApplicationIdPut (string applicationId, List<NewModuleRequest> body = null)
+<a name="addcustommodulestoapplication"></a>
+# **AddCustomModulesToApplication**
+> void AddCustomModulesToApplication (string applicationId, List<NewModuleRequest> body = null)
 
 
 
@@ -31,7 +31,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiModuleAddCustomModulesApplicationIdPutExample
+    public class AddCustomModulesToApplicationExample
     {
         public void main()
         {
@@ -50,11 +50,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiModuleAddCustomModulesApplicationIdPut(applicationId, body);
+                apiInstance.AddCustomModulesToApplication(applicationId, body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleAddCustomModulesApplicationIdPut: " + e.Message );
+                Debug.Print("Exception when calling ModuleApi.AddCustomModulesToApplication: " + e.Message );
             }
         }
     }
@@ -82,9 +82,9 @@ void (empty response body)
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimoduleaddfeatureapplicationmoduleidput"></a>
-# **ApiModuleAddFeatureApplicationModuleIdPut**
-> void ApiModuleAddFeatureApplicationModuleIdPut (string applicationModuleId, AddFeatureToModuleRequest body = null)
+<a name="addfeaturetogeneralmodule"></a>
+# **AddFeatureToGeneralModule**
+> void AddFeatureToGeneralModule (string applicationId, AddFeatureToModuleRequest body = null)
 
 
 
@@ -98,7 +98,74 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiModuleAddFeatureApplicationModuleIdPutExample
+    public class AddFeatureToGeneralModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ModuleApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new AddFeatureToModuleRequest(); // AddFeatureToModuleRequest |  (optional) 
+
+            try
+            {
+                apiInstance.AddFeatureToGeneralModule(applicationId, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ModuleApi.AddFeatureToGeneralModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**AddFeatureToModuleRequest**](AddFeatureToModuleRequest.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="addfeaturetomodule"></a>
+# **AddFeatureToModule**
+> void AddFeatureToModule (string applicationModuleId, AddFeatureToModuleRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class AddFeatureToModuleExample
     {
         public void main()
         {
@@ -117,11 +184,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiModuleAddFeatureApplicationModuleIdPut(applicationModuleId, body);
+                apiInstance.AddFeatureToModule(applicationModuleId, body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleAddFeatureApplicationModuleIdPut: " + e.Message );
+                Debug.Print("Exception when calling ModuleApi.AddFeatureToModule: " + e.Message );
             }
         }
     }
@@ -149,9 +216,9 @@ void (empty response body)
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimoduleaddmoduleapplicationidput"></a>
-# **ApiModuleAddModuleApplicationIdPut**
-> void ApiModuleAddModuleApplicationIdPut (string applicationId, AddModuleToApplicationRequest body = null)
+<a name="addmoduletoapplication"></a>
+# **AddModuleToApplication**
+> void AddModuleToApplication (string applicationId, AddModuleToApplicationRequest body = null)
 
 
 
@@ -165,7 +232,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiModuleAddModuleApplicationIdPutExample
+    public class AddModuleToApplicationExample
     {
         public void main()
         {
@@ -184,11 +251,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiModuleAddModuleApplicationIdPut(applicationId, body);
+                apiInstance.AddModuleToApplication(applicationId, body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleAddModuleApplicationIdPut: " + e.Message );
+                Debug.Print("Exception when calling ModuleApi.AddModuleToApplication: " + e.Message );
             }
         }
     }
@@ -216,9 +283,9 @@ void (empty response body)
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimoduleadduncategorizedfeatureapplicationidput"></a>
-# **ApiModuleAddUncategorizedFeatureApplicationIdPut**
-> void ApiModuleAddUncategorizedFeatureApplicationIdPut (string applicationId, AddFeatureToModuleRequest body = null)
+<a name="changeapplicationmoduleorder"></a>
+# **ChangeApplicationModuleOrder**
+> void ChangeApplicationModuleOrder (string applicationId, List<string> body = null)
 
 
 
@@ -232,338 +299,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiModuleAddUncategorizedFeatureApplicationIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ModuleApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new AddFeatureToModuleRequest(); // AddFeatureToModuleRequest |  (optional) 
-
-            try
-            {
-                apiInstance.ApiModuleAddUncategorizedFeatureApplicationIdPut(applicationId, body);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleAddUncategorizedFeatureApplicationIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**AddFeatureToModuleRequest**](AddFeatureToModuleRequest.md)|  | [optional] 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimoduleapplicationidget"></a>
-# **ApiModuleApplicationIdGet**
-> void ApiModuleApplicationIdGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiModuleApplicationIdGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ModuleApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                apiInstance.ApiModuleApplicationIdGet(applicationId);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleApplicationIdGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimoduleapplicationmoduleiddisabledelete"></a>
-# **ApiModuleApplicationModuleIdDisableDelete**
-> void ApiModuleApplicationModuleIdDisableDelete (string applicationModuleId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiModuleApplicationModuleIdDisableDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ModuleApi();
-            var applicationModuleId = applicationModuleId_example;  // string | 
-
-            try
-            {
-                apiInstance.ApiModuleApplicationModuleIdDisableDelete(applicationModuleId);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleApplicationModuleIdDisableDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationModuleId** | **string**|  | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimoduleapplicationmoduleidupdateput"></a>
-# **ApiModuleApplicationModuleIdUpdatePut**
-> void ApiModuleApplicationModuleIdUpdatePut (string applicationModuleId, UpdateApplicationModuleRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiModuleApplicationModuleIdUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ModuleApi();
-            var applicationModuleId = applicationModuleId_example;  // string | 
-            var body = new UpdateApplicationModuleRequest(); // UpdateApplicationModuleRequest |  (optional) 
-
-            try
-            {
-                apiInstance.ApiModuleApplicationModuleIdUpdatePut(applicationModuleId, body);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleApplicationModuleIdUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationModuleId** | **string**|  | 
- **body** | [**UpdateApplicationModuleRequest**](UpdateApplicationModuleRequest.md)|  | [optional] 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimodulecustomapplicationidpost"></a>
-# **ApiModuleCustomApplicationIdPost**
-> void ApiModuleCustomApplicationIdPost (string applicationId, NewModuleRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiModuleCustomApplicationIdPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ModuleApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new NewModuleRequest(); // NewModuleRequest |  (optional) 
-
-            try
-            {
-                apiInstance.ApiModuleCustomApplicationIdPost(applicationId, body);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleCustomApplicationIdPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**NewModuleRequest**](NewModuleRequest.md)|  | [optional] 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimodulereordermodulesapplicationidput"></a>
-# **ApiModuleReorderModulesApplicationIdPut**
-> void ApiModuleReorderModulesApplicationIdPut (string applicationId, List<string> body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiModuleReorderModulesApplicationIdPutExample
+    public class ChangeApplicationModuleOrderExample
     {
         public void main()
         {
@@ -582,11 +318,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiModuleReorderModulesApplicationIdPut(applicationId, body);
+                apiInstance.ChangeApplicationModuleOrder(applicationId, body);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleReorderModulesApplicationIdPut: " + e.Message );
+                Debug.Print("Exception when calling ModuleApi.ChangeApplicationModuleOrder: " + e.Message );
             }
         }
     }
@@ -614,9 +350,9 @@ void (empty response body)
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apimodulesystemmodulesget"></a>
-# **ApiModuleSystemModulesGet**
-> void ApiModuleSystemModulesGet ()
+<a name="createcustommodule"></a>
+# **CreateCustomModule**
+> void CreateCustomModule (string applicationId, NewModuleRequest body = null)
 
 
 
@@ -630,7 +366,204 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiModuleSystemModulesGetExample
+    public class CreateCustomModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ModuleApi();
+            var applicationId = applicationId_example;  // string | 
+            var body = new NewModuleRequest(); // NewModuleRequest |  (optional) 
+
+            try
+            {
+                apiInstance.CreateCustomModule(applicationId, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ModuleApi.CreateCustomModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **body** | [**NewModuleRequest**](NewModuleRequest.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="disableapplicationmodule"></a>
+# **DisableApplicationModule**
+> void DisableApplicationModule (string applicationModuleId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DisableApplicationModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ModuleApi();
+            var applicationModuleId = applicationModuleId_example;  // string | 
+
+            try
+            {
+                apiInstance.DisableApplicationModule(applicationModuleId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ModuleApi.DisableApplicationModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationModuleId** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getmodulesforapplication"></a>
+# **GetModulesForApplication**
+> void GetModulesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetModulesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ModuleApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                apiInstance.GetModulesForApplication(applicationId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ModuleApi.GetModulesForApplication: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getsystemmodules"></a>
+# **GetSystemModules**
+> void GetSystemModules ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetSystemModulesExample
     {
         public void main()
         {
@@ -647,11 +580,11 @@ namespace Example
 
             try
             {
-                apiInstance.ApiModuleSystemModulesGet();
+                apiInstance.GetSystemModules();
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ModuleApi.ApiModuleSystemModulesGet: " + e.Message );
+                Debug.Print("Exception when calling ModuleApi.GetSystemModules: " + e.Message );
             }
         }
     }
@@ -672,6 +605,73 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateapplicationmodule"></a>
+# **UpdateApplicationModule**
+> void UpdateApplicationModule (string applicationModuleId, UpdateApplicationModuleRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateApplicationModuleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ModuleApi();
+            var applicationModuleId = applicationModuleId_example;  // string | 
+            var body = new UpdateApplicationModuleRequest(); // UpdateApplicationModuleRequest |  (optional) 
+
+            try
+            {
+                apiInstance.UpdateApplicationModule(applicationModuleId, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ModuleApi.UpdateApplicationModule: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationModuleId** | **string**|  | 
+ **body** | [**UpdateApplicationModuleRequest**](UpdateApplicationModuleRequest.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -30,18 +30,18 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum SimpleChoiceType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Yes for value: Yes
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "Yes")]
+        Yes = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum No for value: No
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "No")]
+        No = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum Maybe for value: Maybe
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3    }
+        [EnumMember(Value = "Maybe")]
+        Maybe = 3    }
 }

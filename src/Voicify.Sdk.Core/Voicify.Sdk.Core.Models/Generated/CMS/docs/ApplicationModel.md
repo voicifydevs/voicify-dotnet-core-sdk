@@ -13,11 +13,13 @@ Name | Type | Description | Notes
 **ImageUrl** | **string** |  | [optional] 
 **ShortCode** | **string** |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
+**AllowsTemplating** | **bool?** |  | [optional] 
 **ApplicationInformationItems** | [**List&lt;ApplicationInformationModel&gt;**](ApplicationInformationModel.md) |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
 **Regions** | [**List&lt;VoicifyRegionModel&gt;**](VoicifyRegionModel.md) |  | [optional] 
 **IsDisabled** | **bool?** |  | [optional] 
 **AlexaFallbackSensitivity** | **AlexaFallbackSensitivityLevel** |  | [optional] 
+**Metadata** | [**Dictionary&lt;string, &gt;**](.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

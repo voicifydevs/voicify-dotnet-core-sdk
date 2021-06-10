@@ -30,23 +30,23 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum VoicifyNotificationPriority
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Low for value: Low
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "Low")]
+        Low = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum Medium for value: Medium
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "Medium")]
+        Medium = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum High for value: High
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "High")]
+        High = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum Urgent for value: Urgent
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4    }
+        [EnumMember(Value = "Urgent")]
+        Urgent = 4    }
 }

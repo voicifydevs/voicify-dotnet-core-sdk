@@ -3,10 +3,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Responses** | [**List&lt;NewSimpleChoiceResponseRequest&gt;**](NewSimpleChoiceResponseRequest.md) |  | [optional] 
-**ChoiceType** | **SimpleChoiceType** |  | [optional] 
 **ApplicationId** | **string** |  | 
+**Responses** | [**List&lt;NewSimpleChoiceResponseRequest&gt;**](NewSimpleChoiceResponseRequest.md) |  | [optional] 
 **ApplicationFeatureId** | **string** |  | 
+**ChoiceType** | **SimpleChoiceType** |  | [optional] 
 **Title** | **string** |  | 
 **ImageItemId** | **string** |  | [optional] 
 **BackgroundImageItemId** | **string** |  | [optional] 

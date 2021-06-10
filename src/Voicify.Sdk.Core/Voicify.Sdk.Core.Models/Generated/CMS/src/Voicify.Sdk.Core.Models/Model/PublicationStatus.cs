@@ -30,38 +30,38 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum PublicationStatus
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum DEVELOPMENT for value: DEVELOPMENT
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "DEVELOPMENT")]
+        DEVELOPMENT = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum CERTIFICATION for value: CERTIFICATION
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "CERTIFICATION")]
+        CERTIFICATION = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum PUBLISHED for value: PUBLISHED
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "PUBLISHED")]
+        PUBLISHED = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum SUPPRESSED for value: SUPPRESSED
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4,
+        [EnumMember(Value = "SUPPRESSED")]
+        SUPPRESSED = 4,
         /// <summary>
-        /// Enum NUMBER_4 for value: 4
+        /// Enum PULLED for value: PULLED
         /// </summary>
-        [EnumMember(Value = "4")]
-        NUMBER_4 = 5,
+        [EnumMember(Value = "PULLED")]
+        PULLED = 5,
         /// <summary>
-        /// Enum NUMBER_5 for value: 5
+        /// Enum HIDDEN for value: HIDDEN
         /// </summary>
-        [EnumMember(Value = "5")]
-        NUMBER_5 = 6,
+        [EnumMember(Value = "HIDDEN")]
+        HIDDEN = 6,
         /// <summary>
-        /// Enum NUMBER_6 for value: 6
+        /// Enum REMOVED for value: REMOVED
         /// </summary>
-        [EnumMember(Value = "6")]
-        NUMBER_6 = 7    }
+        [EnumMember(Value = "REMOVED")]
+        REMOVED = 7    }
 }

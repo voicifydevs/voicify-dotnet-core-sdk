@@ -4,12 +4,12 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiSingleSignOnSignInPost**](SingleSignOnApi.md#apisinglesignonsigninpost) | **POST** /api/SingleSignOn/signIn | 
-[**ApiSingleSignOnSignUpPost**](SingleSignOnApi.md#apisinglesignonsignuppost) | **POST** /api/SingleSignOn/signUp | 
+[**SignInWithSingleSignOn**](SingleSignOnApi.md#signinwithsinglesignon) | **POST** /api/SingleSignOn/signIn | 
+[**SignUpWithSingleSignOn**](SingleSignOnApi.md#signupwithsinglesignon) | **POST** /api/SingleSignOn/signUp | 
 
-<a name="apisinglesignonsigninpost"></a>
-# **ApiSingleSignOnSignInPost**
-> SingleSignOnResponse ApiSingleSignOnSignInPost (SingleSignOnRequest body = null)
+<a name="signinwithsinglesignon"></a>
+# **SignInWithSingleSignOn**
+> SingleSignOnResponse SignInWithSingleSignOn (SingleSignOnRequest body = null)
 
 
 
@@ -23,7 +23,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSingleSignOnSignInPostExample
+    public class SignInWithSingleSignOnExample
     {
         public void main()
         {
@@ -41,12 +41,12 @@ namespace Example
 
             try
             {
-                SingleSignOnResponse result = apiInstance.ApiSingleSignOnSignInPost(body);
+                SingleSignOnResponse result = apiInstance.SignInWithSingleSignOn(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SingleSignOnApi.ApiSingleSignOnSignInPost: " + e.Message );
+                Debug.Print("Exception when calling SingleSignOnApi.SignInWithSingleSignOn: " + e.Message );
             }
         }
     }
@@ -73,9 +73,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apisinglesignonsignuppost"></a>
-# **ApiSingleSignOnSignUpPost**
-> SingleSignOnResponse ApiSingleSignOnSignUpPost (SingleSignOnRequest body = null)
+<a name="signupwithsinglesignon"></a>
+# **SignUpWithSingleSignOn**
+> SingleSignOnResponse SignUpWithSingleSignOn (SingleSignOnRequest body = null)
 
 
 
@@ -89,7 +89,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiSingleSignOnSignUpPostExample
+    public class SignUpWithSingleSignOnExample
     {
         public void main()
         {
@@ -107,12 +107,12 @@ namespace Example
 
             try
             {
-                SingleSignOnResponse result = apiInstance.ApiSingleSignOnSignUpPost(body);
+                SingleSignOnResponse result = apiInstance.SignUpWithSingleSignOn(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling SingleSignOnApi.ApiSingleSignOnSignUpPost: " + e.Message );
+                Debug.Print("Exception when calling SingleSignOnApi.SignUpWithSingleSignOn: " + e.Message );
             }
         }
     }

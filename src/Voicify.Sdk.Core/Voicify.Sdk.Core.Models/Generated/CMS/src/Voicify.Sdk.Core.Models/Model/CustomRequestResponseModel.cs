@@ -52,7 +52,8 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="displayTitleOverride">displayTitleOverride.</param>
         /// <param name="followUpId">followUpId.</param>
         /// <param name="responseId">responseId.</param>
-        public CustomRequestResponseModel(string id = default(string), string content = default(string), string customRequestId = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), RepromptModel reprompt = default(RepromptModel), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), FollowUpModel followUp = default(FollowUpModel), List<ConditionInstanceModel> conditions = default(List<ConditionInstanceModel>), string repromptId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), string followUpId = default(string), string responseId = default(string))
+        /// <param name="flagRules">flagRules.</param>
+        public CustomRequestResponseModel(string id = default(string), string content = default(string), string customRequestId = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), RepromptModel reprompt = default(RepromptModel), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), FollowUpModel followUp = default(FollowUpModel), List<ConditionInstanceModel> conditions = default(List<ConditionInstanceModel>), string repromptId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), string followUpId = default(string), string responseId = default(string), List<ResponseFlagRuleModel> flagRules = default(List<ResponseFlagRuleModel>))
         {
             this.Id = id;
             this.Content = content;
@@ -74,6 +75,7 @@ namespace Voicify.Sdk.Core.Models.Model
             this.DisplayTitleOverride = displayTitleOverride;
             this.FollowUpId = followUpId;
             this.ResponseId = responseId;
+            this.FlagRules = flagRules;
         }
         
         /// <summary>
@@ -197,6 +199,12 @@ namespace Voicify.Sdk.Core.Models.Model
         public string ResponseId { get; set; }
 
         /// <summary>
+        /// Gets or Sets FlagRules
+        /// </summary>
+        [DataMember(Name="flagRules", EmitDefaultValue=false)]
+        public List<ResponseFlagRuleModel> FlagRules { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -224,6 +232,7 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  DisplayTitleOverride: ").Append(DisplayTitleOverride).Append("\n");
             sb.Append("  FollowUpId: ").Append(FollowUpId).Append("\n");
             sb.Append("  ResponseId: ").Append(ResponseId).Append("\n");
+            sb.Append("  FlagRules: ").Append(FlagRules).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -358,6 +367,12 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.ResponseId == input.ResponseId ||
                     (this.ResponseId != null &&
                     this.ResponseId.Equals(input.ResponseId))
+                ) && 
+                (
+                    this.FlagRules == input.FlagRules ||
+                    this.FlagRules != null &&
+                    input.FlagRules != null &&
+                    this.FlagRules.SequenceEqual(input.FlagRules)
                 );
         }
 
@@ -410,6 +425,8 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.FollowUpId.GetHashCode();
                 if (this.ResponseId != null)
                     hashCode = hashCode * 59 + this.ResponseId.GetHashCode();
+                if (this.FlagRules != null)
+                    hashCode = hashCode * 59 + this.FlagRules.GetHashCode();
                 return hashCode;
             }
         }

@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **Keywords** | **string** |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
 **DefaultLanguageId** | **string** |  | [optional] 
+**AllowsTemplating** | **bool?** |  | [optional] 
 **Languages** | [**List&lt;LanguageModel&gt;**](LanguageModel.md) |  | [optional] 
 **ApplicationInformationItems** | [**List&lt;ApplicationInformationModel&gt;**](ApplicationInformationModel.md) |  | [optional] 
 **Members** | [**List&lt;ApplicationMemberModel&gt;**](ApplicationMemberModel.md) |  | [optional] 

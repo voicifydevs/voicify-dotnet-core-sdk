@@ -30,23 +30,28 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum ArchiveType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Unknown for value: Unknown
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum BulkContent for value: BulkContent
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "BulkContent")]
+        BulkContent = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum BulkWebhook for value: BulkWebhook
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "BulkWebhook")]
+        BulkWebhook = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum InteractionModelChanges for value: InteractionModelChanges
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4    }
+        [EnumMember(Value = "InteractionModelChanges")]
+        InteractionModelChanges = 4,
+        /// <summary>
+        /// Enum FullApplication for value: FullApplication
+        /// </summary>
+        [EnumMember(Value = "FullApplication")]
+        FullApplication = 5    }
 }

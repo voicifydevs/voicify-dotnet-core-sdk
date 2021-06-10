@@ -30,13 +30,13 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum WebhookChainingType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum NoChaining for value: NoChaining
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "NoChaining")]
+        NoChaining = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum InstanceLevelChaining for value: InstanceLevelChaining
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2    }
+        [EnumMember(Value = "InstanceLevelChaining")]
+        InstanceLevelChaining = 2    }
 }

@@ -30,13 +30,13 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum SkillStage
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Development for value: development
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "development")]
+        Development = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum Live for value: live
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2    }
+        [EnumMember(Value = "live")]
+        Live = 2    }
 }

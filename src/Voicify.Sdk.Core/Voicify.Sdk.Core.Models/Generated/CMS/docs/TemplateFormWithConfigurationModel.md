@@ -3,9 +3,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**TemplateConfiguration** | [**TemplateConfigurationModel**](TemplateConfigurationModel.md) |  | [optional] 
 **Id** | **string** |  | [optional] 
 **TemplateConfigurationId** | **string** |  | [optional] 
-**TemplateConfiguration** | [**TemplateConfigurationModel**](TemplateConfigurationModel.md) |  | [optional] 
+**InstructionsMarkdown** | **string** |  | [optional] 
 **TemplateFormSections** | [**List&lt;TemplateFormSectionModel&gt;**](TemplateFormSectionModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

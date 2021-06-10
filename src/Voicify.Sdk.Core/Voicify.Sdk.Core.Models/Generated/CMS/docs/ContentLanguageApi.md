@@ -4,11 +4,11 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiContentLanguageAllGet**](ContentLanguageApi.md#apicontentlanguageallget) | **GET** /api/ContentLanguage/All | 
+[**GetAllLanguages**](ContentLanguageApi.md#getalllanguages) | **GET** /api/ContentLanguage/All | 
 
-<a name="apicontentlanguageallget"></a>
-# **ApiContentLanguageAllGet**
-> List<LanguageModel> ApiContentLanguageAllGet ()
+<a name="getalllanguages"></a>
+# **GetAllLanguages**
+> List<LanguageModel> GetAllLanguages ()
 
 
 
@@ -22,7 +22,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiContentLanguageAllGetExample
+    public class GetAllLanguagesExample
     {
         public void main()
         {
@@ -39,12 +39,12 @@ namespace Example
 
             try
             {
-                List&lt;LanguageModel&gt; result = apiInstance.ApiContentLanguageAllGet();
+                List&lt;LanguageModel&gt; result = apiInstance.GetAllLanguages();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ContentLanguageApi.ApiContentLanguageAllGet: " + e.Message );
+                Debug.Print("Exception when calling ContentLanguageApi.GetAllLanguages: " + e.Message );
             }
         }
     }

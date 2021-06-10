@@ -4,12 +4,12 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiTermAgreementPost**](TermApi.md#apitermagreementpost) | **POST** /api/Term/agreement | 
-[**ApiTermLatestGet**](TermApi.md#apitermlatestget) | **GET** /api/Term/latest | 
+[**AddTermAgreement**](TermApi.md#addtermagreement) | **POST** /api/Term/agreement | 
+[**GetLatestTerm**](TermApi.md#getlatestterm) | **GET** /api/Term/latest | 
 
-<a name="apitermagreementpost"></a>
-# **ApiTermAgreementPost**
-> UserTermModel ApiTermAgreementPost (NewUserTermRequestModel body = null)
+<a name="addtermagreement"></a>
+# **AddTermAgreement**
+> UserTermModel AddTermAgreement (NewUserTermRequestModel body = null)
 
 
 
@@ -23,7 +23,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiTermAgreementPostExample
+    public class AddTermAgreementExample
     {
         public void main()
         {
@@ -41,12 +41,12 @@ namespace Example
 
             try
             {
-                UserTermModel result = apiInstance.ApiTermAgreementPost(body);
+                UserTermModel result = apiInstance.AddTermAgreement(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TermApi.ApiTermAgreementPost: " + e.Message );
+                Debug.Print("Exception when calling TermApi.AddTermAgreement: " + e.Message );
             }
         }
     }
@@ -73,9 +73,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apitermlatestget"></a>
-# **ApiTermLatestGet**
-> TermModel ApiTermLatestGet ()
+<a name="getlatestterm"></a>
+# **GetLatestTerm**
+> TermModel GetLatestTerm ()
 
 
 
@@ -89,7 +89,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiTermLatestGetExample
+    public class GetLatestTermExample
     {
         public void main()
         {
@@ -106,12 +106,12 @@ namespace Example
 
             try
             {
-                TermModel result = apiInstance.ApiTermLatestGet();
+                TermModel result = apiInstance.GetLatestTerm();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TermApi.ApiTermLatestGet: " + e.Message );
+                Debug.Print("Exception when calling TermApi.GetLatestTerm: " + e.Message );
             }
         }
     }

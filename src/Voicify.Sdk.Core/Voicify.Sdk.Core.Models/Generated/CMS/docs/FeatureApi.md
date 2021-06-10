@@ -4,101 +4,33 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiFeatureApplicationFeatureIdChangeModuleApplicationModuleIdPut**](FeatureApi.md#apifeatureapplicationfeatureidchangemoduleapplicationmoduleidput) | **PUT** /api/Feature/{applicationFeatureId}/changeModule/{applicationModuleId} | 
-[**ApiFeatureApplicationFeatureIdContentGet**](FeatureApi.md#apifeatureapplicationfeatureidcontentget) | **GET** /api/Feature/{applicationFeatureId}/content | 
-[**ApiFeatureApplicationFeatureIdDelete**](FeatureApi.md#apifeatureapplicationfeatureiddelete) | **DELETE** /api/Feature/{applicationFeatureId} | 
-[**ApiFeatureApplicationFeatureIdDisableDelete**](FeatureApi.md#apifeatureapplicationfeatureiddisabledelete) | **DELETE** /api/Feature/{applicationFeatureId}/disable | 
-[**ApiFeatureApplicationFeatureIdEnablePut**](FeatureApi.md#apifeatureapplicationfeatureidenableput) | **PUT** /api/Feature/{applicationFeatureId}/enable | 
-[**ApiFeatureApplicationFeatureIdUpdateParentParentApplicationFeatureIdPut**](FeatureApi.md#apifeatureapplicationfeatureidupdateparentparentapplicationfeatureidput) | **PUT** /api/Feature/{applicationFeatureId}/updateParent/{parentApplicationFeatureId} | 
-[**ApiFeatureApplicationFeatureIdUpdatePut**](FeatureApi.md#apifeatureapplicationfeatureidupdateput) | **PUT** /api/Feature/{applicationFeatureId}/update | 
-[**ApiFeatureApplicationFeatureIdWebhooksBulkPut**](FeatureApi.md#apifeatureapplicationfeatureidwebhooksbulkput) | **PUT** /api/Feature/{applicationFeatureId}/webhooks/bulk | 
-[**ApiFeatureApplicationFeatureIdWebhooksGet**](FeatureApi.md#apifeatureapplicationfeatureidwebhooksget) | **GET** /api/Feature/{applicationFeatureId}/webhooks | 
-[**ApiFeatureApplicationFeatureIdWebhooksWebhookIdPost**](FeatureApi.md#apifeatureapplicationfeatureidwebhookswebhookidpost) | **POST** /api/Feature/{applicationFeatureId}/webhooks/{webhookId} | 
-[**ApiFeatureApplicationFeatureIdWebhooksWebhookInstanceIdPut**](FeatureApi.md#apifeatureapplicationfeatureidwebhookswebhookinstanceidput) | **PUT** /api/Feature/{applicationFeatureId}/webhooks/{webhookInstanceId} | 
-[**ApiFeatureApplicationIdAddFeaturePost**](FeatureApi.md#apifeatureapplicationidaddfeaturepost) | **POST** /api/Feature/{applicationId}/AddFeature | 
-[**ApiFeatureApplicationIdAvailableGet**](FeatureApi.md#apifeatureapplicationidavailableget) | **GET** /api/Feature/{applicationId}/Available | 
-[**ApiFeatureApplicationIdFeaturesConversationCountsGet**](FeatureApi.md#apifeatureapplicationidfeaturesconversationcountsget) | **GET** /api/Feature/{applicationId}/features/conversationCounts | 
-[**ApiFeatureApplicationIdFeaturesGet**](FeatureApi.md#apifeatureapplicationidfeaturesget) | **GET** /api/Feature/{applicationId}/features | 
-[**ApiFeatureApplicationIdReorderFeaturesPut**](FeatureApi.md#apifeatureapplicationidreorderfeaturesput) | **PUT** /api/Feature/{applicationId}/reorderFeatures | 
-[**ApiFeatureBuiltInGet**](FeatureApi.md#apifeaturebuiltinget) | **GET** /api/Feature/BuiltIn | 
-[**ApiFeatureTypesGet**](FeatureApi.md#apifeaturetypesget) | **GET** /api/Feature/Types | 
-[**ApiFeatureWebhookApplicationFeatureWebhookIdDelete**](FeatureApi.md#apifeaturewebhookapplicationfeaturewebhookiddelete) | **DELETE** /api/Feature/webhook/{applicationFeatureWebhookId} | 
-[**ApiFeatureWebhookInstanceWebhookIdUserParametersParameterNameDelete**](FeatureApi.md#apifeaturewebhookinstancewebhookiduserparametersparameternamedelete) | **DELETE** /api/Feature/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
-[**ApiFeatureWebhookInstanceWebhookIdUserParametersPost**](FeatureApi.md#apifeaturewebhookinstancewebhookiduserparameterspost) | **POST** /api/Feature/webhook/{instanceWebhookId}/userParameters | 
-[**ApiFeatureWebhookInstanceWebhookIdUserParametersPut**](FeatureApi.md#apifeaturewebhookinstancewebhookiduserparametersput) | **PUT** /api/Feature/webhook/{instanceWebhookId}/userParameters | 
-[**ApiFeatureWebhookInstanceWebhookIdWebhookParametersPut**](FeatureApi.md#apifeaturewebhookinstancewebhookidwebhookparametersput) | **PUT** /api/Feature/webhook/{instanceWebhookId}/webhookParameters | 
+[**AddFeatureAsync**](FeatureApi.md#addfeatureasync) | **POST** /api/Feature/{applicationId}/AddFeature | 
+[**AddWebhook**](FeatureApi.md#addwebhook) | **POST** /api/Feature/{applicationFeatureId}/webhooks/{webhookId} | 
+[**BulkUpdateAttachedWebhooks**](FeatureApi.md#bulkupdateattachedwebhooks) | **PUT** /api/Feature/{applicationFeatureId}/webhooks/bulk | 
+[**ChangeModule**](FeatureApi.md#changemodule) | **PUT** /api/Feature/{applicationFeatureId}/changeModule/{applicationModuleId} | 
+[**CreateUserDefinedParameter**](FeatureApi.md#createuserdefinedparameter) | **POST** /api/Feature/webhook/{instanceWebhookId}/userParameters | 
+[**DeleteFeature**](FeatureApi.md#deletefeature) | **DELETE** /api/Feature/{applicationFeatureId} | 
+[**DisableFeature**](FeatureApi.md#disablefeature) | **DELETE** /api/Feature/{applicationFeatureId}/disable | 
+[**EnableFeature**](FeatureApi.md#enablefeature) | **PUT** /api/Feature/{applicationFeatureId}/enable | 
+[**GetAppFeaturesWithCounts**](FeatureApi.md#getappfeatureswithcounts) | **GET** /api/Feature/{applicationId}/features/conversationCounts | 
+[**GetAvailableApplicationFeatures**](FeatureApi.md#getavailableapplicationfeatures) | **GET** /api/Feature/{applicationId}/Available | 
+[**GetBuiltInFeatures**](FeatureApi.md#getbuiltinfeatures) | **GET** /api/Feature/BuiltIn | 
+[**GetContentItemsForApplicationFeature**](FeatureApi.md#getcontentitemsforapplicationfeature) | **GET** /api/Feature/{applicationFeatureId}/content | 
+[**GetFeatureTypes**](FeatureApi.md#getfeaturetypes) | **GET** /api/Feature/Types | 
+[**GetFeaturesForApplication**](FeatureApi.md#getfeaturesforapplication) | **GET** /api/Feature/{applicationId}/features | 
+[**GetWebhooks**](FeatureApi.md#getwebhooks) | **GET** /api/Feature/{applicationFeatureId}/webhooks | 
+[**RemoveUserDefinedParameter**](FeatureApi.md#removeuserdefinedparameter) | **DELETE** /api/Feature/webhook/{instanceWebhookId}/userParameters/{parameterName} | 
+[**RemoveWebhook**](FeatureApi.md#removewebhook) | **DELETE** /api/Feature/webhook/{applicationFeatureWebhookId} | 
+[**SetApplicationFeatureOrder**](FeatureApi.md#setapplicationfeatureorder) | **PUT** /api/Feature/{applicationId}/reorderFeatures | 
+[**UpdateApplicationFeature**](FeatureApi.md#updateapplicationfeature) | **PUT** /api/Feature/{applicationFeatureId}/update | 
+[**UpdateAttachedWebhook**](FeatureApi.md#updateattachedwebhook) | **PUT** /api/Feature/{applicationFeatureId}/webhooks/{webhookInstanceId} | 
+[**UpdateParentForApplicationFeature**](FeatureApi.md#updateparentforapplicationfeature) | **PUT** /api/Feature/{applicationFeatureId}/updateParent/{parentApplicationFeatureId} | 
+[**UpdateUserDefinedParameter**](FeatureApi.md#updateuserdefinedparameter) | **PUT** /api/Feature/webhook/{instanceWebhookId}/userParameters | 
+[**UpdateWebhookParameter**](FeatureApi.md#updatewebhookparameter) | **PUT** /api/Feature/webhook/{instanceWebhookId}/webhookParameters | 
 
-<a name="apifeatureapplicationfeatureidchangemoduleapplicationmoduleidput"></a>
-# **ApiFeatureApplicationFeatureIdChangeModuleApplicationModuleIdPut**
-> ApplicationFeatureModel ApiFeatureApplicationFeatureIdChangeModuleApplicationModuleIdPut (string applicationFeatureId, string applicationModuleId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdChangeModuleApplicationModuleIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-            var applicationModuleId = applicationModuleId_example;  // string | 
-
-            try
-            {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationFeatureIdChangeModuleApplicationModuleIdPut(applicationFeatureId, applicationModuleId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdChangeModuleApplicationModuleIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
- **applicationModuleId** | **string**|  | 
-
-### Return type
-
-[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidcontentget"></a>
-# **ApiFeatureApplicationFeatureIdContentGet**
-> List<GenericContentModel> ApiFeatureApplicationFeatureIdContentGet (string applicationFeatureId)
+<a name="addfeatureasync"></a>
+# **AddFeatureAsync**
+> ApplicationFeatureModel AddFeatureAsync (string applicationId, CreateApplicationFeatureRequest body = null)
 
 
 
@@ -112,7 +44,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationFeatureIdContentGetExample
+    public class AddFeatureAsyncExample
     {
         public void main()
         {
@@ -126,16 +58,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
+            var body = new CreateApplicationFeatureRequest(); // CreateApplicationFeatureRequest |  (optional) 
 
             try
             {
-                List&lt;GenericContentModel&gt; result = apiInstance.ApiFeatureApplicationFeatureIdContentGet(applicationFeatureId);
+                ApplicationFeatureModel result = apiInstance.AddFeatureAsync(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdContentGet: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.AddFeatureAsync: " + e.Message );
             }
         }
     }
@@ -146,341 +79,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<GenericContentModel>**](GenericContentModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureiddelete"></a>
-# **ApiFeatureApplicationFeatureIdDelete**
-> ApplicationFeatureModel ApiFeatureApplicationFeatureIdDelete (string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationFeatureIdDelete(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureiddisabledelete"></a>
-# **ApiFeatureApplicationFeatureIdDisableDelete**
-> ApplicationFeatureModel ApiFeatureApplicationFeatureIdDisableDelete (string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdDisableDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationFeatureIdDisableDelete(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdDisableDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidenableput"></a>
-# **ApiFeatureApplicationFeatureIdEnablePut**
-> ApplicationFeatureModel ApiFeatureApplicationFeatureIdEnablePut (string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdEnablePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationFeatureIdEnablePut(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdEnablePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidupdateparentparentapplicationfeatureidput"></a>
-# **ApiFeatureApplicationFeatureIdUpdateParentParentApplicationFeatureIdPut**
-> ApplicationFeatureModel ApiFeatureApplicationFeatureIdUpdateParentParentApplicationFeatureIdPut (string applicationFeatureId, string parentApplicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdUpdateParentParentApplicationFeatureIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-            var parentApplicationFeatureId = parentApplicationFeatureId_example;  // string | 
-
-            try
-            {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationFeatureIdUpdateParentParentApplicationFeatureIdPut(applicationFeatureId, parentApplicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdUpdateParentParentApplicationFeatureIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
- **parentApplicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidupdateput"></a>
-# **ApiFeatureApplicationFeatureIdUpdatePut**
-> ApplicationFeatureModel ApiFeatureApplicationFeatureIdUpdatePut (string applicationFeatureId, UpdateApplicationFeatureRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdUpdatePutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-            var body = new UpdateApplicationFeatureRequest(); // UpdateApplicationFeatureRequest |  (optional) 
-
-            try
-            {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationFeatureIdUpdatePut(applicationFeatureId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdUpdatePut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
- **body** | [**UpdateApplicationFeatureRequest**](UpdateApplicationFeatureRequest.md)|  | [optional] 
+ **applicationId** | **string**|  | 
+ **body** | [**CreateApplicationFeatureRequest**](CreateApplicationFeatureRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -496,9 +96,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidwebhooksbulkput"></a>
-# **ApiFeatureApplicationFeatureIdWebhooksBulkPut**
-> List<ApplicationFeatureWebhookModel> ApiFeatureApplicationFeatureIdWebhooksBulkPut (string applicationFeatureId, BulkWebhookInstancesUpdateRequest body = null)
+<a name="addwebhook"></a>
+# **AddWebhook**
+> ApplicationFeatureWebhookModel AddWebhook (string applicationFeatureId, string webhookId, WebhookParametersRequest body = null)
 
 
 
@@ -512,141 +112,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationFeatureIdWebhooksBulkPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
-
-            try
-            {
-                List&lt;ApplicationFeatureWebhookModel&gt; result = apiInstance.ApiFeatureApplicationFeatureIdWebhooksBulkPut(applicationFeatureId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdWebhooksBulkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
- **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
-
-### Return type
-
-[**List<ApplicationFeatureWebhookModel>**](ApplicationFeatureWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidwebhooksget"></a>
-# **ApiFeatureApplicationFeatureIdWebhooksGet**
-> List<ApplicationFeatureWebhookModel> ApiFeatureApplicationFeatureIdWebhooksGet (string applicationFeatureId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdWebhooksGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureId = applicationFeatureId_example;  // string | 
-
-            try
-            {
-                List&lt;ApplicationFeatureWebhookModel&gt; result = apiInstance.ApiFeatureApplicationFeatureIdWebhooksGet(applicationFeatureId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdWebhooksGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationFeatureId** | **string**|  | 
-
-### Return type
-
-[**List<ApplicationFeatureWebhookModel>**](ApplicationFeatureWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidwebhookswebhookidpost"></a>
-# **ApiFeatureApplicationFeatureIdWebhooksWebhookIdPost**
-> ApplicationFeatureWebhookModel ApiFeatureApplicationFeatureIdWebhooksWebhookIdPost (string applicationFeatureId, string webhookId, WebhookParametersRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureApplicationFeatureIdWebhooksWebhookIdPostExample
+    public class AddWebhookExample
     {
         public void main()
         {
@@ -666,12 +132,12 @@ namespace Example
 
             try
             {
-                ApplicationFeatureWebhookModel result = apiInstance.ApiFeatureApplicationFeatureIdWebhooksWebhookIdPost(applicationFeatureId, webhookId, body);
+                ApplicationFeatureWebhookModel result = apiInstance.AddWebhook(applicationFeatureId, webhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdWebhooksWebhookIdPost: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.AddWebhook: " + e.Message );
             }
         }
     }
@@ -700,9 +166,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationfeatureidwebhookswebhookinstanceidput"></a>
-# **ApiFeatureApplicationFeatureIdWebhooksWebhookInstanceIdPut**
-> ApplicationFeatureWebhookModel ApiFeatureApplicationFeatureIdWebhooksWebhookInstanceIdPut (string applicationFeatureId, string webhookInstanceId, WebhookParametersRequest body = null)
+<a name="bulkupdateattachedwebhooks"></a>
+# **BulkUpdateAttachedWebhooks**
+> List<ApplicationFeatureWebhookModel> BulkUpdateAttachedWebhooks (string applicationFeatureId, BulkWebhookInstancesUpdateRequest body = null)
 
 
 
@@ -716,7 +182,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationFeatureIdWebhooksWebhookInstanceIdPutExample
+    public class BulkUpdateAttachedWebhooksExample
     {
         public void main()
         {
@@ -731,17 +197,16 @@ namespace Example
 
             var apiInstance = new FeatureApi();
             var applicationFeatureId = applicationFeatureId_example;  // string | 
-            var webhookInstanceId = webhookInstanceId_example;  // string | 
-            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+            var body = new BulkWebhookInstancesUpdateRequest(); // BulkWebhookInstancesUpdateRequest |  (optional) 
 
             try
             {
-                ApplicationFeatureWebhookModel result = apiInstance.ApiFeatureApplicationFeatureIdWebhooksWebhookInstanceIdPut(applicationFeatureId, webhookInstanceId, body);
+                List&lt;ApplicationFeatureWebhookModel&gt; result = apiInstance.BulkUpdateAttachedWebhooks(applicationFeatureId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationFeatureIdWebhooksWebhookInstanceIdPut: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.BulkUpdateAttachedWebhooks: " + e.Message );
             }
         }
     }
@@ -753,12 +218,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **applicationFeatureId** | **string**|  | 
- **webhookInstanceId** | **string**|  | 
- **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+ **body** | [**BulkWebhookInstancesUpdateRequest**](BulkWebhookInstancesUpdateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ApplicationFeatureWebhookModel**](ApplicationFeatureWebhookModel.md)
+[**List<ApplicationFeatureWebhookModel>**](ApplicationFeatureWebhookModel.md)
 
 ### Authorization
 
@@ -770,9 +234,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationidaddfeaturepost"></a>
-# **ApiFeatureApplicationIdAddFeaturePost**
-> ApplicationFeatureModel ApiFeatureApplicationIdAddFeaturePost (string applicationId, CreateApplicationFeatureRequest body = null)
+<a name="changemodule"></a>
+# **ChangeModule**
+> ApplicationFeatureModel ChangeModule (string applicationFeatureId, string applicationModuleId)
 
 
 
@@ -786,7 +250,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationIdAddFeaturePostExample
+    public class ChangeModuleExample
     {
         public void main()
         {
@@ -800,17 +264,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FeatureApi();
-            var applicationId = applicationId_example;  // string | 
-            var body = new CreateApplicationFeatureRequest(); // CreateApplicationFeatureRequest |  (optional) 
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var applicationModuleId = applicationModuleId_example;  // string | 
 
             try
             {
-                ApplicationFeatureModel result = apiInstance.ApiFeatureApplicationIdAddFeaturePost(applicationId, body);
+                ApplicationFeatureModel result = apiInstance.ChangeModule(applicationFeatureId, applicationModuleId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationIdAddFeaturePost: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.ChangeModule: " + e.Message );
             }
         }
     }
@@ -821,8 +285,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **body** | [**CreateApplicationFeatureRequest**](CreateApplicationFeatureRequest.md)|  | [optional] 
+ **applicationFeatureId** | **string**|  | 
+ **applicationModuleId** | **string**|  | 
 
 ### Return type
 
@@ -834,13 +298,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationidavailableget"></a>
-# **ApiFeatureApplicationIdAvailableGet**
-> List<FeatureModel> ApiFeatureApplicationIdAvailableGet (string applicationId)
+<a name="createuserdefinedparameter"></a>
+# **CreateUserDefinedParameter**
+> bool? CreateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
 
 
 
@@ -854,7 +318,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationIdAvailableGetExample
+    public class CreateUserDefinedParameterExample
     {
         public void main()
         {
@@ -868,16 +332,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FeatureApi();
-            var applicationId = applicationId_example;  // string | 
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
 
             try
             {
-                List&lt;FeatureModel&gt; result = apiInstance.ApiFeatureApplicationIdAvailableGet(applicationId);
+                bool? result = apiInstance.CreateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationIdAvailableGet: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.CreateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -888,11 +353,78 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
+ **instanceWebhookId** | **string**|  | 
+ **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**List<FeatureModel>**](FeatureModel.md)
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="deletefeature"></a>
+# **DeleteFeature**
+> ApplicationFeatureModel DeleteFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class DeleteFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                ApplicationFeatureModel result = apiInstance.DeleteFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.DeleteFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
 
 ### Authorization
 
@@ -904,9 +436,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationidfeaturesconversationcountsget"></a>
-# **ApiFeatureApplicationIdFeaturesConversationCountsGet**
-> List<ConversationCountModel> ApiFeatureApplicationIdFeaturesConversationCountsGet (string applicationId)
+<a name="disablefeature"></a>
+# **DisableFeature**
+> ApplicationFeatureModel DisableFeature (string applicationFeatureId)
 
 
 
@@ -920,7 +452,139 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationIdFeaturesConversationCountsGetExample
+    public class DisableFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                ApplicationFeatureModel result = apiInstance.DisableFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.DisableFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="enablefeature"></a>
+# **EnableFeature**
+> ApplicationFeatureModel EnableFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class EnableFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                ApplicationFeatureModel result = apiInstance.EnableFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.EnableFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getappfeatureswithcounts"></a>
+# **GetAppFeaturesWithCounts**
+> List<ConversationCountModel> GetAppFeaturesWithCounts (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAppFeaturesWithCountsExample
     {
         public void main()
         {
@@ -938,12 +602,12 @@ namespace Example
 
             try
             {
-                List&lt;ConversationCountModel&gt; result = apiInstance.ApiFeatureApplicationIdFeaturesConversationCountsGet(applicationId);
+                List&lt;ConversationCountModel&gt; result = apiInstance.GetAppFeaturesWithCounts(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationIdFeaturesConversationCountsGet: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.GetAppFeaturesWithCounts: " + e.Message );
             }
         }
     }
@@ -970,9 +634,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationidfeaturesget"></a>
-# **ApiFeatureApplicationIdFeaturesGet**
-> List<ApplicationFeatureModel> ApiFeatureApplicationIdFeaturesGet (string applicationId)
+<a name="getavailableapplicationfeatures"></a>
+# **GetAvailableApplicationFeatures**
+> List<FeatureModel> GetAvailableApplicationFeatures (string applicationId)
 
 
 
@@ -986,7 +650,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationIdFeaturesGetExample
+    public class GetAvailableApplicationFeaturesExample
     {
         public void main()
         {
@@ -1004,12 +668,268 @@ namespace Example
 
             try
             {
-                List&lt;ApplicationFeatureModel&gt; result = apiInstance.ApiFeatureApplicationIdFeaturesGet(applicationId);
+                List&lt;FeatureModel&gt; result = apiInstance.GetAvailableApplicationFeatures(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationIdFeaturesGet: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.GetAvailableApplicationFeatures: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**List<FeatureModel>**](FeatureModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getbuiltinfeatures"></a>
+# **GetBuiltInFeatures**
+> List<FeatureModel> GetBuiltInFeatures ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetBuiltInFeaturesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+
+            try
+            {
+                List&lt;FeatureModel&gt; result = apiInstance.GetBuiltInFeatures();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.GetBuiltInFeatures: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<FeatureModel>**](FeatureModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getcontentitemsforapplicationfeature"></a>
+# **GetContentItemsForApplicationFeature**
+> List<GenericContentModel> GetContentItemsForApplicationFeature (string applicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetContentItemsForApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;GenericContentModel&gt; result = apiInstance.GetContentItemsForApplicationFeature(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.GetContentItemsForApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<GenericContentModel>**](GenericContentModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getfeaturetypes"></a>
+# **GetFeatureTypes**
+> List<FeatureTypeModel> GetFeatureTypes ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetFeatureTypesExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+
+            try
+            {
+                List&lt;FeatureTypeModel&gt; result = apiInstance.GetFeatureTypes();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.GetFeatureTypes: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<FeatureTypeModel>**](FeatureTypeModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getfeaturesforapplication"></a>
+# **GetFeaturesForApplication**
+> List<ApplicationFeatureModel> GetFeaturesForApplication (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetFeaturesForApplicationExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationFeatureModel&gt; result = apiInstance.GetFeaturesForApplication(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.GetFeaturesForApplication: " + e.Message );
             }
         }
     }
@@ -1036,9 +956,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeatureapplicationidreorderfeaturesput"></a>
-# **ApiFeatureApplicationIdReorderFeaturesPut**
-> List<ApplicationFeatureModel> ApiFeatureApplicationIdReorderFeaturesPut (string applicationId, List<string> body = null, string parentApplicationFeatureId = null)
+<a name="getwebhooks"></a>
+# **GetWebhooks**
+> List<ApplicationFeatureWebhookModel> GetWebhooks (string applicationFeatureId)
 
 
 
@@ -1052,7 +972,207 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureApplicationIdReorderFeaturesPutExample
+    public class GetWebhooksExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationFeatureWebhookModel&gt; result = apiInstance.GetWebhooks(applicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.GetWebhooks: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationFeatureWebhookModel>**](ApplicationFeatureWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeuserdefinedparameter"></a>
+# **RemoveUserDefinedParameter**
+> bool? RemoveUserDefinedParameter (string instanceWebhookId, string parameterName)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveUserDefinedParameterExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var instanceWebhookId = instanceWebhookId_example;  // string | 
+            var parameterName = parameterName_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveUserDefinedParameter(instanceWebhookId, parameterName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.RemoveUserDefinedParameter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **instanceWebhookId** | **string**|  | 
+ **parameterName** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removewebhook"></a>
+# **RemoveWebhook**
+> ApplicationFeatureWebhookModel RemoveWebhook (string applicationFeatureWebhookId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureWebhookId = applicationFeatureWebhookId_example;  // string | 
+
+            try
+            {
+                ApplicationFeatureWebhookModel result = apiInstance.RemoveWebhook(applicationFeatureWebhookId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.RemoveWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureWebhookId** | **string**|  | 
+
+### Return type
+
+[**ApplicationFeatureWebhookModel**](ApplicationFeatureWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="setapplicationfeatureorder"></a>
+# **SetApplicationFeatureOrder**
+> List<ApplicationFeatureModel> SetApplicationFeatureOrder (string applicationId, List<string> body = null, string parentApplicationFeatureId = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class SetApplicationFeatureOrderExample
     {
         public void main()
         {
@@ -1072,12 +1192,12 @@ namespace Example
 
             try
             {
-                List&lt;ApplicationFeatureModel&gt; result = apiInstance.ApiFeatureApplicationIdReorderFeaturesPut(applicationId, body, parentApplicationFeatureId);
+                List&lt;ApplicationFeatureModel&gt; result = apiInstance.SetApplicationFeatureOrder(applicationId, body, parentApplicationFeatureId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureApplicationIdReorderFeaturesPut: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.SetApplicationFeatureOrder: " + e.Message );
             }
         }
     }
@@ -1106,9 +1226,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturebuiltinget"></a>
-# **ApiFeatureBuiltInGet**
-> List<FeatureModel> ApiFeatureBuiltInGet ()
+<a name="updateapplicationfeature"></a>
+# **UpdateApplicationFeature**
+> ApplicationFeatureModel UpdateApplicationFeature (string applicationFeatureId, UpdateApplicationFeatureRequest body = null)
 
 
 
@@ -1122,7 +1242,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureBuiltInGetExample
+    public class UpdateApplicationFeatureExample
     {
         public void main()
         {
@@ -1136,140 +1256,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var body = new UpdateApplicationFeatureRequest(); // UpdateApplicationFeatureRequest |  (optional) 
 
             try
             {
-                List&lt;FeatureModel&gt; result = apiInstance.ApiFeatureBuiltInGet();
+                ApplicationFeatureModel result = apiInstance.UpdateApplicationFeature(applicationFeatureId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureBuiltInGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<FeatureModel>**](FeatureModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturetypesget"></a>
-# **ApiFeatureTypesGet**
-> List<FeatureTypeModel> ApiFeatureTypesGet ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureTypesGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-
-            try
-            {
-                List&lt;FeatureTypeModel&gt; result = apiInstance.ApiFeatureTypesGet();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureTypesGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<FeatureTypeModel>**](FeatureTypeModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturewebhookapplicationfeaturewebhookiddelete"></a>
-# **ApiFeatureWebhookApplicationFeatureWebhookIdDelete**
-> ApplicationFeatureWebhookModel ApiFeatureWebhookApplicationFeatureWebhookIdDelete (string applicationFeatureWebhookId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureWebhookApplicationFeatureWebhookIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var applicationFeatureWebhookId = applicationFeatureWebhookId_example;  // string | 
-
-            try
-            {
-                ApplicationFeatureWebhookModel result = apiInstance.ApiFeatureWebhookApplicationFeatureWebhookIdDelete(applicationFeatureWebhookId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureWebhookApplicationFeatureWebhookIdDelete: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.UpdateApplicationFeature: " + e.Message );
             }
         }
     }
@@ -1280,147 +1277,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationFeatureWebhookId** | **string**|  | 
+ **applicationFeatureId** | **string**|  | 
+ **body** | [**UpdateApplicationFeatureRequest**](UpdateApplicationFeatureRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ApplicationFeatureWebhookModel**](ApplicationFeatureWebhookModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturewebhookinstancewebhookiduserparametersparameternamedelete"></a>
-# **ApiFeatureWebhookInstanceWebhookIdUserParametersParameterNameDelete**
-> bool? ApiFeatureWebhookInstanceWebhookIdUserParametersParameterNameDelete (string instanceWebhookId, string parameterName)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureWebhookInstanceWebhookIdUserParametersParameterNameDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var parameterName = parameterName_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiFeatureWebhookInstanceWebhookIdUserParametersParameterNameDelete(instanceWebhookId, parameterName);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureWebhookInstanceWebhookIdUserParametersParameterNameDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **parameterName** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturewebhookinstancewebhookiduserparameterspost"></a>
-# **ApiFeatureWebhookInstanceWebhookIdUserParametersPost**
-> bool? ApiFeatureWebhookInstanceWebhookIdUserParametersPost (string instanceWebhookId, UserDefinedWebhookParameterCreateRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiFeatureWebhookInstanceWebhookIdUserParametersPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new FeatureApi();
-            var instanceWebhookId = instanceWebhookId_example;  // string | 
-            var body = new UserDefinedWebhookParameterCreateRequest(); // UserDefinedWebhookParameterCreateRequest |  (optional) 
-
-            try
-            {
-                bool? result = apiInstance.ApiFeatureWebhookInstanceWebhookIdUserParametersPost(instanceWebhookId, body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureWebhookInstanceWebhookIdUserParametersPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **instanceWebhookId** | **string**|  | 
- **body** | [**UserDefinedWebhookParameterCreateRequest**](UserDefinedWebhookParameterCreateRequest.md)|  | [optional] 
-
-### Return type
-
-**bool?**
+[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
 
 ### Authorization
 
@@ -1432,9 +1294,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturewebhookinstancewebhookiduserparametersput"></a>
-# **ApiFeatureWebhookInstanceWebhookIdUserParametersPut**
-> bool? ApiFeatureWebhookInstanceWebhookIdUserParametersPut (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+<a name="updateattachedwebhook"></a>
+# **UpdateAttachedWebhook**
+> ApplicationFeatureWebhookModel UpdateAttachedWebhook (string applicationFeatureId, string webhookInstanceId, WebhookParametersRequest body = null)
 
 
 
@@ -1448,7 +1310,145 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureWebhookInstanceWebhookIdUserParametersPutExample
+    public class UpdateAttachedWebhookExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var webhookInstanceId = webhookInstanceId_example;  // string | 
+            var body = new WebhookParametersRequest(); // WebhookParametersRequest |  (optional) 
+
+            try
+            {
+                ApplicationFeatureWebhookModel result = apiInstance.UpdateAttachedWebhook(applicationFeatureId, webhookInstanceId, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.UpdateAttachedWebhook: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+ **webhookInstanceId** | **string**|  | 
+ **body** | [**WebhookParametersRequest**](WebhookParametersRequest.md)|  | [optional] 
+
+### Return type
+
+[**ApplicationFeatureWebhookModel**](ApplicationFeatureWebhookModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateparentforapplicationfeature"></a>
+# **UpdateParentForApplicationFeature**
+> ApplicationFeatureModel UpdateParentForApplicationFeature (string applicationFeatureId, string parentApplicationFeatureId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateParentForApplicationFeatureExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new FeatureApi();
+            var applicationFeatureId = applicationFeatureId_example;  // string | 
+            var parentApplicationFeatureId = parentApplicationFeatureId_example;  // string | 
+
+            try
+            {
+                ApplicationFeatureModel result = apiInstance.UpdateParentForApplicationFeature(applicationFeatureId, parentApplicationFeatureId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FeatureApi.UpdateParentForApplicationFeature: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationFeatureId** | **string**|  | 
+ **parentApplicationFeatureId** | **string**|  | 
+
+### Return type
+
+[**ApplicationFeatureModel**](ApplicationFeatureModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="updateuserdefinedparameter"></a>
+# **UpdateUserDefinedParameter**
+> bool? UpdateUserDefinedParameter (string instanceWebhookId, UserDefinedWebhookParameterUpdateRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UpdateUserDefinedParameterExample
     {
         public void main()
         {
@@ -1467,12 +1467,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiFeatureWebhookInstanceWebhookIdUserParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateUserDefinedParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureWebhookInstanceWebhookIdUserParametersPut: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.UpdateUserDefinedParameter: " + e.Message );
             }
         }
     }
@@ -1500,9 +1500,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apifeaturewebhookinstancewebhookidwebhookparametersput"></a>
-# **ApiFeatureWebhookInstanceWebhookIdWebhookParametersPut**
-> bool? ApiFeatureWebhookInstanceWebhookIdWebhookParametersPut (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
+<a name="updatewebhookparameter"></a>
+# **UpdateWebhookParameter**
+> bool? UpdateWebhookParameter (string instanceWebhookId, WebhookParameterUpdateRequest body = null)
 
 
 
@@ -1516,7 +1516,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiFeatureWebhookInstanceWebhookIdWebhookParametersPutExample
+    public class UpdateWebhookParameterExample
     {
         public void main()
         {
@@ -1535,12 +1535,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiFeatureWebhookInstanceWebhookIdWebhookParametersPut(instanceWebhookId, body);
+                bool? result = apiInstance.UpdateWebhookParameter(instanceWebhookId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling FeatureApi.ApiFeatureWebhookInstanceWebhookIdWebhookParametersPut: " + e.Message );
+                Debug.Print("Exception when calling FeatureApi.UpdateWebhookParameter: " + e.Message );
             }
         }
     }

@@ -32,32 +32,20 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="AzureBotServiceInformation" /> class.
         /// </summary>
-        /// <param name="id">id.</param>
-        /// <param name="name">name.</param>
         /// <param name="registrationUrl">registrationUrl.</param>
         /// <param name="microsoftAppId">microsoftAppId.</param>
         /// <param name="microsoftAppPassword">microsoftAppPassword.</param>
-        public AzureBotServiceInformation(string id = default(string), string name = default(string), string registrationUrl = default(string), string microsoftAppId = default(string), string microsoftAppPassword = default(string))
+        /// <param name="id">id.</param>
+        /// <param name="name">name.</param>
+        public AzureBotServiceInformation(string registrationUrl = default(string), string microsoftAppId = default(string), string microsoftAppPassword = default(string), string id = default(string), string name = default(string))
         {
-            this.Id = id;
-            this.Name = name;
             this.RegistrationUrl = registrationUrl;
             this.MicrosoftAppId = microsoftAppId;
             this.MicrosoftAppPassword = microsoftAppPassword;
+            this.Id = id;
+            this.Name = name;
         }
         
-        /// <summary>
-        /// Gets or Sets Id
-        /// </summary>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public string Id { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Name
-        /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
         /// <summary>
         /// Gets or Sets RegistrationUrl
         /// </summary>
@@ -77,6 +65,18 @@ namespace Voicify.Sdk.Core.Models.Model
         public string MicrosoftAppPassword { get; set; }
 
         /// <summary>
+        /// Gets or Sets Id
+        /// </summary>
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Name
+        /// </summary>
+        [DataMember(Name="name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -84,11 +84,11 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class AzureBotServiceInformation {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  RegistrationUrl: ").Append(RegistrationUrl).Append("\n");
             sb.Append("  MicrosoftAppId: ").Append(MicrosoftAppId).Append("\n");
             sb.Append("  MicrosoftAppPassword: ").Append(MicrosoftAppPassword).Append("\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -124,16 +124,6 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
-                    this.Id == input.Id ||
-                    (this.Id != null &&
-                    this.Id.Equals(input.Id))
-                ) && 
-                (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
-                ) && 
-                (
                     this.RegistrationUrl == input.RegistrationUrl ||
                     (this.RegistrationUrl != null &&
                     this.RegistrationUrl.Equals(input.RegistrationUrl))
@@ -147,6 +137,16 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.MicrosoftAppPassword == input.MicrosoftAppPassword ||
                     (this.MicrosoftAppPassword != null &&
                     this.MicrosoftAppPassword.Equals(input.MicrosoftAppPassword))
+                ) && 
+                (
+                    this.Id == input.Id ||
+                    (this.Id != null &&
+                    this.Id.Equals(input.Id))
+                ) && 
+                (
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
                 );
         }
 
@@ -159,16 +159,16 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Id != null)
-                    hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.Name != null)
-                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.RegistrationUrl != null)
                     hashCode = hashCode * 59 + this.RegistrationUrl.GetHashCode();
                 if (this.MicrosoftAppId != null)
                     hashCode = hashCode * 59 + this.MicrosoftAppId.GetHashCode();
                 if (this.MicrosoftAppPassword != null)
                     hashCode = hashCode * 59 + this.MicrosoftAppPassword.GetHashCode();
+                if (this.Id != null)
+                    hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.Name != null)
+                    hashCode = hashCode * 59 + this.Name.GetHashCode();
                 return hashCode;
             }
         }

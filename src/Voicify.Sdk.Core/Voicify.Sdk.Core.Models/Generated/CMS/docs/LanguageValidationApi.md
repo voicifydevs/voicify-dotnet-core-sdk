@@ -4,12 +4,12 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiLanguageValidationApplicationIdBestMatchPost**](LanguageValidationApi.md#apilanguagevalidationapplicationidbestmatchpost) | **POST** /api/LanguageValidation/{applicationId}/BestMatch | 
-[**ApiLanguageValidationApplicationIdMatchesPost**](LanguageValidationApi.md#apilanguagevalidationapplicationidmatchespost) | **POST** /api/LanguageValidation/{applicationId}/Matches | 
+[**FindBestMatch**](LanguageValidationApi.md#findbestmatch) | **POST** /api/LanguageValidation/{applicationId}/BestMatch | 
+[**GetMatches**](LanguageValidationApi.md#getmatches) | **POST** /api/LanguageValidation/{applicationId}/Matches | 
 
-<a name="apilanguagevalidationapplicationidbestmatchpost"></a>
-# **ApiLanguageValidationApplicationIdBestMatchPost**
-> ProcessedLanguage ApiLanguageValidationApplicationIdBestMatchPost (string applicationId, string body = null, string locale = null)
+<a name="findbestmatch"></a>
+# **FindBestMatch**
+> ProcessedLanguage FindBestMatch (string applicationId, string body = null, string locale = null)
 
 
 
@@ -23,7 +23,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLanguageValidationApplicationIdBestMatchPostExample
+    public class FindBestMatchExample
     {
         public void main()
         {
@@ -43,12 +43,12 @@ namespace Example
 
             try
             {
-                ProcessedLanguage result = apiInstance.ApiLanguageValidationApplicationIdBestMatchPost(applicationId, body, locale);
+                ProcessedLanguage result = apiInstance.FindBestMatch(applicationId, body, locale);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LanguageValidationApi.ApiLanguageValidationApplicationIdBestMatchPost: " + e.Message );
+                Debug.Print("Exception when calling LanguageValidationApi.FindBestMatch: " + e.Message );
             }
         }
     }
@@ -77,9 +77,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apilanguagevalidationapplicationidmatchespost"></a>
-# **ApiLanguageValidationApplicationIdMatchesPost**
-> List<ProcessedLanguage> ApiLanguageValidationApplicationIdMatchesPost (string applicationId, string body = null, string locale = null)
+<a name="getmatches"></a>
+# **GetMatches**
+> List<ProcessedLanguage> GetMatches (string applicationId, string body = null, string locale = null)
 
 
 
@@ -93,7 +93,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiLanguageValidationApplicationIdMatchesPostExample
+    public class GetMatchesExample
     {
         public void main()
         {
@@ -113,12 +113,12 @@ namespace Example
 
             try
             {
-                List&lt;ProcessedLanguage&gt; result = apiInstance.ApiLanguageValidationApplicationIdMatchesPost(applicationId, body, locale);
+                List&lt;ProcessedLanguage&gt; result = apiInstance.GetMatches(applicationId, body, locale);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LanguageValidationApi.ApiLanguageValidationApplicationIdMatchesPost: " + e.Message );
+                Debug.Print("Exception when calling LanguageValidationApi.GetMatches: " + e.Message );
             }
         }
     }

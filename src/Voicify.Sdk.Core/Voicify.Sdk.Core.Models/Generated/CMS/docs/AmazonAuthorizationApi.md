@@ -4,84 +4,14 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiAmazonAuthorizationAuthorizationUrlGet**](AmazonAuthorizationApi.md#apiamazonauthorizationauthorizationurlget) | **GET** /api/AmazonAuthorization/AuthorizationUrl | 
-[**ApiAmazonAuthorizationCallbackGet**](AmazonAuthorizationApi.md#apiamazonauthorizationcallbackget) | **GET** /api/AmazonAuthorization/Callback | 
-[**ApiAmazonAuthorizationCredentialsOrganizationIdGet**](AmazonAuthorizationApi.md#apiamazonauthorizationcredentialsorganizationidget) | **GET** /api/AmazonAuthorization/Credentials/{organizationId} | 
-[**ApiAmazonAuthorizationCredentialsTokenIdDelete**](AmazonAuthorizationApi.md#apiamazonauthorizationcredentialstokeniddelete) | **DELETE** /api/AmazonAuthorization/Credentials/{tokenId} | 
+[**AmazonAuthCallbackAsync**](AmazonAuthorizationApi.md#amazonauthcallbackasync) | **GET** /api/AmazonAuthorization/Callback | 
+[**GetAvailableCredentials**](AmazonAuthorizationApi.md#getavailablecredentials) | **GET** /api/AmazonAuthorization/Credentials/{organizationId} | 
+[**RemoveCredential**](AmazonAuthorizationApi.md#removecredential) | **DELETE** /api/AmazonAuthorization/Credentials/{tokenId} | 
+[**RequestAuthenticationUrl**](AmazonAuthorizationApi.md#requestauthenticationurl) | **GET** /api/AmazonAuthorization/AuthorizationUrl | 
 
-<a name="apiamazonauthorizationauthorizationurlget"></a>
-# **ApiAmazonAuthorizationAuthorizationUrlGet**
-> string ApiAmazonAuthorizationAuthorizationUrlGet (string organizationId = null, string applicationId = null, string salt = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiAmazonAuthorizationAuthorizationUrlGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new AmazonAuthorizationApi();
-            var organizationId = organizationId_example;  // string |  (optional) 
-            var applicationId = applicationId_example;  // string |  (optional) 
-            var salt = salt_example;  // string |  (optional) 
-
-            try
-            {
-                string result = apiInstance.ApiAmazonAuthorizationAuthorizationUrlGet(organizationId, applicationId, salt);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AmazonAuthorizationApi.ApiAmazonAuthorizationAuthorizationUrlGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | [optional] 
- **applicationId** | **string**|  | [optional] 
- **salt** | **string**|  | [optional] 
-
-### Return type
-
-**string**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiamazonauthorizationcallbackget"></a>
-# **ApiAmazonAuthorizationCallbackGet**
-> bool? ApiAmazonAuthorizationCallbackGet (string code = null, string state = null, string error = null)
+<a name="amazonauthcallbackasync"></a>
+# **AmazonAuthCallbackAsync**
+> bool? AmazonAuthCallbackAsync (string code = null, string state = null, string error = null)
 
 
 
@@ -95,7 +25,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAmazonAuthorizationCallbackGetExample
+    public class AmazonAuthCallbackAsyncExample
     {
         public void main()
         {
@@ -115,12 +45,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiAmazonAuthorizationCallbackGet(code, state, error);
+                bool? result = apiInstance.AmazonAuthCallbackAsync(code, state, error);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AmazonAuthorizationApi.ApiAmazonAuthorizationCallbackGet: " + e.Message );
+                Debug.Print("Exception when calling AmazonAuthorizationApi.AmazonAuthCallbackAsync: " + e.Message );
             }
         }
     }
@@ -149,9 +79,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiamazonauthorizationcredentialsorganizationidget"></a>
-# **ApiAmazonAuthorizationCredentialsOrganizationIdGet**
-> List<TokenResponse> ApiAmazonAuthorizationCredentialsOrganizationIdGet (string organizationId)
+<a name="getavailablecredentials"></a>
+# **GetAvailableCredentials**
+> List<TokenResponse> GetAvailableCredentials (string organizationId)
 
 
 
@@ -165,7 +95,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAmazonAuthorizationCredentialsOrganizationIdGetExample
+    public class GetAvailableCredentialsExample
     {
         public void main()
         {
@@ -183,12 +113,12 @@ namespace Example
 
             try
             {
-                List&lt;TokenResponse&gt; result = apiInstance.ApiAmazonAuthorizationCredentialsOrganizationIdGet(organizationId);
+                List&lt;TokenResponse&gt; result = apiInstance.GetAvailableCredentials(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AmazonAuthorizationApi.ApiAmazonAuthorizationCredentialsOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling AmazonAuthorizationApi.GetAvailableCredentials: " + e.Message );
             }
         }
     }
@@ -215,9 +145,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiamazonauthorizationcredentialstokeniddelete"></a>
-# **ApiAmazonAuthorizationCredentialsTokenIdDelete**
-> bool? ApiAmazonAuthorizationCredentialsTokenIdDelete (string tokenId)
+<a name="removecredential"></a>
+# **RemoveCredential**
+> bool? RemoveCredential (string tokenId)
 
 
 
@@ -231,7 +161,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiAmazonAuthorizationCredentialsTokenIdDeleteExample
+    public class RemoveCredentialExample
     {
         public void main()
         {
@@ -249,12 +179,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiAmazonAuthorizationCredentialsTokenIdDelete(tokenId);
+                bool? result = apiInstance.RemoveCredential(tokenId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AmazonAuthorizationApi.ApiAmazonAuthorizationCredentialsTokenIdDelete: " + e.Message );
+                Debug.Print("Exception when calling AmazonAuthorizationApi.RemoveCredential: " + e.Message );
             }
         }
     }
@@ -270,6 +200,76 @@ Name | Type | Description  | Notes
 ### Return type
 
 **bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="requestauthenticationurl"></a>
+# **RequestAuthenticationUrl**
+> string RequestAuthenticationUrl (string organizationId = null, string applicationId = null, string salt = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RequestAuthenticationUrlExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new AmazonAuthorizationApi();
+            var organizationId = organizationId_example;  // string |  (optional) 
+            var applicationId = applicationId_example;  // string |  (optional) 
+            var salt = salt_example;  // string |  (optional) 
+
+            try
+            {
+                string result = apiInstance.RequestAuthenticationUrl(organizationId, applicationId, salt);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AmazonAuthorizationApi.RequestAuthenticationUrl: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | [optional] 
+ **applicationId** | **string**|  | [optional] 
+ **salt** | **string**|  | [optional] 
+
+### Return type
+
+**string**
 
 ### Authorization
 

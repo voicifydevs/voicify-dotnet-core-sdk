@@ -30,28 +30,28 @@ namespace Voicify.Sdk.Core.Models.Model
         public enum ConditionComparisonType
     {
         /// <summary>
-        /// Enum NUMBER_0 for value: 0
+        /// Enum Unknown for value: Unknown
         /// </summary>
-        [EnumMember(Value = "0")]
-        NUMBER_0 = 1,
+        [EnumMember(Value = "Unknown")]
+        Unknown = 1,
         /// <summary>
-        /// Enum NUMBER_1 for value: 1
+        /// Enum Equals for value: Equals
         /// </summary>
-        [EnumMember(Value = "1")]
-        NUMBER_1 = 2,
+        [EnumMember(Value = "Equals")]
+        Equals = 2,
         /// <summary>
-        /// Enum NUMBER_2 for value: 2
+        /// Enum NotEquals for value: NotEquals
         /// </summary>
-        [EnumMember(Value = "2")]
-        NUMBER_2 = 3,
+        [EnumMember(Value = "NotEquals")]
+        NotEquals = 3,
         /// <summary>
-        /// Enum NUMBER_3 for value: 3
+        /// Enum Contains for value: Contains
         /// </summary>
-        [EnumMember(Value = "3")]
-        NUMBER_3 = 4,
+        [EnumMember(Value = "Contains")]
+        Contains = 4,
         /// <summary>
-        /// Enum NUMBER_4 for value: 4
+        /// Enum DoesNotContain for value: DoesNotContain
         /// </summary>
-        [EnumMember(Value = "4")]
-        NUMBER_4 = 5    }
+        [EnumMember(Value = "DoesNotContain")]
+        DoesNotContain = 5    }
 }

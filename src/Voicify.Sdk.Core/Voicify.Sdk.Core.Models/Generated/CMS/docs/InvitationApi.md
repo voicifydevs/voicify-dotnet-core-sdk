@@ -4,17 +4,17 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiInvitationAcceptInvitationIdPost**](InvitationApi.md#apiinvitationacceptinvitationidpost) | **POST** /api/Invitation/accept/{invitationId} | 
-[**ApiInvitationDeclineInvitationIdPost**](InvitationApi.md#apiinvitationdeclineinvitationidpost) | **POST** /api/Invitation/decline/{invitationId} | 
-[**ApiInvitationGet**](InvitationApi.md#apiinvitationget) | **GET** /api/Invitation | 
-[**ApiInvitationInvitationIdDelete**](InvitationApi.md#apiinvitationinvitationiddelete) | **DELETE** /api/Invitation/{invitationId} | 
-[**ApiInvitationOrganizationIdGet**](InvitationApi.md#apiinvitationorganizationidget) | **GET** /api/Invitation/{organizationId} | 
-[**ApiInvitationOrganizationIdPost**](InvitationApi.md#apiinvitationorganizationidpost) | **POST** /api/Invitation/{organizationId} | 
-[**ApiInvitationOrganizationIdWithRolePost**](InvitationApi.md#apiinvitationorganizationidwithrolepost) | **POST** /api/Invitation/{organizationId}/withRole | 
+[**AcceptInvite**](InvitationApi.md#acceptinvite) | **POST** /api/Invitation/accept/{invitationId} | 
+[**DeclineInvite**](InvitationApi.md#declineinvite) | **POST** /api/Invitation/decline/{invitationId} | 
+[**GetInvitations**](InvitationApi.md#getinvitations) | **GET** /api/Invitation | 
+[**GetInvitationsForOrganization**](InvitationApi.md#getinvitationsfororganization) | **GET** /api/Invitation/{organizationId} | 
+[**RevokeInvite**](InvitationApi.md#revokeinvite) | **DELETE** /api/Invitation/{invitationId} | 
+[**SendInvite**](InvitationApi.md#sendinvite) | **POST** /api/Invitation/{organizationId} | 
+[**SendInvite_0**](InvitationApi.md#sendinvite_0) | **POST** /api/Invitation/{organizationId}/withRole | 
 
-<a name="apiinvitationacceptinvitationidpost"></a>
-# **ApiInvitationAcceptInvitationIdPost**
-> OrganizationMemberModel ApiInvitationAcceptInvitationIdPost (string invitationId)
+<a name="acceptinvite"></a>
+# **AcceptInvite**
+> OrganizationMemberModel AcceptInvite (string invitationId)
 
 
 
@@ -28,7 +28,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiInvitationAcceptInvitationIdPostExample
+    public class AcceptInviteExample
     {
         public void main()
         {
@@ -46,12 +46,12 @@ namespace Example
 
             try
             {
-                OrganizationMemberModel result = apiInstance.ApiInvitationAcceptInvitationIdPost(invitationId);
+                OrganizationMemberModel result = apiInstance.AcceptInvite(invitationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationAcceptInvitationIdPost: " + e.Message );
+                Debug.Print("Exception when calling InvitationApi.AcceptInvite: " + e.Message );
             }
         }
     }
@@ -78,9 +78,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiinvitationdeclineinvitationidpost"></a>
-# **ApiInvitationDeclineInvitationIdPost**
-> InvitationModel ApiInvitationDeclineInvitationIdPost (string invitationId)
+<a name="declineinvite"></a>
+# **DeclineInvite**
+> InvitationModel DeclineInvite (string invitationId)
 
 
 
@@ -94,7 +94,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiInvitationDeclineInvitationIdPostExample
+    public class DeclineInviteExample
     {
         public void main()
         {
@@ -112,12 +112,12 @@ namespace Example
 
             try
             {
-                InvitationModel result = apiInstance.ApiInvitationDeclineInvitationIdPost(invitationId);
+                InvitationModel result = apiInstance.DeclineInvite(invitationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationDeclineInvitationIdPost: " + e.Message );
+                Debug.Print("Exception when calling InvitationApi.DeclineInvite: " + e.Message );
             }
         }
     }
@@ -144,9 +144,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiinvitationget"></a>
-# **ApiInvitationGet**
-> List<InvitationModel> ApiInvitationGet ()
+<a name="getinvitations"></a>
+# **GetInvitations**
+> List<InvitationModel> GetInvitations ()
 
 
 
@@ -160,7 +160,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiInvitationGetExample
+    public class GetInvitationsExample
     {
         public void main()
         {
@@ -177,12 +177,12 @@ namespace Example
 
             try
             {
-                List&lt;InvitationModel&gt; result = apiInstance.ApiInvitationGet();
+                List&lt;InvitationModel&gt; result = apiInstance.GetInvitations();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationGet: " + e.Message );
+                Debug.Print("Exception when calling InvitationApi.GetInvitations: " + e.Message );
             }
         }
     }
@@ -206,9 +206,9 @@ This endpoint does not need any parameter.
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiinvitationinvitationiddelete"></a>
-# **ApiInvitationInvitationIdDelete**
-> InvitationModel ApiInvitationInvitationIdDelete (string invitationId)
+<a name="getinvitationsfororganization"></a>
+# **GetInvitationsForOrganization**
+> List<InvitationModel> GetInvitationsForOrganization (string organizationId)
 
 
 
@@ -222,73 +222,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiInvitationInvitationIdDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new InvitationApi();
-            var invitationId = invitationId_example;  // string | 
-
-            try
-            {
-                InvitationModel result = apiInstance.ApiInvitationInvitationIdDelete(invitationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationInvitationIdDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **invitationId** | **string**|  | 
-
-### Return type
-
-[**InvitationModel**](InvitationModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiinvitationorganizationidget"></a>
-# **ApiInvitationOrganizationIdGet**
-> List<InvitationModel> ApiInvitationOrganizationIdGet (string organizationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiInvitationOrganizationIdGetExample
+    public class GetInvitationsForOrganizationExample
     {
         public void main()
         {
@@ -306,12 +240,12 @@ namespace Example
 
             try
             {
-                List&lt;InvitationModel&gt; result = apiInstance.ApiInvitationOrganizationIdGet(organizationId);
+                List&lt;InvitationModel&gt; result = apiInstance.GetInvitationsForOrganization(organizationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling InvitationApi.GetInvitationsForOrganization: " + e.Message );
             }
         }
     }
@@ -338,9 +272,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiinvitationorganizationidpost"></a>
-# **ApiInvitationOrganizationIdPost**
-> InvitationModel ApiInvitationOrganizationIdPost (string organizationId, BasicInvitationRequest body = null)
+<a name="revokeinvite"></a>
+# **RevokeInvite**
+> InvitationModel RevokeInvite (string invitationId)
 
 
 
@@ -354,7 +288,73 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiInvitationOrganizationIdPostExample
+    public class RevokeInviteExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new InvitationApi();
+            var invitationId = invitationId_example;  // string | 
+
+            try
+            {
+                InvitationModel result = apiInstance.RevokeInvite(invitationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InvitationApi.RevokeInvite: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **invitationId** | **string**|  | 
+
+### Return type
+
+[**InvitationModel**](InvitationModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="sendinvite"></a>
+# **SendInvite**
+> InvitationModel SendInvite (string organizationId, BasicInvitationRequest body = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class SendInviteExample
     {
         public void main()
         {
@@ -373,12 +373,12 @@ namespace Example
 
             try
             {
-                InvitationModel result = apiInstance.ApiInvitationOrganizationIdPost(organizationId, body);
+                InvitationModel result = apiInstance.SendInvite(organizationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationOrganizationIdPost: " + e.Message );
+                Debug.Print("Exception when calling InvitationApi.SendInvite: " + e.Message );
             }
         }
     }
@@ -406,9 +406,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiinvitationorganizationidwithrolepost"></a>
-# **ApiInvitationOrganizationIdWithRolePost**
-> InvitationModel ApiInvitationOrganizationIdWithRolePost (string organizationId, NewInvitationRequest body = null)
+<a name="sendinvite_0"></a>
+# **SendInvite_0**
+> InvitationModel SendInvite_0 (string organizationId, NewInvitationRequest body = null)
 
 
 
@@ -422,7 +422,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiInvitationOrganizationIdWithRolePostExample
+    public class SendInvite_0Example
     {
         public void main()
         {
@@ -441,12 +441,12 @@ namespace Example
 
             try
             {
-                InvitationModel result = apiInstance.ApiInvitationOrganizationIdWithRolePost(organizationId, body);
+                InvitationModel result = apiInstance.SendInvite_0(organizationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling InvitationApi.ApiInvitationOrganizationIdWithRolePost: " + e.Message );
+                Debug.Print("Exception when calling InvitationApi.SendInvite_0: " + e.Message );
             }
         }
     }

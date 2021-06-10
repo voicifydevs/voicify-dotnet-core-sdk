@@ -32,26 +32,38 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="InteractionModelUpdateWithReference" /> class.
         /// </summary>
+        /// <param name="createdFromReferenceId">createdFromReferenceId.</param>
+        /// <param name="appliedFormId">appliedFormId.</param>
         /// <param name="effectiveAsOf">effectiveAsOf.</param>
         /// <param name="intents">intents.</param>
         /// <param name="disableIntents">disableIntents.</param>
         /// <param name="enableIntents">enableIntents.</param>
         /// <param name="isBaseUpdate">isBaseUpdate.</param>
         /// <param name="locale">locale.</param>
-        /// <param name="createdFromReferenceId">createdFromReferenceId.</param>
-        /// <param name="appliedFormId">appliedFormId.</param>
-        public InteractionModelUpdateWithReference(long? effectiveAsOf = default(long?), Dictionary<string, IntentUpdate> intents = default(Dictionary<string, IntentUpdate>), List<IntentStatusUpdate> disableIntents = default(List<IntentStatusUpdate>), List<IntentStatusUpdate> enableIntents = default(List<IntentStatusUpdate>), bool? isBaseUpdate = default(bool?), string locale = default(string), string createdFromReferenceId = default(string), string appliedFormId = default(string))
+        public InteractionModelUpdateWithReference(string createdFromReferenceId = default(string), string appliedFormId = default(string), long? effectiveAsOf = default(long?), Dictionary<string, IntentUpdate> intents = default(Dictionary<string, IntentUpdate>), List<IntentStatusUpdate> disableIntents = default(List<IntentStatusUpdate>), List<IntentStatusUpdate> enableIntents = default(List<IntentStatusUpdate>), bool? isBaseUpdate = default(bool?), string locale = default(string))
         {
+            this.CreatedFromReferenceId = createdFromReferenceId;
+            this.AppliedFormId = appliedFormId;
             this.EffectiveAsOf = effectiveAsOf;
             this.Intents = intents;
             this.DisableIntents = disableIntents;
             this.EnableIntents = enableIntents;
             this.IsBaseUpdate = isBaseUpdate;
             this.Locale = locale;
-            this.CreatedFromReferenceId = createdFromReferenceId;
-            this.AppliedFormId = appliedFormId;
         }
         
+        /// <summary>
+        /// Gets or Sets CreatedFromReferenceId
+        /// </summary>
+        [DataMember(Name="createdFromReferenceId", EmitDefaultValue=false)]
+        public string CreatedFromReferenceId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AppliedFormId
+        /// </summary>
+        [DataMember(Name="appliedFormId", EmitDefaultValue=false)]
+        public string AppliedFormId { get; set; }
+
         /// <summary>
         /// Gets or Sets EffectiveAsOf
         /// </summary>
@@ -89,18 +101,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public string Locale { get; set; }
 
         /// <summary>
-        /// Gets or Sets CreatedFromReferenceId
-        /// </summary>
-        [DataMember(Name="createdFromReferenceId", EmitDefaultValue=false)]
-        public string CreatedFromReferenceId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets AppliedFormId
-        /// </summary>
-        [DataMember(Name="appliedFormId", EmitDefaultValue=false)]
-        public string AppliedFormId { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -108,14 +108,14 @@ namespace Voicify.Sdk.Core.Models.Model
         {
             var sb = new StringBuilder();
             sb.Append("class InteractionModelUpdateWithReference {\n");
+            sb.Append("  CreatedFromReferenceId: ").Append(CreatedFromReferenceId).Append("\n");
+            sb.Append("  AppliedFormId: ").Append(AppliedFormId).Append("\n");
             sb.Append("  EffectiveAsOf: ").Append(EffectiveAsOf).Append("\n");
             sb.Append("  Intents: ").Append(Intents).Append("\n");
             sb.Append("  DisableIntents: ").Append(DisableIntents).Append("\n");
             sb.Append("  EnableIntents: ").Append(EnableIntents).Append("\n");
             sb.Append("  IsBaseUpdate: ").Append(IsBaseUpdate).Append("\n");
             sb.Append("  Locale: ").Append(Locale).Append("\n");
-            sb.Append("  CreatedFromReferenceId: ").Append(CreatedFromReferenceId).Append("\n");
-            sb.Append("  AppliedFormId: ").Append(AppliedFormId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -151,6 +151,16 @@ namespace Voicify.Sdk.Core.Models.Model
 
             return 
                 (
+                    this.CreatedFromReferenceId == input.CreatedFromReferenceId ||
+                    (this.CreatedFromReferenceId != null &&
+                    this.CreatedFromReferenceId.Equals(input.CreatedFromReferenceId))
+                ) && 
+                (
+                    this.AppliedFormId == input.AppliedFormId ||
+                    (this.AppliedFormId != null &&
+                    this.AppliedFormId.Equals(input.AppliedFormId))
+                ) && 
+                (
                     this.EffectiveAsOf == input.EffectiveAsOf ||
                     (this.EffectiveAsOf != null &&
                     this.EffectiveAsOf.Equals(input.EffectiveAsOf))
@@ -182,16 +192,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.Locale == input.Locale ||
                     (this.Locale != null &&
                     this.Locale.Equals(input.Locale))
-                ) && 
-                (
-                    this.CreatedFromReferenceId == input.CreatedFromReferenceId ||
-                    (this.CreatedFromReferenceId != null &&
-                    this.CreatedFromReferenceId.Equals(input.CreatedFromReferenceId))
-                ) && 
-                (
-                    this.AppliedFormId == input.AppliedFormId ||
-                    (this.AppliedFormId != null &&
-                    this.AppliedFormId.Equals(input.AppliedFormId))
                 );
         }
 
@@ -204,6 +204,10 @@ namespace Voicify.Sdk.Core.Models.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.CreatedFromReferenceId != null)
+                    hashCode = hashCode * 59 + this.CreatedFromReferenceId.GetHashCode();
+                if (this.AppliedFormId != null)
+                    hashCode = hashCode * 59 + this.AppliedFormId.GetHashCode();
                 if (this.EffectiveAsOf != null)
                     hashCode = hashCode * 59 + this.EffectiveAsOf.GetHashCode();
                 if (this.Intents != null)
@@ -216,10 +220,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.IsBaseUpdate.GetHashCode();
                 if (this.Locale != null)
                     hashCode = hashCode * 59 + this.Locale.GetHashCode();
-                if (this.CreatedFromReferenceId != null)
-                    hashCode = hashCode * 59 + this.CreatedFromReferenceId.GetHashCode();
-                if (this.AppliedFormId != null)
-                    hashCode = hashCode * 59 + this.AppliedFormId.GetHashCode();
                 return hashCode;
             }
         }

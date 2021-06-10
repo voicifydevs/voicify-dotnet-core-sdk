@@ -72,8 +72,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="conditions">conditions.</param>
         /// <param name="webhookChainingType">webhookChainingType.</param>
         /// <param name="appliedApplicationTemplateFormId">appliedApplicationTemplateFormId.</param>
-        /// <param name="sharedReferences">sharedReferences.</param>
-        public WelcomeMessageExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string content = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), List<WelcomeMessageWebhookModel> welcomeMessageWebhooks = default(List<WelcomeMessageWebhookModel>), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), FollowUpModel followUp = default(FollowUpModel), int? hits = default(int?), RepromptModel reprompt = default(RepromptModel), string repromptId = default(string), string followUpId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?), string responseId = default(string), List<WelcomeMessageResponseModel> responses = default(List<WelcomeMessageResponseModel>), List<ConditionInstanceModel> conditions = default(List<ConditionInstanceModel>), WebhookChainingType? webhookChainingType = default(WebhookChainingType?), string appliedApplicationTemplateFormId = default(string), SharedReferencesExportModel sharedReferences = default(SharedReferencesExportModel))
+        public WelcomeMessageExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string content = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), List<WelcomeMessageWebhookModel> welcomeMessageWebhooks = default(List<WelcomeMessageWebhookModel>), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), FollowUpModel followUp = default(FollowUpModel), int? hits = default(int?), RepromptModel reprompt = default(RepromptModel), string repromptId = default(string), string followUpId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), string createdFromId = default(string), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?), string responseId = default(string), List<WelcomeMessageResponseModel> responses = default(List<WelcomeMessageResponseModel>), List<ConditionInstanceModel> conditions = default(List<ConditionInstanceModel>), WebhookChainingType? webhookChainingType = default(WebhookChainingType?), string appliedApplicationTemplateFormId = default(string))
         {
             this.Id = id;
             this.ApplicationId = applicationId;
@@ -110,7 +109,6 @@ namespace Voicify.Sdk.Core.Models.Model
             this.Conditions = conditions;
             this.WebhookChainingType = webhookChainingType;
             this.AppliedApplicationTemplateFormId = appliedApplicationTemplateFormId;
-            this.SharedReferences = sharedReferences;
         }
         
         /// <summary>
@@ -319,12 +317,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public string AppliedApplicationTemplateFormId { get; set; }
 
         /// <summary>
-        /// Gets or Sets SharedReferences
-        /// </summary>
-        [DataMember(Name="sharedReferences", EmitDefaultValue=false)]
-        public SharedReferencesExportModel SharedReferences { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -367,7 +359,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  Conditions: ").Append(Conditions).Append("\n");
             sb.Append("  WebhookChainingType: ").Append(WebhookChainingType).Append("\n");
             sb.Append("  AppliedApplicationTemplateFormId: ").Append(AppliedApplicationTemplateFormId).Append("\n");
-            sb.Append("  SharedReferences: ").Append(SharedReferences).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -580,11 +571,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.AppliedApplicationTemplateFormId == input.AppliedApplicationTemplateFormId ||
                     (this.AppliedApplicationTemplateFormId != null &&
                     this.AppliedApplicationTemplateFormId.Equals(input.AppliedApplicationTemplateFormId))
-                ) && 
-                (
-                    this.SharedReferences == input.SharedReferences ||
-                    (this.SharedReferences != null &&
-                    this.SharedReferences.Equals(input.SharedReferences))
                 );
         }
 
@@ -667,8 +653,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.WebhookChainingType.GetHashCode();
                 if (this.AppliedApplicationTemplateFormId != null)
                     hashCode = hashCode * 59 + this.AppliedApplicationTemplateFormId.GetHashCode();
-                if (this.SharedReferences != null)
-                    hashCode = hashCode * 59 + this.SharedReferences.GetHashCode();
                 return hashCode;
             }
         }

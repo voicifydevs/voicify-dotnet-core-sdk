@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Responses** | [**List&lt;NewNumberRangeResponseRequest&gt;**](NewNumberRangeResponseRequest.md) |  | 
 **ApplicationId** | **string** |  | 
 **ApplicationFeatureId** | **string** |  | 
 **MinimumValue** | **double?** |  | [optional] 
@@ -18,7 +19,6 @@ Name | Type | Description | Notes
 **DisplayTextOverride** | **string** |  | [optional] 
 **DisplayTitleOverride** | **string** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
-**Responses** | [**List&lt;NewNumberRangeResponseRequest&gt;**](NewNumberRangeResponseRequest.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

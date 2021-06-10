@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Content** | **string** |  | 
 **Title** | **string** |  | 
 **ApplicationId** | **string** |  | [optional] 
 **ImageItemId** | **string** |  | [optional] 
@@ -17,7 +18,6 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **RequiresParent** | **bool?** |  | [optional] 
 **LanguageIds** | **List&lt;string&gt;** |  | [optional] 
-**Content** | **string** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

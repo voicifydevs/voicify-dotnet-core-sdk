@@ -4,106 +4,38 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiApplicationDeploymentApplicationIdAlexaSkillAlexaSkillIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidalexaskillalexaskillidput) | **PUT** /api/ApplicationDeployment/{applicationId}/alexaSkill/{alexaSkillId} | 
-[**ApiApplicationDeploymentApplicationIdAlexaSkillCreateAndDeployPost**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidalexaskillcreateanddeploypost) | **POST** /api/ApplicationDeployment/{applicationId}/alexaSkill/CreateAndDeploy | 
-[**ApiApplicationDeploymentApplicationIdAlexaSkillDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidalexaskilldelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/alexaSkill | 
-[**ApiApplicationDeploymentApplicationIdAlexaVendorDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidalexavendordelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/alexaVendor | 
-[**ApiApplicationDeploymentApplicationIdAlexaVendorVendorIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidalexavendorvendoridput) | **PUT** /api/ApplicationDeployment/{applicationId}/alexaVendor/{vendorId} | 
-[**ApiApplicationDeploymentApplicationIdAlexaVendorsGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidalexavendorsget) | **GET** /api/ApplicationDeployment/{applicationId}/alexaVendors | 
-[**ApiApplicationDeploymentApplicationIdAmazonAuthTokenAmazonTokenIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidamazonauthtokenamazontokenidput) | **PUT** /api/ApplicationDeployment/{applicationId}/amazonAuthToken/{amazonTokenId} | 
-[**ApiApplicationDeploymentApplicationIdAmazonAuthTokenDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidamazonauthtokendelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/amazonAuthToken | 
-[**ApiApplicationDeploymentApplicationIdAzureSubscriptionDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidazuresubscriptiondelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/azureSubscription | 
-[**ApiApplicationDeploymentApplicationIdAzureSubscriptionsSubscriptionIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidazuresubscriptionssubscriptionidput) | **PUT** /api/ApplicationDeployment/{applicationId}/azureSubscriptions/{subscriptionId} | 
-[**ApiApplicationDeploymentApplicationIdDialogflowAgentDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationiddialogflowagentdelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/dialogflowAgent | 
-[**ApiApplicationDeploymentApplicationIdDialogflowAgentPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationiddialogflowagentput) | **PUT** /api/ApplicationDeployment/{applicationId}/dialogflowAgent | 
-[**ApiApplicationDeploymentApplicationIdGoogleAuthTokenDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidgoogleauthtokendelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/googleAuthToken | 
-[**ApiApplicationDeploymentApplicationIdGoogleAuthTokenGoogleTokenIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidgoogleauthtokengoogletokenidput) | **PUT** /api/ApplicationDeployment/{applicationId}/googleAuthToken/{googleTokenId} | 
-[**ApiApplicationDeploymentApplicationIdLinkToAmazonGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidlinktoamazonget) | **GET** /api/ApplicationDeployment/{applicationId}/linkToAmazon | 
-[**ApiApplicationDeploymentApplicationIdLinkToGoogleGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidlinktogoogleget) | **GET** /api/ApplicationDeployment/{applicationId}/linkToGoogle | 
-[**ApiApplicationDeploymentApplicationIdLinkToMicrosoftGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidlinktomicrosoftget) | **GET** /api/ApplicationDeployment/{applicationId}/linkToMicrosoft | 
-[**ApiApplicationDeploymentApplicationIdLuisAppCreateAndDeployPost**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidluisappcreateanddeploypost) | **POST** /api/ApplicationDeployment/{applicationId}/luisApp/CreateAndDeploy | 
-[**ApiApplicationDeploymentApplicationIdLuisAppDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidluisappdelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/luisApp | 
-[**ApiApplicationDeploymentApplicationIdLuisAppLuisAppIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidluisappluisappidput) | **PUT** /api/ApplicationDeployment/{applicationId}/luisApp/{luisAppId} | 
-[**ApiApplicationDeploymentApplicationIdLuisKeyLuisKeyPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidluiskeyluiskeyput) | **PUT** /api/ApplicationDeployment/{applicationId}/luisKey/{luisKey} | 
-[**ApiApplicationDeploymentApplicationIdLuisPredictionResourcesPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidluispredictionresourcesput) | **PUT** /api/ApplicationDeployment/{applicationId}/luisPredictionResources | 
-[**ApiApplicationDeploymentApplicationIdMicrosoftAuthTokenMicrosoftTokenIdPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidmicrosoftauthtokenmicrosofttokenidput) | **PUT** /api/ApplicationDeployment/{applicationId}/microsoftAuthToken/{microsoftTokenId} | 
-[**ApiApplicationDeploymentApplicationIdMicrosoftProjectDelete**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidmicrosoftprojectdelete) | **DELETE** /api/ApplicationDeployment/{applicationId}/microsoftProject | 
-[**ApiApplicationDeploymentApplicationIdMicrosoftProjectPut**](ApplicationDeploymentApi.md#apiapplicationdeploymentapplicationidmicrosoftprojectput) | **PUT** /api/ApplicationDeployment/{applicationId}/microsoftProject | 
-[**ApiApplicationDeploymentOrganizationLinksToAmazonOrganizationIdGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentorganizationlinkstoamazonorganizationidget) | **GET** /api/ApplicationDeployment/organizationLinksToAmazon/{organizationId} | 
-[**ApiApplicationDeploymentOrganizationLinksToGoogleOrganizationIdGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentorganizationlinkstogoogleorganizationidget) | **GET** /api/ApplicationDeployment/organizationLinksToGoogle/{organizationId} | 
-[**ApiApplicationDeploymentOrganizationLinksToMicrosoftOrganizationIdGet**](ApplicationDeploymentApi.md#apiapplicationdeploymentorganizationlinkstomicrosoftorganizationidget) | **GET** /api/ApplicationDeployment/organizationLinksToMicrosoft/{organizationId} | 
+[**DeployNewLuisApp**](ApplicationDeploymentApi.md#deploynewluisapp) | **POST** /api/ApplicationDeployment/{applicationId}/luisApp/CreateAndDeploy | 
+[**DeployNewSkill**](ApplicationDeploymentApi.md#deploynewskill) | **POST** /api/ApplicationDeployment/{applicationId}/alexaSkill/CreateAndDeploy | 
+[**GetAlexaVendors**](ApplicationDeploymentApi.md#getalexavendors) | **GET** /api/ApplicationDeployment/{applicationId}/alexaVendors | 
+[**GetApplicationLinkToAmazon**](ApplicationDeploymentApi.md#getapplicationlinktoamazon) | **GET** /api/ApplicationDeployment/{applicationId}/linkToAmazon | 
+[**GetApplicationLinkToGoogle**](ApplicationDeploymentApi.md#getapplicationlinktogoogle) | **GET** /api/ApplicationDeployment/{applicationId}/linkToGoogle | 
+[**GetApplicationLinkToMicrosoft**](ApplicationDeploymentApi.md#getapplicationlinktomicrosoft) | **GET** /api/ApplicationDeployment/{applicationId}/linkToMicrosoft | 
+[**GetApplicationsLinkedToAmazon**](ApplicationDeploymentApi.md#getapplicationslinkedtoamazon) | **GET** /api/ApplicationDeployment/organizationLinksToAmazon/{organizationId} | 
+[**GetApplicationsLinkedToGoogle**](ApplicationDeploymentApi.md#getapplicationslinkedtogoogle) | **GET** /api/ApplicationDeployment/organizationLinksToGoogle/{organizationId} | 
+[**GetApplicationsLinkedToMicrosoft**](ApplicationDeploymentApi.md#getapplicationslinkedtomicrosoft) | **GET** /api/ApplicationDeployment/organizationLinksToMicrosoft/{organizationId} | 
+[**LinkAlexaSkillId**](ApplicationDeploymentApi.md#linkalexaskillid) | **PUT** /api/ApplicationDeployment/{applicationId}/alexaSkill/{alexaSkillId} | 
+[**LinkAlexaVendor**](ApplicationDeploymentApi.md#linkalexavendor) | **PUT** /api/ApplicationDeployment/{applicationId}/alexaVendor/{vendorId} | 
+[**LinkAmazonAuthToken**](ApplicationDeploymentApi.md#linkamazonauthtoken) | **PUT** /api/ApplicationDeployment/{applicationId}/amazonAuthToken/{amazonTokenId} | 
+[**LinkAzureSubscription**](ApplicationDeploymentApi.md#linkazuresubscription) | **PUT** /api/ApplicationDeployment/{applicationId}/azureSubscriptions/{subscriptionId} | 
+[**LinkDialogflowAgentId**](ApplicationDeploymentApi.md#linkdialogflowagentid) | **PUT** /api/ApplicationDeployment/{applicationId}/dialogflowAgent | 
+[**LinkGoogleAuthToken**](ApplicationDeploymentApi.md#linkgoogleauthtoken) | **PUT** /api/ApplicationDeployment/{applicationId}/googleAuthToken/{googleTokenId} | 
+[**LinkLuisApp**](ApplicationDeploymentApi.md#linkluisapp) | **PUT** /api/ApplicationDeployment/{applicationId}/luisApp/{luisAppId} | 
+[**LinkLuisAuthoringKey**](ApplicationDeploymentApi.md#linkluisauthoringkey) | **PUT** /api/ApplicationDeployment/{applicationId}/luisKey/{luisKey} | 
+[**LinkLuisPredictionResources**](ApplicationDeploymentApi.md#linkluispredictionresources) | **PUT** /api/ApplicationDeployment/{applicationId}/luisPredictionResources | 
+[**LinkMicrosoftApp**](ApplicationDeploymentApi.md#linkmicrosoftapp) | **PUT** /api/ApplicationDeployment/{applicationId}/microsoftProject | 
+[**LinkMicrosoftAuthToken**](ApplicationDeploymentApi.md#linkmicrosoftauthtoken) | **PUT** /api/ApplicationDeployment/{applicationId}/microsoftAuthToken/{microsoftTokenId} | 
+[**RemoveAlexaVendor**](ApplicationDeploymentApi.md#removealexavendor) | **DELETE** /api/ApplicationDeployment/{applicationId}/alexaVendor | 
+[**RemoveAmazonAuthToken**](ApplicationDeploymentApi.md#removeamazonauthtoken) | **DELETE** /api/ApplicationDeployment/{applicationId}/amazonAuthToken | 
+[**RemoveAzureSubscription**](ApplicationDeploymentApi.md#removeazuresubscription) | **DELETE** /api/ApplicationDeployment/{applicationId}/azureSubscription | 
+[**RemoveGoogleAuthToken**](ApplicationDeploymentApi.md#removegoogleauthtoken) | **DELETE** /api/ApplicationDeployment/{applicationId}/googleAuthToken | 
+[**UnlinkAlexaSkill**](ApplicationDeploymentApi.md#unlinkalexaskill) | **DELETE** /api/ApplicationDeployment/{applicationId}/alexaSkill | 
+[**UnlinkDialogflowAgent**](ApplicationDeploymentApi.md#unlinkdialogflowagent) | **DELETE** /api/ApplicationDeployment/{applicationId}/dialogflowAgent | 
+[**UnlinkLuisApp**](ApplicationDeploymentApi.md#unlinkluisapp) | **DELETE** /api/ApplicationDeployment/{applicationId}/luisApp | 
+[**UnlinkMicrosoftProject**](ApplicationDeploymentApi.md#unlinkmicrosoftproject) | **DELETE** /api/ApplicationDeployment/{applicationId}/microsoftProject | 
 
-<a name="apiapplicationdeploymentapplicationidalexaskillalexaskillidput"></a>
-# **ApiApplicationDeploymentApplicationIdAlexaSkillAlexaSkillIdPut**
-> bool? ApiApplicationDeploymentApplicationIdAlexaSkillAlexaSkillIdPut (string applicationId, string alexaSkillId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAlexaSkillAlexaSkillIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var alexaSkillId = alexaSkillId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAlexaSkillAlexaSkillIdPut(applicationId, alexaSkillId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAlexaSkillAlexaSkillIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **alexaSkillId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidalexaskillcreateanddeploypost"></a>
-# **ApiApplicationDeploymentApplicationIdAlexaSkillCreateAndDeployPost**
-> NewSkillResponse ApiApplicationDeploymentApplicationIdAlexaSkillCreateAndDeployPost (string applicationId)
+<a name="deploynewluisapp"></a>
+# **DeployNewLuisApp**
+> NewLuisAppResponse DeployNewLuisApp (string applicationId, string luisRegion = null)
 
 
 
@@ -117,1073 +49,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentApplicationIdAlexaSkillCreateAndDeployPostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                NewSkillResponse result = apiInstance.ApiApplicationDeploymentApplicationIdAlexaSkillCreateAndDeployPost(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAlexaSkillCreateAndDeployPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**NewSkillResponse**](NewSkillResponse.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidalexaskilldelete"></a>
-# **ApiApplicationDeploymentApplicationIdAlexaSkillDelete**
-> bool? ApiApplicationDeploymentApplicationIdAlexaSkillDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAlexaSkillDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAlexaSkillDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAlexaSkillDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidalexavendordelete"></a>
-# **ApiApplicationDeploymentApplicationIdAlexaVendorDelete**
-> bool? ApiApplicationDeploymentApplicationIdAlexaVendorDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAlexaVendorDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAlexaVendorDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAlexaVendorDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidalexavendorvendoridput"></a>
-# **ApiApplicationDeploymentApplicationIdAlexaVendorVendorIdPut**
-> bool? ApiApplicationDeploymentApplicationIdAlexaVendorVendorIdPut (string applicationId, string vendorId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAlexaVendorVendorIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var vendorId = vendorId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAlexaVendorVendorIdPut(applicationId, vendorId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAlexaVendorVendorIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **vendorId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidalexavendorsget"></a>
-# **ApiApplicationDeploymentApplicationIdAlexaVendorsGet**
-> AlexaVendorResponse ApiApplicationDeploymentApplicationIdAlexaVendorsGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAlexaVendorsGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                AlexaVendorResponse result = apiInstance.ApiApplicationDeploymentApplicationIdAlexaVendorsGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAlexaVendorsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**AlexaVendorResponse**](AlexaVendorResponse.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidamazonauthtokenamazontokenidput"></a>
-# **ApiApplicationDeploymentApplicationIdAmazonAuthTokenAmazonTokenIdPut**
-> bool? ApiApplicationDeploymentApplicationIdAmazonAuthTokenAmazonTokenIdPut (string applicationId, string amazonTokenId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAmazonAuthTokenAmazonTokenIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var amazonTokenId = amazonTokenId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAmazonAuthTokenAmazonTokenIdPut(applicationId, amazonTokenId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAmazonAuthTokenAmazonTokenIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **amazonTokenId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidamazonauthtokendelete"></a>
-# **ApiApplicationDeploymentApplicationIdAmazonAuthTokenDelete**
-> bool? ApiApplicationDeploymentApplicationIdAmazonAuthTokenDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAmazonAuthTokenDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAmazonAuthTokenDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAmazonAuthTokenDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidazuresubscriptiondelete"></a>
-# **ApiApplicationDeploymentApplicationIdAzureSubscriptionDelete**
-> bool? ApiApplicationDeploymentApplicationIdAzureSubscriptionDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAzureSubscriptionDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAzureSubscriptionDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAzureSubscriptionDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidazuresubscriptionssubscriptionidput"></a>
-# **ApiApplicationDeploymentApplicationIdAzureSubscriptionsSubscriptionIdPut**
-> bool? ApiApplicationDeploymentApplicationIdAzureSubscriptionsSubscriptionIdPut (string applicationId, string subscriptionId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdAzureSubscriptionsSubscriptionIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var subscriptionId = subscriptionId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdAzureSubscriptionsSubscriptionIdPut(applicationId, subscriptionId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdAzureSubscriptionsSubscriptionIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **subscriptionId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationiddialogflowagentdelete"></a>
-# **ApiApplicationDeploymentApplicationIdDialogflowAgentDelete**
-> bool? ApiApplicationDeploymentApplicationIdDialogflowAgentDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdDialogflowAgentDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdDialogflowAgentDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdDialogflowAgentDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationiddialogflowagentput"></a>
-# **ApiApplicationDeploymentApplicationIdDialogflowAgentPut**
-> bool? ApiApplicationDeploymentApplicationIdDialogflowAgentPut (string applicationId, string dialogflowAgentId = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdDialogflowAgentPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var dialogflowAgentId = dialogflowAgentId_example;  // string |  (optional) 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdDialogflowAgentPut(applicationId, dialogflowAgentId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdDialogflowAgentPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **dialogflowAgentId** | **string**|  | [optional] 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidgoogleauthtokendelete"></a>
-# **ApiApplicationDeploymentApplicationIdGoogleAuthTokenDelete**
-> bool? ApiApplicationDeploymentApplicationIdGoogleAuthTokenDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdGoogleAuthTokenDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdGoogleAuthTokenDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdGoogleAuthTokenDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidgoogleauthtokengoogletokenidput"></a>
-# **ApiApplicationDeploymentApplicationIdGoogleAuthTokenGoogleTokenIdPut**
-> bool? ApiApplicationDeploymentApplicationIdGoogleAuthTokenGoogleTokenIdPut (string applicationId, string googleTokenId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdGoogleAuthTokenGoogleTokenIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var googleTokenId = googleTokenId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdGoogleAuthTokenGoogleTokenIdPut(applicationId, googleTokenId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdGoogleAuthTokenGoogleTokenIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **googleTokenId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidlinktoamazonget"></a>
-# **ApiApplicationDeploymentApplicationIdLinkToAmazonGet**
-> DeploymentLink ApiApplicationDeploymentApplicationIdLinkToAmazonGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdLinkToAmazonGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                DeploymentLink result = apiInstance.ApiApplicationDeploymentApplicationIdLinkToAmazonGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLinkToAmazonGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**DeploymentLink**](DeploymentLink.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidlinktogoogleget"></a>
-# **ApiApplicationDeploymentApplicationIdLinkToGoogleGet**
-> DeploymentLink ApiApplicationDeploymentApplicationIdLinkToGoogleGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdLinkToGoogleGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                DeploymentLink result = apiInstance.ApiApplicationDeploymentApplicationIdLinkToGoogleGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLinkToGoogleGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**DeploymentLink**](DeploymentLink.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidlinktomicrosoftget"></a>
-# **ApiApplicationDeploymentApplicationIdLinkToMicrosoftGet**
-> MicrosoftDeploymentLink ApiApplicationDeploymentApplicationIdLinkToMicrosoftGet (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdLinkToMicrosoftGetExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                MicrosoftDeploymentLink result = apiInstance.ApiApplicationDeploymentApplicationIdLinkToMicrosoftGet(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLinkToMicrosoftGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-[**MicrosoftDeploymentLink**](MicrosoftDeploymentLink.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidluisappcreateanddeploypost"></a>
-# **ApiApplicationDeploymentApplicationIdLuisAppCreateAndDeployPost**
-> NewLuisAppResponse ApiApplicationDeploymentApplicationIdLuisAppCreateAndDeployPost (string applicationId, string luisRegion = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdLuisAppCreateAndDeployPostExample
+    public class DeployNewLuisAppExample
     {
         public void main()
         {
@@ -1202,12 +68,12 @@ namespace Example
 
             try
             {
-                NewLuisAppResponse result = apiInstance.ApiApplicationDeploymentApplicationIdLuisAppCreateAndDeployPost(applicationId, luisRegion);
+                NewLuisAppResponse result = apiInstance.DeployNewLuisApp(applicationId, luisRegion);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLuisAppCreateAndDeployPost: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.DeployNewLuisApp: " + e.Message );
             }
         }
     }
@@ -1235,9 +101,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidluisappdelete"></a>
-# **ApiApplicationDeploymentApplicationIdLuisAppDelete**
-> bool? ApiApplicationDeploymentApplicationIdLuisAppDelete (string applicationId)
+<a name="deploynewskill"></a>
+# **DeployNewSkill**
+> NewSkillResponse DeployNewSkill (string applicationId)
 
 
 
@@ -1251,7 +117,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentApplicationIdLuisAppDeleteExample
+    public class DeployNewSkillExample
     {
         public void main()
         {
@@ -1269,12 +135,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdLuisAppDelete(applicationId);
+                NewSkillResponse result = apiInstance.DeployNewSkill(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLuisAppDelete: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.DeployNewSkill: " + e.Message );
             }
         }
     }
@@ -1286,6 +152,536 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **applicationId** | **string**|  | 
+
+### Return type
+
+[**NewSkillResponse**](NewSkillResponse.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getalexavendors"></a>
+# **GetAlexaVendors**
+> AlexaVendorResponse GetAlexaVendors (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetAlexaVendorsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                AlexaVendorResponse result = apiInstance.GetAlexaVendors(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetAlexaVendors: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**AlexaVendorResponse**](AlexaVendorResponse.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationlinktoamazon"></a>
+# **GetApplicationLinkToAmazon**
+> DeploymentLink GetApplicationLinkToAmazon (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationLinkToAmazonExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                DeploymentLink result = apiInstance.GetApplicationLinkToAmazon(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetApplicationLinkToAmazon: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**DeploymentLink**](DeploymentLink.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationlinktogoogle"></a>
+# **GetApplicationLinkToGoogle**
+> DeploymentLink GetApplicationLinkToGoogle (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationLinkToGoogleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                DeploymentLink result = apiInstance.GetApplicationLinkToGoogle(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetApplicationLinkToGoogle: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**DeploymentLink**](DeploymentLink.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationlinktomicrosoft"></a>
+# **GetApplicationLinkToMicrosoft**
+> MicrosoftDeploymentLink GetApplicationLinkToMicrosoft (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationLinkToMicrosoftExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                MicrosoftDeploymentLink result = apiInstance.GetApplicationLinkToMicrosoft(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetApplicationLinkToMicrosoft: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+[**MicrosoftDeploymentLink**](MicrosoftDeploymentLink.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationslinkedtoamazon"></a>
+# **GetApplicationsLinkedToAmazon**
+> List<ApplicationsByAmazonAccount> GetApplicationsLinkedToAmazon (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationsLinkedToAmazonExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationsByAmazonAccount&gt; result = apiInstance.GetApplicationsLinkedToAmazon(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetApplicationsLinkedToAmazon: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationsByAmazonAccount>**](ApplicationsByAmazonAccount.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationslinkedtogoogle"></a>
+# **GetApplicationsLinkedToGoogle**
+> List<ApplicationsByGoogleAccount> GetApplicationsLinkedToGoogle (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationsLinkedToGoogleExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationsByGoogleAccount&gt; result = apiInstance.GetApplicationsLinkedToGoogle(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetApplicationsLinkedToGoogle: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationsByGoogleAccount>**](ApplicationsByGoogleAccount.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="getapplicationslinkedtomicrosoft"></a>
+# **GetApplicationsLinkedToMicrosoft**
+> List<ApplicationsByMicrosoftAccount> GetApplicationsLinkedToMicrosoft (string organizationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class GetApplicationsLinkedToMicrosoftExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var organizationId = organizationId_example;  // string | 
+
+            try
+            {
+                List&lt;ApplicationsByMicrosoftAccount&gt; result = apiInstance.GetApplicationsLinkedToMicrosoft(organizationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.GetApplicationsLinkedToMicrosoft: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **organizationId** | **string**|  | 
+
+### Return type
+
+[**List<ApplicationsByMicrosoftAccount>**](ApplicationsByMicrosoftAccount.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="linkalexaskillid"></a>
+# **LinkAlexaSkillId**
+> bool? LinkAlexaSkillId (string applicationId, string alexaSkillId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class LinkAlexaSkillIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+            var alexaSkillId = alexaSkillId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.LinkAlexaSkillId(applicationId, alexaSkillId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkAlexaSkillId: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **alexaSkillId** | **string**|  | 
 
 ### Return type
 
@@ -1301,9 +697,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidluisappluisappidput"></a>
-# **ApiApplicationDeploymentApplicationIdLuisAppLuisAppIdPut**
-> bool? ApiApplicationDeploymentApplicationIdLuisAppLuisAppIdPut (string applicationId, string luisAppId, string luisRegion = null, string locale = null)
+<a name="linkalexavendor"></a>
+# **LinkAlexaVendor**
+> bool? LinkAlexaVendor (string applicationId, string vendorId)
 
 
 
@@ -1317,7 +713,347 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentApplicationIdLuisAppLuisAppIdPutExample
+    public class LinkAlexaVendorExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+            var vendorId = vendorId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.LinkAlexaVendor(applicationId, vendorId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkAlexaVendor: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **vendorId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="linkamazonauthtoken"></a>
+# **LinkAmazonAuthToken**
+> bool? LinkAmazonAuthToken (string applicationId, string amazonTokenId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class LinkAmazonAuthTokenExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+            var amazonTokenId = amazonTokenId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.LinkAmazonAuthToken(applicationId, amazonTokenId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkAmazonAuthToken: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **amazonTokenId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="linkazuresubscription"></a>
+# **LinkAzureSubscription**
+> bool? LinkAzureSubscription (string applicationId, string subscriptionId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class LinkAzureSubscriptionExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+            var subscriptionId = subscriptionId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.LinkAzureSubscription(applicationId, subscriptionId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkAzureSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **subscriptionId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="linkdialogflowagentid"></a>
+# **LinkDialogflowAgentId**
+> bool? LinkDialogflowAgentId (string applicationId, string dialogflowAgentId = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class LinkDialogflowAgentIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+            var dialogflowAgentId = dialogflowAgentId_example;  // string |  (optional) 
+
+            try
+            {
+                bool? result = apiInstance.LinkDialogflowAgentId(applicationId, dialogflowAgentId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkDialogflowAgentId: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **dialogflowAgentId** | **string**|  | [optional] 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="linkgoogleauthtoken"></a>
+# **LinkGoogleAuthToken**
+> bool? LinkGoogleAuthToken (string applicationId, string googleTokenId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class LinkGoogleAuthTokenExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+            var googleTokenId = googleTokenId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.LinkGoogleAuthToken(applicationId, googleTokenId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkGoogleAuthToken: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+ **googleTokenId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="linkluisapp"></a>
+# **LinkLuisApp**
+> bool? LinkLuisApp (string applicationId, string luisAppId, string luisRegion = null, string locale = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class LinkLuisAppExample
     {
         public void main()
         {
@@ -1338,12 +1074,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdLuisAppLuisAppIdPut(applicationId, luisAppId, luisRegion, locale);
+                bool? result = apiInstance.LinkLuisApp(applicationId, luisAppId, luisRegion, locale);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLuisAppLuisAppIdPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkLuisApp: " + e.Message );
             }
         }
     }
@@ -1373,9 +1109,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidluiskeyluiskeyput"></a>
-# **ApiApplicationDeploymentApplicationIdLuisKeyLuisKeyPut**
-> bool? ApiApplicationDeploymentApplicationIdLuisKeyLuisKeyPut (string applicationId, string luisKey)
+<a name="linkluisauthoringkey"></a>
+# **LinkLuisAuthoringKey**
+> bool? LinkLuisAuthoringKey (string applicationId, string luisKey)
 
 
 
@@ -1389,7 +1125,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentApplicationIdLuisKeyLuisKeyPutExample
+    public class LinkLuisAuthoringKeyExample
     {
         public void main()
         {
@@ -1408,12 +1144,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdLuisKeyLuisKeyPut(applicationId, luisKey);
+                bool? result = apiInstance.LinkLuisAuthoringKey(applicationId, luisKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLuisKeyLuisKeyPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkLuisAuthoringKey: " + e.Message );
             }
         }
     }
@@ -1441,9 +1177,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidluispredictionresourcesput"></a>
-# **ApiApplicationDeploymentApplicationIdLuisPredictionResourcesPut**
-> bool? ApiApplicationDeploymentApplicationIdLuisPredictionResourcesPut (string applicationId, UpdateLuisPredictionResourcesRequest body = null)
+<a name="linkluispredictionresources"></a>
+# **LinkLuisPredictionResources**
+> bool? LinkLuisPredictionResources (string applicationId, UpdateLuisPredictionResourcesRequest body = null)
 
 
 
@@ -1457,7 +1193,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentApplicationIdLuisPredictionResourcesPutExample
+    public class LinkLuisPredictionResourcesExample
     {
         public void main()
         {
@@ -1476,12 +1212,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdLuisPredictionResourcesPut(applicationId, body);
+                bool? result = apiInstance.LinkLuisPredictionResources(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdLuisPredictionResourcesPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkLuisPredictionResources: " + e.Message );
             }
         }
     }
@@ -1509,9 +1245,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidmicrosoftauthtokenmicrosofttokenidput"></a>
-# **ApiApplicationDeploymentApplicationIdMicrosoftAuthTokenMicrosoftTokenIdPut**
-> bool? ApiApplicationDeploymentApplicationIdMicrosoftAuthTokenMicrosoftTokenIdPut (string applicationId, string microsoftTokenId)
+<a name="linkmicrosoftapp"></a>
+# **LinkMicrosoftApp**
+> bool? LinkMicrosoftApp (string applicationId, UpdateMicrosoftAppInfoRequest body = null)
 
 
 
@@ -1525,141 +1261,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentApplicationIdMicrosoftAuthTokenMicrosoftTokenIdPutExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-            var microsoftTokenId = microsoftTokenId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdMicrosoftAuthTokenMicrosoftTokenIdPut(applicationId, microsoftTokenId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdMicrosoftAuthTokenMicrosoftTokenIdPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
- **microsoftTokenId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidmicrosoftprojectdelete"></a>
-# **ApiApplicationDeploymentApplicationIdMicrosoftProjectDelete**
-> bool? ApiApplicationDeploymentApplicationIdMicrosoftProjectDelete (string applicationId)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdMicrosoftProjectDeleteExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: Bearer
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-            // Configure API key authorization: X-Api-Key
-            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
-
-            var apiInstance = new ApplicationDeploymentApi();
-            var applicationId = applicationId_example;  // string | 
-
-            try
-            {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdMicrosoftProjectDelete(applicationId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdMicrosoftProjectDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationId** | **string**|  | 
-
-### Return type
-
-**bool?**
-
-### Authorization
-
-[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentapplicationidmicrosoftprojectput"></a>
-# **ApiApplicationDeploymentApplicationIdMicrosoftProjectPut**
-> bool? ApiApplicationDeploymentApplicationIdMicrosoftProjectPut (string applicationId, UpdateMicrosoftAppInfoRequest body = null)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Voicify.Sdk.Core.Models.Api;
-using Voicify.Sdk.Core.Models.Client;
-using Voicify.Sdk.Core.Models.Model;
-
-namespace Example
-{
-    public class ApiApplicationDeploymentApplicationIdMicrosoftProjectPutExample
+    public class LinkMicrosoftAppExample
     {
         public void main()
         {
@@ -1678,12 +1280,12 @@ namespace Example
 
             try
             {
-                bool? result = apiInstance.ApiApplicationDeploymentApplicationIdMicrosoftProjectPut(applicationId, body);
+                bool? result = apiInstance.LinkMicrosoftApp(applicationId, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentApplicationIdMicrosoftProjectPut: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkMicrosoftApp: " + e.Message );
             }
         }
     }
@@ -1711,9 +1313,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentorganizationlinkstoamazonorganizationidget"></a>
-# **ApiApplicationDeploymentOrganizationLinksToAmazonOrganizationIdGet**
-> List<ApplicationsByAmazonAccount> ApiApplicationDeploymentOrganizationLinksToAmazonOrganizationIdGet (string organizationId)
+<a name="linkmicrosoftauthtoken"></a>
+# **LinkMicrosoftAuthToken**
+> bool? LinkMicrosoftAuthToken (string applicationId, string microsoftTokenId)
 
 
 
@@ -1727,7 +1329,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentOrganizationLinksToAmazonOrganizationIdGetExample
+    public class LinkMicrosoftAuthTokenExample
     {
         public void main()
         {
@@ -1741,16 +1343,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ApplicationDeploymentApi();
-            var organizationId = organizationId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
+            var microsoftTokenId = microsoftTokenId_example;  // string | 
 
             try
             {
-                List&lt;ApplicationsByAmazonAccount&gt; result = apiInstance.ApiApplicationDeploymentOrganizationLinksToAmazonOrganizationIdGet(organizationId);
+                bool? result = apiInstance.LinkMicrosoftAuthToken(applicationId, microsoftTokenId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentOrganizationLinksToAmazonOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.LinkMicrosoftAuthToken: " + e.Message );
             }
         }
     }
@@ -1761,11 +1364,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
+ **applicationId** | **string**|  | 
+ **microsoftTokenId** | **string**|  | 
 
 ### Return type
 
-[**List<ApplicationsByAmazonAccount>**](ApplicationsByAmazonAccount.md)
+**bool?**
 
 ### Authorization
 
@@ -1777,9 +1381,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentorganizationlinkstogoogleorganizationidget"></a>
-# **ApiApplicationDeploymentOrganizationLinksToGoogleOrganizationIdGet**
-> List<ApplicationsByGoogleAccount> ApiApplicationDeploymentOrganizationLinksToGoogleOrganizationIdGet (string organizationId)
+<a name="removealexavendor"></a>
+# **RemoveAlexaVendor**
+> bool? RemoveAlexaVendor (string applicationId)
 
 
 
@@ -1793,7 +1397,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentOrganizationLinksToGoogleOrganizationIdGetExample
+    public class RemoveAlexaVendorExample
     {
         public void main()
         {
@@ -1807,16 +1411,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ApplicationDeploymentApi();
-            var organizationId = organizationId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                List&lt;ApplicationsByGoogleAccount&gt; result = apiInstance.ApiApplicationDeploymentOrganizationLinksToGoogleOrganizationIdGet(organizationId);
+                bool? result = apiInstance.RemoveAlexaVendor(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentOrganizationLinksToGoogleOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.RemoveAlexaVendor: " + e.Message );
             }
         }
     }
@@ -1827,11 +1431,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**List<ApplicationsByGoogleAccount>**](ApplicationsByGoogleAccount.md)
+**bool?**
 
 ### Authorization
 
@@ -1843,9 +1447,9 @@ Name | Type | Description  | Notes
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-<a name="apiapplicationdeploymentorganizationlinkstomicrosoftorganizationidget"></a>
-# **ApiApplicationDeploymentOrganizationLinksToMicrosoftOrganizationIdGet**
-> List<ApplicationsByMicrosoftAccount> ApiApplicationDeploymentOrganizationLinksToMicrosoftOrganizationIdGet (string organizationId)
+<a name="removeamazonauthtoken"></a>
+# **RemoveAmazonAuthToken**
+> bool? RemoveAmazonAuthToken (string applicationId)
 
 
 
@@ -1859,7 +1463,7 @@ using Voicify.Sdk.Core.Models.Model;
 
 namespace Example
 {
-    public class ApiApplicationDeploymentOrganizationLinksToMicrosoftOrganizationIdGetExample
+    public class RemoveAmazonAuthTokenExample
     {
         public void main()
         {
@@ -1873,16 +1477,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
 
             var apiInstance = new ApplicationDeploymentApi();
-            var organizationId = organizationId_example;  // string | 
+            var applicationId = applicationId_example;  // string | 
 
             try
             {
-                List&lt;ApplicationsByMicrosoftAccount&gt; result = apiInstance.ApiApplicationDeploymentOrganizationLinksToMicrosoftOrganizationIdGet(organizationId);
+                bool? result = apiInstance.RemoveAmazonAuthToken(applicationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ApplicationDeploymentApi.ApiApplicationDeploymentOrganizationLinksToMicrosoftOrganizationIdGet: " + e.Message );
+                Debug.Print("Exception when calling ApplicationDeploymentApi.RemoveAmazonAuthToken: " + e.Message );
             }
         }
     }
@@ -1893,11 +1497,407 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizationId** | **string**|  | 
+ **applicationId** | **string**|  | 
 
 ### Return type
 
-[**List<ApplicationsByMicrosoftAccount>**](ApplicationsByMicrosoftAccount.md)
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removeazuresubscription"></a>
+# **RemoveAzureSubscription**
+> bool? RemoveAzureSubscription (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveAzureSubscriptionExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveAzureSubscription(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.RemoveAzureSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="removegoogleauthtoken"></a>
+# **RemoveGoogleAuthToken**
+> bool? RemoveGoogleAuthToken (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class RemoveGoogleAuthTokenExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.RemoveGoogleAuthToken(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.RemoveGoogleAuthToken: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="unlinkalexaskill"></a>
+# **UnlinkAlexaSkill**
+> bool? UnlinkAlexaSkill (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UnlinkAlexaSkillExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.UnlinkAlexaSkill(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.UnlinkAlexaSkill: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="unlinkdialogflowagent"></a>
+# **UnlinkDialogflowAgent**
+> bool? UnlinkDialogflowAgent (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UnlinkDialogflowAgentExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.UnlinkDialogflowAgent(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.UnlinkDialogflowAgent: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="unlinkluisapp"></a>
+# **UnlinkLuisApp**
+> bool? UnlinkLuisApp (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UnlinkLuisAppExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.UnlinkLuisApp(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.UnlinkLuisApp: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[Bearer](../README.md#Bearer), [X-Api-Key](../README.md#X-Api-Key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+<a name="unlinkmicrosoftproject"></a>
+# **UnlinkMicrosoftProject**
+> bool? UnlinkMicrosoftProject (string applicationId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Voicify.Sdk.Core.Models.Api;
+using Voicify.Sdk.Core.Models.Client;
+using Voicify.Sdk.Core.Models.Model;
+
+namespace Example
+{
+    public class UnlinkMicrosoftProjectExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Bearer
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+            // Configure API key authorization: X-Api-Key
+            Configuration.Default.AddApiKey("X-Api-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("X-Api-Key", "Bearer");
+
+            var apiInstance = new ApplicationDeploymentApi();
+            var applicationId = applicationId_example;  // string | 
+
+            try
+            {
+                bool? result = apiInstance.UnlinkMicrosoftProject(applicationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ApplicationDeploymentApi.UnlinkMicrosoftProject: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **applicationId** | **string**|  | 
+
+### Return type
+
+**bool?**
 
 ### Authorization
 

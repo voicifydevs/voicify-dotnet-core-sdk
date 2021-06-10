@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **DisplayTitleOverride** | **string** |  | [optional] 
 **FollowUpId** | **string** |  | [optional] 
 **ResponseId** | **string** |  | [optional] 
+**FlagRules** | [**List&lt;ResponseFlagRuleModel&gt;**](ResponseFlagRuleModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

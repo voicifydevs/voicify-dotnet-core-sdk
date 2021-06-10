@@ -70,8 +70,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// <param name="responses">responses.</param>
         /// <param name="webhookChainingType">webhookChainingType.</param>
         /// <param name="appliedApplicationTemplateFormId">appliedApplicationTemplateFormId.</param>
-        /// <param name="sharedReferences">sharedReferences.</param>
-        public ExitMessageExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string content = default(string), string createdFromId = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), List<ExitMessageWebhookModel> exitMessageWebhooks = default(List<ExitMessageWebhookModel>), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), int? hits = default(int?), RepromptModel reprompt = default(RepromptModel), string repromptId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), string followUpId = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?), string responseId = default(string), List<ExitMessageResponseModel> responses = default(List<ExitMessageResponseModel>), WebhookChainingType? webhookChainingType = default(WebhookChainingType?), string appliedApplicationTemplateFormId = default(string), SharedReferencesExportModel sharedReferences = default(SharedReferencesExportModel))
+        public ExitMessageExportModel(string id = default(string), string applicationId = default(string), string applicationFeatureId = default(string), string title = default(string), bool? isLive = default(bool?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), string content = default(string), string createdFromId = default(string), MediaItemModel smallImage = default(MediaItemModel), MediaItemModel largeImage = default(MediaItemModel), MediaItemModel backgroundImage = default(MediaItemModel), MediaItemModel audio = default(MediaItemModel), MediaItemModel video = default(MediaItemModel), List<ExitMessageWebhookModel> exitMessageWebhooks = default(List<ExitMessageWebhookModel>), MediaResponseContainerModel mediaResponseContainer = default(MediaResponseContainerModel), int? hits = default(int?), RepromptModel reprompt = default(RepromptModel), string repromptId = default(string), DateTime? createdDate = default(DateTime?), DateTime? modifiedDate = default(DateTime?), string mediaResponseContainerId = default(string), string displayTextOverride = default(string), string displayTitleOverride = default(string), string followUpId = default(string), bool? requiresParent = default(bool?), bool? isComplete = default(bool?), List<LanguageModel> languages = default(List<LanguageModel>), bool? shouldNotSync = default(bool?), string responseId = default(string), List<ExitMessageResponseModel> responses = default(List<ExitMessageResponseModel>), WebhookChainingType? webhookChainingType = default(WebhookChainingType?), string appliedApplicationTemplateFormId = default(string))
         {
             this.Id = id;
             this.ApplicationId = applicationId;
@@ -106,7 +105,6 @@ namespace Voicify.Sdk.Core.Models.Model
             this.Responses = responses;
             this.WebhookChainingType = webhookChainingType;
             this.AppliedApplicationTemplateFormId = appliedApplicationTemplateFormId;
-            this.SharedReferences = sharedReferences;
         }
         
         /// <summary>
@@ -303,12 +301,6 @@ namespace Voicify.Sdk.Core.Models.Model
         public string AppliedApplicationTemplateFormId { get; set; }
 
         /// <summary>
-        /// Gets or Sets SharedReferences
-        /// </summary>
-        [DataMember(Name="sharedReferences", EmitDefaultValue=false)]
-        public SharedReferencesExportModel SharedReferences { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -349,7 +341,6 @@ namespace Voicify.Sdk.Core.Models.Model
             sb.Append("  Responses: ").Append(Responses).Append("\n");
             sb.Append("  WebhookChainingType: ").Append(WebhookChainingType).Append("\n");
             sb.Append("  AppliedApplicationTemplateFormId: ").Append(AppliedApplicationTemplateFormId).Append("\n");
-            sb.Append("  SharedReferences: ").Append(SharedReferences).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -551,11 +542,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     this.AppliedApplicationTemplateFormId == input.AppliedApplicationTemplateFormId ||
                     (this.AppliedApplicationTemplateFormId != null &&
                     this.AppliedApplicationTemplateFormId.Equals(input.AppliedApplicationTemplateFormId))
-                ) && 
-                (
-                    this.SharedReferences == input.SharedReferences ||
-                    (this.SharedReferences != null &&
-                    this.SharedReferences.Equals(input.SharedReferences))
                 );
         }
 
@@ -634,8 +620,6 @@ namespace Voicify.Sdk.Core.Models.Model
                     hashCode = hashCode * 59 + this.WebhookChainingType.GetHashCode();
                 if (this.AppliedApplicationTemplateFormId != null)
                     hashCode = hashCode * 59 + this.AppliedApplicationTemplateFormId.GetHashCode();
-                if (this.SharedReferences != null)
-                    hashCode = hashCode * 59 + this.SharedReferences.GetHashCode();
                 return hashCode;
             }
         }
