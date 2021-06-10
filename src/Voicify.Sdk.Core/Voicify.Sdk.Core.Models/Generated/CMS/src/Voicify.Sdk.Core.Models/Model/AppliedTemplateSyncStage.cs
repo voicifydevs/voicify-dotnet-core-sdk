@@ -27,7 +27,7 @@ namespace Voicify.Sdk.Core.Models.Model
     /// Defines AppliedTemplateSyncStage
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-        public enum AppliedTemplateSyncStage
+    public enum AppliedTemplateSyncStage
     {
         /// <summary>
         /// Enum Unknown for value: Unknown
