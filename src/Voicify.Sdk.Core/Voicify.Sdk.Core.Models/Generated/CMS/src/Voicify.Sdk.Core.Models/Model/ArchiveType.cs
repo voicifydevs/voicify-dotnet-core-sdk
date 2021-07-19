@@ -33,22 +33,22 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Unknown for value: Unknown
         /// </summary>
         [EnumMember(Value = "Unknown")]
-        Unknown = 1,
+        Unknown = 0,
         /// <summary>
         /// Enum BulkContent for value: BulkContent
         /// </summary>
         [EnumMember(Value = "BulkContent")]
-        BulkContent = 2,
+        BulkContent = 1,
         /// <summary>
         /// Enum BulkWebhook for value: BulkWebhook
         /// </summary>
         [EnumMember(Value = "BulkWebhook")]
-        BulkWebhook = 3,
+        BulkWebhook = 2,
         /// <summary>
         /// Enum InteractionModelChanges for value: InteractionModelChanges
         /// </summary>
         [EnumMember(Value = "InteractionModelChanges")]
-        InteractionModelChanges = 4,
+        InteractionModelChanges = 3,
         /// <summary>
         /// Enum FullApplication for value: FullApplication
         /// </summary>

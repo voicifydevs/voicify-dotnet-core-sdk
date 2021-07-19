@@ -33,27 +33,27 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Unknown for value: Unknown
         /// </summary>
         [EnumMember(Value = "Unknown")]
-        Unknown = 1,
+        Unknown = 0,
         /// <summary>
         /// Enum ApplyTemplateToApp for value: ApplyTemplateToApp
         /// </summary>
         [EnumMember(Value = "ApplyTemplateToApp")]
-        ApplyTemplateToApp = 2,
+        ApplyTemplateToApp = 1,
         /// <summary>
         /// Enum ApplyTemplateToAppDynamic for value: ApplyTemplateToAppDynamic
         /// </summary>
         [EnumMember(Value = "ApplyTemplateToAppDynamic")]
-        ApplyTemplateToAppDynamic = 3,
+        ApplyTemplateToAppDynamic = 2,
         /// <summary>
         /// Enum UpdateAppliedTemplate for value: UpdateAppliedTemplate
         /// </summary>
         [EnumMember(Value = "UpdateAppliedTemplate")]
-        UpdateAppliedTemplate = 4,
+        UpdateAppliedTemplate = 3,
         /// <summary>
         /// Enum UpdateAppliedTemplateDynamic for value: UpdateAppliedTemplateDynamic
         /// </summary>
         [EnumMember(Value = "UpdateAppliedTemplateDynamic")]
-        UpdateAppliedTemplateDynamic = 5,
+        UpdateAppliedTemplateDynamic = 4,
         /// <summary>
         /// Enum RemoveAppliedTemplate for value: RemoveAppliedTemplate
         /// </summary>

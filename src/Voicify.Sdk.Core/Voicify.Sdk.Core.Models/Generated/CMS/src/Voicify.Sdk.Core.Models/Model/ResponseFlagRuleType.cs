@@ -33,7 +33,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Add for value: Add
         /// </summary>
         [EnumMember(Value = "Add")]
-        Add = 1,
+        Add = 0,
         /// <summary>
         /// Enum Remove for value: Remove
         /// </summary>

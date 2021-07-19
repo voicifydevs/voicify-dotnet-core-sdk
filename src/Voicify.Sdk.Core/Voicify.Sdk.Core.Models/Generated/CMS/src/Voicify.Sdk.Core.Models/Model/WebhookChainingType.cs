@@ -33,7 +33,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum NoChaining for value: NoChaining
         /// </summary>
         [EnumMember(Value = "NoChaining")]
-        NoChaining = 1,
+        NoChaining = 0,
         /// <summary>
         /// Enum InstanceLevelChaining for value: InstanceLevelChaining
         /// </summary>

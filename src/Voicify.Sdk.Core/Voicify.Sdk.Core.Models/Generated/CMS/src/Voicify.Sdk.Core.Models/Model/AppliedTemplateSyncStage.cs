@@ -33,17 +33,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Unknown for value: Unknown
         /// </summary>
         [EnumMember(Value = "Unknown")]
-        Unknown = 1,
+        Unknown = 0,
         /// <summary>
         /// Enum Queued for value: Queued
         /// </summary>
         [EnumMember(Value = "Queued")]
-        Queued = 2,
+        Queued = 1,
         /// <summary>
         /// Enum Processing for value: Processing
         /// </summary>
         [EnumMember(Value = "Processing")]
-        Processing = 3,
+        Processing = 2,
         /// <summary>
         /// Enum Complete for value: Complete
         /// </summary>

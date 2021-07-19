@@ -33,7 +33,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Session for value: Session
         /// </summary>
         [EnumMember(Value = "Session")]
-        Session = 1,
+        Session = 0,
         /// <summary>
         /// Enum UserProfile for value: UserProfile
         /// </summary>

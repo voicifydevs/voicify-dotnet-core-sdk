@@ -33,7 +33,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Development for value: development
         /// </summary>
         [EnumMember(Value = "development")]
-        Development = 1,
+        Development = 0,
         /// <summary>
         /// Enum Live for value: live
         /// </summary>

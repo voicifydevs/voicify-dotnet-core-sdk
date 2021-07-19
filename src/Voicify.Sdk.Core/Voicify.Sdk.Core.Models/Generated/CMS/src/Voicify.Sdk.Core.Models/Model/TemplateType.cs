@@ -33,7 +33,7 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum ContentTemplate for value: ContentTemplate
         /// </summary>
         [EnumMember(Value = "ContentTemplate")]
-        ContentTemplate = 1,
+        ContentTemplate = 0,
         /// <summary>
         /// Enum Integration for value: Integration
         /// </summary>

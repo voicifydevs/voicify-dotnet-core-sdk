@@ -41,13 +41,13 @@ namespace Voicify.Sdk.Core.Models.Model
             /// Enum SQUARE for value: SQUARE
             /// </summary>
             [EnumMember(Value = "SQUARE")]
-            SQUARE = 1,
+            SQUARE = 0,
             
             /// <summary>
             /// Enum RECTANGLE for value: RECTANGLE
             /// </summary>
             [EnumMember(Value = "RECTANGLE")]
-            RECTANGLE = 2,
+            RECTANGLE = 1,
             
             /// <summary>
             /// Enum ROUND for value: ROUND

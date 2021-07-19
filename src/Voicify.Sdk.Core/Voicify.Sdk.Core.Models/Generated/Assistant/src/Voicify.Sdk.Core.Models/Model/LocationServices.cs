@@ -41,7 +41,7 @@ namespace Voicify.Sdk.Core.Models.Model
             /// Enum ENABLED for value: ENABLED
             /// </summary>
             [EnumMember(Value = "ENABLED")]
-            ENABLED = 1,
+            ENABLED = 0,
             
             /// <summary>
             /// Enum DISABLED for value: DISABLED
@@ -66,7 +66,7 @@ namespace Voicify.Sdk.Core.Models.Model
             /// Enum RUNNING for value: RUNNING
             /// </summary>
             [EnumMember(Value = "RUNNING")]
-            RUNNING = 1,
+            RUNNING = 0,
             
             /// <summary>
             /// Enum STOPPED for value: STOPPED

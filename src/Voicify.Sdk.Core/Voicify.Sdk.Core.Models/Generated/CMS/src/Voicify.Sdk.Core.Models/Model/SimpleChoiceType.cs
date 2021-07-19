@@ -33,12 +33,12 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Yes for value: Yes
         /// </summary>
         [EnumMember(Value = "Yes")]
-        Yes = 1,
+        Yes = 0,
         /// <summary>
         /// Enum No for value: No
         /// </summary>
         [EnumMember(Value = "No")]
-        No = 2,
+        No = 1,
         /// <summary>
         /// Enum Maybe for value: Maybe
         /// </summary>

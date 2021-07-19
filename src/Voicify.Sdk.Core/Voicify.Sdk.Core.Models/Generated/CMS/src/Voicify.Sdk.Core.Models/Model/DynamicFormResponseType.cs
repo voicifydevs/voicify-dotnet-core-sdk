@@ -33,17 +33,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Continue for value: Continue
         /// </summary>
         [EnumMember(Value = "Continue")]
-        Continue = 1,
+        Continue = 0,
         /// <summary>
         /// Enum Invalid for value: Invalid
         /// </summary>
         [EnumMember(Value = "Invalid")]
-        Invalid = 2,
+        Invalid = 1,
         /// <summary>
         /// Enum Custom for value: Custom
         /// </summary>
         [EnumMember(Value = "Custom")]
-        Custom = 3,
+        Custom = 2,
         /// <summary>
         /// Enum Oauth for value: Oauth
         /// </summary>

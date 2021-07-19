@@ -33,32 +33,32 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum DEVELOPMENT for value: DEVELOPMENT
         /// </summary>
         [EnumMember(Value = "DEVELOPMENT")]
-        DEVELOPMENT = 1,
+        DEVELOPMENT = 0,
         /// <summary>
         /// Enum CERTIFICATION for value: CERTIFICATION
         /// </summary>
         [EnumMember(Value = "CERTIFICATION")]
-        CERTIFICATION = 2,
+        CERTIFICATION = 1,
         /// <summary>
         /// Enum PUBLISHED for value: PUBLISHED
         /// </summary>
         [EnumMember(Value = "PUBLISHED")]
-        PUBLISHED = 3,
+        PUBLISHED = 2,
         /// <summary>
         /// Enum SUPPRESSED for value: SUPPRESSED
         /// </summary>
         [EnumMember(Value = "SUPPRESSED")]
-        SUPPRESSED = 4,
+        SUPPRESSED = 3,
         /// <summary>
         /// Enum PULLED for value: PULLED
         /// </summary>
         [EnumMember(Value = "PULLED")]
-        PULLED = 5,
+        PULLED = 4,
         /// <summary>
         /// Enum HIDDEN for value: HIDDEN
         /// </summary>
         [EnumMember(Value = "HIDDEN")]
-        HIDDEN = 6,
+        HIDDEN = 5,
         /// <summary>
         /// Enum REMOVED for value: REMOVED
         /// </summary>

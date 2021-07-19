@@ -33,17 +33,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum General for value: General
         /// </summary>
         [EnumMember(Value = "General")]
-        General = 1,
+        General = 0,
         /// <summary>
         /// Enum Location for value: Location
         /// </summary>
         [EnumMember(Value = "Location")]
-        Location = 2,
+        Location = 1,
         /// <summary>
         /// Enum StartDate for value: StartDate
         /// </summary>
         [EnumMember(Value = "StartDate")]
-        StartDate = 3,
+        StartDate = 2,
         /// <summary>
         /// Enum Status for value: Status
         /// </summary>

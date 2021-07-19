@@ -33,17 +33,17 @@ namespace Voicify.Sdk.Core.Models.Model
         /// Enum Low for value: Low
         /// </summary>
         [EnumMember(Value = "Low")]
-        Low = 1,
+        Low = 0,
         /// <summary>
         /// Enum Medium for value: Medium
         /// </summary>
         [EnumMember(Value = "Medium")]
-        Medium = 2,
+        Medium = 1,
         /// <summary>
         /// Enum High for value: High
         /// </summary>
         [EnumMember(Value = "High")]
-        High = 3,
+        High = 2,
         /// <summary>
         /// Enum Urgent for value: Urgent
         /// </summary>
